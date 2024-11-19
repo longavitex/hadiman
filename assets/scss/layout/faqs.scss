@@ -1,0 +1,33 @@
+/* faqs */
+.faqs {
+    &_item {
+        .icon_arrow {
+            position: relative;
+
+            &_minus {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity .3s ease;
+            }
+        }
+
+        .answer {
+            display: none;
+        }
+
+        &.active {
+            .icon_arrow {
+                &_plus {
+                    opacity: 0;
+                }
+                
+                &_minus {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

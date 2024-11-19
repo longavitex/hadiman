@@ -1,0 +1,63 @@
+@mixin css3-prefix($property, $value) {
+	-webkit-#{$property}: #{$value};
+	-khtml-#{$property}: #{$value};
+	-moz-#{$property}: #{$value};
+	-ms-#{$property}: #{$value};
+	-o-#{$property}: #{$value};
+	#{$property}: #{$value};
+}
+
+@mixin multi-ellipsis($line) {
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	word-break: break-all;
+}
+
+@mixin absolute-full {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0
+}
+
+@mixin set-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin set-center-x {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin set-center-y {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin respond-above($mq) {
+	@media (min-width: $mq) {
+		@content;
+	}
+}
+
+@mixin respond-between($mq-min, $mq-max) {
+	@media (min-width: $mq-min) and (max-width: ($mq-max - 0.02)) {
+		@content;
+	}
+}
+
+@mixin respond-below($mq) {
+	@media (max-width: ($mq - 0.02)) {
+		@content;
+	}
+}

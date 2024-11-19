@@ -1,0 +1,105 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Oxygen', serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $white;
+    color: $black;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+
+    &.overflow-unset {
+        overflow-x: unset;
+    }
+
+    &.scroll_lock {
+        overflow: hidden;
+    }
+}
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+main {
+    display: block
+}
+
+img,
+form,
+fieldset {
+    border: 0;
+    vertical-align: top
+}
+
+img {
+    width: 100%;
+}
+
+ul,
+ol,
+li {
+    list-style: none
+}
+
+button {
+    overflow: visible;
+    cursor: pointer;
+    border-radius: 0;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+button:disabled {
+    cursor: default
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+input,
+select,
+textarea {
+    background: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+address,
+caption,
+em {
+    font-style: normal
+}
+
+a {
+    display: inline-block;
+    text-decoration: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}

@@ -1,0 +1,36 @@
+/* Services */ 
+.services {
+  &.style-three {
+    .services_link {
+      &:hover {
+        .services_info {
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+
+  &.style-four {
+    .services {
+      &_card {
+        overflow: hidden;
+        -webkit-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
+        -moz-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
+        -ms-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
+        clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
+      }
+
+      &_name {
+        margin-right: -15%;
+      }
+    }
+  }
+
+  &_sidebar {
+    .tab_btn {
+      &.active {
+        color: $orange;
+      }
+    }
+  }
+}

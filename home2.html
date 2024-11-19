@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadiman</title>
+    <link rel="shortcut icon" href="./assets/images/fav.ico">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/icomoon/style.css">
+    <link rel="stylesheet" href="./dist/output-tailwind.css">
+    <link rel="stylesheet" href="./dist/output-scss.css">
+</head>
+
+<body>
+    <div class="wrap md:pt-10 pt-4 md:px-10 px-4">
+        <!-- HEADER -->
+        <header id="header" class="header relative z-[2]">
+            <div class="header_main flex items-center justify-between absolute top-0 left-0 w-full sm:h-25 h-20 md:px-10 px-6">
+                <h1>
+                    <a href="index.html" class="logo flex items-center gap-3">
+                        <img src="./assets/images/logo_blue.png" class="flex-shrink-0 w-10" alt="logo">
+                        <strong class="heading4 text-white">Hadiman</strong>
+                    </a>
+                </h1>
+                <ul class="menu style-blue flex items-center gap-10 h-full max-lg:hidden">
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full text-white active">
+                            <span class="has_line line_blue txt-button">Home</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <ul
+                            class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
+                            <li class="menu_sub_item">
+                                <a href="index.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Homepage
+                                    01</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="home2.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300 active">Homepage
+                                    02</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="home3.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Homepage
+                                    03</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="home4.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Homepage
+                                    04</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full text-white">
+                            <span class="has_line line_blue txt-button">Services</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <div
+                            class="menu_sub menu_sub_mega invisible fixed top-[8.75rem] right-0 left-0 translate-y-5 opacity-0 pointer-events-none duration-400">
+                            <div class="container">
+                                <ul
+                                    class="services_list grid grid-cols-3 gap-4 w-full p-8 border-t border-outline bg-white">
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link block py-4 px-5 border border-outline hover:bg-blue hover:bg-opacity-10 duration-300 group">
+                                            <strong
+                                                class="services_tit heading6 group-hover:text-blue duration-300">Renovation
+                                                Services</strong>
+                                            <p
+                                                class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                Transform your home with our professional renovation services. Whether
+                                                it’s a kitchen remodel, a bathroom upgrade, or a complete home makeover,
+                                                our team brings your vision to life with precision and care.</p>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link block py-4 px-5 border border-outline hover:bg-blue hover:bg-opacity-10 duration-300 group">
+                                            <strong
+                                                class="services_tit heading6 group-hover:text-blue duration-300">Electrical
+                                                Services</strong>
+                                            <p
+                                                class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                Our licensed electricians provide safe, reliable electrical services,
+                                                including installations, repairs, upgrades, and inspections to ensure
+                                                your home’s electrical systems are efficient and up-to-code.</p>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link block py-4 px-5 border border-outline hover:bg-blue hover:bg-opacity-10 duration-300 group">
+                                            <strong
+                                                class="services_tit heading6 group-hover:text-blue duration-300">Plumbing
+                                                Services</strong>
+                                            <p
+                                                class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                From fixing leaks to installing new fixtures, our experienced plumbers
+                                                handle all types of plumbing projects, ensuring dependable solutions for
+                                                both minor repairs and major installations.</p>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link block py-4 px-5 border border-outline hover:bg-blue hover:bg-opacity-10 duration-300 group">
+                                            <strong
+                                                class="services_tit heading6 group-hover:text-blue duration-300">HVAC
+                                                Services</strong>
+                                            <p
+                                                class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                Stay comfortable year-round with our HVAC installation, repair, and
+                                                maintenance. We provide energy-efficient solutions tailored to your
+                                                home’s needs, keeping your family comfortable in every season.</p>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link block py-4 px-5 border border-outline hover:bg-blue hover:bg-opacity-10 duration-300 group">
+                                            <strong
+                                                class="services_tit heading6 group-hover:text-blue duration-300">Painting
+                                                and Drywall</strong>
+                                            <p
+                                                class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                Refresh your home with our professional painting and drywall services,
+                                                delivering high-quality finishes that enhance your space’s aesthetic
+                                                appeal and durability.</p>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link block py-4 px-5 border border-outline hover:bg-blue hover:bg-opacity-10 duration-300 group">
+                                            <strong
+                                                class="services_tit heading6 group-hover:text-blue duration-300">Roofing
+                                                Services</strong>
+                                            <p
+                                                class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                Enhance your home’s protection and curb appeal with our expert roofing
+                                                services, including new installations, repairs, and inspections to
+                                                ensure long-lasting protection and beauty for your property.</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full text-white">
+                            <span class="has_line line_blue txt-button">Blog</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <ul
+                            class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
+                            <li class="menu_sub_item">
+                                <a href="blog-default.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Blog
+                                    Default</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="blog-list.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Blog
+                                    List</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="blog-grid.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Blog
+                                    Grid</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="blog-detail1.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Blog
+                                    Details 1</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="blog-detail2.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Blog
+                                    Details 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full text-white">
+                            <span class="has_line line_blue txt-button">Shop</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <ul
+                            class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
+                            <li class="menu_sub_item">
+                                <a href="shop.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Our
+                                    Products</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="product-detail.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Product
+                                    Details</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="cart.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Shopping
+                                    Cart</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="checkout.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Check
+                                    Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full text-white">
+                            <span class="has_line line_blue txt-button">Pages</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <ul
+                            class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
+                            <li class="menu_sub_item">
+                                <a href="about-us.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">About
+                                    Us</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="services-list.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Our Services</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="our-projects1.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Our
+                                    Projects 1</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="our-projects2.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Our
+                                    Projects 2</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="projects-detail.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Projects
+                                    Details</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="pricing.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Our
+                                    Pricings</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="testimonial.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Our
+                                    Testimonials</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="book-appointment.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Book
+                                    Appointment</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="404.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">404
+                                    Page</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="faqs.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-blue hover:bg-opacity-10 hover:text-blue duration-300">Faqs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="contact.html" class="menu_link inline-flex items-center gap-1 h-full text-white">
+                            <span class="has_line line_blue txt-button">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header_info flex items-center gap-6">
+                    <li class="max-3xl:hidden">
+                        <a href="tel:+1555678888" class="flex items-center gap-3 group">
+                            <span
+                                class="flex items-center justify-center sm:w-14 w-12 sm:h-14 h-12 bg-blue duration-400">
+                                <span class="ph ph-phone-call sm:text-3xl text-2xl text-white"></span>
+                            </span>
+                            <div class="max-lg:hidden">
+                                <span class="text-white">Call Us Now:</span>
+                                <strong class="heading6 block mt-0.5 text-white">1-555-678-888</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="max-3xl:hidden">
+                        <a href="mailto:hi.avitex@gmail.com" class="flex items-center gap-3 group">
+                            <span
+                                class="flex items-center justify-center sm:w-14 w-12 sm:h-14 h-12 bg-blue duration-400">
+                                <span class="ph ph-envelope sm:text-3xl text-2xl text-white"></span>
+                            </span>
+                            <div class="max-lg:hidden">
+                                <span class="text-white">Email Address</span>
+                                <strong class="heading6 block mt-0.5 text-white">hi.avitex@gmail.com</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="max-xl:hidden">
+                        <a href="book-appointment.html" class="btn bg-blue">Request an estimate</a>
+                    </li>
+                    <li>
+                        <ul class="menu_icons">
+                            <li class="menu_icons_item inline-block align-middle">
+                                <button class="menu_icons_btn js_btn_search">
+                                    <span class="ph ph-magnifying-glass text-2xl text-white"></span>
+                                    <span class="blind">button search</span>
+                                </button>
+                            </li>
+                            <li class="menu_icons_item inline-block align-middle relative ml-5">
+                                <button class="menu_icons_btn js_btn_cart">
+                                    <span class="ph ph-shopping-bag-open text-2xl text-white"></span>
+                                    <span class="blind">button cart</span>
+                                </button>
+                                <span
+                                    class="cart_quantity flex items-center justify-center absolute -top-2 -right-2 w-4 h-4 rounded-full bg-white text-[10px]">2</span>
+                            </li>
+                            <li class="menu_icons_item inline-block align-middle ml-5 lg:hidden">
+                                <button class="menu_icons_btn js_btn_menu_mobile">
+                                    <span class="ph ph-list text-2xl text-white"></span>
+                                    <span class="blind">button menu mobile</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- SLIDER -->
+        <section class="section slider h-[53.75rem] relative">
+            <button
+                class="btn_prev flex items-center justify-center absolute top-1/2 min-[1600px]:left-10 left-[16px] z-[2] -translate-y-1/2 w-13 h-[4.75rem] bg-white min-[1600px]:bg-opacity-10 bg-opacity-30 text-white duration-300 lg:hover:bg-opacity-80 lg:hover:text-black">
+                <span class="ph ph-caret-left text-xl"></span>
+                <span class="blind">button prev</span>
+            </button>
+            <div class="slider_swiper swiper w-full h-full">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide flex items-center justify-center relative">
+                        <div class="slider_bg absolute top-0 left-0 w-full h-full pointer-events-none">
+                            <img src="./assets/images/slider/slider2_1.jpg" alt="Quick, Reliable Plumer Solutions" class="h-full object-cover">
+                        </div>
+                        <div class="container relative">
+                            <h2 class="section_tit text-white heading1">Quick, Reliable <br class="max-md:hidden">Plumer Solutions</h2>
+                            <p class="section_desc mt-4 text-white body2">Leaky pipes? Blocked drains? We’ve got you covered 24/7 with expert repairs and fast service.</p>
+                            <ul class="slider_btn_group flex flex-wrap gap-4 mt-9">
+                                <li class="slider_btn_item">
+                                    <a href="services-list.html" class="slider_btn btn btn_icon bg-blue">
+                                        <span>Book a Service</span>
+                                        <span class="ph ph-arrow-up-right text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="slider_btn_item">
+                                    <a href="contact.html" class="slider_btn btn btn_icon bg-white">
+                                        <span>Get A quote</span>
+                                        <span class="ph ph-arrow-up-right text-2xl"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="swiper-slide flex items-center justify-center relative">
+                        <div class="slider_bg absolute top-0 left-0 w-full h-full pointer-events-none">
+                            <img src="./assets/images/slider/slider2_2.jpg" alt="Your Go-To for Plumbing Repairs" class="h-full object-cover">
+                        </div>
+                        <div class="container relative">
+                            <h2 class="section_tit text-white heading1">Your Go-To for <br class="max-md:hidden">Plumbing Repairs</h2>
+                            <p class="section_desc mt-4 text-white body2">Whether it's a small leak or a major issue, we provide fast, dependable plumbing <br class="max-md:hidden">services you can rely on.</p>
+                            <ul class="slider_btn_group flex flex-wrap gap-4 mt-9">
+                                <li class="slider_btn_item">
+                                    <a href="services-list.html" class="slider_btn btn btn_icon bg-blue">
+                                        <span>Book a Service</span>
+                                        <span class="ph ph-arrow-up-right text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="slider_btn_item">
+                                    <a href="contact.html" class="slider_btn btn btn_icon bg-white">
+                                        <span>Get A quote</span>
+                                        <span class="ph ph-arrow-up-right text-2xl"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-pagination pagination-white"></div>
+            </div>
+            <button
+                class="btn_next flex items-center justify-center absolute top-1/2 min-[1600px]:right-10 right-[16px] z-[2] -translate-y-1/2 w-13 h-[4.75rem] bg-white min-[1600px]:bg-opacity-10 bg-opacity-30 text-white duration-300 lg:hover:bg-opacity-80 lg:hover:text-black">
+                <span class="ph ph-caret-right text-xl"></span>
+                <span class="blind">button next</span>
+            </button>
+        </section>
+        <!-- ABOUT -->
+        <section class="section about sm:py-25 py-15">
+            <div class="container flex flex-col items-center">
+                <span class="section_tag tag bg-blue">about us</span>
+                <h3 class="section_tit mt-4 heading3 text-center">Reliable Plumbing Services You Can Trust</h3>
+                <p class="section_desc body2 lg:w-2/3 lg:mt-5 mt-3 text-variant1 text-center">We deliver reliable plumbing solutions for everything from small repairs to major installations. Whether it’s a leak or a full replacement, our skilled plumbers ensure top-quality results every time.</p>
+                <div class="about_content flex max-lg:flex-col items-center justify-between gap-y-12 lg:mt-12 mt-9">
+                    <div class="about_img flex items-center justify-center flex-shrink-0 relative lg:w-[48%] sm:w-2/3 w-full">
+                        <img src="./assets/images/components/about2.jpg" alt="Reliable Plumbing Services You Can Trust">
+                        <div class="about_banner flex items-center gap-4 absolute bottom-0 right-0 py-5 px-7.5 sm:border-l-[16px] border-l-8 sm:border-t-[16px] border-t-8 border-white bg-blue text-white">
+                            <h2 class="heading2">25+</h2>
+                            <h6 class="heading6">Year Of <br>Experience</br></h6>
+                        </div>
+                        <button class="btn_play js_btn_play inline-flex items-center justify-center absolute w-18 h-18 rounded-full bg-white duration-400 hover:bg-blue hover:text-white">
+                            <span class="ph-fill ph-play text-3xl"></span>
+                            <span class="blind">button play video</span>
+                        </button>
+                    </div>
+                    <div class="about_info w-full xl:pl-25 lg:pl-14">
+                        <ul class="about_benefit flex flex-col gap-8">
+                            <li class="flex gap-6">
+                                <span class="icon-reward-fill flex-shrink-0 text-5xl"></span>
+                                <div>
+                                    <strong class="block heading6">Experienced, Skilled Team</strong>
+                                    <p class="mt-3 text-variant1">"Our team brings years of hands-on experience to every project, ensuring expert solutions for all your renovation, plumbing.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="icon-hand-coin-fill flex-shrink-0 text-5xl"></span>
+                                <div>
+                                    <strong class="block heading6">Competitive Pricing</strong>
+                                    <p class="mt-3 text-variant1">"We offer fair, transparent pricing without compromising on the quality of our work, so you always know what to expect.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="icon-hourglass flex-shrink-0 text-5xl"></span>
+                                <div>
+                                    <strong class="block heading6">Fast, Minimal Disruption</strong>
+                                    <p class="mt-3 text-variant1">"We work quickly and efficiently to minimize disruptions to your home while still delivering top-quality results you can rely on.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="icon-hand-user flex-shrink-0 text-5xl"></span>
+                                <div>
+                                    <strong class="block heading6">24/7 Emergency Support</strong>
+                                    <p class="mt-3 text-variant1">"Our emergency services are available 24/7, ready to respond whenever you need urgent repairs or immediate assistance.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="about_btn flex flex-wrap gap-8 gap-y-6 mt-10">
+                            <li>
+                                <a href="services-list.html" class="btn bg-blue">View All Services</a>
+                            </li>
+                            <li>
+                                <a href="tel:+1555678888" class="flex items-center gap-3 group">
+                                    <span
+                                        class="flex items-center justify-center w-14 h-14 border-2 border-blue duration-400 group-hover:bg-blue group-hover:text-white">
+                                        <span class="ph ph-phone-call text-3xl"></span>
+                                    </span>
+                                    <div>
+                                        <span class="text-variant1">Call Us Now:</span>
+                                        <strong class="heading6 block mt-0.5">1-555-678-888</strong>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICES -->
+        <section class="section services sm:py-25 py-15 bg-surface">
+            <div class="container flex flex-col items-center">
+                <div class="heading flex max-lg:flex-col justify-center gap-7 gap-y-5">
+                    <div class="lg:w-1/2">
+                        <span class="section_tag tag bg-blue">What We Do?</span>
+                        <h3 class="section_tit mt-4 heading3">Our Service That We Offer</h3>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <p class="section_desc body2">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation</p>
+                        <a href="services-list.html" class="inline-flex items-center gap-2 mt-3 mx-auto duration-300 hover:text-blue">
+                            <span class="border-b-2 underline-offset-2 txt-button">View All Services</span>
+                            <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="services_list grid xl:grid-cols-3 md:grid-cols-2 lg:gap-11 gap-6 lg:mt-12 mt-9">
+                    <li class="services_item">
+                        <a href="services-detail.html" class="services_link flex flex-col gap-7 h-full p-7 bg-white group">
+                            <div class="services_thumb relative">
+                                <img src="./assets/images/services/2-1.jpg" alt="Leak Detection">
+                                <span class="services_icon flex items-center justify-center flex-shrink-0 absolute sm:-bottom-10 -bottom-7 right-5 sm:w-20 w-14 sm:h-20 h-14 border-8 border-white bg-black duration-500 group-hover:bg-blue">
+                                    <span class="icon-pipe-leak sm:text-3xl text-xl"></span>
+                                </span>
+                            </div>
+                            <div class="services_info">
+                                <strong class="services_name heading5">Leak Detection</strong>
+                                <p class="services_desc mt-4 text-variant1">Quickly identify and fix leaks to prevent water damage and costly repairs.</p>
+                                <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-blue">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services_item">
+                        <a href="services-detail.html" class="services_link flex flex-col gap-7 h-full p-7 bg-white group">
+                            <div class="services_thumb relative">
+                                <img src="./assets/images/services/2-2.jpg" alt="Drain Cleaning">
+                                <span class="services_icon flex items-center justify-center flex-shrink-0 absolute sm:-bottom-10 -bottom-7 right-5 sm:w-20 w-14 sm:h-20 h-14 border-8 border-white bg-black duration-500 group-hover:bg-blue">
+                                    <span class="icon-pipe-oval sm:text-3xl text-xl"></span>
+                                </span>
+                            </div>
+                            <div class="services_info">
+                                <strong class="services_name heading5">Drain Cleaning</strong>
+                                <p class="services_desc mt-4 text-variant1">Unclog and clean your drains to ensure smooth water flow and prevent blockages.</p>
+                                <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-blue">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services_item">
+                        <a href="services-detail.html" class="services_link flex flex-col gap-7 h-full p-7 bg-white group">
+                            <div class="services_thumb relative">
+                                <img src="./assets/images/services/2-3.jpg" alt="Pipe Installation">
+                                <span class="services_icon flex items-center justify-center flex-shrink-0 absolute sm:-bottom-10 -bottom-7 right-5 sm:w-20 w-14 sm:h-20 h-14 border-8 border-white bg-black duration-500 group-hover:bg-blue">
+                                    <span class="icon-spanner sm:text-3xl text-xl"></span>
+                                </span>
+                            </div>
+                            <div class="services_info">
+                                <strong class="services_name heading5">Pipe Installation</strong>
+                                <p class="services_desc mt-4 text-variant1">Expert pipe installation and replacement services for reliable, long-lasting plumbing.</p>
+                                <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-blue">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services_item">
+                        <a href="services-detail.html" class="services_link flex flex-col gap-7 h-full p-7 bg-white group">
+                            <div class="services_thumb relative">
+                                <img src="./assets/images/services/2-4.jpg" alt="Heater Installation">
+                                <span class="services_icon flex items-center justify-center flex-shrink-0 absolute sm:-bottom-10 -bottom-7 right-5 sm:w-20 w-14 sm:h-20 h-14 border-8 border-white bg-black duration-500 group-hover:bg-blue">
+                                    <span class="icon-heater sm:text-3xl text-xl"></span>
+                                </span>
+                            </div>
+                            <div class="services_info">
+                                <strong class="services_name heading5">Heater Installation</strong>
+                                <p class="services_desc mt-4 text-variant1">Ensure a steady supply of hot water with our installation and repair services."</p>
+                                <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-blue">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services_item">
+                        <a href="services-detail.html" class="services_link flex flex-col gap-7 h-full p-7 bg-white group">
+                            <div class="services_thumb relative">
+                                <img src="./assets/images/services/2-5.jpg" alt="Toilet Repair">
+                                <span class="services_icon flex items-center justify-center flex-shrink-0 absolute sm:-bottom-10 -bottom-7 right-5 sm:w-20 w-14 sm:h-20 h-14 border-8 border-white bg-black duration-500 group-hover:bg-blue">
+                                    <span class="icon-plunger sm:text-3xl text-xl"></span>
+                                </span>
+                            </div>
+                            <div class="services_info">
+                                <strong class="services_name heading5">Toilet Repair</strong>
+                                <p class="services_desc mt-4 text-variant1">Fix toilet leaks or install new, efficient models to improve your bathroom’s functionality.</p>
+                                <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-blue">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="services_item">
+                        <a href="services-detail.html" class="services_link flex flex-col gap-7 h-full p-7 bg-white group">
+                            <div class="services_thumb relative">
+                                <img src="./assets/images/services/2-6.jpg" alt="Sewer Services">
+                                <span class="services_icon flex items-center justify-center flex-shrink-0 absolute sm:-bottom-10 -bottom-7 right-5 sm:w-20 w-14 sm:h-20 h-14 border-8 border-white bg-black duration-500 group-hover:bg-blue">
+                                    <span class="icon-tap sm:text-3xl text-xl"></span>
+                                </span>
+                            </div>
+                            <div class="services_info">
+                                <strong class="services_name heading5">Sewer Services</strong>
+                                <p class="services_desc mt-4 text-variant1">Repair or replace damaged sewer lines to prevent backups and maintain proper drainage.</p>
+                                <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-blue">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- BANNER -->
+        <section class="section banner py-16">
+            <div class="banner_swiper swiper-container flex items-center whitespace-nowrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <strong class="heading2 lg:px-15 sm:px-10 px-5">Leak Detection</strong>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/logo_blue.png" class="max-w-8" alt="logo_blue">
+                    </div>
+                    <div class="swiper-slide">
+                        <strong class="heading2 lg:px-15 sm:px-10 px-5">Drain Cleaning</strong>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/logo_blue.png" class="max-w-8" alt="logo_blue">
+                    </div>
+                    <div class="swiper-slide">
+                        <strong class="heading2 lg:px-15 sm:px-10 px-5">Pipe Installation</strong>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/logo_blue.png" class="max-w-8" alt="logo_blue">
+                    </div>
+                    <div class="swiper-slide">
+                        <strong class="heading2 lg:px-15 sm:px-10 px-5">Heater Installation</strong>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/logo_blue.png" class="max-w-8" alt="logo_blue">
+                    </div>
+                    <div class="swiper-slide">
+                        <strong class="heading2 lg:px-15 sm:px-10 px-5">Leak Detection</strong>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/logo_blue.png" class="max-w-8" alt="logo_blue">
+                    </div>
+                    <div class="swiper-slide">
+                        <strong class="heading2 lg:px-15 sm:px-10 px-5">Drain Cleaning</strong>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/logo_blue.png" class="max-w-8" alt="logo_blue">
+                    </div>
+                    <div class="swiper-slide">
+                        <strong class="heading2 lg:px-15 sm:px-10 px-5">Pipe Installation</strong>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/logo_blue.png" class="max-w-8" alt="logo_blue">
+                    </div>
+                    <div class="swiper-slide">
+                        <strong class="heading2 lg:px-15 sm:px-10 px-5">Heater Installation</strong>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/logo_blue.png" class="max-w-8" alt="logo_blue">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROCESS -->
+        <section class="section process">
+            <div class="container flex max-lg:flex-col lg:items-center xl:gap-[8.5rem] gap-10 relative">
+                <div class="flex-shrink-0 lg:w-[44%]">
+                    <div class="process_img flex items-center justify-center relative">
+                        <img src="./assets/images/components/process2.jpg" alt="Our Renovation Process">
+                    </div>
+                </div>
+                <div class="process_content">
+                    <span class="section_tag tag">Our Process</span>
+                    <h3 class="section_title mt-4 heading3">Our Renovation Process</h3>
+                    <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">We take you through every stage of the renovation journey, ensuring your vision becomes reality with precision and care.</p>
+                    <ul class="process_list flex flex-col gap-12 lg:mt-12 mt-9">
+                        <li class="process_item flex gap-7 group">
+                            <span
+                                class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
+                                <span class="icon-consultation sm:text-5xl text-4xl"></span>
+                                <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-blue text-white txt-button">1</span>
+                            </span>
+                            <div class="process_info">
+                                <strong class="heading5">Consultation & Planning</strong>
+                                <p class="mt-3 text-variant1">We discuss your needs and budget, creating a detailed plan to ensure everything is ready before starting.</p>
+                            </div>
+                        </li>
+                        <li class="process_item flex gap-7 group">
+                            <span
+                                class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
+                                <span class="icon-design sm:text-5xl text-4xl"></span>
+                                <span
+                                    class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-blue text-white txt-button">2</span>
+                            </span>
+                            <div class="process_info">
+                                <strong class="heading5">Design & Approval</strong>
+                                <p class="mt-3 text-variant1">We create a custom design based on your ideas, reviewing it
+                                    together to make sure it meets your expectations.</p>
+                            </div>
+                        </li>
+                        <li class="process_item flex gap-7 group">
+                            <span
+                                class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
+                                <span class="icon-wrench sm:text-5xl text-4xl"></span>
+                                <span
+                                    class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-blue text-white txt-button">3</span>
+                            </span>
+                            <div class="process_info">
+                                <strong class="heading5">Construction & Execution</strong>
+                                <p class="mt-3 text-variant1">Our team begins the renovation, managing each phase carefully &
+                                    keeping you updated throughout the process.</p>
+                            </div>
+                        </li>
+                        <li class="process_item flex gap-7 group">
+                            <span
+                                class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
+                                <span class="icon-inspection sm:text-5xl text-4xl"></span>
+                                <span
+                                    class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-blue text-white txt-button">4</span>
+                            </span>
+                            <div class="process_info">
+                                <strong class="heading5">Inspection & Handover</strong>
+                                <p class="mt-3 text-variant1">After completion, we inspect the work, and once you approve, we
+                                    hand over your beautifully renovated space.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- TESTIMONIALS -->
+        <section class="section testimonials mt-25">
+            <div class="container">
+                <div class="testimonials_inner sm:py-25 py-15 border-t border-outline">
+                    <span class="section_tag tag block w-fit mx-auto bg-blue">Testimonials</span>
+                    <h3 class="section_tit mt-4 heading3 text-center">What our clients say?</h3>
+                    <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">Hear from our satisfied clients who trust us for top-quality service.</p>
+                    <div class="testimonials_content relative w-full lg:mt-12 mt-9">
+                        <button class="btn_prev flex items-center justify-center absolute top-1/2 min-[1600px]:left-10 -left-[16px] z-[2] -translate-y-1/2 w-13 h-[4.75rem] bg-white min-[1600px]:bg-opacity-10 bg-opacity-30 text-white duration-300 lg:hover:bg-opacity-80 lg:hover:text-black">
+                            <span class="ph ph-caret-left text-xl"></span>
+                            <span class="blind">button prev</span>
+                        </button>
+                        <div class="testimonials_swiper_two swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="testimonials_item swiper-slide p-7 border border-outline">
+                                    <ul class="rating flex">
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl text-variant2"></li>
+                                    </ul>
+                                    <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
+                                    <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
+                                        <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                            <img src="./assets/images/team/team1.jpg" class="h-full object-cover" alt="Guy Hawkins">
+                                        </div>
+                                        <div class="testimonials_author">
+                                            <strong class="testimonials_name heading6">Guy Hawkins</strong>
+                                            <span class="testimonials_address block mt-1 text-variant1">New York, USA</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="testimonials_item swiper-slide p-7 border border-outline">
+                                    <ul class="rating flex">
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                    </ul>
+                                    <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
+                                    <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
+                                        <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                            <img src="./assets/images/team/team2.jpg" class="h-full object-cover" alt="Michael Carrick">
+                                        </div>
+                                        <div class="testimonials_author">
+                                            <strong class="testimonials_name heading6">Michael Carrick</strong>
+                                            <span class="testimonials_address block mt-1 text-variant1">Manchester, UK</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="testimonials_item swiper-slide p-7 border border-outline">
+                                    <ul class="rating flex">
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl text-variant2"></li>
+                                    </ul>
+                                    <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
+                                    <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
+                                        <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                            <img src="./assets/images/team/team3.jpg" class="h-full object-cover" alt="Christina Rodiguez">
+                                        </div>
+                                        <div class="testimonials_author">
+                                            <strong class="testimonials_name heading6">Christina Rodiguez</strong>
+                                            <span class="testimonials_address block mt-1 text-variant1">Madrid, Spain</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="testimonials_item swiper-slide p-7 border border-outline">
+                                    <ul class="rating flex">
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                    </ul>
+                                    <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
+                                    <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
+                                        <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                            <img src="./assets/images/team/team4.jpg" class="h-full object-cover" alt="Leonardo Pato">
+                                        </div>
+                                        <div class="testimonials_author">
+                                            <strong class="testimonials_name heading6">Leonardo Pato</strong>
+                                            <span class="testimonials_address block mt-1 text-variant1">Paris, France</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn_next flex items-center justify-center absolute top-1/2 min-[1600px]:right-10 -right-[16px] z-[2] -translate-y-1/2 w-13 h-[4.75rem] bg-white min-[1600px]:bg-opacity-10 bg-opacity-30 text-white duration-300 lg:hover:bg-opacity-80 lg:hover:text-black">
+                            <span class="ph ph-caret-right text-xl"></span>
+                            <span class="blind">button next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="section cta overflow-hidden relative">
+            <div class="cta_bg absolute top-0 left-0 w-full h-full pointer-events-none">
+                <img src="./assets/images/components/cta2.jpg" class="h-full object-cover" alt="GET A QUOTE">
+            </div>
+            <div class="container relative sm:py-25 py-15 text-white">
+                <span class="section_tag tag bg-white text-white">Get A qUOTE</span>
+                <h3 class="section_title lg:w-1/2 mt-4 heading3">Book Your Plumbing Service Today!</h3>
+                <p class="section_desc lg:w-1/2 lg:mt-5 mt-3 body2">Got a leak or clog? Our expert plumbers are ready to solve any problem quickly. Schedule your appointment now for reliable service you can trust!</p>
+                <a href="tel:+1555678888" class="btn mt-10 bg-blue">Call now: 1-555-678-888</a>
+            </div>
+        </section>
+        <!-- WHY CHOOSE US -->
+        <section class="section choose_us sm:py-25 py-15">
+            <div class="container flex flex-col items-center">
+                <span class="section_tag tag w-fit bg-blue">WHY CHOOSE US</span>
+                <h3 class="section_tit mt-4 heading3 text-center">Why We’re the Best Choice</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">We go the extra mile to ensure your satisfaction with every step of the process.</p>
+                <div class="choose_us_content flex max-lg:flex-col items-center gap-15 mt-12">
+                    <ul class="choose_us_list flex flex-col lg:gap-12 gap-8 max-lg:w-full">
+                        <li class="choose_us_item flex flex-col lg:items-end">
+                            <span class="icon-pencil text-6xl"></span>
+                            <strong class="block mt-5 heading5">Customized Solutions</strong>
+                            <p class="mt-3 text-variant1 lg:text-right">We tailor our air conditioning services to fit your specific needs and preferences, ensuring optimal performance and comfort in your home for years to come.</p>
+                        </li>
+                        <li class="line flex-shrink-0 w-full h-px bg-outline"></li>
+                        <li class="choose_us_item flex flex-col lg:items-end">
+                            <span class="icon-timer text-6xl"></span>
+                            <strong class="block mt-5 heading5">Timely Response</strong>
+                            <p class="mt-3 text-variant1 lg:text-right">Our team is committed to prompt service, guaranteeing quick responses to your air conditioning issues, minimizing downtime, and restoring your comfort efficiently.
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="choose_us_bg flex-shrink-0 lg:w-1/3 sm:w-3/4 w-full">
+                        <img src="./assets/images/components/choose_us2.jpg" alt="choose_us2">
+                    </div>
+                    <ul class="choose_us_list flex flex-col lg:gap-12 gap-8 max-lg:w-full">
+                        <li class="choose_us_item">
+                            <span class="icon-reward text-6xl"></span>
+                            <strong class="block mt-5 heading5">Quality Products</strong>
+                            <p class="mt-3 text-variant1">We use only high-quality, reliable products and equipment to ensure
+                                that your air conditioning system operates efficiently and lasts longer.</p>
+                        </li>
+                        <li class="line flex-shrink-0 w-full h-px bg-outline"></li>
+                        <li class="choose_us_item">
+                            <span class="icon-hand-coin text-6xl"></span>
+                            <strong class="block mt-5 heading5">Transparent Pricing</strong>
+                            <p class="mt-3 text-variant1">We provide straightforward, upfront pricing with no hidden fees, so you can make informed decisions about your air conditioning services.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- COUNTER -->
+        <section class="section counter">
+            <div class="container">
+                <ul class="counter_list flex max-xl:flex-wrap items-center justify-between gap-y-10 sm:py-25 py-15 border-t border-outline">
+                    <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full">
+                        <h2 class="heading1"><span class="counter_number">20</span>k+</h2>
+                        <strong class="heading6">Services Completed</strong>
+                    </li>
+                    <li class="line max-xl:hidden flex-shrink-0 w-px h-32 bg-white bg-opacity-20"></li>
+                    <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full">
+                        <h2 class="heading1"><span class="counter_number">4.8</span>/5</h2>
+                        <strong class="heading6">By 1,200 customers</strong>
+                    </li>
+                    <li class="line max-xl:hidden flex-shrink-0 w-px h-32 bg-white bg-opacity-20"></li>
+                    <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full">
+                        <h2 class="heading1"><span class="counter_number">10</span>k+</h2>
+                        <strong class="heading6">Satisfied Customers</strong>
+                    </li>
+                    <li class="line max-xl:hidden flex-shrink-0 w-px h-32 bg-white bg-opacity-20"></li>
+                    <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full">
+                        <h2 class="heading1"><span class="counter_number">10</span>+</h2>
+                        <strong class="heading6">Years Of Experience</strong>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- OUR PROJECTS -->
+        <section class="section projects sm:py-25 py-15 bg-surface">
+            <div class="container">
+                <div class="heading flex max-lg:flex-col justify-center gap-7 gap-y-5">
+                    <div class="lg:w-1/2">
+                        <span class="section_tag tag bg-blue">Our Projects</span>
+                        <h3 class="section_tit mt-4 heading3">Amazing Work Results</h3>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <p class="section_desc body2 text-variant1">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation</p>
+                        <a href="our-projects1.html" class="inline-flex items-center gap-2 mt-4 mx-auto duration-300 hover:text-blue">
+                            <span class="border-b-2 underline-offset-2 txt-button">View All Projects</span>
+                            <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects_list lg:mt-12 mt-9 lg:px-10 px-4">
+                <div class="projects_swiper swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="projects_item swiper-slide">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <img src="./assets/images/projects/projects2-1.jpg" alt="Drain Cleaning Office Building Water Supply">
+                                <div class="projects_info flex flex-col items-center justify-center gap-3 absolute top-5 right-5 bottom-5 left-5 px-8 bg-dark bg-opacity-80 text-white opacity-0 scale-0 duration-700 group-hover:scale-100 group-hover:opacity-100">
+                                    <span class="projects_cate txt-label">Drain Cleaning</span>
+                                    <strong class="projects_name heading6 text-center">Office Building Water Supply</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item swiper-slide">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <img src="./assets/images/projects/projects2-2.jpg" alt="Pipe Installation High-Rise Apartment Complex">
+                                <div class="projects_info flex flex-col items-center justify-center gap-3 absolute top-5 right-5 bottom-5 left-5 px-8 bg-dark bg-opacity-80 text-white opacity-0 scale-0 duration-700 group-hover:scale-100 group-hover:opacity-100">
+                                    <span class="projects_cate txt-label">Pipe Installation</span>
+                                    <strong class="projects_name heading6 text-center">High-Rise Apartment Complex</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item swiper-slide">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <img src="./assets/images/projects/projects2-3.jpg" alt="Foundation Work Commercial Construction Project">
+                                <div class="projects_info flex flex-col items-center justify-center gap-3 absolute top-5 right-5 bottom-5 left-5 px-8 bg-dark bg-opacity-80 text-white opacity-0 scale-0 duration-700 group-hover:scale-100 group-hover:opacity-100">
+                                    <span class="projects_cate txt-label">Foundation Work</span>
+                                    <strong class="projects_name heading6 text-center">Commercial Construction Project</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item swiper-slide">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <img src="./assets/images/projects/projects2-4.jpg" alt="Tap Replacement University Science Laboratory">
+                                <div class="projects_info flex flex-col items-center justify-center gap-3 absolute top-5 right-5 bottom-5 left-5 px-8 bg-dark bg-opacity-80 text-white opacity-0 scale-0 duration-700 group-hover:scale-100 group-hover:opacity-100">
+                                    <span class="projects_cate txt-label">Tap Replacement</span>
+                                    <strong class="projects_name heading6 text-center">University Science Laboratory</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item swiper-slide">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <img src="./assets/images/projects/projects2-2.jpg" alt="Pipe Installation High-Rise Apartment Complex">
+                                <div class="projects_info flex flex-col items-center justify-center gap-3 absolute top-5 right-5 bottom-5 left-5 px-8 bg-dark bg-opacity-80 text-white opacity-0 scale-0 duration-700 group-hover:scale-100 group-hover:opacity-100">
+                                    <span class="projects_cate txt-label">Pipe Installation</span>
+                                    <strong class="projects_name heading6 text-center">High-Rise Apartment Complex</strong>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination relative mt-10"></div>
+                </div>
+            </div>
+        </section>
+        <!-- BRAND -->
+        <section class="section brand sm:py-25 py-15">
+            <div class="container flex max-xl:flex-col items-center justify-between xl:gap-20 gap-12">
+                <ul class="brand_img flex-shrink-0 grid gap-2.5 lg:w-[49%]">
+                    <li class="col-start-1 row-start-1 row-span-2">
+                        <img src="./assets/images/brand/img2-1.jpg" alt="img2-1">
+                    </li>
+                    <li class="col-start-2 row-start-1 row-span-1">
+                        <img src="./assets/images/brand/img2-2.jpg" alt="img2-2">
+                    </li>
+                    <li class="col-start-1 row-start-3 row-span-1">
+                        <img src="./assets/images/brand/img2-3.jpg" alt="img2-3">
+                    </li>
+                    <li class="col-start-2 row-start-2 row-span-2">
+                        <img src="./assets/images/brand/img2-4.jpg" alt="img2-4">
+                    </li>
+                </ul>
+                <div class="brand_content">
+                    <span class="section_tag tag bg-blue">Our Partners</span>
+                    <h3 class="section_tit mt-4 heading3">Our Trusted Partners in Quality & Excellence</h3>
+                    <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Collaborating with Industry-Leading Experts to Consistently Deliver Top-Tier Services and Long-Lasting Solutions, Ensuring Every Project Meets Our Highest Standards of Quality, Unmatched Customer Satisfaction Across All Sectors.</p>
+                    <ul class="brand_list flex flex-wrap xs:gap-16 gap-8 gap-y-11 lg:mt-12 mt-9">
+                        <li class="brand_item xs:max-w-[10.25rem] max-w-32">
+                            <img src="./assets/images/brand/1.png" alt="maxus">
+                        </li>
+                        <li class="brand_item xs:max-w-[10.25rem] max-w-32">
+                            <img src="./assets/images/brand/2.png" alt="gemstoned">
+                        </li>
+                        <li class="brand_item xs:max-w-[10.25rem] max-w-32">
+                            <img src="./assets/images/brand/3.png" alt="venmo">
+                        </li>
+                        <li class="brand_item xs:max-w-[10.25rem] max-w-32">
+                            <img src="./assets/images/brand/4.png" alt="revlon">
+                        </li>
+                        <li class="brand_item xs:max-w-[10.25rem] max-w-32">
+                            <img src="./assets/images/brand/5.png" alt="customfit">
+                        </li>
+                        <li class="brand_item xs:max-w-[10.25rem] max-w-32">
+                            <img src="./assets/images/brand/6.png" alt="vagoda">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- LASTEST NEWS -->
+        <section class="section blog">
+            <div class="container">
+                <div class="blog_inner flex flex-col items-center sm:py-25 py-15 border-t border-outline">
+                    <span class="section_tag tag">Latest News</span>
+                    <h3 class="section_tit mt-4 heading3 text-center">Home Repair Tips & Expert Advice</h3>
+                    <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">Discover articles with DIY tips, expert insights, and advice to help you easily maintain and improve your home.</p>
+                    <ul class="blog_list grid lg:grid-cols-3 gap-7.5 w-full lg:mt-12 mt-9">
+                        <li class="blog_item style-two overflow-hidden relative group">
+                            <a href="blog-detail1.html" class="blog_thumb block">
+                                <img src="./assets/images/blog/blog2-1.jpg" alt="How to Detect and Fix Leaks Before They Cause Damage">
+                            </a>
+                            <div class="blog_info absolute bottom-0 left-0 w-full p-7 group-hover:text-white duration-500">
+                                <div class="flex items-center gap-3 relative txt-label text-variant1 group-hover:text-white duration-300">
+                                    <span class="blog_date">October 22, 2024</span>
+                                    <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
+                                    <a href="blog-default.html" class="blog_cate hover:underline">Plumbing</a>
+                                </div>
+                                <a href="blog-detail1.html" class="blog_tit relative mt-3 line-clamp-3 heading5 hover:underline">How to Detect and Fix Leaks Before They Cause Damage</a>
+                                <a href="blog-detail1.html" class="inline-flex relative items-center gap-2 mt-6">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Read More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-xl"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="blog_item style-two overflow-hidden relative group">
+                            <a href="blog-detail1.html" class="blog_thumb block">
+                                <img src="./assets/images/blog/blog2-2.jpg" alt="Top 5 Essential Home Maintenance Tips for Every">
+                            </a>
+                            <div class="blog_info absolute bottom-0 left-0 w-full p-7 group-hover:text-white duration-500">
+                                <div class="flex items-center gap-3 relative txt-label text-variant1 group-hover:text-white duration-300">
+                                    <span class="blog_date">October 20, 2024</span>
+                                    <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
+                                    <a href="blog-default.html" class="blog_cate hover:underline">Maintenance</a>
+                                </div>
+                                <a href="blog-detail1.html" class="blog_tit relative mt-3 line-clamp-3 heading5 hover:underline">Top 5 Essential Home Maintenance Tips for Every</a>
+                                <a href="blog-detail1.html" class="inline-flex relative items-center gap-2 mt-6">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Read More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-xl"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="blog_item style-two overflow-hidden relative group">
+                            <a href="blog-detail1.html" class="blog_thumb block">
+                                <img src="./assets/images/blog/blog2-3.jpg" alt="5 Signs It’s Time to Service Your Air Conditioning System">
+                            </a>
+                            <div class="blog_info absolute bottom-0 left-0 w-full p-7 group-hover:text-white duration-500">
+                                <div class="flex items-center gap-3 relative txt-label text-variant1 group-hover:text-white duration-300">
+                                    <span class="blog_date">October 15, 2024</span>
+                                    <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
+                                    <a href="blog-default.html" class="blog_cate hover:underline">HVAC</a>
+                                </div>
+                                <a href="blog-detail1.html" class="blog_tit relative mt-3 line-clamp-3 heading5 hover:underline">5 Signs It’s Time to Service Your Air Conditioning System</a>
+                                <a href="blog-detail1.html" class="inline-flex relative items-center gap-2 mt-6">
+                                    <span class="border-b-2 underline-offset-2 txt-button">Read More</span>
+                                    <span class="ph-bold ph-arrow-up-right text-xl"></span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer sm:pt-20 pt-12 bg-dark text-white">
+        <div class="container flex flex-wrap justify-between gap-10">
+            <div class="footer_info md:w-1/4 w-full">
+                <h1>
+                    <a href="index.html" class="footer_logo flex items-center gap-3">
+                        <img src="./assets/images/logo_blue.png" class="flex-shrink-0 w-10" alt="logo">
+                        <strong class="heading4">Hadiman</strong>
+                    </a>
+                </h1>
+                <div class="footer_map mt-7">
+                    <div class="flex items-center gap-2 pb-2">
+                        <span class="ph ph-map-pin text-2xl"></span>
+                        <span>268 St, East Chicago, IN 46312, US</span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/Y6gQTTNuxhrqbrcX8" class="text-sm font-bold underline duration-300 hover:text-blue" target="_blank">Google map</a>
+                </div>
+                <div class="footer_mail flex flex-wrap items-center gap-2 mt-4">
+                    <span class="ph ph-envelope text-2xl"></span>
+                    <span>hi.avitex@gmail.com</span>
+                </div>
+                <div class="footer_time mt-4">
+                    <span class="block pb-1 text-variant2">Opening Times:</span>
+                    <span>Mon - Fri: 9am - 5pm</span>
+                    <span>Weekend: 10am - 4pm</span>
+                </div>
+                <ul class="footer_social flex flex-wrap items-center gap-3 mt-7">
+                    <li class="social_item">
+                        <a href="https://www.messenger.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-blue"
+                            target="_blank">
+                            <span class="ph ph-messenger-logo text-xl"></span>
+                            <span class="blind">link messenger</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="https://www.x.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-blue"
+                            target="_blank">
+                            <span class="ph ph-x-logo text-xl"></span>
+                            <span class="blind">link x</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="https://www.instagram.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-blue"
+                            target="_blank">
+                            <span class="ph ph-instagram-logo text-xl"></span>
+                            <span class="blind">link instagram</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="https://www.skype.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-blue"
+                            target="_blank">
+                            <span class="ph ph-skype-logo text-xl"></span>
+                            <span class="blind">link skype</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="https://www.telegram.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-blue"
+                            target="_blank">
+                            <span class="ph ph-telegram-logo text-xl"></span>
+                            <span class="blind">link telegram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_content md:w-2/3 w-full">
+                <div class="footer_newsletter flex max-lg:flex-col gap-15 gap-y-6 pb-10 border-b border-white border-opacity-10">
+                    <h4 class="heading4">Subscribe <br class="max-lg:hidden">Newsletter</h4>
+                    <div class="w-full">
+                        <form class='flex w-full'>
+                            <input type="email" placeholder='Enter your e-mail'
+                                class='caption1 w-full h-14 px-6 border border-white border-opacity-10 duration-300 focus:border-white'
+                                required />
+                            <button type="submit" class='btn flex-shrink-0 h-fit bg-blue hover:bg-white'>Subscribe</button>
+                        </form>
+                        <p class="mt-4 text-variant2">Sign up to get the latest news and events—we promise no spam.</p>
+                    </div>
+                </div>
+                <div class="footer_nav flex max-xl:flex-wrap justify-between gap-10 gap-y-8 mt-10">
+                    <div class="footer_nav_area">
+                        <strong class="footer_nav_heading txt-label">About</strong>
+                        <ul class="footer_nav_list flex flex-col gap-2 mt-3">
+                            <li>
+                                <a href="about-us.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">About Us</a>
+                            </li>
+                            <li>
+                                <a href="services-list.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Services</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav_area">
+                        <strong class="footer_nav_heading txt-label">Categories</strong>
+                        <ul class="footer_nav_list flex flex-col gap-2 mt-3">
+                            <li>
+                                <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Renovation Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Electrical Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Plumbing Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">HVAC Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav_area">
+                        <strong class="footer_nav_heading txt-label">Quick Links</strong>
+                        <ul class="footer_nav_list flex flex-col gap-2 mt-3">
+                            <li>
+                                <a href="services-list.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Pricing Plans</a>
+                            </li>
+                            <li>
+                                <a href="shop.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Shop</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav_area max-md:w-full">
+                        <strong class="footer_nav_heading txt-label">Get a Free Estimate Today!</strong>
+                        <p class="footer_nav_desc mt-3 text-variant2">Call us for a cost estimate over the phone</p>
+                        <h5 class="footer_nav_contact heading5 mt-4">1-555-678-8888</h5>
+                        <a href="book-appointment.html" class="btn mt-4 bg-blue hover:bg-white">Request an estimate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom flex items-center justify-between max-sm:flex-col gap-2 w-full mt-5 py-4 border-t border-white border-opacity-10">
+                <p class="copyright text-variant2 text-center">Copyright © 2024 Hadiman By <a href="" class="text-white hover:underline" target="_blank">Avitex</a>. <br class="xs:hidden">All rights reserved</p>
+                <div class="footer_bottom_link flex items-center gap-2.5">
+                    <a class="text-variant2 hover:underline hover:text-white" href="#!">Terms Of Services</a>
+                    <span class="text-white opacity-10">|</span>
+                    <a class="text-variant2 hover:underline hover:text-white" href="#!">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to top -->
+    <a class="scroll_to_top_btn" href="#header"><span class="ph-bold ph-caret-up"></span></a>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/phosphor-icons.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

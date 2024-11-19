@@ -1,0 +1,9 @@
+/* Testimonials */ 
+.testimonials {
+    &_img {
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

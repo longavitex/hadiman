@@ -1,0 +1,52 @@
+.process {
+    &.style-three {
+        @include respond-above($screen-xl) {
+            .process_item {
+                &:nth-child(1),
+                &:nth-child(3) {
+                    &::before {
+                        position: absolute;
+                        top: 0.25rem;
+                        right: -6rem;
+                        width: 10.5rem;
+                        height: 3.5rem;
+                        background: url('../assets/images/other/oval_arrow_down.png') center / contain no-repeat;
+                        content: '';
+                    }
+                }
+    
+                &:nth-child(2) {
+                    &::before {
+                        position: absolute;
+                        top: 4rem;
+                        right: -6rem;
+                        width: 10.5rem;
+                        height: 3.5rem;
+                        background: url('../assets/images/other/oval_arrow_up.png') center / contain no-repeat;
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
+
+    &.style-four {
+        @include respond-above($screen-xl) {
+            .process_item {
+                &:nth-child(1),
+                &:nth-child(3) {
+                    &::before {
+                        right: -7rem;
+                    }
+                }
+    
+                &:nth-child(2) {
+                    &::before {
+                        top: 7rem;
+                        right: -7rem;
+                    }
+                }
+            }
+        }
+    }
+}

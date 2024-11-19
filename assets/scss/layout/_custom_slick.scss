@@ -1,0 +1,46 @@
+/* Slick Dots */
+.slick-dots {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    gap: 8px;
+    margin-top: 40px;
+
+    li {
+        position: relative;
+        border: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        button {
+            display: none;
+        }
+
+        &::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid #171717;
+            transition: 0.5s;
+        }
+
+        &.slick-active {
+            border: 1px solid $black;
+            background-color: #fff;
+
+            &::after {
+                background-color: $black;
+                border: 1px solid $black;
+            }
+        }
+    }
+}

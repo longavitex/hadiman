@@ -1,0 +1,414 @@
+/* Main class is used */
+.blind,
+caption,
+legend {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 100px;
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 1442px !important;
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include respond-above($screen-lg) {
+    max-width: 1480px !important;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+.box_shadow_sm {
+  box-shadow: 0px 10px 25px 0px rgba(54, 95, 104, 0.10);
+}
+
+.heading1 {
+  font-size: 5rem;
+  line-height: 5.5rem;
+  font-weight: 700;
+}
+
+.heading2 {
+  font-size: 3.5rem;
+  line-height: 4.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.heading3 {
+  font-size: 2.75rem;
+  line-height: 3.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.heading4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.heading5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.heading6 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.body2 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+.txt-button {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.caption1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.caption2 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.txt-label {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: $orange;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: $white;
+  text-transform: capitalize;
+  transition: all ease 0.3s;
+
+  &_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  &.bg-white {
+    background-color: $white;
+    color: $black;
+
+    @include respond-above($screen-lg) {
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+  &.bg-black {
+    background-color: $black;
+    color: $white;
+
+    &:hover {
+      background-color: $orange;
+    }
+
+    &.hover\:bg-yellow:hover {
+      background-color: $yellow;
+    }
+  }
+
+  &.bg-blue {
+    background-color: $blue;
+    color: $white;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+
+  &.bg-yellow {
+    background-color: $yellow;
+    color: $white;
+
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  &.bg-red {
+    background-color: $red;
+    color: $white;
+
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  &:hover {
+    background-color: $dark;
+  }
+
+  &.hover\:bg-white:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  background: rgba($color: $orange, $alpha: 0.1);
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $orange;
+
+  &.leading-7 {
+    line-height: 1.75rem;
+  }
+
+  &.bg-white {
+    background: rgba($color: $white, $alpha: 0.1);
+  }
+
+  &.bg-blue {
+    background: rgba($color: $blue, $alpha: 0.1);
+    color: $blue;
+  }
+
+  &.bg-yellow {
+    background: rgba($color: $yellow, $alpha: 0.1);
+    color: $yellow;
+  }
+
+  &.bg-red {
+    background: rgba($color: $red, $alpha: 0.1);
+    color: $red;
+  }
+
+  &.text-white {
+    color: $white;
+  }
+
+  &_fill {
+    background: $orange;
+    color: $white;
+
+    &.bg-yellow {
+      background: $yellow;
+      color: $white;
+    }
+  }
+}
+
+.ph,
+.ph-bold,
+.ph-fill {
+  display: block;
+}
+
+.has_line {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: $orange;
+    transition: width .3s ease;
+  }
+
+  &.line_black {
+    &::before {
+      background-color: $black;
+    }
+  }
+
+  &.line_blue {
+    &::before {
+      background-color: $blue;
+    }
+  }
+
+  &.line_yellow {
+    &::before {
+      background-color: $yellow;
+    }
+  }
+
+  &.line_red {
+    &::before {
+      background-color: $red;
+    }
+  }
+
+  &.line_white {
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &.active,
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.active {
+  >.has_line {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.form_input {
+  transition: border-color .4s ease;
+
+  &:focus {
+    border-color: $black;
+  }
+}
+
+.form_select {
+  position: relative;
+
+  select {
+    transition: border-color .4s ease;
+
+    &:focus {
+      border-color: $black;
+    }
+  }
+
+  >.arrow_down {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+  }
+}
+
+.scroll_to_top_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  right: 24px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $white;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  box-shadow: 0px 5px 25px rgba(58, 64, 67, 0.15);
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &.active {
+    bottom: 32px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@include respond-below($screen-lg) {
+
+  html,
+  body {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .heading1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .heading2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .heading3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .heading4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@include respond-below($screen-md) {
+
+  html,
+  body {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .heading1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .heading2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .heading3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .heading4 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
