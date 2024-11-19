@@ -14,7 +14,20 @@
                 transform: translateY(0);
             }
         }
+
+        &:nth-child(2) {
+            .services_link {
+                &.active {
+                    background-color: rgba($color: $orange, $alpha: 0.1);
+
+                    .services_tit {
+                        color: $orange;
+                    }
+                }
+            }
+        }
     }
+
     &_sub_link {
         &.active {
             color: $orange;

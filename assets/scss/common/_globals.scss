@@ -325,6 +325,45 @@ legend {
   }
 }
 
+.form_checkbox {
+  position: relative;
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkbox_icon {
+    visibility: hidden;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .label {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $black;
+      border-radius: 2px;
+      transition: 0.4s;
+    }
+  }
+
+  .checkbox:checked+.checkbox_icon {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .scroll_to_top_btn {
   display: flex;
   align-items: center;

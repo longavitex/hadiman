@@ -250,7 +250,7 @@
                             </li>
                             <li class="menu_sub_item">
                                 <a href="blog-list.html"
-                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Blog
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
                                     List</a>
                             </li>
                             <li class="menu_sub_item">
@@ -265,7 +265,7 @@
                             </li>
                             <li class="menu_sub_item">
                                 <a href="blog-detail2.html"
-                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Blog
                                     Details 2</a>
                             </li>
                         </ul>
@@ -381,206 +381,246 @@
             </div>
         </div>
     </header>
-    <!-- BREADCRUMB -->
-    <section class="section breadcrumb flex items-center h-80 relative">
-        <div class="breadcrumb_bg absolute top-0 left-0 w-full h-full pointer-events-none">
-            <img src="./assets/images/breadcrumb/blog.jpg" alt="Blog List" class="h-full object-cover">
+    <!-- BLOG DETAIL -->
+    <section class="blog_detail">
+        <div class="blog_detail_thumb overflow-hidden w-full md:h-[40rem] h-[30rem]">
+            <img src="./assets/images/blog/blog_detail.jpg" alt="Top 5 DIY Repairs That Every Homeowner Should Know" class="w-full h-full object-cover" />
         </div>
-        <div class="container relative text-white">
-            <ul class="breadcrumb_nav flex items-center gap-1">
-                <li class="flex items-center">
-                    <a href="index.html" class="breadcrumb_link caption1 duration-300 hover:underline">Home</a>
-                </li>
-                <li class="flex items-center">
-                    <span class="ph ph-caret-right text-xs opacity-50"></span>
-                    <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Blog</a>
-                </li>
-            </ul>
-            <h2 class="section_tit mt-3 heading2">Blog List</h2>
+        <div class="container flex justify-center -mt-[5.625rem]">
+            <div class="blog_content xl:w-[980px] sm:px-15 px-4 sm:pt-15 pt-10 bg-white">
+                <span class="blog_cate block txt-label text-center">Residential Cleaning</span>
+                <h2 class="heading2 title mt-4 text-center">Top 5 DIY Repairs That Every Homeowner Should Know</h2>
+                <div class="flex flex-wrap items-center justify-center gap-4 mt-4">
+                    <div class="date flex items-center gap-2">
+                        <span class="ph ph-calendar-blank text-xl"></span>
+                        <span class="blog_author caption1">October 22, 2024</span>
+                    </div>
+                    <div class="line flex-shrink-0 w-px h-4 bg-outline"></div>
+                    <div class="date flex items-center gap-2">
+                        <span class="ph ph-user text-xl"></span>
+                        <span class="blog_date caption1">Tony Nguyen</span>
+                    </div>
+                </div>
+                <p class="md:mt-10 mt-7 body2">In today's digital age, the importance of mobile optimization cannot be overstated. With an increasing number of users accessing the internet through smartphones and tablets, designing for mobile-first has become imperative for businesses looking to provide seamless user experiences.</p>
+                <p class="mt-3 body2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum sed mauris eu imperdiet. Donec congue orci nec mi luctus, ut faucibus mauris scelerisque. Donec orci lorem, volutpat a mauris nec, sodales imperdiet urna. Sed dictum enim libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas ligula libero, pharetra non dolor et, tempor bibendum magna. Mauris a efficitur nisi.</p>
+                <div class="images grid sm:grid-cols-2 gap-7.5 md:mt-10 mt-7">
+                    <img src="./assets/images/services/detail/bg_list1.jpg" alt="bg_list1" />
+                    <img src="./assets/images/services/detail/bg_list2.jpg" alt="bg_list2" />
+                </div>
+                <h4 class="heading4 md:mt-10 mt-7">How to Choose the Right Handyman for Your Home</h4>
+                <p class="mt-4 body2">Donec eu dui condimentum, laoreet nulla vitae, venenatis ipsum. Donec luctus sem sit amet varius laoreet. Aliquam fermentum sit amet urna fringilla tincidunt. Vestibulum ullamcorper nec lacus ac molestie. Curabitur congue neque sed nisi auctor consequat.</p>
+                <ul class="flex flex-col gap-3 mt-4">
+                    <li class="flex body2">
+                        <span class="ph-fill ph-dot-outline mt-1 mr-1"></span>
+                        <p>15+ years of industry experience designing, building, and supporting large-scale distributed systems in production, with recent experience in building large scale cloud services.</p>
+                    </li>
+                    <li class="flex body2">
+                        <span class="ph-fill ph-dot-outline mt-1 mr-1"></span>
+                        <p>Deep knowledge and experience with different security areas like identity and access management, cryptography, network security, etc.</p>
+                    </li>
+                    <li class="flex body2">
+                        <span class="ph-fill ph-dot-outline mt-1 mr-1"></span>
+                        <p>Experience with database systems and database internals, such as query engines and optimizers are a big plus. </p>
+                    </li>
+                    <li class="flex body2">
+                        <span class="ph-fill ph-dot-outline mt-1 mr-1"></span>
+                        <p>Strong fundamentals in computer science skills.</p>
+                    </li>
+                    <li class="flex body2">
+                        <span class="ph-fill ph-dot-outline mt-1 mr-1"></span>
+                        <p>Expert-level development skills in Java or C++.</p>
+                    </li>
+                    <li class="flex body2">
+                        <span class="ph-fill ph-dot-outline mt-1 mr-1"></span>
+                        <p>Advanced degree in Computer Science or related degree.</p>
+                    </li>
+                    <li class="flex body2">
+                        <span class="ph-fill ph-dot-outline mt-1 mr-1"></span>
+                        <p>Ph.D. in the related field is a plus</p>
+                    </li>
+                </ul>
+                <p class="mt-3 body2">Curabitur aliquam ac arcu in mattis. Phasellus pulvinar erat at aliquam hendrerit. Nam ut velit dolor. Sed fermentum tempus odio, ac faucibus elit scelerisque consequat. Fusce ac malesuada elit. Nam at aliquam libero, quis lacinia erat. In hac habitasse platea dictumst. Suspendisse id dolor orci. Vivamus at aliquam tellus. Vestibulum a augue ac purus suscipit varius non eget lectus. Nam lobortis mauris luctus tristique feugiat. Nulla eleifend risus sit amet nisi feugiat, id eleifend sapien malesuada.</p>
+                <div class="action flex flex-wrap items-center justify-between gap-5 md:mt-10 mt-7">
+                    <div class="list_tags flex flex-wrap items-center gap-3">
+                        <span>Tag:</span>
+                        <ul class="list flex flex-wrap items-center gap-3">
+                            <li>
+                                <a href="blog-default.html" class="block px-4 py-1.5 bg-surface caption1 duration-300 hover:bg-orange hover:text-white">Equipment</a>
+                            </li>
+                            <li>
+                                <a href="blog-default.html" class="block px-4 py-1.5 bg-surface caption1 duration-300 hover:bg-orange hover:text-white">Maintenance</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list_social flex items-center gap-3 flex-wrap">
+                        <span>Share:</span>
+                        <ul class="list flex flex-wrap items-center gap-3">
+                            <li>
+                                <a href="https://www.messenger.com/" target="_blank" class="flex items-center justify-center w-10 h-10 rounded-full bg-surface duration-300 hover:bg-orange hover:text-white">
+                                    <span class="ph ph-messenger-logo text-xl"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="flex items-center justify-center w-10 h-10 rounded-full bg-surface duration-300 hover:bg-orange hover:text-white">
+                                    <span class="ph ph-instagram-logo text-xl"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.x.com/" target="_blank" class="flex items-center justify-center w-10 h-10 rounded-full bg-surface duration-300 hover:bg-orange hover:text-white">
+                                    <span class="ph ph-x-logo text-xl"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="next-pre grid sm:grid-cols-2 gap-y-7 relative md:mt-10 mt-7 py-6 border-y border-outline">
+                    <a href="blog-detail1.html" class="left sm:pr-10 sm:border-r border-outline group">
+                        <span class="txt-label uppercase">Previous</span>
+                        <strong class="heading6 inline-block prev mt-2 duration-300 group-hover:text-orange">Designing for Delight: Elevating User Experience with Emotional Design</strong>
+                    </a>
+                    <a href="blog-detail1.html" class="right sm:pl-10 sm:text-right group">
+                        <span class="txt-label uppercase">Next</span>
+                        <strong class="heading6 inline-block next mt-2 duration-300 group-hover:text-orange">Leveraging Artificial Intelligence for Enhanced Experiences</strong>
+                    </a>
+                </div>
+                <div class="review mt-10">
+                    <h5 class="heading5">Customer reviews</h5>
+                    <ul class="review_list flex flex-col gap-6 mt-5">
+                        <li class="review_item">
+                            <div class="review_user flex items-center gap-4">
+                                <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                    <img src="./assets/images/team/team1.jpg" alt="Jeremy L." class="user_avatar w-full h-full object-cover" />
+                                </div>
+                                <div class="review_user_info">
+                                    <span class="review_user_name txt-button">Jeremy L.</span>
+                                    <span class="review_user_date block caption1 text-variant1">August 22, 2024</span>
+                                </div>
+                            </div>
+                            <p class="review_desc mt-3">Amazing quality! The product arrived quickly, and I was impressed with how durable it feels. Definitely worth the price, and I’ll be purchasing again soon.</p>
+                            <ul class="review_reply flex flex-col gap-6 mt-6 sm:ml-15 ml-8 pl-5 border-l-4 border-outline">
+                                <li class="review_reply_item">
+                                    <div class="review_user flex items-center gap-4">
+                                        <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                            <img src="./assets/images/team/team2.jpg" alt="Anotonio R." class="user_avatar w-full h-full object-cover" />
+                                        </div>
+                                        <div class="review_user_info">
+                                            <span class="review_user_name txt-button">Anotonio R.</span>
+                                            <span class="review_user_date block caption1 text-variant1">August 23, 2024</span>
+                                        </div>
+                                    </div>
+                                    <p class="review_desc mt-3">Exceeded my expectations! I bought this as a gift, and the recipient was thrilled. The craftsmanship is top-notch, and customer service was super helpful with my inquiries.</p>
+                                </li>
+                                <li class="review_reply_item">
+                                    <div class="review_user flex items-center gap-4">
+                                        <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                            <img src="./assets/images/team/team4.jpg" alt="Alexander P." class="user_avatar w-full h-full object-cover" />
+                                        </div>
+                                        <div class="review_user_info">
+                                            <span class="review_user_name txt-button">Alexander P.</span>
+                                            <span class="review_user_date block caption1 text-variant1">August 23, 2024</span>
+                                        </div>
+                                    </div>
+                                    <p class="review_desc mt-3">I really like the logo that Gihan created, and he was very responsive and great to work with. I would recommend him to anyone looking for a logo or graphic design!</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="review_item">
+                            <div class="review_user flex items-center gap-4">
+                                <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                    <img src="./assets/images/team/team3.jpg" alt="Christina H." class="user_avatar w-full h-full object-cover" />
+                                </div>
+                                <div class="review_user_info">
+                                    <span class="review_user_name txt-button">Christina H.</span>
+                                    <span class="review_user_date block caption1 text-variant1">August 21, 2024</span>
+                                </div>
+                            </div>
+                            <p class="review_desc mt-3">Great experience overall! Easy checkout process, fast shipping, and the product was just as described. Highly recommend this shop for reliable purchases!</p>
+                        </li>
+                    </ul>
+                    <div id="form-review" class="form-review mt-10 p-7 border border-outline">
+                        <h5 class="heading5">Leave A comment</h5>
+                        <form class="form grid sm:grid-cols-2 gap-5 mt-6">
+                            <div class="name">
+                                <label for="username">Name</label>
+                                <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="username" type="text" placeholder="Your Name" required />
+                            </div>
+                            <div class="mail">
+                                <label for="email">Email</label>
+                                <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="email" type="email" placeholder="Your Email" required />
+                            </div>
+                            <div class="col-span-full message">
+                                <label for="message">Review</label>
+                                <textarea class="form_input w-full mt-2 px-4 py-3 border border-outline" id="message" name="message" rows="3" placeholder="Write comment " required></textarea>
+                            </div>
+                            <div class="form_checkbox flex col-span-full">
+                                <input type="checkbox" class="checkbox" id="saveAccount" />
+                                <span class="ph-fill ph-check-square text-[20px] checkbox_icon"></span>
+                                <label class="label pl-7" for="saveAccount">Save my name, email, and website in this browser for the next time I comment.</label>
+                            </div>
+                            <div class="col-span-full">
+                                <button type="submit" class="btn">Submit Review</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- BLOG -->
+    <!-- LASTEST NEWS -->
     <section class="section blog sm:py-25 py-15">
-        <div class="container flex max-xl:flex-col gap-y-12">
-            <div class="list w-full xl:pr-25">
-                <ul class="list_blog grid lg:gap-10 gap-8">
-                    <li class="blog_item flex max-sm:flex-col items-center border border-outline">
-                        <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 overflow-hidden sm:w-[48%] sm:h-full group">
-                            <img src="./assets/images/blog/1.jpg" alt="Top 5 DIY Repairs That Every Homeowner Should Know" class="blog_img h-full object-cover duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info sm:p-10 p-6">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title heading5 mt-3 line-clamp-2 hover:underline">Top 5 DIY Repairs That Every Homeowner Should Know</strong>
-                                <p class="blog_desc mt-4 line-clamp-3 text-variant1">June is Pride Month, a time to celebrate and support the LGBTQ+ community. In this article, we explore how brands can develop authentic Pride Month marketing strategies that resonate with audiences and demonstrate genuine allyship.</p>
-                                <strong class="inline-block mt-4 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
+        <div class="container">
+            <h3 class="section_tit mt-4 heading3 text-center">related articles</h3>
+            <p class="section_desc mt-3 body2 text-variant1 text-center">Your go-to source for mental health insights, tools, and advice.</p>
+            <ul class="blog_list grid lg:grid-cols-3 gap-7.5 w-full lg:mt-12 mt-9">
+                <li class="blog_item flex flex-col gap-6">
+                    <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
+                        <img src="./assets/images/blog/blog1-1.jpg" class="duration-700 group-hover:scale-105" alt="Top 5 Essential Home Maintenance Tips for Every Season">
+                    </a>
+                    <div class="blog_info">
+                        <div class="flex items-center gap-3 txt-label text-variant1">
+                            <span class="blog_date">October 22, 2024</span>
+                            <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
+                            <a href="blog-default.html"
+                                class="blog_cate duration-300 hover:underline hover:text-black">Maintenance</a>
                         </div>
-                    </li>
-                    <li class="blog_item flex max-sm:flex-col items-center border border-outline">
-                        <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 overflow-hidden sm:w-[48%] sm:h-full group">
-                            <img src="./assets/images/blog/2.jpg" alt="How to Prevent Costly Water Damage in Your Home" class="blog_img h-full object-cover duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info sm:p-10 p-6">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title heading5 mt-3 line-clamp-2 hover:underline">How to Prevent Costly Water Damage in Your Home</strong>
-                                <p class="blog_desc mt-4 line-clamp-3 text-variant1">Discover the benefits of solar energy, including reduced utility costs, increased home value, and a positive environmental impact. Identify the most frequent air condition issues and find out how to support community.</p>
-                                <strong class="inline-block mt-4 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
+                        <a href="blog-detail1.html"
+                            class="blog_tit mt-3 line-clamp-3 heading5 duration-300 hover:text-orange">Top 5
+                            Essential Home Maintenance Tips for Every Season</a>
+                    </div>
+                </li>
+                <li class="blog_item flex flex-col gap-6">
+                    <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
+                        <img src="./assets/images/blog/blog1-2.jpg" class="duration-700 group-hover:scale-105" alt="How to Detect and Fix Leaks Before They Cause Damage">
+                    </a>
+                    <div class="blog_info">
+                        <div class="flex items-center gap-3 txt-label text-variant1">
+                            <span class="blog_date">October 24, 2024</span>
+                            <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
+                            <a href="blog-default.html"
+                                class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
                         </div>
-                    </li>
-                    <li class="blog_item flex max-sm:flex-col items-center border border-outline">
-                        <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 overflow-hidden sm:w-[48%] sm:h-full group">
-                            <img src="./assets/images/blog/3.jpg" alt="How to Choose the Right Handyman for Your Home" class="blog_img h-full object-cover duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info sm:p-10 p-6">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title heading5 mt-3 line-clamp-2 hover:underline">How to Choose the Right Handyman for Your Home</strong>
-                                <p class="blog_desc mt-4 line-clamp-3 text-variant1">Selecting the right handyman can make all the difference in your project’s success. Learn how consistent maintenance of your air conditioning system can identify the most frequent air condition issues.</p>
-                                <strong class="inline-block mt-4 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
+                        <a href="blog-detail1.html"
+                            class="blog_tit mt-3 line-clamp-3 heading5 duration-300 hover:text-orange">How to
+                            Detect and Fix Leaks Before They Cause Damage</a>
+                    </div>
+                </li>
+                <li class="blog_item flex flex-col gap-6">
+                    <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
+                        <img src="./assets/images/blog/blog1-3.jpg" class="duration-700 group-hover:scale-105" alt="5 Signs It’s Time to Service Your Air Conditioning System">
+                    </a>
+                    <div class="blog_info">
+                        <div class="flex items-center gap-3 txt-label text-variant1">
+                            <span class="blog_date">October 26, 2024</span>
+                            <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
+                            <a href="blog-default.html"
+                                class="blog_cate duration-300 hover:underline hover:text-black">HVAC</a>
                         </div>
-                    </li>
-                </ul>
-                <ul class="pagination_list menu_tab flex items-center gap-2 w-full md:mt-10 mt-7" role="tablist">
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange active" role="tab" aria-selected="true">1</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">2</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">3</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">></button>
-                    </li>
-                </ul>
-            </div>
-            <div class="blog_sidebar flex-shrink-0 xl:w-96 w-full h-fit">
-                <form class="form_search overflow-hidden relative w-full h-13">
-                    <input class="form_input py-3 pr-10 w-full h-full border-b border-outline" type="text" placeholder="Search" required />
-                    <button class="flex items-center justify-end absolute top-0 right-0 w-8 h-full aspect-square duration-300 hover:text-orange">
-                        <span class="ph ph-magnifying-glass text-2xl"></span>
-                    </button>
-                </form>
-                <div class="filter_category md:mt-10 mt-7">
-                    <h5 class="heading5">Categories</h5>
-                    <ul class="category_list flex flex-col gap-3 mt-5" role="tablist">
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Plumbing Tips</span>
-                                <span class="quantity">(112)</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Water Conservation</span>
-                                <span class="quantity">(32)</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">DIY Repairs</span>
-                                <span class="quantity">(42)</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Common Issues</span>
-                                <span class="quantity">(65)</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">System Upgrades</span>
-                                <span class="quantity">(13)</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="recent md:mt-10 mt-7">
-                    <h5 class="heading5">Recent Posts</h5>
-                    <ul class="recent_list mt-4">
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/4.jpg" alt="How Regular HVAC Maintenance Can Save You Money" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 21, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">How Regular HVAC Maintenance Can Save You Money</a>
-                            </div>
-                        </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/5.jpg" alt="Improving Energy Efficiency with Simple Home Upgrades" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 22, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Improving Energy Efficiency with Simple Home Upgrades</a>
-                            </div>
-                        </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/6.jpg" alt="Must-Have Tools Every Handyman Recommends for Homeowners" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 24, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Must-Have Tools Every Handyman Recommends for Homeowners</a>
-                            </div>
-                        </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/7.jpg" alt="Home Maintenance Checklist, Stay on Top of Repairs Year-Round" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 25, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Home Maintenance Checklist, Stay on Top of Repairs Year-Round</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filter_tag md:mt-10 mt-7">
-                    <h5 class="heading5">Popular Tag</h5>
-                    <ul class="tag_list menu_tab flex items-center flex-wrap gap-3 mt-5" role="tablist">
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Tips</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Renovations</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Electrical</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Plumbing</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">HVAC Services</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Painting</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Home Repairs</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                        <a href="blog-detail1.html"
+                            class="blog_tit mt-3 line-clamp-3 heading5 duration-300 hover:text-orange">5 Signs
+                            It’s Time to Service Your Air Conditioning System</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- FOOTER -->

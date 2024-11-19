@@ -390,6 +390,40 @@ legend {
   right: 1rem;
 }
 
+.form_checkbox {
+  position: relative;
+}
+.form_checkbox .checkbox {
+  display: none;
+}
+.form_checkbox .checkbox_icon {
+  visibility: hidden;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+}
+.form_checkbox .label {
+  position: relative;
+  z-index: 1;
+}
+.form_checkbox .label::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #202020;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+.form_checkbox .checkbox:checked + .checkbox_icon {
+  visibility: visible;
+  opacity: 1;
+}
+
 .scroll_to_top_btn {
   display: flex;
   align-items: center;
@@ -684,6 +718,12 @@ legend {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0);
+}
+.menu_item:nth-child(2) .services_link.active {
+  background-color: rgba(255, 102, 0, 0.1);
+}
+.menu_item:nth-child(2) .services_link.active .services_tit {
+  color: #FF6600;
 }
 .menu_sub_link.active {
   color: #FF6600;
