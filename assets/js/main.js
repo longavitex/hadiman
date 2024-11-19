@@ -203,7 +203,7 @@
         const brandSwiperObj = new Swiper('.brand_swiper', SWIPER_OPTIONS.BRAND_SWIPER);
         const projectsSwiperObj = new Swiper('.projects_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
         const servicesSwiperObj = new Swiper('.services_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
-        const servicesSwiperFourObj = new Swiper('.services_swiper', SWIPER_OPTIONS.SERVICES_SWIPER_FOUR);
+        const servicesSwiperFourObj = new Swiper('.services.style-four .services_swiper', SWIPER_OPTIONS.SERVICES_SWIPER_FOUR);
     };
 
     // projects style center home4

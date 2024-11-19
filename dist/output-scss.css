@@ -688,6 +688,9 @@ legend {
 }
 
 /* faqs */
+.faqs_item:last-child {
+  border-bottom: none;
+}
 .faqs_item .icon_arrow {
   position: relative;
 }

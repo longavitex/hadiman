@@ -1,6 +1,10 @@
 /* faqs */
 .faqs {
     &_item {
+        &:last-child {
+            border-bottom: none;
+        }
+        
         .icon_arrow {
             position: relative;
 
