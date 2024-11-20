@@ -115,13 +115,6 @@ legend {
   text-transform: capitalize;
   transition: all ease 0.3s;
 
-  &_icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
-  }
-
   &.bg-white {
     background-color: $white;
     color: $black;
@@ -181,6 +174,25 @@ legend {
   &.hover\:bg-white:hover {
     background-color: $white;
     color: $black;
+  }
+
+  &_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  &_outline {
+    border: 2px solid $outline;
+    background-color: transparent;
+    color: $black;
+
+    &:hover {
+      border-color: $orange;
+      background-color: $orange;
+      color: $white;
+    }
   }
 }
 
@@ -391,6 +403,24 @@ legend {
     bottom: 32px;
     opacity: 1;
     visibility: visible;
+  }
+
+  &.bg-blue {
+    &:hover {
+      background-color: $blue;
+    }
+  }
+
+  &.bg-yellow {
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+
+  &.bg-red {
+    &:hover {
+      background-color: $red;
+    }
   }
 }
 

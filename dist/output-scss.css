@@ -230,12 +230,6 @@ legend {
   text-transform: capitalize;
   transition: all ease 0.3s;
 }
-.btn_icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
-}
 .btn.bg-white {
   background-color: #FFFFFF;
   color: #202020;
@@ -283,6 +277,22 @@ legend {
 .btn.hover\:bg-white:hover {
   background-color: #FFFFFF;
   color: #202020;
+}
+.btn_icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.btn_outline {
+  border: 2px solid #E4E4E4;
+  background-color: transparent;
+  color: #202020;
+}
+.btn_outline:hover {
+  border-color: #FF6600;
+  background-color: #FF6600;
+  color: #FFFFFF;
 }
 
 .tag {
@@ -450,6 +460,15 @@ legend {
   bottom: 32px;
   opacity: 1;
   visibility: visible;
+}
+.scroll_to_top_btn.bg-blue:hover {
+  background-color: #2D77DC;
+}
+.scroll_to_top_btn.bg-yellow:hover {
+  background-color: #F2B201;
+}
+.scroll_to_top_btn.bg-red:hover {
+  background-color: #D31B41;
 }
 
 @media (max-width: 1023.98px) {

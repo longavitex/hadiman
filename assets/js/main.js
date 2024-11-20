@@ -47,7 +47,7 @@
             spaceBetween: 40,
             pagination: {
                 clickable: true,
-                el: ".testimonials .swiper-pagination"
+                el: ".testimonials.style-filter .swiper-pagination"
             },
         },
         TESTIMONIAL_SWIPER_TWO: {
@@ -79,6 +79,15 @@
                     slidesPerView: 3,
                     spaceBetween: 30,
                 },
+            },
+        },
+        TESTIMONIAL_SWIPER_THREE: {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 40,
+            pagination: {
+                clickable: true,
+                el: ".testimonials_swiper_three+.swiper-pagination"
             },
         },
         BANNER_SWIPER: {
@@ -199,6 +208,7 @@
             }
         });
         const testimonialsSwiperTwoObj = new Swiper('.testimonials_swiper_two', SWIPER_OPTIONS.TESTIMONIAL_SWIPER_TWO);
+        const testimonialsSwiperThreeObj = new Swiper('.testimonials_swiper_three', SWIPER_OPTIONS.TESTIMONIAL_SWIPER_THREE);
         const bannerSwiperObj = new Swiper('.banner_swiper', SWIPER_OPTIONS.BANNER_SWIPER);
         const brandSwiperObj = new Swiper('.brand_swiper', SWIPER_OPTIONS.BRAND_SWIPER);
         const projectsSwiperObj = new Swiper('.projects_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
@@ -208,24 +218,14 @@
 
     // projects hover home3
     const handleHoverProjectsThree = function () {
-        $('.projects_link').hover(
-            function () {
-                // When hover, add class
-                var index = $(this).closest('.projects_item').index();
-                $('.projects_link').removeClass('active');
-                $(this).addClass('active');
-                $('.projects_thumb_item').removeClass('active');
-                // $('.projects_thumb_item').css('display', 'none');
-                $('.projects_thumb_item').eq(index).addClass('active');
-                // $('.projects_thumb_item').eq(index).fadeIn();
-            },
-            // function () {
-            //     // When leave hover, remove class
-            //     var index = $(this).index();
-            //     $(this).removeClass('active');
-            //     $('.projects_thumb_item').eq(index).removeClass('active');
-            // }
-        );
+        $('.projects_link').hover(function () {
+            // When hover, add class
+            var index = $(this).closest('.projects_item').index();
+            $('.projects_link').removeClass('active');
+            $(this).addClass('active');
+            $('.projects_thumb_item').removeClass('active');
+            $('.projects_thumb_item').eq(index).addClass('active');
+        });
     }
 
     // projects style center home4
@@ -356,8 +356,21 @@
         })
     }
 
+    // Active menu tab
+    const handleClickLoadMore = function () {
+        $(".js_btn_load_more").on('click', function () {
+            // show loading
+            $('.tab_panel.active').addClass('loading');
+
+            setTimeout(function () {
+                // remove loading
+                $('.tab_panel.active').removeClass('loading');
+            }, 500)
+        })
+    }
+
     // FAQs
-    const handleFaq = function () {
+    const handleFaqs = function () {
         $(".faqs_btn").on('click', function () {
             $(this).closest('.faqs_item').toggleClass('active').siblings('.faqs_item').removeClass('active');
             $(this).closest('.faqs_item').find('.answer').slideToggle(300)
@@ -376,6 +389,7 @@
         projectsSlideFour()
         handleCompareProject()
         handleActiveTab()
-        handleFaq()
+        handleClickLoadMore()
+        handleFaqs()
     });
 })(window, window.jQuery);

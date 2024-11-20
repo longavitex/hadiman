@@ -237,7 +237,7 @@
                         </div>
                     </li>
                     <li class="menu_item h-full relative">
-                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full active">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full">
                             <span class="has_line txt-button">Blog</span>
                             <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
                         </a>
@@ -245,7 +245,7 @@
                             class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
                             <li class="menu_sub_item">
                                 <a href="blog-default.html"
-                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Blog
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
                                     Default</a>
                             </li>
                             <li class="menu_sub_item">
@@ -300,7 +300,7 @@
                         </ul>
                     </li>
                     <li class="menu_item h-full relative">
-                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full active">
                             <span class="has_line txt-button">Pages</span>
                             <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
                         </a>
@@ -313,7 +313,7 @@
                             </li>
                             <li class="menu_sub_item">
                                 <a href="our-services.html"
-                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Our Services</a>
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Our Services</a>
                             </li>
                             <li class="menu_sub_item">
                                 <a href="our-projects1.html"
@@ -384,7 +384,7 @@
     <!-- BREADCRUMB -->
     <section class="section breadcrumb flex items-center h-[320px] relative">
         <div class="breadcrumb_bg absolute top-0 left-0 w-full h-full pointer-events-none">
-            <img src="./assets/images/breadcrumb/blog.jpg" alt="Blog Defaults" class="h-full object-cover">
+            <img src="./assets/images/breadcrumb/services.jpg" alt="Our Services" class="h-full object-cover">
         </div>
         <div class="container relative text-white">
             <ul class="breadcrumb_nav flex items-center gap-1">
@@ -393,194 +393,325 @@
                 </li>
                 <li class="flex items-center">
                     <span class="ph ph-caret-right text-xs opacity-50"></span>
-                    <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Blog</a>
+                    <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Services</a>
                 </li>
             </ul>
-            <h2 class="section_tit mt-3 heading2">Blog Defaults</h2>
+            <h2 class="section_tit mt-3 heading2">Our Services</h2>
         </div>
     </section>
-    <!-- BLOG -->
-    <section class="section blog sm:py-25 py-15">
-        <div class="container flex max-lg:flex-col gap-y-12">
-            <div class="list xl:pr-25 lg:pr-12">
-                <ul class="blog_list grid lg:gap-10 gap-8">
-                    <li class="blog_item">
-                        <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
-                            <img src="./assets/images/blog/1.jpg" alt="Top 5 DIY Repairs That Every Homeowner Should Know" class="blog_img duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info mt-5">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title mt-4 heading5 line-clamp-2 hover:underline">Top 5 DIY Repairs That Every Homeowner Should Know</strong>
-                                <p class="blog_desc mt-5 line-clamp-3 text-variant1">June is Pride Month, a time to celebrate and support the LGBTQ+ community. In this article, we explore how brands can develop authentic Pride Month marketing strategies that resonate with audiences and demonstrate genuine allyship.</p>
-                                <strong class="inline-block mt-5 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
+    <!-- SERVICES -->
+    <section class="section services sm:py-25 py-15">
+        <div class="container flex flex-col items-center">
+            <span class="section_tag tag">What We Do?</span>
+            <h3 class="section_title heading3 mt-4 text-center">Our Service That We Offer</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation</p>
+            <ul class="services_list grid xl:grid-cols-3 md:grid-cols-2 lg:gap-7.5 gap-6 lg:mt-12 mt-9">
+                <li class="services_item">
+                    <a href="services-detail.html" class="services_link flex h-full bg-surface group">
+                        <span
+                            class="services_icon flex items-center justify-center flex-shrink-0 w-[5.75rem] h-[5.75rem] border-r-[0.75rem] border-b-[0.75rem] border-white bg-surface duration-500 group-hover:bg-orange group-hover:text-white">
+                            <span class="icon-wrench-house text-5xl"></span>
+                        </span>
+                        <div class="services_info p-7">
+                            <strong class="services_name heading5">Renovation Services</strong>
+                            <p class="services_desc mt-4 text-variant1">Transform your home with our professional renovation services. Whether it’s a kitchen remodel, bathroom upgrade, or a complete home makeover, we bring creativity and expertise to every project.</p>
+                            <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-orange">
+                                <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                            </span>
                         </div>
-                    </li>
-                    <li class="blog_item">
-                        <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
-                            <img src="./assets/images/blog/2.jpg" alt="How to Prevent Costly Water Damage in Your Home" class="blog_img duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info mt-5">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title mt-4 heading5 line-clamp-2 hover:underline">How to Prevent Costly Water Damage in Your Home</strong>
-                                <p class="blog_desc mt-5 line-clamp-3 text-variant1">Discover the benefits of solar energy, including reduced utility costs, increased home value, and a positive environmental impact. Identify the most frequent air condition issues and find out how to support community.</p>
-                                <strong class="inline-block mt-5 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
+                    </a>
+                </li>
+                <li class="services_item">
+                    <a href="services-detail.html" class="services_link flex h-full bg-surface group">
+                        <span
+                            class="services_icon flex items-center justify-center flex-shrink-0 w-[5.75rem] h-[5.75rem] border-r-[0.75rem] border-b-[0.75rem] border-white bg-surface duration-500 group-hover:bg-orange group-hover:text-white">
+                            <span class="icon-electrical text-5xl"></span>
+                        </span>
+                        <div class="services_info p-7">
+                            <strong class="services_name heading5">Electrical Services</strong>
+                            <p class="services_desc mt-4 text-variant1">Our licensed electricians provide safe, reliable
+                                electrical services, including installations, repairs, upgrades, and full system
+                                troubleshooting to ensure your home’s electrical safety.</p>
+                            <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-orange">
+                                <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                            </span>
                         </div>
-                    </li>
-                    <li class="blog_item">
-                        <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
-                            <img src="./assets/images/blog/3.jpg" alt="How to Choose the Right Handyman for Your Home" class="blog_img duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info mt-5">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title mt-4 heading5 line-clamp-2 hover:underline">How to Choose the Right Handyman for Your Home</strong>
-                                <p class="blog_desc mt-5 line-clamp-3 text-variant1">Selecting the right handyman can make all the difference in your project’s success. Learn how consistent maintenance of your air conditioning system can identify the most frequent air condition issues.</p>
-                                <strong class="inline-block mt-5 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
+                    </a>
+                </li>
+                <li class="services_item">
+                    <a href="services-detail.html" class="services_link flex h-full bg-surface group">
+                        <span
+                            class="services_icon flex items-center justify-center flex-shrink-0 w-[5.75rem] h-[5.75rem] border-r-[0.75rem] border-b-[0.75rem] border-white bg-surface duration-500 group-hover:bg-orange group-hover:text-white">
+                            <span class="icon-pipe text-5xl"></span>
+                        </span>
+                        <div class="services_info p-7">
+                            <strong class="services_name heading5">Plumbing Services</strong>
+                            <p class="services_desc mt-4 text-variant1">From fixing leaks to installing new fixtures,
+                                our experienced plumbers handle all types of plumbing repairs and installations. We
+                                ensure efficient and long-lasting solutions for your home.</p>
+                            <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-orange">
+                                <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                            </span>
                         </div>
-                    </li>
-                </ul>
-                <ul class="pagination_list menu_tab flex items-center gap-2 w-full md:mt-10 mt-7" role="tablist">
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange active" role="tab" aria-selected="true">1</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">2</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">3</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">></button>
-                    </li>
-                </ul>
+                    </a>
+                </li>
+                <li class="services_item">
+                    <a href="services-detail.html" class="services_link flex h-full bg-surface group">
+                        <span
+                            class="services_icon flex items-center justify-center flex-shrink-0 w-[5.75rem] h-[5.75rem] border-r-[0.75rem] border-b-[0.75rem] border-white bg-surface duration-500 group-hover:bg-orange group-hover:text-white">
+                            <span class="icon-air text-5xl"></span>
+                        </span>
+                        <div class="services_info p-7">
+                            <strong class="services_name heading5">HVAC Services</strong>
+                            <p class="services_desc mt-4 text-variant1">Stay comfortable year-round with our HVAC
+                                installation, repair, and maintenance. We provide energy-efficient solutions to keep
+                                your home cool in summer, warm in winter.</p>
+                            <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-orange">
+                                <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="services_item">
+                    <a href="services-detail.html" class="services_link flex h-full bg-surface group">
+                        <span
+                            class="services_icon flex items-center justify-center flex-shrink-0 w-[5.75rem] h-[5.75rem] border-r-[0.75rem] border-b-[0.75rem] border-white bg-surface duration-500 group-hover:bg-orange group-hover:text-white">
+                            <span class="icon-paint text-5xl"></span>
+                        </span>
+                        <div class="services_info p-7">
+                            <strong class="services_name heading5">Painting and Drywall</strong>
+                            <p class="services_desc mt-4 text-variant1">Refresh your home with our professional painting
+                                and drywall services, delivering high-quality finishes for both interiors and exteriors,
+                                tailored to your design preferences and style.</p>
+                            <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-orange">
+                                <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="services_item">
+                    <a href="services-detail.html" class="services_link flex h-full bg-surface group">
+                        <span
+                            class="services_icon flex items-center justify-center flex-shrink-0 w-[5.75rem] h-[5.75rem] border-r-[0.75rem] border-b-[0.75rem] border-white bg-surface duration-500 group-hover:bg-orange group-hover:text-white">
+                            <span class="icon-roof text-5xl"></span>
+                        </span>
+                        <div class="services_info p-7">
+                            <strong class="services_name heading5">Roofing Services</strong>
+                            <p class="services_desc mt-4 text-variant1">Enhance your home’s protection and curb appeal
+                                with our expert roofing services, including new installations, leak repairs,
+                                replacements, and inspections to keep your roof in top condition.</p>
+                            <span class="flex items-center gap-2 mt-4 duration-300 group-hover:text-orange">
+                                <span class="border-b-2 underline-offset-2 txt-button">Learn More</span>
+                                <span class="ph-bold ph-arrow-up-right text-2xl"></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials sm:py-25 py-15 bg-surface">
+        <div class="container flex max-lg:flex-col xl:gap-20 gap-10 gap-y-8">
+            <div class="flex-shrink-0 lg:w-[30%] sm:w-2/3 w-full">
+                <span class="section_tag tag">Testimonials</span>
+                <h3 class="section_tit mt-4 heading3">What Our Clients Are Saying?</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
             </div>
-            <div class="blog_sidebar flex-shrink-0 xl:w-96 lg:w-80 w-full h-fit">
-                <form class="form_search overflow-hidden relative w-full h-13">
-                    <input class="form_input py-3 pr-10 w-full h-full border-b border-outline" type="text" placeholder="Search" required />
-                    <button class="flex items-center justify-end absolute top-0 right-0 w-8 h-full aspect-square duration-300 hover:text-orange">
-                        <span class="ph ph-magnifying-glass text-2xl"></span>
+            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline">
+                <div class="testimonials_swiper_three swiper w-full">
+                    <ul class="swiper-wrapper">
+                        <li class="testimonials_item swiper-slide">
+                            <ul class="rating flex">
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                            </ul>
+                            <p class="testimonials_desc mt-4 text-3xl font-bold line-clamp-4">"I was so impressed with the HVAC installation. The technicians were on time, explained everything clearly, left no mess behind. The new system works flawlessly, and my home is much more comfortable.”</p>
+                            <div class="flex items-center gap-4 mt-8">
+                                <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                    <img src="./assets/images/team/team1.jpg" class="h-full object-cover" alt="Guy Hawkins">
+                                </div>
+                                <div class="testimonials_author">
+                                    <strong class="testimonials_name heading6">Guy Hawkins</strong>
+                                    <span class="testimonials_address block mt-1 text-variant1">New York, USA</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials_item swiper-slide">
+                            <ul class="rating flex">
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                            </ul>
+                            <p class="testimonials_desc mt-4 text-3xl font-bold line-clamp-4">“Outstanding plumbing service! The plumbing has been perfect ever since. The HVAC repair team did an amazing job! Excellent electrical work done and left the place spotless, explained everything clearly.”</p>
+                            <div class="flex items-center gap-4 mt-8">
+                                <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                    <img src="./assets/images/team/team3.jpg" class="h-full object-cover" alt="Christina Bella">
+                                </div>
+                                <div class="testimonials_author">
+                                    <strong class="testimonials_name heading6">Christina Bella</strong>
+                                    <span class="testimonials_address block mt-1 text-variant1">Madrid, Spain</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials_item swiper-slide">
+                            <ul class="rating flex">
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl"></li>
+                                <li class="ph-fill ph-star text-xl text-variant2"></li>
+                            </ul>
+                            <p class="testimonials_desc mt-4 text-3xl font-bold line-clamp-4">“The HVAC repair team did an amazing job! They were efficient, courteous, and ensured everything was working perfectly before leaving. It’s refreshing to see such dedication to quality and customer satisfaction.”
+                            </p>
+                            <div class="flex items-center gap-4 mt-8">
+                                <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                    <img src="./assets/images/team/team2.jpg" class="h-full object-cover" alt="Peter Parker">
+                                </div>
+                                <div class="testimonials_author">
+                                    <strong class="testimonials_name heading6">Peter Parker</strong>
+                                    <span class="testimonials_address block mt-1 text-variant1">California, USA</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-pagination relative mt-8 text-left"></div>
+            </div>
+        </div>
+    </section>
+    <!-- FORM REQUEST -->
+    <section class="section form_request">
+        <div class="form_request_banner relative bg-black">
+            <div class="bg_img absolute top-0 left-0 w-full h-full">
+                <img src="./assets/images/components/form_request_banner3.png" class="h-full object-cover" alt="Get Quick, Reliable Air Conditioning Solutions Today.">
+            </div>
+            <div class="container flex flex-col items-center relative pt-25 pb-[16.25rem] text-white">
+                <button class="btn_play js_btn_play inline-flex items-center justify-center w-18 h-18 rounded-full bg-orange duration-400 hover:bg-white hover:text-black">
+                    <span class="ph-fill ph-play text-3xl"></span>
+                    <span class="blind">button play video</span>
+                </button>
+                <strong class="block mt-10 heading6 text-center">Not Sure Where to Begin?</strong>
+                <h3 class="section_tit sm:w-2/3 mt-3 heading2 text-center">Get Quick, Reliable Air Conditioning Solutions Today.</h3>
+            </div>
+        </div>
+        <div class="container -mt-[12.5rem]">
+            <div class="relative sm:w-[83%] mx-auto bg-white box_shadow_sm">
+                <div class="form_request_form relative xl:w-[52%] sm:p-12 p-8">
+                    <h4 class="heading4">Request A Quote</h4>
+                    <p class="mt-3 text-variant1">We’ll work with you for a customized cleaning plan that meets your needs and fits your budget.</p>
+                    <form class="form grid sm:grid-cols-2 grid-cols-1 gap-5 w-full mt-6">
+                        <div class="form_group w-full">
+                            <input type="text" name="name" class="form_input w-full py-3 px-4 border border-outline rounded" placeholder="Your Name" required>
+                        </div>
+                        <div class="form_group w-full">
+                            <input type="tel" name="phone" pattern="\d*" class="form_input w-full py-3 px-4 border border-outline rounded" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form_group w-full">
+                            <input type="email" name="email" class="form_input w-full py-3 px-4 border border-outline rounded" placeholder="Email Address" required>
+                        </div>
+                        <div class="form_group form_select w-full">
+                            <select name="services" class="w-full py-3 px-4 border border-outline rounded" required>
+                                <option value="Choose Services" selected disabled>Choose Services</option>
+                                <option value="HVAC Maintenance">HVAC Maintenance</option>
+                                <option value="AC Installation">AC Installation</option>
+                                <option value="Heating Repair">Heating Repair</option>
+                                <option value="Emergency Repair">Emergency Repair</option>
+                            </select>
+                            <span class="ph ph-caret-down arrow_down text-xl"></span>
+                        </div>
+                        <div class="form_group sm:col-span-2 w-full">
+                            <textarea name="message" class="form_input w-full py-3 px-4 border border-outline rounded" rows="3" placeholder="Your Mesage" required></textarea>
+                        </div>
+                        <div class="form_group sm:col-span-2 mt-1 w-full">
+                            <button type="submit" class="btn w-full bg-orange text-center">Make An Appointment</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form_request_img absolute top-0 right-0 w-[48%] h-full max-xl:hidden">
+                    <img src="./assets/images/components/form_request_img3.jpg" class="h-full object-cover" alt="Request A Quote">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQS -->
+    <section class="section faqs sm:py-25 py-15">
+        <div class="container flex flex-col items-center">
+            <span class="section_tag tag">FAQs</span>
+            <h3 class="section_title heading3 mt-4 text-center">Frequently Asked Questions</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">Get Answers to Common Questions About Our Services and How We Work</p>
+            <ul class="faqs_list sm:w-5/6 w-full lg:mt-12 mt-9 border border-outline">
+                <li class="faqs_item py-5 px-6 border-b border-outline">
+                    <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
+                        <strong class="title heading5 text-left">What areas do you serve?</strong>
+                        <span class="icon_arrow">
+                            <span class="icon_arrow_plus ph ph-plus text-2xl duration-400"></span>
+                            <span class="icon_arrow_minus ph ph-minus text-2xl duration-400 hidden"></span>
+                        </span>
                     </button>
-                </form>
-                <div class="filter_category md:mt-10 mt-7">
-                    <h5 class="heading5">Categories</h5>
-                    <ul class="category_list flex flex-col gap-3 mt-5" role="tablist">
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Plumbing Tips</span>
-                                <span class="quantity">(112)</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Water Conservation</span>
-                                <span class="quantity">(32)</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">DIY Repairs</span>
-                                <span class="quantity">(42)</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Common Issues</span>
-                                <span class="quantity">(65)</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">System Upgrades</span>
-                                <span class="quantity">(13)</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="recent md:mt-10 mt-7">
-                    <h5 class="heading5">Recent Posts</h5>
-                    <ul class="recent_list mt-4">
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/4.jpg" alt="How Regular HVAC Maintenance Can Save You Money" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 21, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">How Regular HVAC Maintenance Can Save You Money</a>
-                            </div>
-                        </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/5.jpg" alt="Improving Energy Efficiency with Simple Home Upgrades" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 22, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Improving Energy Efficiency with Simple Home Upgrades</a>
-                            </div>
-                        </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/6.jpg" alt="Must-Have Tools Every Handyman Recommends for Homeowners" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 24, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Must-Have Tools Every Handyman Recommends for Homeowners</a>
-                            </div>
-                        </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/7.jpg" alt="Home Maintenance Checklist, Stay on Top of Repairs Year-Round" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 25, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Home Maintenance Checklist, Stay on Top of Repairs Year-Round</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filter_tag md:mt-10 mt-7">
-                    <h5 class="heading5">Popular Tag</h5>
-                    <ul class="tag_list menu_tab flex items-center flex-wrap gap-3 mt-5" role="tablist">
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Tips</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Renovations</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Electrical</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Plumbing</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">HVAC Services</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Painting</button>
-                        </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Home Repairs</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                    <div class="answer mt-4">
+                        <p class="text-variant1">We provide services across multiple regions, ensuring that our expert team is readily available to meet your needs. Contact us to see if we cover your specific location.</p>
+                    </div>
+                </li>
+                <li class="faqs_item py-5 px-6 border-b border-outline">
+                    <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
+                        <strong class="title heading5 text-left">Are your technicians licensed?</strong>
+                        <span class="icon_arrow">
+                            <span class="icon_arrow_plus ph ph-plus text-2xl duration-400"></span>
+                            <span class="icon_arrow_minus ph ph-minus text-2xl duration-400 hidden"></span>
+                        </span>
+                    </button>
+                    <div class="answer mt-4">
+                        <p class="text-variant1">Yes, all our technicians are fully licensed and certified in their respective fields. We ensure they undergo regular training to stay updated with industry standards.</p>
+                    </div>
+                </li>
+                <li class="faqs_item py-5 px-6 border-b border-outline">
+                    <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
+                        <strong class="title heading5 text-left">What should I expect during a service visit?</strong>
+                        <span class="icon_arrow">
+                            <span class="icon_arrow_plus ph ph-plus text-2xl duration-400"></span>
+                            <span class="icon_arrow_minus ph ph-minus text-2xl duration-400 hidden"></span>
+                        </span>
+                    </button>
+                    <div class="answer mt-4">
+                        <p class="text-variant1">During a service visit, our friendly technician will assess the problem, explain the necessary work, and provide you with a clear plan of action. We strive to deliver efficient and respectful service.</p>
+                    </div>
+                </li>
+                <li class="faqs_item py-5 px-6 border-b border-outline">
+                    <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
+                        <strong class="title heading5 text-left">Do you offer free estimates?</strong>
+                        <span class="icon_arrow">
+                            <span class="icon_arrow_plus ph ph-plus text-2xl duration-400"></span>
+                            <span class="icon_arrow_minus ph ph-minus text-2xl duration-400 hidden"></span>
+                        </span>
+                    </button>
+                    <div class="answer mt-4">
+                        <p class="text-variant1">Absolutely! We offer complimentary estimates to help you make informed decisions. Our team will evaluate your requirements and provide a transparent, no-obligation quote.</p>
+                    </div>
+                </li>
+                <li class="faqs_item py-5 px-6 border-b border-outline">
+                    <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
+                        <strong class="title heading5 text-left">How do I know which service I need?</strong>
+                        <span class="icon_arrow">
+                            <span class="icon_arrow_plus ph ph-plus text-2xl duration-400"></span>
+                            <span class="icon_arrow_minus ph ph-minus text-2xl duration-400 hidden"></span>
+                        </span>
+                    </button>
+                    <div class="answer mt-4">
+                        <p class="text-variant1">Our knowledgeable staff can guide you through your options based on your situation. Feel free to contact us, and we'll help identify the right service for your needs.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- FOOTER -->

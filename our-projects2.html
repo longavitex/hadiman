@@ -237,7 +237,7 @@
                         </div>
                     </li>
                     <li class="menu_item h-full relative">
-                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full active">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full">
                             <span class="has_line txt-button">Blog</span>
                             <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
                         </a>
@@ -245,7 +245,7 @@
                             class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
                             <li class="menu_sub_item">
                                 <a href="blog-default.html"
-                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Blog
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
                                     Default</a>
                             </li>
                             <li class="menu_sub_item">
@@ -300,7 +300,7 @@
                         </ul>
                     </li>
                     <li class="menu_item h-full relative">
-                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full active">
                             <span class="has_line txt-button">Pages</span>
                             <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
                         </a>
@@ -322,7 +322,7 @@
                             </li>
                             <li class="menu_sub_item">
                                 <a href="our-projects2.html"
-                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Our
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Our
                                     Projects 2</a>
                             </li>
                             <li class="menu_sub_item">
@@ -384,7 +384,7 @@
     <!-- BREADCRUMB -->
     <section class="section breadcrumb flex items-center h-[320px] relative">
         <div class="breadcrumb_bg absolute top-0 left-0 w-full h-full pointer-events-none">
-            <img src="./assets/images/breadcrumb/blog.jpg" alt="Blog Defaults" class="h-full object-cover">
+            <img src="./assets/images/breadcrumb/projects.jpg" alt="Completed Projects" class="h-full object-cover">
         </div>
         <div class="container relative text-white">
             <ul class="breadcrumb_nav flex items-center gap-1">
@@ -393,194 +393,322 @@
                 </li>
                 <li class="flex items-center">
                     <span class="ph ph-caret-right text-xs opacity-50"></span>
-                    <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Blog</a>
+                    <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Our Projects</a>
                 </li>
             </ul>
-            <h2 class="section_tit mt-3 heading2">Blog Defaults</h2>
+            <h2 class="section_tit mt-3 heading2">Completed Projects</h2>
         </div>
     </section>
-    <!-- BLOG -->
-    <section class="section blog sm:py-25 py-15">
-        <div class="container flex max-lg:flex-col gap-y-12">
-            <div class="list xl:pr-25 lg:pr-12">
-                <ul class="blog_list grid lg:gap-10 gap-8">
-                    <li class="blog_item">
-                        <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
-                            <img src="./assets/images/blog/1.jpg" alt="Top 5 DIY Repairs That Every Homeowner Should Know" class="blog_img duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info mt-5">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title mt-4 heading5 line-clamp-2 hover:underline">Top 5 DIY Repairs That Every Homeowner Should Know</strong>
-                                <p class="blog_desc mt-5 line-clamp-3 text-variant1">June is Pride Month, a time to celebrate and support the LGBTQ+ community. In this article, we explore how brands can develop authentic Pride Month marketing strategies that resonate with audiences and demonstrate genuine allyship.</p>
-                                <strong class="inline-block mt-5 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
-                        </div>
+    <!-- PROJECTS -->
+    <section class="section projects sm:py-25 py-15">
+        <div class="container flex flex-col items-center gap-12">
+            <div class="menu_tab w-full">
+                <ul class="menu flex gap-10" role="tablist">
+                    <li class="indicator absolute bottom-0 h-0.5 bg-orange duration-300"></li>
+                    <li class="tab_item" role="presentation">
+                        <button class="tab_btn tab_btn_border heading6 hover:text-orange duration-300 active" id="all" role="tab" aria-controls="tab_all" aria-selected="true">All</button>
                     </li>
-                    <li class="blog_item">
-                        <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
-                            <img src="./assets/images/blog/2.jpg" alt="How to Prevent Costly Water Damage in Your Home" class="blog_img duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info mt-5">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title mt-4 heading5 line-clamp-2 hover:underline">How to Prevent Costly Water Damage in Your Home</strong>
-                                <p class="blog_desc mt-5 line-clamp-3 text-variant1">Discover the benefits of solar energy, including reduced utility costs, increased home value, and a positive environmental impact. Identify the most frequent air condition issues and find out how to support community.</p>
-                                <strong class="inline-block mt-5 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
-                        </div>
+                    <li class="tab_item" role="presentation">
+                        <button class="tab_btn tab_btn_border heading6 hover:text-orange duration-300" id="plumber" role="tab" aria-controls="tab_plumber" aria-selected="false">Plumber</button>
                     </li>
-                    <li class="blog_item">
-                        <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
-                            <img src="./assets/images/blog/3.jpg" alt="How to Choose the Right Handyman for Your Home" class="blog_img duration-700 group-hover:scale-105" />
-                        </a>
-                        <div class="blog_info mt-5">
-                            <div class="flex flex-wrap items-center gap-3 txt-label text-variant1">
-                                <span class="blog_date">October 22, 2024</span>
-                                <span class="flex-shrink-0 w-px h-3 bg-outline"></span>
-                                <a href="blog-default.html" class="blog_cate duration-300 hover:underline hover:text-black">Plumbing</a>
-                            </div>
-                            <a href="blog-detail1.html" class="block">
-                                <strong class="blog_title mt-4 heading5 line-clamp-2 hover:underline">How to Choose the Right Handyman for Your Home</strong>
-                                <p class="blog_desc mt-5 line-clamp-3 text-variant1">Selecting the right handyman can make all the difference in your project’s success. Learn how consistent maintenance of your air conditioning system can identify the most frequent air condition issues.</p>
-                                <strong class="inline-block mt-5 underline duration-300 hover:text-orange">Read More</strong>
-                            </a>
-                        </div>
+                    <li class="tab_item" role="presentation">
+                        <button class="tab_btn tab_btn_border heading6 hover:text-orange duration-300" id="roofing" role="tab" aria-controls="tab_roofing" aria-selected="false">Roofing</button>
                     </li>
-                </ul>
-                <ul class="pagination_list menu_tab flex items-center gap-2 w-full md:mt-10 mt-7" role="tablist">
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange active" role="tab" aria-selected="true">1</button>
+                    <li class="tab_item" role="presentation">
+                        <button class="tab_btn tab_btn_border heading6 hover:text-orange duration-300" id="air" role="tab" aria-controls="tab_air" aria-selected="false">Air Conditioning</button>
                     </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">2</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">3</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="tab_btn tab_btn_fill_orange flex items-center justify-center w-10 h-10 border border-outline txt-button duration-300 hover:border-orange" role="tab" aria-selected="false">></button>
+                    <li class="tab_item" role="presentation">
+                        <button class="tab_btn tab_btn_border heading6 hover:text-orange duration-300" id="electrical" role="tab" aria-controls="tab_electrical" aria-selected="false">Electrical</button>
                     </li>
                 </ul>
             </div>
-            <div class="blog_sidebar flex-shrink-0 xl:w-96 lg:w-80 w-full h-fit">
-                <form class="form_search overflow-hidden relative w-full h-13">
-                    <input class="form_input py-3 pr-10 w-full h-full border-b border-outline" type="text" placeholder="Search" required />
-                    <button class="flex items-center justify-end absolute top-0 right-0 w-8 h-full aspect-square duration-300 hover:text-orange">
-                        <span class="ph ph-magnifying-glass text-2xl"></span>
-                    </button>
-                </form>
-                <div class="filter_category md:mt-10 mt-7">
-                    <h5 class="heading5">Categories</h5>
-                    <ul class="category_list flex flex-col gap-3 mt-5" role="tablist">
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Plumbing Tips</span>
-                                <span class="quantity">(112)</span>
-                            </button>
+            <div class="projects_tab">
+                <div id="tab_all" class="tab_panel active" role="tabpanel" aria-labelledby="all" aria-hidden="false">
+                    <ul class="projects_list grid lg:grid-cols-3 sm:grid-cols-2 gap-7.5 gap-y-10">
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects1.jpg" class="duration-700 group-hover:scale-110" alt="Plumber Office Building Water Supply">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Plumber</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Office Building Water Supply</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Water Conservation</span>
-                                <span class="quantity">(32)</span>
-                            </button>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects8.jpg" class="duration-700 group-hover:scale-110" alt="Roofing Central AC Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Roofing</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Central AC Installation</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">DIY Repairs</span>
-                                <span class="quantity">(42)</span>
-                            </button>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects9.jpg" class="duration-700 group-hover:scale-110" alt="Electrical Central AC Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Electrical</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Central AC Installation</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">Common Issues</span>
-                                <span class="quantity">(65)</span>
-                            </button>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects2.jpg" class="duration-700 group-hover:scale-110" alt="Roofing Bathroom Plumbing Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Roofing</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Bathroom Plumbing Installation</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn flex items-center justify-between w-full text-variant1 duration-300 hover:text-black" role="tab" aria-selected="false">
-                                <span class="txt">System Upgrades</span>
-                                <span class="quantity">(13)</span>
-                            </button>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects10.jpg" class="duration-700 group-hover:scale-110" alt="Electrical Central AC Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Electrical</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Central AC Installation</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects11.jpg" class="duration-700 group-hover:scale-110" alt="Air Conditioning Central AC Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Air Conditioning</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Central AC Installation</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects3.jpg" class="duration-700 group-hover:scale-110" alt="Air Conditioning Leak Detection and Repair">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Air Conditioning</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Leak Detection and Repair</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects4.jpg" class="duration-700 group-hover:scale-110" alt="Electrical AC System Electrical">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Electrical</span>
+                                    <strong class="projects_name heading6 group-hover:underline">AC System Electrical</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects5.jpg" class="duration-700 group-hover:scale-110" alt="Plumber Electrical Panel Upgrades">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Plumber</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Electrical Panel Upgrades</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects6.jpg" class="duration-700 group-hover:scale-110" alt="Roofing Roof Inspection & Maintenance">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Roofing</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Roof Inspection & Maintenance</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects7.jpg" class="duration-700 group-hover:scale-110" alt="Air Conditioning Lighting Installation and Repair">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Air Conditioning</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Lighting Installation and Repair</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects12.jpg" class="duration-700 group-hover:scale-110" alt="Air Conditioning Central AC Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Air Conditioning</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Central AC Installation</strong>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <div class="recent md:mt-10 mt-7">
-                    <h5 class="heading5">Recent Posts</h5>
-                    <ul class="recent_list mt-4">
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/4.jpg" alt="How Regular HVAC Maintenance Can Save You Money" class="blog_img h-full object-cover" />
+                <div id="tab_plumber" class="tab_panel" role="tabpanel" aria-labelledby="plumber" aria-hidden="true">
+                    <ul class="projects_list grid lg:grid-cols-3 sm:grid-cols-2 gap-7.5 gap-y-10">
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects1.jpg" class="duration-700 group-hover:scale-110" alt="Plumber Office Building Water Supply">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Plumber</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Office Building Water Supply</strong>
+                                </div>
                             </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 21, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">How Regular HVAC Maintenance Can Save You Money</a>
-                            </div>
                         </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/5.jpg" alt="Improving Energy Efficiency with Simple Home Upgrades" class="blog_img h-full object-cover" />
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects2.jpg" class="duration-700 group-hover:scale-110" alt="Plumber Bathroom Plumbing Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Plumber</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Bathroom Plumbing Installation</strong>
+                                </div>
                             </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 22, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Improving Energy Efficiency with Simple Home Upgrades</a>
-                            </div>
                         </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/6.jpg" alt="Must-Have Tools Every Handyman Recommends for Homeowners" class="blog_img h-full object-cover" />
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects4.jpg" class="duration-700 group-hover:scale-110" alt="Plumber AC System Electrical">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Plumber</span>
+                                    <strong class="projects_name heading6 group-hover:underline">AC System Electrical</strong>
+                                </div>
                             </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 24, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Must-Have Tools Every Handyman Recommends for Homeowners</a>
-                            </div>
-                        </li>
-                        <li class="blog_item flex items-center gap-6 mt-4 pb-4 border-b border-outline group">
-                            <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 w-[90px] h-[90px] overflow-hidden">
-                                <img src="./assets/images/blog/7.jpg" alt="Home Maintenance Checklist, Stay on Top of Repairs Year-Round" class="blog_img h-full object-cover" />
-                            </a>
-                            <div class="blog_info">
-                                <span class="blog_date caption1 text-variant1">October 25, 2024</span>
-                                <a href="blog-detail1.html" class="blog_name mt-1 txt-button line-clamp-3 duration-300 group-hover:text-orange">Home Maintenance Checklist, Stay on Top of Repairs Year-Round</a>
-                            </div>
                         </li>
                     </ul>
                 </div>
-                <div class="filter_tag md:mt-10 mt-7">
-                    <h5 class="heading5">Popular Tag</h5>
-                    <ul class="tag_list menu_tab flex items-center flex-wrap gap-3 mt-5" role="tablist">
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Tips</button>
+                <div id="tab_roofing" class="tab_panel" role="tabpanel" aria-labelledby="roofing" aria-hidden="true">
+                    <ul class="projects_list grid lg:grid-cols-3 sm:grid-cols-2 gap-7.5 gap-y-10">
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects9.jpg" class="duration-700 group-hover:scale-110" alt="Roofing Office Building Water Supply">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Roofing</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Office Building Water Supply</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Renovations</button>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects6.jpg" class="duration-700 group-hover:scale-110" alt="Roofing Bathroom Plumbing Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Roofing</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Bathroom Plumbing Installation</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Electrical</button>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects8.jpg" class="duration-700 group-hover:scale-110" alt="Roofing AC System Electrical">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Roofing</span>
+                                    <strong class="projects_name heading6 group-hover:underline">AC System Electrical</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Plumbing</button>
+                    </ul>
+                </div>
+                <div id="tab_air" class="tab_panel" role="tabpanel" aria-labelledby="air" aria-hidden="true">
+                    <ul class="projects_list grid lg:grid-cols-3 sm:grid-cols-2 gap-7.5 gap-y-10">
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects3.jpg" class="duration-700 group-hover:scale-110" alt="Air Conditioning Bathroom Plumbing Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Air Conditioning</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Bathroom Plumbing Installation</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">HVAC Services</button>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects11.jpg" class="duration-700 group-hover:scale-110" alt="Air Conditioning Leak Detection and Repair">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Air Conditioning</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Leak Detection and Repair</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Painting</button>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects12.jpg" class="duration-700 group-hover:scale-110" alt="Air Conditioning AC System Electrical">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Air Conditioning</span>
+                                    <strong class="projects_name heading6 group-hover:underline">AC System Electrical</strong>
+                                </div>
+                            </a>
                         </li>
-                        <li role="presentation">
-                            <button class="tab_btn tab_btn_fill px-4 py-1.5 caption1 capitalize bg-surface border border-transparent duration-300 hover:border-black" role="tab" aria-selected="false">Home Repairs</button>
+                    </ul>
+                </div>
+                <div id="tab_electrical" class="tab_panel" role="tabpanel" aria-labelledby="electrical" aria-hidden="true">
+                    <ul class="projects_list grid lg:grid-cols-3 sm:grid-cols-2 gap-7.5 gap-y-10">
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects5.jpg" class="duration-700 group-hover:scale-110" alt="Electrical Office Building Water Supply">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Electrical</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Office Building Water Supply</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects7.jpg" class="duration-700 group-hover:scale-110" alt="Electrical Bathroom Plumbing Installation">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Electrical</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Bathroom Plumbing Installation</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects_item">
+                            <a href="projects-detail.html" class="projects_link block relative group">
+                                <div class="projects_thumb overflow-hidden">
+                                    <img src="./assets/images/projects/projects10.jpg" class="duration-700 group-hover:scale-110" alt="Electrical Leak Detection and Repair">
+                                </div>
+                                <div class="projects_info flex flex-col gap-2 mt-5">
+                                    <span class="projects_cate txt-label text-variant1">Electrical</span>
+                                    <strong class="projects_name heading6 group-hover:underline">Leak Detection and Repair</strong>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <button class="btn btn_outline js_btn_load_more">Load More</button>
         </div>
     </section>
     <!-- FOOTER -->
