@@ -206,6 +206,28 @@
         const servicesSwiperFourObj = new Swiper('.services.style-four .services_swiper', SWIPER_OPTIONS.SERVICES_SWIPER_FOUR);
     };
 
+    // projects hover home3
+    const handleHoverProjectsThree = function () {
+        $('.projects_link').hover(
+            function () {
+                // When hover, add class
+                var index = $(this).closest('.projects_item').index();
+                $('.projects_link').removeClass('active');
+                $(this).addClass('active');
+                $('.projects_thumb_item').removeClass('active');
+                // $('.projects_thumb_item').css('display', 'none');
+                $('.projects_thumb_item').eq(index).addClass('active');
+                // $('.projects_thumb_item').eq(index).fadeIn();
+            },
+            // function () {
+            //     // When leave hover, remove class
+            //     var index = $(this).index();
+            //     $(this).removeClass('active');
+            //     $('.projects_thumb_item').eq(index).removeClass('active');
+            // }
+        );
+    }
+
     // projects style center home4
     const projectsSlideFour = function () {
         $('.projects_slick').slick({
@@ -350,6 +372,7 @@
     $(win).on('load', function () {
         handleFixedHeader()
         setSwipers()
+        handleHoverProjectsThree()
         projectsSlideFour()
         handleCompareProject()
         handleActiveTab()

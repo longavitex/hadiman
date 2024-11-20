@@ -964,6 +964,14 @@ legend {
   background: transparent;
   cursor: grabbing;
 }
+.projects.style-three .projects_thumb_item {
+  transition: visibility 0.5s linear, opacity 0.5s linear;
+}
+.projects.style-three .projects_thumb_item.active {
+  visibility: visible;
+  height: 100%;
+  opacity: 1;
+}
 .projects.style-three .projects_item {
   position: relative;
 }
@@ -997,6 +1005,9 @@ legend {
     background: rgba(255, 255, 255, 0.2);
     content: "";
   }
+}
+.projects.style-three .projects_link.active {
+  background-color: #F2B201;
 }
 .projects.style-four .slick-list {
   overflow: unset;
