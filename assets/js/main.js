@@ -3,6 +3,15 @@
 
 
 ; (function (win, $) {
+    const calendar = $('#calendar');
+    const daysContainer = $('.days');
+    const monthName = $('.calendar_date');
+    const dayPicker = $('.day_picker');
+    const daySlotsContainer = $('.day_slots');
+
+    let currentDate = new Date();
+    let selectedDate = null;
+
     // Add fixed header
     const handleFixedHeader = function () {
         const header = $("#header")
@@ -216,18 +225,6 @@
         const servicesSwiperFourObj = new Swiper('.services.style-four .services_swiper', SWIPER_OPTIONS.SERVICES_SWIPER_FOUR);
     };
 
-    // projects hover home3
-    const handleHoverProjectsThree = function () {
-        $('.projects_link').hover(function () {
-            // When hover, add class
-            var index = $(this).closest('.projects_item').index();
-            $('.projects_link').removeClass('active');
-            $(this).addClass('active');
-            $('.projects_thumb_item').removeClass('active');
-            $('.projects_thumb_item').eq(index).addClass('active');
-        });
-    }
-
     // projects style center home4
     const projectsSlideFour = function () {
         $('.projects_slick').slick({
@@ -298,6 +295,18 @@
             $(this).closest('.projects_item').find('.comparison_btn').css('left', $(this).val() + "%")
             $(this).closest('.projects_item').find('.projects_divisor').css('width', $(this).val() + "%")
         })
+    }
+
+    // projects hover home3
+    const handleHoverProjectsThree = function () {
+        $('.projects_link').hover(function () {
+            // When hover, add class
+            var index = $(this).closest('.projects_item').index();
+            $('.projects_link').removeClass('active');
+            $(this).addClass('active');
+            $('.projects_thumb_item').removeClass('active');
+            $('.projects_thumb_item').eq(index).addClass('active');
+        });
     }
 
     // Active menu tab
@@ -378,6 +387,122 @@
         })
     }
 
+    // Generate calendar for the current month
+    const generateCalendar = function(date) {
+        const year = date.getFullYear(); // Get year
+        const month = date.getMonth(); // Get month index (0 = January, 11 = December)
+    
+        // First day in month (1st) (index: 0 = Sunday, 1 = Monday, ... , 6: Saturday)
+        let firstDay = new Date(year, month, 1).getDay();
+    
+        // Adjust so that Monday is the first day (default is Sunday)
+        // If the first day is Sunday (getDay() === 0), set firstDay = 6 (Sunday will be the last day).
+        firstDay = (firstDay === 0) ? 6 : firstDay - 1;
+    
+        daysContainer.empty();
+        monthName.text(date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }));
+    
+        // Add blank element before firstDay
+        for (let i = 0; i < firstDay; i++) {
+            daysContainer.append('<li></li>');
+        }
+    
+        // month + 1: next month.
+        // 0: last day of before month.
+        // getDate(): days in month
+        const lastDate = new Date(year, month + 1, 0).getDate();
+        
+        // Add days in month
+        for (let day = 1; day <= lastDate; day++) {
+            const currentDate = new Date(year, month, day);
+            const isSunday = currentDate.getDay() === 0; // check Sunday
+    
+            // Create a new day button
+            const buttonElement = $(`<button class="day_btn w-full h-full py-6 heading6 text-center duration-300 hover:bg-orange hover:bg-opacity-10">${day}</button>`);
+    
+            // If Sunday, add class disabled
+            if (isSunday) {
+                buttonElement.addClass('disabled').attr('disabled', true);
+            }
+
+            // Create element `day_picker` for day
+            const dayPickerElement = $(`
+                <div class="day_picker p-5 bg-orange bg-opacity-10 hidden">
+                    <h5 class="heading5 text-center">Available Appointments</h5>
+                    <div class="day_slots flex flex-col gap-3 mt-3"></div>
+                </div>
+            `);
+    
+            // Add evt click for <button> (not Sunday)
+            if (!isSunday) {
+                buttonElement.on('click', function(){
+                    selectedDate = currentDate;
+                    $('.days .day_btn').removeClass('selected');
+                    $('.days .day_picker').addClass('hidden');
+                    buttonElement.addClass('selected');
+                    dayPickerElement.removeClass('hidden');
+                    showTimeSlots(dayPickerElement.find('.day_slots'));
+                });
+            }
+    
+            // Attach the <button> to <li>
+            const dayElement = $('<li class="day_item"></li>').append(buttonElement).append(dayPickerElement);
+            daysContainer.append(dayElement);
+        }
+    }
+
+    // Show time slots for the selected date
+    function showTimeSlots(container) {
+        const slots = generateTimeSlots('08:00', '18:00', 60); // Thời gian từ 8:00 đến 18:00
+        container.empty();
+    
+        slots.forEach((slot) => {
+            const slotElement = $(`
+                <div class="time_slots_item flex items-center justify-between p-2 bg-white">
+                    <span>${slot}</span>
+                    <span>1 time slots available</span>
+                    <button class="btn">Booking</button>
+                </div>
+            `);
+    
+            slotElement.find('.booking_btn').click(() => {
+                showBookingPopup(selectedDate, slot);
+            });
+    
+            container.append(slotElement);
+        });
+    }
+
+    // Generate time slots (e.g., 30-minute intervals)
+    const generateTimeSlots = function(startTime, endTime, interval) {
+        const slots = [];
+        let [startHour, startMinute] = startTime.split(':').map(Number);
+        const [endHour, endMinute] = endTime.split(':').map(Number);
+
+        while (startHour < endHour || (startHour === endHour && startMinute < endMinute)) {
+            const formatted = `${String(startHour).padStart(2, '0')}:${String(startMinute).padStart(2, '0')}`;
+            slots.push(formatted);
+
+            startMinute += interval;
+            if (startMinute >= 60) {
+                startMinute -= 60;
+                startHour += 1;
+            }
+        }
+        return slots;
+    }
+
+    // Navigate to the previous or next month
+    $('.btn_prev_month').click(() => {
+        currentDate.setMonth(currentDate.getMonth() - 1);
+        generateCalendar(currentDate);
+    });
+
+    $('.btn_next_month').click(() => {
+        currentDate.setMonth(currentDate.getMonth() + 1);
+        generateCalendar(currentDate);
+    });
+
     $(win).scroll(function () {
         handleFixedHeader()
     }).scroll();
@@ -385,11 +510,12 @@
     $(win).on('load', function () {
         handleFixedHeader()
         setSwipers()
-        handleHoverProjectsThree()
         projectsSlideFour()
         handleCompareProject()
+        handleHoverProjectsThree()
         handleActiveTab()
         handleClickLoadMore()
         handleFaqs()
+        generateCalendar(currentDate);
     });
 })(window, window.jQuery);

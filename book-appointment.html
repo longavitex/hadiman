@@ -399,10 +399,10 @@
             <h2 class="section_tit mt-3 heading2">Book Appointment</h2>
         </div>
     </section>
-    <!-- FORM REQUEST -->
-    <section class="section form_request sm:py-25 py-15">
-        <div class="container flex items-center max-xl:flex-col gap-[9.5rem] gap-y-14">
-            <div class="form_request_content w-full">
+    <!-- BOOK APPOINTMENT -->
+    <section class="section appointment sm:py-25 py-15">
+        <div class="container flex max-xl:flex-col gap-[9.5rem] gap-y-14">
+            <div class="appointment_content w-full">
                 <span class="section_tag tag">Book a Consultation</span>
                 <h3 class="section_tit mt-4 heading3">Book Your Trusted Handyman Expert Now!</h3>
                 <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Affordable pricing plans tailored to your home repair needs, from quick fixes to large-scale renovations.</p>
@@ -425,8 +425,34 @@
                     <span class="ph-bold ph-arrow-right text-xl"></span>
                 </a>
             </div>
-            <div class="form_request_form flex-shrink-0 relative xl:w-1/2 w-full sm:p-10 p-7 bg-surface">
-                
+            <div class="appointment_form flex-shrink-0 relative xl:w-1/2 w-full shadow-lg">
+                <div id="calendar" class="calendar">
+                    <div class="calendar_heading flex items-center justify-between px-5 py-3.5 bg-orange text-white">
+                        <button class="btn_prev_month">
+                            <span class="ph ph-caret-left text-3xl"></span>
+                            <span class="blind">button prev month</span>
+                        </button>
+                        <span class="calendar_date heading5">March 2025</span>
+                        <button class="btn_next_month">
+                            <span class="ph ph-caret-right text-3xl"></span>
+                            <span class="blind">button next month</span>
+                        </button>
+                    </div>
+                    <div class="weekdays grid grid-cols-7 py-3">
+                        <span class="font-bold uppercase text-center">Mon</span>
+                        <span class="font-bold uppercase text-center">Tue</span>
+                        <span class="font-bold uppercase text-center">Wed</span>
+                        <span class="font-bold uppercase text-center">Thu</span>
+                        <span class="font-bold uppercase text-center">Fri</span>
+                        <span class="font-bold uppercase text-center">Sat</span>
+                        <span class="font-bold uppercase text-center">Sun</span>
+                    </div>
+                    <ul class="days grid grid-cols-7"></ul>
+                </div>
+                <!-- <div id="time_picker" class="p-5 bg-orange bg-opacity-10 hidden">
+                    <h5 class="heading5 text-center">Available Appointments</h5>
+                    <div id="time_slots" class="flex flex-col gap-3 mt-3"></div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -584,6 +610,14 @@
     </footer>
     <!-- Scroll to top -->
     <a class="scroll_to_top_btn" href="#header"><span class="ph-bold ph-caret-up"></span></a>
+
+    <!-- Popup Booking -->
+    <div id="popup" class="invisible fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 flex items-center justify-center">
+        <div class="popup_item popup_booking w-[690px] h-fit bg-white shadow-lg">
+            <h5 class="heading5 py-3.5 bg-orange text-white">Request An Appointment</h5>
+            <button id="popup_close_btn" class="btn btn_outline">Cancel</button>
+        </div>
+    </div>
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/phosphor-icons.js"></script>

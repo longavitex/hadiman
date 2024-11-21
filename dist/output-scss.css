@@ -589,6 +589,25 @@ legend {
   border: none;
 }
 
+.calendar .days {
+  position: relative;
+}
+.calendar .day_btn.disabled {
+  background-color: #F7F7F7;
+  color: #A1A2A8;
+  pointer-events: none;
+}
+.calendar .day_btn.selected {
+  background-color: rgba(255, 102, 0, 0.1);
+}
+.calendar .day_picker {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 200px;
+}
+
 /* Swiper Pagination */
 .swiper {
   cursor: grab;
