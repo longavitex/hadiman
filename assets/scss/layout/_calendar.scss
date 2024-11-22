@@ -1,7 +1,6 @@
 .calendar {
-  .days {
-    position: relative;
-  }
+  position: relative;
+
   .day {
     &_btn {
       &.disabled {
@@ -14,12 +13,12 @@
         background-color: rgba($color: $orange, $alpha: 0.1);
       }
     }
-    &_picker {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      min-height: 200px;
-    }
+  }
+  .time_picker {
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
   }
 }

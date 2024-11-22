@@ -184,15 +184,37 @@ legend {
   }
 
   &_outline {
-    border: 2px solid $outline;
-    background-color: transparent;
+    position: relative;
+    background-color: $white;
     color: $black;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: border-color 0.3s ease;
+      border: 2px solid $outline;
+      background-color: transparent;
+    }
+
     &:hover {
-      border-color: $orange;
       background-color: $orange;
       color: $white;
+      
+      &::before {
+        border-color: $orange;
+      }
     }
+  }
+
+  &_disabled {
+    background-color: $outline;
+    color: $variant2;
+    cursor: default;
+    pointer-events: none;
   }
 }
 
@@ -347,7 +369,7 @@ legend {
   .checkbox_icon {
     visibility: hidden;
     position: absolute;
-    top: 3px;
+    top: 2px;
     left: 0px;
     z-index: 1;
     opacity: 0;

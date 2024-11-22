@@ -33,7 +33,7 @@ body {
 body.overflow-unset {
   overflow-x: unset;
 }
-body.scroll_lock {
+body.scroll_locked {
   overflow: hidden;
 }
 
@@ -285,14 +285,33 @@ legend {
   gap: 0.25rem;
 }
 .btn_outline {
-  border: 2px solid #E4E4E4;
-  background-color: transparent;
+  position: relative;
+  background-color: #FFFFFF;
   color: #202020;
 }
+.btn_outline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: border-color 0.3s ease;
+  border: 2px solid #E4E4E4;
+  background-color: transparent;
+}
 .btn_outline:hover {
-  border-color: #FF6600;
   background-color: #FF6600;
   color: #FFFFFF;
+}
+.btn_outline:hover::before {
+  border-color: #FF6600;
+}
+.btn_disabled {
+  background-color: #E4E4E4;
+  color: #A1A2A8;
+  cursor: default;
+  pointer-events: none;
 }
 
 .tag {
@@ -409,7 +428,7 @@ legend {
 .form_checkbox .checkbox_icon {
   visibility: hidden;
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 0px;
   z-index: 1;
   opacity: 0;
@@ -589,7 +608,7 @@ legend {
   border: none;
 }
 
-.calendar .days {
+.calendar {
   position: relative;
 }
 .calendar .day_btn.disabled {
@@ -600,12 +619,12 @@ legend {
 .calendar .day_btn.selected {
   background-color: rgba(255, 102, 0, 0.1);
 }
-.calendar .day_picker {
+.calendar .time_picker {
+  overflow: hidden;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  min-height: 200px;
 }
 
 /* Swiper Pagination */
@@ -870,6 +889,31 @@ legend {
     }
 }
 */
+.popup {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.popup.open {
+  visibility: visible;
+  opacity: 1;
+}
+.popup_item {
+  display: none;
+}
+.popup_item.open {
+  display: block;
+}
+
 @media (min-width: 1280px) {
   .process.style-three .process_item:nth-child(1)::before, .process.style-three .process_item:nth-child(3)::before {
     position: absolute;

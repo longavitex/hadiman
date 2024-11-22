@@ -3,14 +3,18 @@
 
 
 ; (function (win, $) {
+    gsap.registerPlugin(Observer);
     const calendar = $('#calendar');
     const daysContainer = $('.days');
     const monthName = $('.calendar_date');
-    const dayPicker = $('.day_picker');
-    const daySlotsContainer = $('.day_slots');
+    const timePicker = $('.time_picker');
+    const timeSlotsContainer = $('.time_slots');
+    const itemsPerRow = 7; // days in row (grid 7 cols)
 
     let currentDate = new Date();
     let selectedDate = null;
+    let calendarHeight = calendar.outerHeight();
+    let timePickerHeight = timePicker.outerHeight();
 
     // Add fixed header
     const handleFixedHeader = function () {
@@ -424,84 +428,99 @@
             if (isSunday) {
                 buttonElement.addClass('disabled').attr('disabled', true);
             }
-
-            // Create element `day_picker` for day
-            const dayPickerElement = $(`
-                <div class="day_picker p-5 bg-orange bg-opacity-10 hidden">
-                    <h5 class="heading5 text-center">Available Appointments</h5>
-                    <div class="day_slots flex flex-col gap-3 mt-3"></div>
-                </div>
-            `);
     
             // Add evt click for <button> (not Sunday)
             if (!isSunday) {
                 buttonElement.on('click', function(){
-                    selectedDate = currentDate;
-                    $('.days .day_btn').removeClass('selected');
-                    $('.days .day_picker').addClass('hidden');
-                    buttonElement.addClass('selected');
-                    dayPickerElement.removeClass('hidden');
-                    showTimeSlots(dayPickerElement.find('.day_slots'));
+                    if(buttonElement.hasClass('selected')) {
+                        buttonElement.removeClass('selected');
+                        timePicker.addClass('hidden');
+                        daysContainer.find('li').css('margin-top', 0); // Reset margin-top
+                        calendar.removeAttr('style'); // Reset height
+                    } else {
+                        selectedDate = currentDate;
+                        $('.days .day_btn').removeClass('selected');
+                        calendar.removeAttr('style'); // Reset height
+                        buttonElement.addClass('selected');
+                        timePicker.removeClass('hidden');
+
+                        // Specifies the row elements immediately below the selected date
+                        const dayItems = daysContainer.find('li');
+                        const clickedIndex = dayItems.index(buttonElement.closest('li'));
+                        const currentRow = Math.floor((clickedIndex + 1) / itemsPerRow); // Hàng hiện tại
+                        const totalRows = Math.ceil(dayItems.length / itemsPerRow); // Tổng số hàng
+
+                        // Reset margin-top for all elements
+                        dayItems.css('margin-top', 0);
+
+                        // Height for calendar
+                        calendarHeight = calendar.outerHeight()
+                        calendar.css('height', calendarHeight + timePicker.outerHeight() + 'px')
+    
+                        // Position for time_picker
+                        let pickerPosition = buttonElement[0].getBoundingClientRect().top - calendar[0].getBoundingClientRect().top + buttonElement.outerHeight()
+                        timePicker.css('top', pickerPosition + 'px')
+
+                        // Apply margin-top for next row
+                        if (currentRow < totalRows - 1) {
+                            const nextRowStartIndex = (currentRow + 1) * itemsPerRow;
+                            const nextRowEndIndex = nextRowStartIndex + itemsPerRow;
+                
+                            for (let i = nextRowStartIndex; i < nextRowEndIndex; i++) {
+                                $(dayItems[i]).css('margin-top', timePicker.outerHeight());
+                            }
+                        }
+                    }
                 });
             }
     
             // Attach the <button> to <li>
-            const dayElement = $('<li class="day_item"></li>').append(buttonElement).append(dayPickerElement);
+            const dayElement = $('<li class="day_item"></li>').append(buttonElement);
             daysContainer.append(dayElement);
         }
-    }
-
-    // Show time slots for the selected date
-    function showTimeSlots(container) {
-        const slots = generateTimeSlots('08:00', '18:00', 60); // Thời gian từ 8:00 đến 18:00
-        container.empty();
-    
-        slots.forEach((slot) => {
-            const slotElement = $(`
-                <div class="time_slots_item flex items-center justify-between p-2 bg-white">
-                    <span>${slot}</span>
-                    <span>1 time slots available</span>
-                    <button class="btn">Booking</button>
-                </div>
-            `);
-    
-            slotElement.find('.booking_btn').click(() => {
-                showBookingPopup(selectedDate, slot);
-            });
-    
-            container.append(slotElement);
-        });
-    }
-
-    // Generate time slots (e.g., 30-minute intervals)
-    const generateTimeSlots = function(startTime, endTime, interval) {
-        const slots = [];
-        let [startHour, startMinute] = startTime.split(':').map(Number);
-        const [endHour, endMinute] = endTime.split(':').map(Number);
-
-        while (startHour < endHour || (startHour === endHour && startMinute < endMinute)) {
-            const formatted = `${String(startHour).padStart(2, '0')}:${String(startMinute).padStart(2, '0')}`;
-            slots.push(formatted);
-
-            startMinute += interval;
-            if (startMinute >= 60) {
-                startMinute -= 60;
-                startHour += 1;
-            }
-        }
-        return slots;
     }
 
     // Navigate to the previous or next month
     $('.btn_prev_month').click(() => {
         currentDate.setMonth(currentDate.getMonth() - 1);
         generateCalendar(currentDate);
+        $('.days .day_btn').removeClass('selected');
+        timePicker.addClass('hidden');
+        daysContainer.find('li').css('margin-top', 0); // Reset margin-top
+        calendar.removeAttr('style'); // Reset height
     });
 
     $('.btn_next_month').click(() => {
         currentDate.setMonth(currentDate.getMonth() + 1);
         generateCalendar(currentDate);
+        $('.days .day_btn').removeClass('selected');
+        timePicker.addClass('hidden');
+        daysContainer.find('li').css('margin-top', 0); // Reset margin-top
+        calendar.removeAttr('style'); // Reset height
     });
+
+    const openPopup = function() {
+        $('.js_btn_open_popup').on('click', function(){
+            // prevent scroll
+            $('body').addClass('scroll_locked');
+            const popup = $(this).attr('data-popup');
+            $('.popup').addClass('open');
+            $('.popup_item').removeClass('open');
+            $('.' + popup).addClass('open');
+        })
+    }
+
+    const closePopup = function() {
+        $('.popup, .js_btn_close_popup').on('click', function(){
+            // prevent scroll
+            $('body').removeClass('scroll_locked');
+            $('.popup, .popup_item').removeClass('open');
+        })
+
+        $('.popup_item').on('click', function(e){
+            e.stopPropagation()
+        })
+    }
 
     $(win).scroll(function () {
         handleFixedHeader()
@@ -517,5 +536,7 @@
         handleClickLoadMore()
         handleFaqs()
         generateCalendar(currentDate);
+        openPopup()
+        closePopup()
     });
 })(window, window.jQuery);
