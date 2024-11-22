@@ -370,8 +370,8 @@ legend {
     visibility: hidden;
     position: absolute;
     top: 2px;
-    left: 0px;
-    z-index: 1;
+    left: -1px;
+    z-index: 2;
     opacity: 0;
   }
 
@@ -388,13 +388,16 @@ legend {
       height: 16px;
       border: 1px solid $black;
       border-radius: 2px;
-      transition: 0.4s;
     }
   }
 
   .checkbox:checked+.checkbox_icon {
     visibility: visible;
     opacity: 1;
+  }
+
+  .checkbox:checked+.checkbox_icon.text-orange+.label::before {
+    border-color: $orange;
   }
 }
 

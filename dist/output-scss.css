@@ -429,8 +429,8 @@ legend {
   visibility: hidden;
   position: absolute;
   top: 2px;
-  left: 0px;
-  z-index: 1;
+  left: -1px;
+  z-index: 2;
   opacity: 0;
 }
 .form_checkbox .label {
@@ -446,11 +446,13 @@ legend {
   height: 16px;
   border: 1px solid #202020;
   border-radius: 2px;
-  transition: 0.4s;
 }
 .form_checkbox .checkbox:checked + .checkbox_icon {
   visibility: visible;
   opacity: 1;
+}
+.form_checkbox .checkbox:checked + .checkbox_icon.text-orange + .label::before {
+  border-color: #FF6600;
 }
 
 .scroll_to_top_btn {
@@ -599,10 +601,6 @@ legend {
 }
 .blog_item.style-two:hover .blog_info::before {
   transform: translateY(100%);
-}
-.blog_sidebar .category_list .tab_btn.active {
-  font-weight: 700;
-  color: #202020;
 }
 .blog_sidebar .recent_list .blog_item:last-child {
   border: none;
@@ -870,25 +868,6 @@ legend {
   opacity: 1;
 }
 
-/* 
-.list_link {
-    .menu_tab {
-        overflow: unset;
-
-        .tab_btn {
-            &.active {
-                border-color: $orange;
-            }
-        }
-    }
-}
-
-.form_register {
-    .menu_tab {
-        max-width: unset;
-    }
-}
-*/
 .popup {
   visibility: hidden;
   display: flex;
@@ -1128,6 +1107,47 @@ legend {
 }
 .services_sidebar .tab_btn.active {
   color: #FF6600;
+}
+
+.filter_category .tab_btn.active {
+  font-weight: 700;
+  color: #202020;
+}
+.filter_brand .form_checkbox:has(.checkbox:checked) .txt,
+.filter_brand .form_checkbox:has(.checkbox:checked) .quantity {
+  font-weight: 700;
+  color: #202020;
+}
+.filter_rating .item:has(input:checked) {
+  background-color: var(--background);
+  border-color: var(--primary);
+}
+.filter_rating .item input {
+  position: relative;
+  appearance: none;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  background: var(--white);
+}
+.filter_rating .item input::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+.filter_rating .item input:checked {
+  border-color: var(--primary);
+}
+.filter_rating .item input:checked::before {
+  background: var(--primary);
+}
+.filter_rating .item.bg-transparent {
+  background-color: transparent !important;
 }
 
 /* Slider */

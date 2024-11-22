@@ -51,15 +51,6 @@
   }
 
   &_sidebar {
-    .category_list {
-      .tab_btn {
-        &.active {
-          font-weight: 700;
-          color: $black;
-        }
-      }
-    }
-
     .recent_list {
       .blog_item {
         &:last-child {

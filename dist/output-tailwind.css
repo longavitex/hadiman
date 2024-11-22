@@ -1065,6 +1065,10 @@ video {
   height: 100vh;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .max-h-\[70vh\] {
   max-height: 70vh;
 }
@@ -1174,6 +1178,10 @@ video {
   width: 80vw;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .min-w-\[13\.75rem\] {
   min-width: 13.75rem;
 }
@@ -1219,6 +1227,10 @@ video {
   --tw-scale-x: 0;
   --tw-scale-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-1 {
@@ -1407,6 +1419,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border {
@@ -2973,6 +2989,10 @@ video {
 
   .xl\:w-\[980px\] {
     width: 980px;
+  }
+
+  .xl\:w-\[18\.75rem\] {
+    width: 18.75rem;
   }
 
   .xl\:grid-cols-2 {
