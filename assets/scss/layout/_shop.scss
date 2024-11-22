@@ -1,3 +1,22 @@
+/* shop */
+.shop {
+  &_product {
+    &_heading {
+      .form_checkbox {
+        .label {
+          &::before {
+            border-radius: 50%;
+          }
+        }
+        .checkbox:checked~.label::before {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+/* shop sidebar */
 .filter {
   &_category {
     .tab_btn {
@@ -7,9 +26,11 @@
       }
     }
   }
+
   &_brand {
     .form_checkbox {
       &:has(.checkbox:checked) {
+
         .txt,
         .quantity {
           font-weight: 700;
@@ -18,44 +39,42 @@
       }
     }
   }
+
   &_rating {
-    .item {
-        &:has(input:checked) {
-            background-color: var(--background);
-            border-color: var(--primary);
+    .rating_item {
+      .radio_input {
+        border: 2px solid $variant1;
+        appearance: none;
+        transition: border-color 0.2s ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 2px;
+          right: 2px;
+          bottom: 2px;
+          left: 2px;
+          border-radius: 50%;
+          background-color: transparent;
+          transition: background-color 0.2s ease;
         }
 
-        input {
-            position: relative;
-            appearance: none;
-            border-radius: 50%;
-            border: 2px solid var(--line);
-            background: var(--white);
+        &:checked {
+          border-color: $orange;
 
-            &::before {
-                content: "";
-                position: absolute;
-                top: 3px;
-                right: 3px;
-                bottom: 3px;
-                left: 3px;
-                border-radius: 50%;
-                background: transparent;
-                transition: all 0.2s ease;
-            }
-
-            &:checked {
-                border-color: var(--primary);
-
-                &::before {
-                    background: var(--primary);
-                }
-            }
+          &::before {
+            background-color: $orange;
+          }
         }
+      }
 
-        &.bg-transparent {
-            background-color: transparent !important;
-        }
+      .radio_input:checked + label {
+        .star,
+        .quantity {
+          font-weight: 700;
+          color: $black;
+        } 
+      }
     }
   }
 }

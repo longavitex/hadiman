@@ -401,7 +401,7 @@
     </section>
     <!-- SHOP -->
     <section class="section shop sm:py-25 py-15">
-        <div class="container flex max-xl:flex-col gap-y-12">
+        <div class="container flex max-xl:flex-col-reverse gap-y-12">
             <div class="shop_sidebar flex-shrink-0 xl:w-[18.75rem] w-full h-fit">
                 <div class="filter_category">
                     <h6 class="heading6">Product Categories</h6>
@@ -544,24 +544,473 @@
                 <div class="filter_rating md:mt-10 mt-7">
                     <h5 class="heading5">Customer Rating</h5>
                     <ul class="rating_list flex flex-col gap-3 mt-4" role="tablist">
-                        <!-- <li class="rating_item form_checkbox flex" role="presentation">
-                            <input type="checkbox" class="checkbox" id="channellock" />
-                            <label class="label flex items-center justify-between w-full pl-7 cursor-pointer" for="channellock">
-                                <span class="txt">Channellock</span>
-                                <span class="quantity">(16)</span>
+                        <li class="rating_item flex items-center gap-2">
+                            <input type="radio" name="rating" id="fiveStar" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" />
+                            <label for="fiveStar" class="flex items-center justify-between w-full cursor-pointer">
+                                <div class="flex items-center gap-2">
+                                    <ul class="flex">
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                    </ul>
+                                    <span class="star text-variant1">5</span>
+                                </div>
+                                <span class="quantity text-variant1">(32)</span>
                             </label>
-                        </li> -->
-                        <li class="item flex items-center gap-4 p-6 border-2 border-line rounded-lg duration-300 hover:border-primary">
-                            <input type="radio" name="package_plan" id="basic_plan_package" class="w-6 h-6 flex-shrink-0 cursor-pointer" checked />
-                            <label for="basic_plan_package" class="flex flex-col gap-1 cursor-pointer">
-                                <strong class="heading6">Basic plan package</strong>
-                                <span class="text-secondary">08/10 service posting, services displayed for 15 days</span>
+                        </li>
+                        <li class="rating_item flex items-center gap-2">
+                            <input type="radio" name="rating" id="fourStar" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" />
+                            <label for="fourStar" class="flex items-center justify-between w-full cursor-pointer">
+                                <div class="flex items-center gap-2">
+                                    <ul class="flex">
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                    </ul>
+                                    <span class="star text-variant1">4</span>
+                                </div>
+                                <span class="quantity text-variant1">(17)</span>
+                            </label>
+                        </li>
+                        <li class="rating_item flex items-center gap-2">
+                            <input type="radio" name="rating" id="threeStar" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" />
+                            <label for="threeStar" class="flex items-center justify-between w-full cursor-pointer">
+                                <div class="flex items-center gap-2">
+                                    <ul class="flex">
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                    </ul>
+                                    <span class="star text-variant1">3</span>
+                                </div>
+                                <span class="quantity text-variant1">(6)</span>
+                            </label>
+                        </li>
+                        <li class="rating_item flex items-center gap-2">
+                            <input type="radio" name="rating" id="twoStar" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" />
+                            <label for="twoStar" class="flex items-center justify-between w-full cursor-pointer">
+                                <div class="flex items-center gap-2">
+                                    <ul class="flex">
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                    </ul>
+                                    <span class="star text-variant1">2</span>
+                                </div>
+                                <span class="quantity text-variant1">(2)</span>
+                            </label>
+                        </li>
+                        <li class="rating_item flex items-center gap-2">
+                            <input type="radio" name="rating" id="oneStar" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" />
+                            <label for="oneStar" class="flex items-center justify-between w-full cursor-pointer">
+                                <div class="flex items-center gap-2">
+                                    <ul class="flex">
+                                        <li class="ph-fill ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                        <li class="ph ph-star"></li>
+                                    </ul>
+                                    <span class="star text-variant1">1</span>
+                                </div>
+                                <span class="quantity text-variant1">(1)</span>
                             </label>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="shop_product"></div>
+            <div class="shop_product w-full xl:pl-15">
+                <div class="shop_product_heading flex flex-wrap items-center justify-between gap-4">
+                    <div class="form_checkbox flex items-center gap-1">
+                        <input type="checkbox" class="checkbox" id="filterSale" />
+                        <span class="ph ph-check-circle text-[22px] text-[#36A785] checkbox_icon"></span>
+                        <label class="label pl-7 cursor-pointer" for="filterSale">Shop sale items only</label>
+                    </div>
+                    <div class="sorting flex items-center gap-3">
+                        <span class="caption1 text-variant1">Sort by:</span>
+                        <div class="form_select">
+                            <select name="sorting" class="w-full py-2.5 pl-3 pr-18 border border-outline rounded caption1" required>
+                                <option value="Sorting" selected disabled>Sorting</option>
+                                <option value="Best Selling">Best Selling</option>
+                                <option value="Best Discount">Best Discount</option>
+                                <option value="Price Low To High">Price Low To High</option>
+                                <option value="Price High To Low">Price High To Low</option>
+                            </select>
+                            <span class="ph ph-caret-down arrow_down text-xl text-variant1"></span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="product_list grid lg:grid-cols-3 grid-cols-2 sm:gap-7.5 gap-5 gap-y-10 mt-7.5">
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/1.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Ironclad Heavy Gloves">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-outline"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Ironclad Heavy Gloves</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/2.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="VACO Impact Driver">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">VACO Impact Driver</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/3.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Custom Leathercraft Bucket">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-outline"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Custom Leathercraft Bucket</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/4.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Klein Tools 60491 Hinged">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-outline"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Klein Tools 60491 Hinged</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/5.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Real Steel Sledge Hammer">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-outline"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Real Steel Sledge Hammer</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/6.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Dewalt Flooring Knee Pads">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-outline"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Dewalt Flooring Knee Pads</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/7.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Method Antibacterial">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-outline"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Method Antibacterial</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/8.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Knee Pads for Work">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-outline"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Knee Pads for Work</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                    <li class="product_item group">
+                        <div class="product_thumb overflow-hidden relative">
+                            <a href="product-detail.html" class="product_img block">
+                                <img src="./assets/images/products/9.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Real Steel Ultra Rock Pick Hammer">
+                            </a>
+                            <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                            <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-heart text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-git-diff text-xl"></span>
+                                    </button>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                        <span class="ph ph-eye text-xl"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        </div>
+                        <a href="product-detail.html" class="product_info block pt-5">
+                            <div class="flex items-center gap-2">
+                                <ul class="flex gap-px">
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-yellow"></li>
+                                    <li class="ph-fill ph-star text-outline"></li>
+                                </ul>
+                                <span class="caption1 text-variant1">(1.234)</span>
+                            </div>
+                            <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Real Steel Ultra Rock Pick Hammer</strong>
+                            <strong class="heading6">$68.00</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <!-- FOOTER -->

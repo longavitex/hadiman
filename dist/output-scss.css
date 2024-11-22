@@ -430,7 +430,7 @@ legend {
   position: absolute;
   top: 2px;
   left: -1px;
-  z-index: 2;
+  z-index: 1;
   opacity: 0;
 }
 .form_checkbox .label {
@@ -450,6 +450,10 @@ legend {
 .form_checkbox .checkbox:checked + .checkbox_icon {
   visibility: visible;
   opacity: 1;
+}
+.form_checkbox:has(.checkbox:checked) .label::before,
+.form_checkbox .checkbox:checked ~ .label::before {
+  border-color: transparent;
 }
 .form_checkbox .checkbox:checked + .checkbox_icon.text-orange + .label::before {
   border-color: #FF6600;
@@ -1109,6 +1113,15 @@ legend {
   color: #FF6600;
 }
 
+/* shop */
+.shop_product_heading .form_checkbox .label::before {
+  border-radius: 50%;
+}
+.shop_product_heading .form_checkbox .checkbox:checked ~ .label::before {
+  border-color: transparent;
+}
+
+/* shop sidebar */
 .filter_category .tab_btn.active {
   font-weight: 700;
   color: #202020;
@@ -1118,36 +1131,32 @@ legend {
   font-weight: 700;
   color: #202020;
 }
-.filter_rating .item:has(input:checked) {
-  background-color: var(--background);
-  border-color: var(--primary);
-}
-.filter_rating .item input {
-  position: relative;
+.filter_rating .rating_item .radio_input {
+  border: 2px solid #616265;
   appearance: none;
-  border-radius: 50%;
-  border: 2px solid var(--line);
-  background: var(--white);
+  transition: border-color 0.2s ease;
 }
-.filter_rating .item input::before {
+.filter_rating .rating_item .radio_input::before {
   content: "";
   position: absolute;
-  top: 3px;
-  right: 3px;
-  bottom: 3px;
-  left: 3px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
   border-radius: 50%;
-  background: transparent;
-  transition: all 0.2s ease;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
 }
-.filter_rating .item input:checked {
-  border-color: var(--primary);
+.filter_rating .rating_item .radio_input:checked {
+  border-color: #FF6600;
 }
-.filter_rating .item input:checked::before {
-  background: var(--primary);
+.filter_rating .rating_item .radio_input:checked::before {
+  background-color: #FF6600;
 }
-.filter_rating .item.bg-transparent {
-  background-color: transparent !important;
+.filter_rating .rating_item .radio_input:checked + label .star,
+.filter_rating .rating_item .radio_input:checked + label .quantity {
+  font-weight: 700;
+  color: #202020;
 }
 
 /* Slider */

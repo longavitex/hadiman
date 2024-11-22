@@ -371,7 +371,7 @@ legend {
     position: absolute;
     top: 2px;
     left: -1px;
-    z-index: 2;
+    z-index: 1;
     opacity: 0;
   }
 
@@ -394,6 +394,11 @@ legend {
   .checkbox:checked+.checkbox_icon {
     visibility: visible;
     opacity: 1;
+  }
+
+  &:has(.checkbox:checked) .label::before,
+  .checkbox:checked~.label::before {
+    border-color: transparent;
   }
 
   .checkbox:checked+.checkbox_icon.text-orange+.label::before {
