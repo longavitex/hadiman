@@ -16,7 +16,6 @@
   }
 }
 
-/* shop sidebar */
 .filter {
   &_category {
     .tab_btn {
@@ -74,6 +73,19 @@
           font-weight: 700;
           color: $black;
         } 
+      }
+    }
+  }
+
+  &_type {
+    .tab_btn {
+      &.active {
+        background-color: $orange;
+        color: $white;
+        
+        &::before {
+          border-color: $orange;
+        }
       }
     }
   }

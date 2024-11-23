@@ -1121,7 +1121,6 @@ legend {
   border-color: transparent;
 }
 
-/* shop sidebar */
 .filter_category .tab_btn.active {
   font-weight: 700;
   color: #202020;
@@ -1157,6 +1156,13 @@ legend {
 .filter_rating .rating_item .radio_input:checked + label .quantity {
   font-weight: 700;
   color: #202020;
+}
+.filter_type .tab_btn.active {
+  background-color: #FF6600;
+  color: #FFFFFF;
+}
+.filter_type .tab_btn.active::before {
+  border-color: #FF6600;
 }
 
 /* Slider */
