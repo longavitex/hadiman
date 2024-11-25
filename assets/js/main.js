@@ -8,13 +8,11 @@
     const daysContainer = $('.days');
     const monthName = $('.calendar_date');
     const timePicker = $('.time_picker');
-    const timeSlotsContainer = $('.time_slots');
     const itemsPerRow = 7; // days in row (grid 7 cols)
 
     let currentDate = new Date();
     let selectedDate = null;
     let calendarHeight = calendar.outerHeight();
-    let timePickerHeight = timePicker.outerHeight();
 
     // Add fixed header
     const handleFixedHeader = function () {
@@ -204,6 +202,15 @@
                 },
             },
         },
+        PRODUCT_SWIPER_THUMB: {
+            spaceBetween: 0,
+            slidesPerView: 1,
+        },
+        PRODUCT_SWIPER_LIST: {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            watchSlidesProgress: true,
+        },
     }
 
     // swiper obj
@@ -227,6 +234,13 @@
         const projectsSwiperObj = new Swiper('.projects_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
         const servicesSwiperObj = new Swiper('.services_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
         const servicesSwiperFourObj = new Swiper('.services.style-four .services_swiper', SWIPER_OPTIONS.SERVICES_SWIPER_FOUR);
+        const productSwiperListObj = new Swiper('.product_swiper_list', SWIPER_OPTIONS.PRODUCT_SWIPER_LIST);
+        const productSwiperThumbObj = new Swiper('.product_swiper_thumb', {
+            ...SWIPER_OPTIONS.PRODUCT_SWIPER_THUMB,
+            thumbs: {
+                swiper: productSwiperListObj,
+            },
+        });
     };
 
     // projects style center home4
@@ -499,6 +513,51 @@
         calendar.removeAttr('style'); // Reset height
     });
 
+    // Rate product
+    const handleRate = function () {
+        var selectedRating = 0;
+
+        // Handle mouse enter (hover) event
+        $('.user_rating .star').on('mouseenter', function () {
+            var rating = $(this).data('value');
+            highlightStars(rating);
+        });
+
+        // Handle mouse leave event
+        $('.user_rating .list_rate').on('mouseleave', function () {
+            highlightStars(selectedRating);
+        });
+
+        // Handle click event
+        $('.user_rating .star').on('click', function () {
+            selectedRating = $(this).data('value');
+            highlightStars(selectedRating);
+        });
+
+        // Function to highlight stars
+        function highlightStars(rating) {
+            $('.user_rating .star').each(function () {
+                var starValue = $(this).data('value');
+                if (starValue <= rating) {
+                    $(this).css('color', '#f2b201');
+                } else {
+                    $(this).css('color', '#e4e4e4');
+                }
+            });
+        }
+
+        // Handle form submission
+        $('#form-review .form').on('submit', function (e) {
+            if (selectedRating === 0) {
+                e.preventDefault(); // Prevent form submission
+                alert('Please select your rating before submit the comment.');
+            } else {
+                $('#form-review .form').append('<input type="hidden" name="rating" value="' + selectedRating + '">');
+            }
+        });
+    }
+
+    // popup
     const openPopup = function() {
         $('.js_btn_open_popup').on('click', function(){
             // prevent scroll
@@ -536,6 +595,7 @@
         handleClickLoadMore()
         handleFaqs()
         generateCalendar(currentDate);
+        handleRate()
         openPopup()
         closePopup()
     });

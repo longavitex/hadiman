@@ -400,13 +400,44 @@
         </div>
     </section>
     <!-- SHOP -->
-    <section class="section product mt-15">
-        <div class="container">
-            <div class="flex max-lg:flex-col gap-y-12">
+    <section class="section product sm:mt-15 mt-7">
+        <div class="container flex flex-col items-center">
+            <div class="flex max-lg:flex-col gap-y-12 w-full">
                 <div class="product_images flex-shrink-0 lg:w-1/2 w-full lg:pr-4 h-fit">
-                    
+                    <div class="swiper product_swiper_thumb">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/1.jpg" class="h-full object-cover" alt="img products detail 1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/2.jpg" class="h-full object-cover" alt="img products detail 2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/3.jpg" class="h-full object-cover" alt="img products detail 3" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/4.jpg" class="h-full object-cover" alt="img products detail 4" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper product_swiper_list mt-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/1.jpg" class="h-full object-cover" alt="img products detail 1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/2.jpg" class="h-full object-cover" alt="img products detail 2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/3.jpg" class="h-full object-cover" alt="img products detail 3" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/4.jpg" class="h-full object-cover" alt="img products detail 4" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="product_detail w-full lg:pl-16">
+                <div class="product_detail w-full xl:pl-16 lg:pl-8">
                     <div class="flex flex-wrap items-center gap-4">
                         <span class="product_badge py-0.5 px-1.5 bg-red txt-button text-white">Best Seller</span>
                         <ul class="flex gap-px">
@@ -414,7 +445,7 @@
                             <li class="ph-fill ph-star text-yellow"></li>
                             <li class="ph-fill ph-star text-yellow"></li>
                             <li class="ph-fill ph-star text-yellow"></li>
-                            <li class="ph-fill ph-star text-outline"></li>
+                            <li class="ph-fill ph-star-half text-yellow"></li>
                         </ul>
                         <span class="caption1 text-variant1">(1.234)</span>
                         <span class="flex items-center gap-1">
@@ -445,12 +476,12 @@
                     </div>
                     <div class="quantity_area mt-6">
                         <span>Quantity:</span>
-                        <div class="quantity_form flex items-center w-fit p-3 border border-outline gap-13">
+                        <div class="quantity_form flex items-center gap-13 w-fit mt-3 p-3 border border-outline">
                             <button class="btn_decrease_quantity">
                                 <span class="ph ph-minus text-2xl"></span>
                                 <span class="blind">button decrease quantity</span>
                             </button>
-                            <span class="quantity txt-button">1</span>
+                            <span class="quantity -mt-0.5 text-xl font-bold">1</span>
                             <button class="btn_increase_quantity">
                                 <span class="ph ph-plus text-2xl"></span>
                                 <span class="blind">button increase quantity</span>
@@ -480,8 +511,10 @@
                         </a>
                         <div class="flex items-center gap-1 mt-3">
                             <span class='ph ph-timer text-xl'></span>
-                            <span class="caption1 text-variant1">Estimated Delivery:</span>
-                            <span class="caption1 text-variant1"><span class="text-black">12-26 days</span> (International), <span class="text-black">3-6 days</span> (United States)</span>
+                            <p>
+                                <span class="caption1 text-variant1">Estimated Delivery:</span>
+                                <span class="caption1 text-variant1"><span class="text-black">12-26 days</span> (International), <span class="text-black">3-6 days</span> (United States)</span>
+                            </p>
                         </div>
                         <div class="flex items-center gap-1 mt-3">
                             <span class='ph ph-arrow-clockwise text-xl'></span>
@@ -504,102 +537,293 @@
                     </div>
                     <ul class="flex flex-col gap-2 mt-6 pt-6 border-t border-outline">
                         <li class="flex items-center gap-1 caption1">
-                            <span class="text-title">SKU:</span>
+                            <span class="txt-button">SKU:</span>
                             <span class="text-variant1">53453412</span>
                         </li>
                         <li class="flex items-center gap-1 caption1">
-                            <span class="text-title">Vendor:</span>
+                            <span class="txt-button">Vendor:</span>
                             <span class="text-variant1">dewalt</span>
                         </li>
                         <li class="flex items-center gap-1 caption1">
-                            <span class="text-title">Available:</span>
+                            <span class="txt-button">Available:</span>
                             <span class="text-variant1">Instock</span>
                         </li>
                         <li class="flex items-center gap-1 caption1">
-                            <span class="text-title">Categories:</span>
+                            <span class="txt-button">Categories:</span>
                             <span class="text-variant1">tools, electric</span>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <div class="review mt-10">
-                <h5 class="heading5">Customer reviews</h5>
-                <ul class="review_list flex flex-col gap-6 mt-5">
-                    <li class="review_item">
-                        <div class="review_user flex items-center gap-4">
-                            <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
-                                <img src="./assets/images/team/team1.jpg" alt="Jeremy L." class="user_avatar w-full h-full object-cover" />
-                            </div>
-                            <div class="review_user_info">
-                                <span class="review_user_name txt-button">Jeremy L.</span>
-                                <span class="review_user_date block caption1 text-variant1">August 22, 2024</span>
-                            </div>
-                        </div>
-                        <p class="review_desc mt-3">Amazing quality! The product arrived quickly, and I was impressed with how durable it feels. Definitely worth the price, and I’ll be purchasing again soon.</p>
-                        <ul class="review_reply flex flex-col gap-6 mt-6 sm:ml-15 ml-8 pl-5 border-l-4 border-outline">
-                            <li class="review_reply_item">
-                                <div class="review_user flex items-center gap-4">
-                                    <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
-                                        <img src="./assets/images/team/team2.jpg" alt="Anotonio R." class="user_avatar w-full h-full object-cover" />
-                                    </div>
-                                    <div class="review_user_info">
-                                        <span class="review_user_name txt-button">Anotonio R.</span>
-                                        <span class="review_user_date block caption1 text-variant1">August 23, 2024</span>
-                                    </div>
-                                </div>
-                                <p class="review_desc mt-3">Exceeded my expectations! I bought this as a gift, and the recipient was thrilled. The craftsmanship is top-notch, and customer service was super helpful with my inquiries.</p>
+                    <div class="flex flex-wrap gap-4 mt-6 pt-6 border-t border-outline">
+                        <span>Guranteed safe checkout:</span>
+                        <ul class="payment_list flex flex-wrap gap-3">
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment1.png" class="h-[32px]" alt="visa">
                             </li>
-                            <li class="review_reply_item">
-                                <div class="review_user flex items-center gap-4">
-                                    <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
-                                        <img src="./assets/images/team/team4.jpg" alt="Alexander P." class="user_avatar w-full h-full object-cover" />
-                                    </div>
-                                    <div class="review_user_info">
-                                        <span class="review_user_name txt-button">Alexander P.</span>
-                                        <span class="review_user_date block caption1 text-variant1">August 23, 2024</span>
-                                    </div>
-                                </div>
-                                <p class="review_desc mt-3">I really like the logo that Gihan created, and he was very responsive and great to work with. I would recommend him to anyone looking for a logo or graphic design!</p>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment2.png" class="h-[32px]" alt="mastercard">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment3.png" class="h-[32px]" alt="amex">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment4.png" class="h-[32px]" alt="paypal">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment5.png" class="h-[32px]" alt="diners club">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment6.png" class="h-[32px]" alt="discover">
                             </li>
                         </ul>
-                    </li>
-                    <li class="review_item">
-                        <div class="review_user flex items-center gap-4">
-                            <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
-                                <img src="./assets/images/team/team3.jpg" alt="Christina H." class="user_avatar w-full h-full object-cover" />
+                    </div>
+                </div>
+            </div>
+            <div class="xl:w-5/6 w-full sm:mt-15 mt-10">
+                <div class="heading flex justify-center">
+                    <ul class="menu_tab flex items-center gap-10" role="tablist">
+                        <li role="presentation">
+                            <button class="tab_btn tab_btn_txt_black has_line line_black py-1 heading5 uppercase text-variant2 hover:text-black" id="description" role="tab" aria-controls="tab_description" aria-selected="false">description</button>
+                        </li>
+                        <li role="presentation">
+                            <button class="tab_btn tab_btn_txt_black has_line line_black py-1 heading5 uppercase text-variant2 hover:text-black active" id="review" role="tab" aria-controls="tab_review" aria-selected="true">review</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content -mt-px sm:p-10 p-7 border border-outline">
+                    <div id="tab_description" class="tab_panel description" role="tabpanel" aria-labelledby="description" aria-hidden="true">
+                        <h6 class="heading6">About This Products</h6>
+                        <ul class="list-feature">
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </li>
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Nulla luctus libero quis mauris vestibulum dapibus.</p>
+                            </li>
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Maecenas ullamcorper erat mi, vel consequat enim suscipit at.</p>
+                            </li>
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Quisque consectetur nibh ac urna molestie scelerisque.</p>
+                            </li>
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Mauris in nisl scelerisque massa consectetur pretium sed et mauris.</p>
+                            </li>
+                        </ul>
+                        <ul class="lg:w-2/3 sm:w-3/4 w-full mt-6">
+                            <li class="item flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Weight</strong>
+                                <p>10kg</p>
+                            </li>
+                            <li class="item bg-surface flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Engine</strong>
+                                <p>Brushless</p>
+                            </li>
+                            <li class="item flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">No-load speed</strong>
+                                <p>3600 rpm</p>
+                            </li>
+                            <li class="item bg-surface flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Maximum torque</strong>
+                                <p>380 N.m</p>
+                            </li>
+                            <li class="item flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">2 in 1 head</strong>
+                                <p>Head 1/2</p>
+                            </li>
+                            <li class="item bg-surface flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Battery capacity</strong>
+                                <p>5Ah - 5,000 mAh</p>
+                            </li>
+                            <li class="item flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Charging voltage</strong>
+                                <p>220V-240V~50/60Hz</p>
+                            </li>
+                            <li class="item bg-surface flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Lamp</strong>
+                                <p>3 LED lights</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab_review" class="tab_panel review active" role="tabpanel" aria-labelledby="review" aria-hidden="false">
+                        <div class="rating_area flex items-center max-md:flex-col justify-between gap-y-3">
+                            <div class="flex flex-col items-center justify-center gap-1">
+                                <h1 class="heading1 avg_rating">4.8</h1>
+                                <div class="flex flex-col items-center gap-1">
+                                    <ul class="rate flex">
+                                        <li class="ph-fill ph-star text-2xl text-yellow"></li>
+                                        <li class="ph-fill ph-star text-2xl text-yellow"></li>
+                                        <li class="ph-fill ph-star text-2xl text-yellow"></li>
+                                        <li class="ph-fill ph-star text-2xl text-yellow"></li>
+                                        <li class="ph-fill ph-star-half text-2xl text-yellow"></li>
+                                    </ul>
+                                    <span class="total_rating">(1,968 Ratings)</span>
+                                </div>
                             </div>
-                            <div class="review_user_info">
-                                <span class="review_user_name txt-button">Christina H.</span>
-                                <span class="review_user_date block caption1 text-variant1">August 21, 2024</span>
+                            <div class="list_rating flex-shrink-0 2xl:w-[520px] sm:w-[50%] w-full">
+                                <div class="item flex items-center justify-between gap-3">
+                                    <div class="flex flex-shrink-0 items-center gap-1 min-w-7">
+                                        <strong class="text-button-sm">5</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-[70%] h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">70%</strong>
+                                </div>
+                                <div class="item flex items-center justify-between gap-3 mt-1">
+                                    <div class="flex flex-shrink-0 items-center gap-1 min-w-7">
+                                        <strong class="text-button-sm">4</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-[20%] h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">20%</strong>
+                                </div>
+                                <div class="item flex items-center justify-between gap-3 mt-1">
+                                    <div class="flex flex-shrink-0 items-center gap-1 min-w-7">
+                                        <strong class="text-button-sm">3</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-[10%] h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">10%</strong>
+                                </div>
+                                <div class="item flex items-center justify-between gap-3 mt-1">
+                                    <div class="flex flex-shrink-0 items-center gap-1 min-w-7">
+                                        <strong class="text-button-sm">2</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-0 h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">0%</strong>
+                                </div>
+                                <div class="item flex items-center justify-between gap-3 mt-1">
+                                    <div class="flex flex-shrink-0 items-center gap-2 min-w-7">
+                                        <strong class="text-button-sm">1</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-0 h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">0%</strong>
+                                </div>
+                            </div>
+                            <a href="#form-review" class="btn flex-shrink-0 h-fit">Write a review</a>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 mt-10">
+                            <h5 class="heading5">04 Comments</h5>
+                            <div class="sorting flex items-center gap-3">
+                                <span class="caption1 text-variant1">Sort by:</span>
+                                <div class="form_select">
+                                    <select name="sorting" class="w-full py-2.5 pl-3 pr-18 border border-outline rounded caption1" required>
+                                        <option value="Sorting" selected disabled>Sorting</option>
+                                        <option value="Most Recent">Most Recent</option>
+                                        <option value="Newest">Newest</option>
+                                    </select>
+                                    <span class="ph ph-caret-down arrow_down text-xl text-variant1"></span>
+                                </div>
                             </div>
                         </div>
-                        <p class="review_desc mt-3">Great experience overall! Easy checkout process, fast shipping, and the product was just as described. Highly recommend this shop for reliable purchases!</p>
-                    </li>
-                </ul>
-                <div id="form-review" class="form-review mt-10 p-7 border border-outline">
-                    <h5 class="heading5">Leave A comment</h5>
-                    <form class="form grid sm:grid-cols-2 gap-5 mt-6">
-                        <div class="name">
-                            <label for="username">Name</label>
-                            <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="username" type="text" placeholder="Your Name" required />
+                        <ul class="review_list flex flex-col gap-6 mt-5">
+                            <li class="review_item">
+                                <div class="review_user flex items-center gap-4">
+                                    <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                        <img src="./assets/images/team/team1.jpg" alt="Jeremy L." class="user_avatar w-full h-full object-cover" />
+                                    </div>
+                                    <div class="review_user_info">
+                                        <span class="review_user_name txt-button">Jeremy L.</span>
+                                        <span class="review_user_date block caption1 text-variant1">August 22, 2024</span>
+                                    </div>
+                                </div>
+                                <p class="review_desc mt-3">Amazing quality! The product arrived quickly, and I was impressed with how durable it feels. Definitely worth the price, and I’ll be purchasing again soon.</p>
+                                <ul class="review_reply flex flex-col gap-6 mt-6 sm:ml-15 ml-8 pl-5 border-l-4 border-outline">
+                                    <li class="review_reply_item">
+                                        <div class="review_user flex items-center gap-4">
+                                            <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                                <img src="./assets/images/team/team2.jpg" alt="Anotonio R." class="user_avatar w-full h-full object-cover" />
+                                            </div>
+                                            <div class="review_user_info">
+                                                <span class="review_user_name txt-button">Anotonio R.</span>
+                                                <span class="review_user_date block caption1 text-variant1">August 23, 2024</span>
+                                            </div>
+                                        </div>
+                                        <p class="review_desc mt-3">Exceeded my expectations! I bought this as a gift, and the recipient was thrilled. The craftsmanship is top-notch, and customer service was super helpful with my inquiries.</p>
+                                    </li>
+                                    <li class="review_reply_item">
+                                        <div class="review_user flex items-center gap-4">
+                                            <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                                <img src="./assets/images/team/team4.jpg" alt="Alexander P." class="user_avatar w-full h-full object-cover" />
+                                            </div>
+                                            <div class="review_user_info">
+                                                <span class="review_user_name txt-button">Alexander P.</span>
+                                                <span class="review_user_date block caption1 text-variant1">August 23, 2024</span>
+                                            </div>
+                                        </div>
+                                        <p class="review_desc mt-3">I really like the logo that Gihan created, and he was very responsive and great to work with. I would recommend him to anyone looking for a logo or graphic design!</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="review_item">
+                                <div class="review_user flex items-center gap-4">
+                                    <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                        <img src="./assets/images/team/team3.jpg" alt="Christina H." class="user_avatar w-full h-full object-cover" />
+                                    </div>
+                                    <div class="review_user_info">
+                                        <span class="review_user_name txt-button">Christina H.</span>
+                                        <span class="review_user_date block caption1 text-variant1">August 21, 2024</span>
+                                    </div>
+                                </div>
+                                <p class="review_desc mt-3">Great experience overall! Easy checkout process, fast shipping, and the product was just as described. Highly recommend this shop for reliable purchases!</p>
+                            </li>
+                        </ul>
+                        <div id="form-review" class="form-review mt-10">
+                            <h5 class="heading5">Leave A comment</h5>
+                            <form class="form grid sm:grid-cols-2 gap-5 mt-6">
+                                <div class="name">
+                                    <label for="username">Name</label>
+                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="username" type="text" placeholder="Your Name" required />
+                                </div>
+                                <div class="mail">
+                                    <label for="email">Email</label>
+                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="email" type="email" placeholder="Your Email" required />
+                                </div>
+                                <div class="title col-span-full">
+                                    <label for="title">Review Title</label>
+                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="title" type="text" placeholder="Give your review a title" required />
+                                </div>
+                                <div class="col-span-full message">
+                                    <label for="message">Review</label>
+                                    <textarea class="form_input w-full mt-2 px-4 py-3 border border-outline" id="message" name="message" rows="3" placeholder="Write your comment" required></textarea>
+                                </div>
+                                <div class="user_rating flex items-end gap-2 col-span-full">
+                                    <strong>Your Rating:</strong>
+                                    <ul class="list_rate flex gap-1">
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="1"></li>
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="2"></li>
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="3"></li>
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="4"></li>
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="5"></li>
+                                    </ul>
+                                </div>
+                                <div class="form_checkbox flex col-span-full">
+                                    <input type="checkbox" class="checkbox" id="saveAccount" />
+                                    <span class="ph-fill ph-check-square text-[22px] checkbox_icon"></span>
+                                    <label class="label pl-7" for="saveAccount">Save my name, email, and website in this browser for the next time I comment.</label>
+                                </div>
+                                <div class="col-span-full">
+                                    <button type="submit" class="btn">Submit Review</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="mail">
-                            <label for="email">Email</label>
-                            <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="email" type="email" placeholder="Your Email" required />
-                        </div>
-                        <div class="col-span-full message">
-                            <label for="message">Review</label>
-                            <textarea class="form_input w-full mt-2 px-4 py-3 border border-outline" id="message" name="message" rows="3" placeholder="Write comment " required></textarea>
-                        </div>
-                        <div class="form_checkbox flex col-span-full">
-                            <input type="checkbox" class="checkbox" id="saveAccount" />
-                            <span class="ph-fill ph-check-square text-[22px] checkbox_icon"></span>
-                            <label class="label pl-7" for="saveAccount">Save my name, email, and website in this browser for the next time I comment.</label>
-                        </div>
-                        <div class="col-span-full">
-                            <button type="submit" class="btn">Submit Review</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

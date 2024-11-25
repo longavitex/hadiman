@@ -50,6 +50,12 @@
                 border-color: $orange;
             }
         }
+
+        &_txt_black {
+            &.active {
+                color: $black;
+            }
+        }
     }
 
     &.style-red {

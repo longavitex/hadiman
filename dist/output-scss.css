@@ -684,24 +684,35 @@ legend {
 .swiper-pagination.relative {
   bottom: unset;
 }
-.swiper.-section {
-  padding-bottom: 56px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: -16px;
-  margin-right: -16px;
-}
-.swiper.-section .swiper-pagination {
-  bottom: 0;
-}
-@media (max-width: 767.98px) {
-  .swiper.-section {
-    padding-bottom: 40px;
-  }
-}
 .swiper.overflow-unset {
   padding-right: 10000px;
   margin-right: -10000px;
+}
+.swiper.product_swiper_list {
+  width: 430px !important;
+  margin-left: 0;
+}
+.swiper.product_swiper_list .swiper-slide {
+  position: relative;
+  cursor: pointer;
+}
+.swiper.product_swiper_list .swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.swiper.product_swiper_list .swiper-slide-thumb-active::before {
+  border-color: #202020;
+}
+@media (max-width: 480px) {
+  .swiper.product_swiper_list {
+    width: 100% !important;
+  }
 }
 
 /* Slick Dots */
@@ -833,6 +844,9 @@ legend {
 }
 .menu_tab .tab_btn_border.active {
   border-color: #FF6600;
+}
+.menu_tab .tab_btn_txt_black.active {
+  color: #202020;
 }
 .menu_tab.style-red .tab_btn_border.active {
   border-color: #FF6600;
