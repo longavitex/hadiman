@@ -313,6 +313,10 @@ legend {
   cursor: default;
   pointer-events: none;
 }
+.btn_decrease_quantity:disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
 
 .tag {
   padding: 0.5rem 1rem;
@@ -1171,12 +1175,29 @@ legend {
   font-weight: 700;
   color: #202020;
 }
+.filter_rating .rating_item .radio_input:disabled,
+.filter_rating .rating_item .radio_input:disabled + label {
+  cursor: default;
+  pointer-events: none;
+}
 .filter_type .tab_btn.active {
   background-color: #FF6600;
   color: #FFFFFF;
 }
 .filter_type .tab_btn.active::before {
   border-color: #FF6600;
+}
+
+/* cart */
+.cart .progress_line::before {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: -6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #FF6600;
 }
 
 /* Slider */

@@ -216,6 +216,13 @@ legend {
     cursor: default;
     pointer-events: none;
   }
+
+  &_decrease_quantity {
+    &:disabled {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+  }
 }
 
 .tag {

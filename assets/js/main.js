@@ -557,6 +557,78 @@
         });
     }
 
+    // Quantity product
+    const handleQuantityProduct = function () {
+        // increase quantity
+        $('.btn_increase_quantity').on('click', function() {
+            const productItem = $(this).closest('.product_item')
+            const quantityForm = $(this).closest('.quantity_form')
+            let currentPrice = Number(productItem.find('.product_price span').text())
+            let currentQuantity = Number(quantityForm.find('.quantity').text())
+            productItem.find('.product_total_price span').text((currentQuantity + 1) * currentPrice);
+            quantityForm.find('.quantity').text(currentQuantity + 1);
+
+            // Check btn decrease
+            if (currentQuantity + 1 > 1) {
+                quantityForm.find('.btn_decrease_quantity').attr('disabled', false);
+            }
+        })
+
+        // decrease quantity
+        $('.btn_decrease_quantity').on('click', function() {
+            const productItem = $(this).closest('.product_item')
+            const quantityForm = $(this).closest('.quantity_form')
+            let currentPrice = Number(productItem.find('.product_price span').text())
+            let currentQuantity = Number(quantityForm.find('.quantity').text())
+
+            if (currentQuantity > 1) {
+                productItem.find('.product_total_price span').text((currentQuantity - 1) * currentPrice);
+                quantityForm.find('.quantity').text(currentQuantity - 1);
+                
+                if (currentQuantity - 1 === 1) {
+                    $(this).attr('disabled', true);
+                }
+            }
+        })
+    }
+
+    // Remove product
+    const handleRemoveProduct = function () {
+        $('.btn_remove_product').on('click', function() {
+            $(this).closest('.product_item').remove()
+        })
+    }
+
+    // Countdown time
+    const countDownTime = function (hours, minutes, seconds, infinite) {
+        // Set time to countdown
+        var duration = (hours * 60 * 60) + (minutes * 60) + (seconds); // change to seconds
+
+        var timer = setInterval(function () {
+            var hoursLeft = Math.floor(duration / 3600);
+            var minutesLeft = Math.floor((duration % 3600) / 60);
+            var secondsLeft = duration % 60;
+
+            // Show time
+            $('.countdown_time .hour').text(hoursLeft / 10 < 1 ? '0' + hoursLeft : hoursLeft);
+            $('.countdown_time .minute').text(minutesLeft / 10 < 1 ? '0' + minutesLeft : minutesLeft);
+            $('.countdown_time .second').text(secondsLeft / 10 < 1 ? '0' + secondsLeft : secondsLeft);
+
+            // decrease time
+            duration--;
+
+            if (duration < 0) {
+                if (infinite === true) {
+                    // reset countdown
+                    countDownTime(hours, minutes, seconds, infinite);
+                } else {
+                    // stop countdown
+                    clearInterval(timer);
+                }
+            }
+        }, 1000);
+    }
+
     // popup
     const openPopup = function() {
         $('.js_btn_open_popup').on('click', function(){
@@ -586,6 +658,9 @@
     }).scroll();
 
     $(win).on('load', function () {
+        if($('.cart').length > 0) {
+            countDownTime(0, 5, 0, true)
+        }
         handleFixedHeader()
         setSwipers()
         projectsSlideFour()
@@ -596,6 +671,8 @@
         handleFaqs()
         generateCalendar(currentDate);
         handleRate()
+        handleQuantityProduct()
+        handleRemoveProduct()
         openPopup()
         closePopup()
     });

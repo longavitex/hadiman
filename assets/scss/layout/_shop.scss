@@ -8,6 +8,7 @@
             border-radius: 50%;
           }
         }
+
         .checkbox:checked~.label::before {
           border-color: transparent;
         }
@@ -67,12 +68,19 @@
         }
       }
 
-      .radio_input:checked + label {
+      .radio_input:checked+label {
+
         .star,
         .quantity {
           font-weight: 700;
           color: $black;
-        } 
+        }
+      }
+
+      .radio_input:disabled,
+      .radio_input:disabled+label {
+        cursor: default;
+        pointer-events: none;
       }
     }
   }
@@ -82,11 +90,27 @@
       &.active {
         background-color: $orange;
         color: $white;
-        
+
         &::before {
           border-color: $orange;
         }
       }
+    }
+  }
+}
+
+/* cart */
+.cart {
+  .progress_line {
+    &::before {
+      content: "";
+      position: absolute;
+      right: -8px;
+      top: -6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $orange;
     }
   }
 }
