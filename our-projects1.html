@@ -377,7 +377,7 @@
                         <span class="wishlist_quantity flex items-center justify-center absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-black text-[10px] text-white pointer-events-none">2</span>
                     </li>
                     <li class="menu_icons_item inline-block align-middle relative ml-5">
-                        <button class="menu_icons_btn js_btn_cart">
+                        <button class="menu_icons_btn js_btn_open_popup" data-popup="popup_cart">
                             <span class="ph ph-shopping-bag-open text-2xl"></span>
                             <span class="blind">button cart</span>
                         </button>
@@ -1055,6 +1055,77 @@
                                 <span class="product_price txt-button">$<span>40</span>.00</span>
                             </div>
                         </a>
+                        <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
+                            <span class="ph ph-x-circle text-xl"></span>
+                            <span class="blind">button remove product</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Popup Cart -->
+        <div id="popup_cart" class='popup_item popup_cart absolute top-0 right-0 sm:w-[500px] w-[80vw] h-full bg-white translate-x-full duration-500'>
+            <div class='popup_cart_inner flex flex-col h-full p-6'>
+                <div class="heading flex flex-shrink-0 items-center justify-between w-full pb-5">
+                    <h5 class="heading5">Cart</h5>
+                    <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-surface duration-300 hover:bg-black hover:text-white">
+                        <span class="ph ph-x text-lg"></span>
+                        <span class="blind">button close menu mobile</span>
+                    </button>
+                </div>
+                <ul class="cart_list overflow-x-hidden w-full h-full max-h-max">
+                    <li class="product_item flex items-center justify-between mt-5 pb-5 border-b border-outline w-full">
+                        <div class="flex gap-4">
+                            <a href="product-detail.html" class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] md:h-[100px] w-24 h-24">
+                                <img src="./assets/images/products/1.jpg" alt="Real Steel Sledge Hammer" class='w-full h-full object-cover' />
+                            </a>
+                            <div class="w-full">
+                                <a href="product-detail.html" class="block pr-4">
+                                    <span class="product_name txt-button line-clamp-2 mb-1">Real Steel Sledge Hammer</span>
+                                    <span class="product_price txt-button">$<span>50</span>.00</span>
+                                </a>
+                                <div class="quantity_form flex items-center gap-5 w-fit mt-4 p-2 border border-outline">
+                                    <button class="btn_decrease_quantity" disabled>
+                                        <span class="ph ph-minus text-xl"></span>
+                                        <span class="blind">button decrease quantity</span>
+                                    </button>
+                                    <span class="quantity -mt-0.5 sm:text-xl text-lg font-bold">1</span>
+                                    <button class="btn_increase_quantity">
+                                        <span class="ph ph-plus text-xl"></span>
+                                        <span class="blind">button increase quantity</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
+                            <span class="ph ph-x-circle text-xl"></span>
+                            <span class="blind">button remove product</span>
+                        </button>
+                    </li>
+                    <li class="product_item flex items-center justify-between mt-5 pb-5 border-b border-outline w-full">
+                        <div class="flex gap-4">
+                            <a href="product-detail.html" class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] md:h-[100px] w-24 h-24">
+                                <img src="./assets/images/products/2.jpg" alt="Dewalt Flooring Knee Pads" class='w-full h-full object-cover' />
+                            </a>
+                            <div class="w-full">
+                                <a href="product-detail.html" class="block pr-4">
+                                    <span class="product_name txt-button line-clamp-2 mb-1">Dewalt Flooring Knee Pads</span>
+                                    <span class="product_price txt-button">$<span>40</span>.00</span>
+                                </a>
+                                <div class="quantity_form flex items-center gap-5 w-fit mt-4 p-2 border border-outline">
+                                    <button class="btn_decrease_quantity" disabled>
+                                        <span class="ph ph-minus text-xl"></span>
+                                        <span class="blind">button decrease quantity</span>
+                                    </button>
+                                    <span class="quantity -mt-0.5 sm:text-xl text-lg font-bold">1</span>
+                                    <button class="btn_increase_quantity">
+                                        <span class="ph ph-plus text-xl"></span>
+                                        <span class="blind">button increase quantity</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
                             <span class="ph ph-x-circle text-xl"></span>
                             <span class="blind">button remove product</span>
