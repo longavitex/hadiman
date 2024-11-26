@@ -1602,7 +1602,7 @@
     <div id="popup" class="popup">
         <!-- Menu mobile -->
         <div id="popup_menu_mobile" class="popup_item popup_menu_mobile absolute top-0 left-0 w-full h-full bg-white -translate-x-full duration-500">
-            <div class="menu_mobile_inner p-6">
+            <div class="menu menu_mobile_inner p-6 overflow-x-hidden max-h-full">
                 <div class="heading flex justify-between">
                     <a href="index.html" class="logo flex items-center gap-3">
                         <img src="./assets/images/logo_orange.png" class="flex-shrink-0 w-12" alt="logo">
@@ -1621,11 +1621,11 @@
                 </form>
                 <ul class="menu_mobile_nav flex flex-col gap-3 mt-6">
                     <li>
-                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline active">
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
                             <strong class="heading6">Home</strong>
                             <span class="ph ph-caret-down text-xl"></span>
                         </a>
-                        <ul class="menu_sub px-4 pt-2">
+                        <ul class="menu_sub_nav px-4 pt-2">
                             <li>
                                 <a href="index.html" class="menu_sub_link py-2 txt-button active">Homepage 01</a>
                             </li>
@@ -1645,13 +1645,33 @@
                             <strong class="heading6">Services</strong>
                             <span class="ph ph-caret-down text-xl"></span>
                         </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Renovation Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Electrical Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Plumbing Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">HVAC Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Painting and Drywall</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Roofing Services</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
                             <strong class="heading6">Blog</strong>
                             <span class="ph ph-caret-down text-xl"></span>
                         </a>
-                        <ul class="menu_sub px-4 pt-2">
+                        <ul class="menu_sub_nav px-4 pt-2">
                             <li>
                                 <a href="blog-default.html" class="menu_sub_link py-2 txt-button">Blog Default</a>
                             </li>
@@ -1674,7 +1694,7 @@
                             <strong class="heading6">Shop</strong>
                             <span class="ph ph-caret-down text-xl"></span>
                         </a>
-                        <ul class="menu_sub px-4 pt-2">
+                        <ul class="menu_sub_nav px-4 pt-2">
                             <li>
                                 <a href="our-products.html" class="menu_sub_link py-2 txt-button">Our Products</a>
                             </li>
@@ -1694,7 +1714,7 @@
                             <strong class="heading6">Pages</strong>
                             <span class="ph ph-caret-down text-xl"></span>
                         </a>
-                        <ul class="menu_sub px-4 pt-2">
+                        <ul class="menu_sub_nav px-4 pt-2">
                             <li>
                                 <a href="about-us.html" class="menu_sub_link py-2 txt-button">About Us</a>
                             </li>

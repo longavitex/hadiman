@@ -333,11 +333,18 @@
             <ul class="header_info flex items-center gap-10">
                 <li>
                     <ul class="menu_icons">
-                        <li class="menu_icons_item inline-block align-middle">
+                        <li class="menu_icons_item inline-block align-middle max-lg:hidden">
                             <button class="menu_icons_btn js_btn_search">
                                 <span class="ph ph-magnifying-glass text-2xl text-white"></span>
                                 <span class="blind">button search</span>
                             </button>
+                        </li>
+                        <li class="menu_icons_item inline-block align-middle relative ml-5">
+                            <button class="menu_icons_btn js_btn_wishlist">
+                                <span class="ph ph-heart text-2xl text-white"></span>
+                                <span class="blind">button wishlist</span>
+                            </button>
+                            <span class="wishlist_quantity flex items-center justify-center absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-white text-[10px]">0</span>
                         </li>
                         <li class="menu_icons_item inline-block align-middle relative ml-5">
                             <button class="menu_icons_btn js_btn_cart">
@@ -348,7 +355,7 @@
                                 class="cart_quantity flex items-center justify-center absolute -top-2 -right-2 w-4 h-4 rounded-full bg-white text-[10px]">2</span>
                         </li>
                         <li class="menu_icons_item inline-block align-middle ml-5 lg:hidden">
-                            <button class="menu_icons_btn js_btn_menu_mobile">
+                            <button class="menu_icons_btn js_btn_open_popup" data-popup="popup_menu_mobile">
                                 <span class="ph ph-list text-2xl text-white"></span>
                                 <span class="blind">button menu mobile</span>
                             </button>
@@ -358,7 +365,7 @@
                 <li class="max-xl:hidden">
                     <a href="book-appointment.html" class="btn bg-red">Request an estimate</a>
                 </li>
-                <li class="max-2xl:hidden">
+                <li class="max-[1600px]:hidden">
                     <a href="tel:+1555678888" class="flex items-center gap-3 group">
                         <span class="flex items-center justify-center sm:w-14 w-12 sm:h-14 h-12 bg-white text-red duration-400 group-hover:bg-red group-hover:text-white">
                             <span class="ph ph-phone-call sm:text-3xl text-2xl"></span>

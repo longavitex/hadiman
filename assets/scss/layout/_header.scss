@@ -28,14 +28,34 @@
         }
     }
 
-    &_sub_link {
-        &.active {
-            color: $orange;
+    &_sub {
+        &_nav {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height .6s linear;
+        }
+
+        &_link {
+            &.active {
+                color: $orange;
+            }
         }
     }
 
-    &_mobile_nav {
-        
+    &_link {
+        .ph {
+            transition: transform .4s ease .1s;
+        }
+
+        &.active {
+            .ph {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &_link.active + .menu_sub_nav {
+        max-height: 400px;
     }
 
     &.style-blue {
