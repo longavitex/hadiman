@@ -363,11 +363,18 @@
                     </li>
                 </ul>
                 <ul class="menu_icons">
-                    <li class="menu_icons_item inline-block align-middle">
+                    <li class="menu_icons_item inline-block align-middle max-lg:hidden">
                         <button class="menu_icons_btn js_btn_search">
                             <span class="ph ph-magnifying-glass text-2xl"></span>
                             <span class="blind">button search</span>
                         </button>
+                    </li>
+                    <li class="menu_icons_item inline-block align-middle relative ml-5">
+                        <button class="menu_icons_btn js_btn_open_popup" data-popup="popup_wishlist">
+                            <span class="ph ph-heart text-2xl"></span>
+                            <span class="blind">button wishlist</span>
+                        </button>
+                        <span class="wishlist_quantity flex items-center justify-center absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-black text-[10px] text-white pointer-events-none">2</span>
                     </li>
                     <li class="menu_icons_item inline-block align-middle relative ml-5">
                         <button class="menu_icons_btn js_btn_cart">
@@ -375,7 +382,7 @@
                             <span class="blind">button cart</span>
                         </button>
                         <span
-                            class="cart_quantity flex items-center justify-center absolute -top-2 -right-2 w-4 h-4 rounded-full bg-black text-[10px] text-white">2</span>
+                            class="cart_quantity flex items-center justify-center absolute -top-2 -right-2 w-4 h-4 rounded-full bg-black text-[10px] text-white pointer-events-none">2</span>
                     </li>
                 </ul>
             </div>
@@ -838,7 +845,7 @@
                         <img src="./assets/images/logo_orange.png" class="flex-shrink-0 w-12" alt="logo">
                         <strong class="heading3">Hadiman</strong>
                     </a>
-                    <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-surface">
+                    <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-surface duration-300 hover:bg-black hover:text-white">
                         <span class="ph ph-x text-lg"></span>
                         <span class="blind">button close menu mobile</span>
                     </button>
@@ -981,6 +988,51 @@
                         <a href="contact.html" class="btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
                             <strong class="heading6">Contact</strong>
                         </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Popup Wishlist -->
+        <div id="popup_wishlist" class='popup_item popup_wishlist absolute top-0 right-0 sm:w-[500px] w-[80vw] h-full bg-white translate-x-full duration-500'>
+            <div class='popup_wishlist_inner flex flex-col p-6'>
+                <div class="heading flex flex-shrink-0 items-center justify-between w-full pb-5">
+                    <h5 class="heading5">Wishlist</h5>
+                    <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-surface duration-300 hover:bg-black hover:text-white">
+                        <span class="ph ph-x text-lg"></span>
+                        <span class="blind">button close menu mobile</span>
+                    </button>
+                </div>
+                <ul class="wishlist_list overflow-x-hidden w-full h-full max-h-max">
+                    <li class="product_item flex items-center justify-between mt-5 pb-5 border-b border-outline w-full">
+                        <a href="product-detail.html" class="flex items-center gap-4">
+                            <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
+                                <img src="./assets/images/products/1.jpg" alt="Real Steel Sledge Hammer" class='w-full h-full object-cover' />
+                            </div>
+                            <div class="pr-4">
+                                <span class="product_name txt-button line-clamp-2 mb-1">Real Steel Sledge Hammer</span>
+                                <span class="product_price txt-button">$<span>50</span>.00</span>
+                            </div>
+                        </a>
+                        <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
+                            <span class="ph ph-x-circle text-xl"></span>
+                            <span class="blind">button remove product</span>
+                        </button>
+                    </li>
+                    <li class="product_item flex items-center justify-between mt-5 pb-5 border-b border-outline w-full">
+                        <a href="product-detail.html" class="flex items-center gap-4">
+                            <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
+                                <img src="./assets/images/products/2.jpg" alt="Dewalt Flooring Knee Pads" class='w-full h-full object-cover' />
+                            </div>
+                            <div class="pr-4">
+                                <span class="product_name txt-button line-clamp-2 mb-1">Dewalt Flooring Knee Pads</span>
+                                <span class="product_price txt-button">$<span>40</span>.00</span>
+                            </div>
+                        </a>
+                        <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
+                            <span class="ph ph-x-circle text-xl"></span>
+                            <span class="blind">button remove product</span>
+                        </button>
                     </li>
                 </ul>
             </div>

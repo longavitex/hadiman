@@ -17,15 +17,12 @@
   }
 
   &_item {
-    display: none;
-
-    &.popup_menu_mobile {
-      display: block;
-    }
-
     &.open {
-      display: block;
       transform: translate(0);
+      
+      &.hidden {
+        display: block;
+      }
     }
   }
 }
