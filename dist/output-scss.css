@@ -977,11 +977,15 @@ legend {
   visibility: visible;
   opacity: 1;
 }
-.popup_item.open {
-  transform: translate(0);
+.popup_item {
+  display: none;
 }
-.popup_item.open.hidden {
+.popup_item.popup_menu_mobile {
   display: block;
+}
+.popup_item.open {
+  display: block;
+  transform: translate(0);
 }
 
 @media (min-width: 1280px) {

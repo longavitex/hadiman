@@ -803,6 +803,165 @@
     </footer>
     <!-- Scroll to top -->
     <a class="scroll_to_top_btn" href="#header"><span class="ph-bold ph-caret-up"></span></a>
+    
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <!-- Menu mobile -->
+        <div id="popup_menu_mobile" class="popup_item popup_menu_mobile absolute top-0 left-0 w-full h-full bg-white -translate-x-full duration-500">
+            <div class="menu menu_mobile_inner p-6 overflow-x-hidden max-h-full">
+                <div class="heading flex justify-between">
+                    <a href="index.html" class="logo flex items-center gap-3">
+                        <img src="./assets/images/logo_orange.png" class="flex-shrink-0 w-12" alt="logo">
+                        <strong class="heading3">Hadiman</strong>
+                    </a>
+                    <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-surface">
+                        <span class="ph ph-x text-lg"></span>
+                        <span class="blind">button close menu mobile</span>
+                    </button>
+                </div>
+                <form class="form_search overflow-hidden relative w-full h-13 mt-8">
+                    <input class="form_input py-3 pl-4 pr-16 w-full h-full border border-transparent bg-surface" type="text" placeholder="Search..." required />
+                    <button class="flex items-center justify-end absolute top-0 right-4 w-8 h-full aspect-square">
+                        <span class="ph ph-magnifying-glass text-2xl"></span>
+                    </button>
+                </form>
+                <ul class="menu_mobile_nav flex flex-col gap-3 mt-6">
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Home</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="index.html" class="menu_sub_link py-2 txt-button">Homepage 01</a>
+                            </li>
+                            <li>
+                                <a href="home2.html" class="menu_sub_link py-2 txt-button">Homepage 02</a>
+                            </li>
+                            <li>
+                                <a href="home3.html" class="menu_sub_link py-2 txt-button">Homepage 03</a>
+                            </li>
+                            <li>
+                                <a href="home4.html" class="menu_sub_link py-2 txt-button">Homepage 04</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Services</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Renovation Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Electrical Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Plumbing Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">HVAC Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Painting and Drywall</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Roofing Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Blog</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="blog-default.html" class="menu_sub_link py-2 txt-button">Blog Default</a>
+                            </li>
+                            <li>
+                                <a href="blog-list.html" class="menu_sub_link py-2 txt-button">Blog List</a>
+                            </li>
+                            <li>
+                                <a href="blog-grid.html" class="menu_sub_link py-2 txt-button">Blog Grid</a>
+                            </li>
+                            <li>
+                                <a href="blog-detail1.html" class="menu_sub_link py-2 txt-button">Blog Detail 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-detail2.html" class="menu_sub_link py-2 txt-button">Blog Detail 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Shop</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="our-products.html" class="menu_sub_link py-2 txt-button">Our Products</a>
+                            </li>
+                            <li>
+                                <a href="product-detail.html" class="menu_sub_link py-2 txt-button">Product Details</a>
+                            </li>
+                            <li>
+                                <a href="cart.html" class="menu_sub_link py-2 txt-button">Shopping Cart</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html" class="menu_sub_link py-2 txt-button active">Check Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Pages</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="about-us.html" class="menu_sub_link py-2 txt-button">About Us</a>
+                            </li>
+                            <li>
+                                <a href="our-services.html" class="menu_sub_link py-2 txt-button">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="our-projects1.html" class="menu_sub_link py-2 txt-button">Our Projects 1</a>
+                            </li>
+                            <li>
+                                <a href="our-projects2.html" class="menu_sub_link py-2 txt-button">Our Projects 2</a>
+                            </li>
+                            <li>
+                                <a href="projects-detail.html" class="menu_sub_link py-2 txt-button">Projects Details</a>
+                            </li>
+                            <li>
+                                <a href="our-pricing.html" class="menu_sub_link py-2 txt-button">Our Pricings</a>
+                            </li>
+                            <li>
+                                <a href="our-testimonials.html" class="menu_sub_link py-2 txt-button">Our Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="book-appointment.html" class="menu_sub_link py-2 txt-button">Book Appointment</a>
+                            </li>
+                            <li>
+                                <a href="404.html" class="menu_sub_link py-2 txt-button">404 Page</a>
+                            </li>
+                            <li>
+                                <a href="faqs.html" class="menu_sub_link py-2 txt-button">Faqs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Contact</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/gsap.min.js"></script>
