@@ -28,11 +28,14 @@
     }
 
     // Toggle active
-    function handleToggleButtonClicked() {
-        $('.btn_toggle').on('click', function() {
-          $(this).toggleClass('active');
+    const handleToggleButtonClicked = function() {
+        $('.btn_toggle').on('click', function(e) {
+            if($(this).hasClass('menu_sub_link')) {
+                e.preventDefault()
+            }
+            $(this).toggleClass('active');
         })
-      }
+    }
 
     const activeTestimonials = function(swiper) {
         let activeIndex = swiper.realIndex
@@ -644,7 +647,7 @@
             const popup = $(this).attr('data-popup');
             $('.popup').addClass('open');
             $('.popup_item').removeClass('open');
-            $('.' + popup).addClass('open');
+            $('#' + popup).addClass('open');
         })
     }
 

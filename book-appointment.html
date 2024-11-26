@@ -110,7 +110,7 @@
         </div>
         <div class="menu_main h-15 border-t border-outline">
             <div class="container flex items-center justify-between h-full bg-white">
-                <button class="menu_icons_btn js_btn_menu_mobile lg:hidden">
+                <button class="menu_icons_btn js_btn_open_popup lg:hidden" data-popup="popup_menu_mobile">
                     <span class="ph ph-list text-2xl"></span>
                     <span class="blind">button menu mobile</span>
                 </button>
@@ -634,7 +634,7 @@
 
     <!-- Popup Booking -->
     <div id="popup" class="popup">
-        <div class="popup_item popup_booking md:w-[690px] w-[80vw] h-fit bg-white shadow-lg">
+        <div id="popup_booking" class="popup_item popup_booking md:w-[690px] w-[80vw] h-fit bg-white shadow-lg">
             <h5 class="heading5 py-3.5 bg-orange text-white text-center">Request An Appointment</h5>
             <div class="popup_content overflow-x-hidden max-h-[70vh] p-7">
                 <h6 class="heading6">Date & Time</h6>
