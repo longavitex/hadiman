@@ -223,6 +223,27 @@ legend {
       opacity: 0.3;
     }
   }
+
+  &_compare,
+  &_wishlist {
+    [class*="ph"] {
+      animation: scaleAnimate 0.5s ease;
+
+      &.hidden {
+        display: none;
+      }
+    }
+
+    &.active {
+      [class*="ph"] {
+        display: none;
+
+        &.hidden {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 .tag {
@@ -413,6 +434,51 @@ legend {
   }
 }
 
+.form_radio {
+  .radio_input {
+    border: 2px solid $variant1;
+    appearance: none;
+    transition: border-color 0.2s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      border-radius: 50%;
+      background-color: transparent;
+      transition: background-color 0.2s ease;
+    }
+
+    &:checked {
+      border-color: $black;
+
+      &::before {
+        background-color: $black;
+      }
+    }
+
+    &.border-orange {
+      &:checked {
+        border-color: $orange;
+  
+        &::before {
+          background-color: $orange;
+        }
+      }
+    }
+  }
+
+  .radio_input:disabled,
+  .radio_input:disabled+label {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
 .scroll_to_top_btn {
   display: flex;
   align-items: center;
@@ -458,6 +524,16 @@ legend {
     &:hover {
       background-color: $red;
     }
+  }
+}
+
+@keyframes scaleAnimate {
+  0% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 

@@ -51,7 +51,6 @@ main {
 }
 
 img,
-form,
 fieldset {
   border: 0;
   vertical-align: top;
@@ -317,6 +316,18 @@ legend {
   pointer-events: none;
   opacity: 0.3;
 }
+.btn_compare [class*=ph], .btn_wishlist [class*=ph] {
+  animation: scaleAnimate 0.5s ease;
+}
+.btn_compare [class*=ph].hidden, .btn_wishlist [class*=ph].hidden {
+  display: none;
+}
+.btn_compare.active [class*=ph], .btn_wishlist.active [class*=ph] {
+  display: none;
+}
+.btn_compare.active [class*=ph].hidden, .btn_wishlist.active [class*=ph].hidden {
+  display: block;
+}
 
 .tag {
   padding: 0.5rem 1rem;
@@ -463,6 +474,41 @@ legend {
   border-color: #FF6600;
 }
 
+.form_radio .radio_input {
+  border: 2px solid #616265;
+  appearance: none;
+  transition: border-color 0.2s ease;
+}
+.form_radio .radio_input::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+.form_radio .radio_input:checked {
+  border-color: #202020;
+}
+.form_radio .radio_input:checked::before {
+  background-color: #202020;
+}
+.form_radio .radio_input.border-orange:checked {
+  border-color: #FF6600;
+}
+.form_radio .radio_input.border-orange:checked::before {
+  background-color: #FF6600;
+}
+.form_radio .radio_input:disabled,
+.form_radio .radio_input:disabled + label {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .scroll_to_top_btn {
   display: flex;
   align-items: center;
@@ -500,6 +546,14 @@ legend {
   background-color: #D31B41;
 }
 
+@keyframes scaleAnimate {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media (max-width: 1023.98px) {
   html,
   body {
@@ -1148,37 +1202,10 @@ legend {
   font-weight: 700;
   color: #202020;
 }
-.filter_rating .rating_item .radio_input {
-  border: 2px solid #616265;
-  appearance: none;
-  transition: border-color 0.2s ease;
-}
-.filter_rating .rating_item .radio_input::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  bottom: 2px;
-  left: 2px;
-  border-radius: 50%;
-  background-color: transparent;
-  transition: background-color 0.2s ease;
-}
-.filter_rating .rating_item .radio_input:checked {
-  border-color: #FF6600;
-}
-.filter_rating .rating_item .radio_input:checked::before {
-  background-color: #FF6600;
-}
 .filter_rating .rating_item .radio_input:checked + label .star,
 .filter_rating .rating_item .radio_input:checked + label .quantity {
   font-weight: 700;
   color: #202020;
-}
-.filter_rating .rating_item .radio_input:disabled,
-.filter_rating .rating_item .radio_input:disabled + label {
-  cursor: default;
-  pointer-events: none;
 }
 .filter_type .tab_btn.active {
   background-color: #FF6600;
@@ -1198,6 +1225,40 @@ legend {
   height: 16px;
   border-radius: 50%;
   background-color: #FF6600;
+}
+
+/* checkout */
+.checkout .form_login {
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+}
+.checkout .btn_form_login.active + .form_login {
+  visibility: visible;
+  max-height: 280px;
+  margin-top: 16px;
+  opacity: 1;
+}
+.checkout .payment_item {
+  transition: all linear 0.4s;
+}
+.checkout .payment_item:has(.radio_input:checked) {
+  background-color: #EFF0F3;
+}
+.checkout .payment_infor {
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+}
+.checkout .payment_item:has(.radio_input:checked) .payment_infor {
+  visibility: visible;
+  max-height: 450px;
+  margin-top: 8px;
+  opacity: 1;
 }
 
 /* Slider */

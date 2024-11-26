@@ -27,6 +27,13 @@
         }
     }
 
+    // Toggle active
+    function handleToggleButtonClicked() {
+        $('.btn_toggle').on('click', function() {
+          $(this).toggleClass('active');
+        })
+      }
+
     const activeTestimonials = function(swiper) {
         let activeIndex = swiper.realIndex
         
@@ -662,6 +669,7 @@
             countDownTime(0, 5, 0, true)
         }
         handleFixedHeader()
+        handleToggleButtonClicked()
         setSwipers()
         projectsSlideFour()
         handleCompareProject()

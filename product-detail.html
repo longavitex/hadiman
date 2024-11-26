@@ -467,7 +467,7 @@
                         </div>
                         <ul class="product_type_list filter_type category_list flex flex-wrap gap-3 mt-3" role="tablist">
                             <li class="product_type_item" role="presentation">
-                                <button class="product_type_btn tab_btn btn btn_outline" role="tab" aria-selected="false">20V MAX XR</button>
+                                <button class="product_type_btn tab_btn btn btn_outline active" role="tab" aria-selected="true">20V MAX XR</button>
                             </li>
                             <li class="product_type_item" role="presentation">
                                 <button class="product_type_btn tab_btn btn btn_outline" role="tab" aria-selected="false">24V MAX XR</button>
@@ -493,12 +493,14 @@
                             <span>Add to cart - </span>
                             <span class="product_price">$79.99</span>
                         </button>
-                        <button class="btn_compare flex flex-shrink-0 items-center justify-center w-12 h-12 border border-outline duration-300 hover:border-outline hover:bg-black hover:text-white">
+                        <button class="btn_compare btn_toggle flex flex-shrink-0 items-center justify-center w-12 h-12 border border-outline duration-300 hover:border-outline hover:bg-black hover:text-white">
                             <span class="ph ph-git-diff text-2xl"></span>
+                            <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
                             <span class="blind">button compare</span>
                         </button>
-                        <button class="btn_wishlist flex flex-shrink-0 items-center justify-center w-12 h-12 border border-outline duration-300 hover:border-outline hover:bg-black hover:text-white">
+                        <button class="btn_wishlist btn_toggle flex flex-shrink-0 items-center justify-center w-12 h-12 border border-outline duration-300 hover:border-outline hover:bg-black hover:text-white">
                             <span class="ph ph-heart text-2xl"></span>
+                            <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
                             <span class="blind">button wishlist</span>
                         </button>
                     </div>

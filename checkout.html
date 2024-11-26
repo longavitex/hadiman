@@ -289,12 +289,12 @@
                             </li>
                             <li class="menu_sub_item">
                                 <a href="cart.html"
-                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Shopping
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Shopping
                                     Cart</a>
                             </li>
                             <li class="menu_sub_item">
                                 <a href="checkout.html"
-                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Check
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Check
                                     Out</a>
                             </li>
                         </ul>
@@ -384,7 +384,7 @@
     <!-- BREADCRUMB -->
     <section class="section breadcrumb flex items-center h-[320px] relative">
         <div class="breadcrumb_bg absolute top-0 left-0 w-full h-full pointer-events-none">
-            <img src="./assets/images/breadcrumb/blog.jpg" alt="Shopping Cart" class="h-full object-cover">
+            <img src="./assets/images/breadcrumb/blog.jpg" alt="Check Out" class="h-full object-cover">
         </div>
         <div class="container relative text-white">
             <ul class="breadcrumb_nav flex items-center gap-1">
@@ -393,382 +393,260 @@
                 </li>
                 <li class="flex items-center">
                     <span class="ph ph-caret-right text-xs opacity-50"></span>
-                    <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Shopping Cart</a>
+                    <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Check Out</a>
                 </li>
             </ul>
-            <h2 class="section_tit mt-3 heading2">Shopping Cart</h2>
+            <h2 class="section_tit mt-3 heading2">Check Out</h2>
         </div>
     </section>
-    <!-- CART -->
-    <section class="section cart sm:mt-25 mt-15">
+    <!-- CHECKOUT -->
+    <section class="section checkout sm:py-25 py-15">
         <div class="container flex justify-between max-xl:flex-col gap-y-8">
-            <div class="xl:w-2/3 xl:pr-3 w-full">
-                <div class="time flex items-center py-3 px-5 bg-surface">
-                    <span class="heading5">🔥</span>
-                    <p class="pl-2">Your cart will expire in
-                        <span class="countdown_time text-red txt-button"><span class="minute">05</span>:<span class="second">00</span></span>
-                        <span> minutes! Please checkout now before your items sell out!</span>
-                    </p>
-                </div>
-                <div class="heading mt-5">
-                    <p class="text">Buy
-                        <span class="txt-button"> $<span class="more-price">150</span>.00 </span>
-                        <span>more to get </span>
-                        <span class="txt-button">freeship</span>
-                    </p>
-                    <div class="tow_bar relative h-[4px] bg-outline mt-4">
-                        <div class="progress_line absolute top-0 left-0 w-1/2 h-full bg-orange"></div>
+            <div class="checkout_form_login xl:w-1/2 xl:pr-[15px] w-full">
+                <button class="btn_form_login btn_toggle flex items-center justify-between w-full py-3 px-4 bg-surface">
+                    <div>
+                        <span class="text-variant1 pr-1">Already have an account? </span><span class="txt-button text-black hover:underline">Login</span>
                     </div>
-                </div>
-                <div class="cart_list overflow-x-auto w-full sm:mt-7 mt-5">
-                    <div class='w-full max-md:w-[900px]'>
-                        <div class="heading bg-surface bora-4 pt-4 pb-4">
-                            <div class="flex">
-                                <div class="w-1/2">
-                                    <strong class="block txt-button text-center">Products</strong>
-                                </div>
-                                <div class="w-1/12">
-                                    <strong class="block txt-button text-center">Price</strong>
-                                </div>
-                                <div class="w-1/6">
-                                    <strong class="block txt-button text-center">Quantity</strong>
-                                </div>
-                                <div class="w-1/6">
-                                    <strong class="block txt-button text-center">Total Price</strong>
-                                </div>
+                    <span class="ph ph-caret-down text-xl"></span>
+                </button>
+                <div class="form_login">
+                    <form class="p-5 border border-outline">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div class="email">
+                                <label for="username">Username or email address <span class="text-red">*</span></label>
+                                <input class="form_input w-full mt-3 px-4 py-3 border border-outline" id="username" type="email" placeholder="Username or email" required />
+                            </div>
+                            <div class="pass">
+                                <label for="password">Your Password <span class="text-red">*</span></label>
+                                <input class="form_input w-full mt-3 px-4 py-3 border border-outline" id="password" type="password" placeholder="Password" required />
                             </div>
                         </div>
-                        <ul class="product_list w-full mt-3">
-                            <li class="product_item flex mt-5 pb-5 border-b border-outline w-full">
-                                <div class="flex-shrink-0 w-1/2 pr-5">
-                                    <a href="product-detail.html" class="flex items-center gap-6">
-                                        <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
-                                            <img src="./assets/images/products/1.jpg" alt="Real Steel Sledge Hammer" class='w-full h-full object-cover' />
-                                        </div>
-                                        <span class="txt-button line-clamp-2">Real Steel Sledge Hammer</span>
-                                    </a>
-                                </div>
-                                <div class="w-1/12 flex items-center justify-center">
-                                    <span class="product_price txt-button">$<span>50</span>.00</span>
-                                </div>
-                                <div class="w-1/6 flex items-center justify-center">
-                                    <div class="quantity_form flex items-center gap-5 w-fit p-3 border border-outline">
-                                        <button class="btn_decrease_quantity" disabled>
-                                            <span class="ph ph-minus text-xl"></span>
-                                            <span class="blind">button decrease quantity</span>
-                                        </button>
-                                        <span class="quantity -mt-0.5 text-xl font-bold">1</span>
-                                        <button class="btn_increase_quantity">
-                                            <span class="ph ph-plus text-xl"></span>
-                                            <span class="blind">button increase quantity</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="w-1/6 flex items-center justify-center">
-                                    <span class="product_total_price txt-button">$<span>50</span>.00</span>
-                                </div>
-                                <div class="w-1/12 flex items-center justify-center">
-                                    <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
-                                        <span class="ph ph-x-circle text-xl"></span>
-                                        <span class="blind">button remove product</span>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="product_item flex mt-5 pb-5 border-b border-outline w-full">
-                                <div class="flex-shrink-0 w-1/2 pr-5">
-                                    <a href="product-detail.html" class="flex items-center gap-6">
-                                        <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
-                                            <img src="./assets/images/products/2.jpg" alt="Dewalt Flooring Knee Pads" class='w-full h-full object-cover' />
-                                        </div>
-                                        <span class="txt-button line-clamp-2">Dewalt Flooring Knee Pads</span>
-                                    </a>
-                                </div>
-                                <div class="w-1/12 flex items-center justify-center">
-                                    <span class="product_price txt-button">$<span>40</span>.00</span>
-                                </div>
-                                <div class="w-1/6 flex items-center justify-center">
-                                    <div class="quantity_form flex items-center gap-5 w-fit p-3 border border-outline">
-                                        <button class="btn_decrease_quantity" disabled>
-                                            <span class="ph ph-minus text-xl"></span>
-                                            <span class="blind">button decrease quantity</span>
-                                        </button>
-                                        <span class="quantity -mt-0.5 text-xl font-bold">1</span>
-                                        <button class="btn_increase_quantity">
-                                            <span class="ph ph-plus text-xl"></span>
-                                            <span class="blind">button increase quantity</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="w-1/6 flex items-center justify-center">
-                                    <span class="product_total_price txt-button">$<span>40</span>.00</span>
-                                </div>
-                                <div class="w-1/12 flex items-center justify-center">
-                                    <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
-                                        <span class="ph ph-x-circle text-xl"></span>
-                                        <span class="blind">button remove product</span>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="product_item flex mt-5 pb-5 border-b border-outline w-full">
-                                <div class="flex-shrink-0 w-1/2 pr-5">
-                                    <a href="product-detail.html" class="flex items-center gap-6">
-                                        <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
-                                            <img src="./assets/images/products/3.jpg" alt="Method Antibacterial" class='w-full h-full object-cover' />
-                                        </div>
-                                        <span class="txt-button line-clamp-2">Method Antibacterial</span>
-                                    </a>
-                                </div>
-                                <div class="w-1/12 flex items-center justify-center">
-                                    <span class="product_price txt-button">$<span>60</span>.00</span>
-                                </div>
-                                <div class="w-1/6 flex items-center justify-center">
-                                    <div class="quantity_form flex items-center gap-5 w-fit p-3 border border-outline">
-                                        <button class="btn_decrease_quantity" disabled>
-                                            <span class="ph ph-minus text-xl"></span>
-                                            <span class="blind">button decrease quantity</span>
-                                        </button>
-                                        <span class="quantity -mt-0.5 text-xl font-bold">1</span>
-                                        <button class="btn_increase_quantity">
-                                            <span class="ph ph-plus text-xl"></span>
-                                            <span class="blind">button increase quantity</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="w-1/6 flex items-center justify-center">
-                                    <span class="product_total_price txt-button">$<span>60</span>.00</span>
-                                </div>
-                                <div class="w-1/12 flex items-center justify-center">
-                                    <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
-                                        <span class="ph ph-x-circle text-xl"></span>
-                                        <span class="blind">button remove product</span>
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="discount_code w-full h-14 sm:mt-7 mt-5">
-                    <form class='w-full h-full relative'>
-                        <input type="text" placeholder='Add voucher discount' class='w-full h-full pl-4 pr-44 border border-outline' required />
-                        <button class='btn flex items-center justify-center absolute top-1.5 bottom-1.5 right-1.5'>Apply Code</button>
+                        <button class="btn mt-4">Login</button>
                     </form>
                 </div>
-            </div>
-            <div class="xl:w-1/3 xl:pl-12 w-full">
-                <div class="cart_summary bg-surface p-6">
-                    <h5 class="heading5">Order Summary</h5>
-                    <div class="total_product_area py-5 flex justify-between border-b border-outline">
-                        <span class="txt-button">Subtotal</span>
-                        <span class="txt-button">$<span class="total_product">150</span><span>.00</span></span>
-                    </div>
-                    <div class="discount_area py-5 flex justify-between border-b border-outline">
-                        <span class="txt-button">Discounts</span>
-                        <span class="txt-button"><span>-$</span><span class="discount">10</span><span>.00</span></span>
-                    </div>
-                    <div class="ship_area py-5 flex justify-between border-b border-outline">
-                        <div class="txt-button">Shipping</div>
-                        <div class="filter_rating flex gap-12">
-                            <ul class="ship_list">
-                                <li class="form_radio ship_item flex items-center gap-2">
-                                    <input type="radio" name="shipcost" id="shipping" class="radio_input flex-shrink-0 relative w-4 h-4 border-orange rounded-full cursor-pointer" disabled />
-                                    <label for="shipping" class="flex items-center justify-between w-full cursor-pointer">Free Shipping:</label>
-                                </li>
-                                <li class="form_radio ship_item flex items-center gap-2">
-                                    <input type="radio" name="shipcost" id="local" class="radio_input flex-shrink-0 relative w-4 h-4 border-orange rounded-full cursor-pointer" checked />
-                                    <label for="local" class="flex items-center justify-between w-full cursor-pointer">Local:</label>
-                                </li>
-                                <li class="form_radio ship_item flex items-center gap-2">
-                                    <input type="radio" name="shipcost" id="flat" class="radio_input flex-shrink-0 relative w-4 h-4 border-orange rounded-full cursor-pointer" />
-                                    <label for="flat" class="flex items-center justify-between w-full cursor-pointer">Flat Rate:</label>
-                                </li>
-                            </ul>
-                            <div>
-                                <div class="ship">$0.00</div>
-                                <div class="local text-on-surface-variant1 mt-1">$30.00</div>
-                                <div class="flat text-on-surface-variant1 mt-1">$40.00</div>
+                <div class="information sm:mt-10 mt-7">
+                    <h5 class="heading5">Information</h5>
+                    <div class="checkout_form mt-5">
+                        <form class="form grid sm:grid-cols-2 gap-5 mt-6">
+                            <div class="first_name">
+                                <input class="form_input w-full px-4 py-3 border border-outline" id="firstname" type="text" placeholder="First Name*" required />
                             </div>
-                        </div>
-                    </div>
-                    <div class="total_order_area my-4 flex justify-between">
-                        <div class="heading5">Total</div>
-                        <div>
-                            <span class="heading5">$</span><span class="cart_total heading5">170</span><span class='heading5'>.00</span>
-                        </div>
-                    </div>
-                    <div class="group_btn flex flex-col items-center gap-y-4 mt-5">
-                        <a href="checkout.html" class="btn w-full text-center">Process To Checkout</a>
-                        <a class="txt-button hover:underline" href="our-products.html">Continue shopping</a>
+                            <div class="last_name">
+                                <input class="form_input w-full px-4 py-3 border border-outline" id="lastname" type="text" placeholder="Last Name*" required />
+                            </div>
+                            <div class="mail">
+                                <input class="form_input w-full px-4 py-3 border border-outline" id="email" type="email" placeholder="Email Address*" required />
+                            </div>
+                            <div class="phone">
+                                <input class="form_input w-full px-4 py-3 border border-outline" id="phone" type="tel" placeholder="Phone Number*" required />
+                            </div>
+                            <div class="country form_select col-span-full w-full">
+                                <select name="services" class="w-full py-3 px-4 border border-outline bg-white" required>
+                                    <option value="Choose Country/Region" selected disabled>Choose Country/Region</option>
+                                    <option value="United States">United States</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="France">France</option>
+                                </select>
+                                <span class="ph ph-caret-down arrow_down text-xl"></span>
+                            </div>
+                            <div class="town">
+                                <input class="form_input w-full px-4 py-3 border border-outline" id="city" type="text" placeholder="Town/City*" required />
+                            </div>
+                            <div class="street">
+                                <input class="form_input w-full px-4 py-3 border border-outline" id="street" type="text" placeholder="Street,..." required />
+                            </div>
+                            <div class="col-span-full message">
+                                <textarea class="form_input w-full px-4 py-3 border border-outline" id="message" name="message" rows="3" placeholder="Write note..." required></textarea>
+                            </div>
+                            <div class="payment col-span-full mt-5">
+                                <h5 class="heading5">Choose payment Option:</h5>
+                                <ul class="payment_list flex flex-col gap-5 mt-5">
+                                    <li class="payment_item p-5 border border-outline">
+                                        <div class="form_radio flex items-center gap-2">
+                                            <input type="radio" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" id="credit" name="payment" />
+                                            <label class="txt-button cursor-pointer" for="credit">Credit Card</label>
+                                        </div>
+                                        <div class="payment_infor">
+                                            <p>Make your payment directly into our bank account. Your order will not be shipped until the funds have cleared in our account.</p>
+                                            <div class="grid grid-cols-2 gap-4 gap-y-5 mt-4">
+                                                <div class="col-span-full">
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="cardNameCredit" placeholder="Name On Card*" />
+                                                </div>
+                                                <div class="col-span-full">
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="cardNumberCredit" placeholder="Card Numbers*" />
+                                                </div>
+                                                <div>
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="date" id="dateCredit" name="date" placeholder="mm/yy*" />
+                                                </div>
+                                                <div>
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="ccvCredit" placeholder="CVV*" />
+                                                </div>
+                                                <div class="form_checkbox flex col-span-full">
+                                                    <input type="checkbox" class="checkbox" id="saveCredit" />
+                                                    <span class="ph-fill ph-check-square text-[22px] checkbox_icon"></span>
+                                                    <label class="label pl-7" for="saveCredit">Save my name, email, and website in this browser for the next time I comment.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="payment_item p-5 border border-outline">
+                                        <div class="form_radio flex items-center gap-2">
+                                            <input type="radio" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" id="delivery" name="payment" />
+                                            <label class="txt-button cursor-pointer" for="delivery">Cash on Delivery</label>
+                                        </div>
+                                        <div class="payment_infor">
+                                            <p>Make your payment directly into our bank account. Your order will not be shipped until the funds have cleared in our account.</p>
+                                            <div class="grid grid-cols-2 gap-4 gap-y-5 mt-4">
+                                                <div class="col-span-full">
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="cardNameDelivery" placeholder="Name On Card*" />
+                                                </div>
+                                                <div class="col-span-full">
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="cardNumberDelivery" placeholder="Card Numbers*" />
+                                                </div>
+                                                <div>
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="date" id="dateDelivery" name="date" placeholder="mm/yy*" />
+                                                </div>
+                                                <div>
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="ccvDelivery" placeholder="CVV*" />
+                                                </div>
+                                                <div class="form_checkbox flex col-span-full">
+                                                    <input type="checkbox" class="checkbox" id="saveDelivery" />
+                                                    <span class="ph-fill ph-check-square text-[22px] checkbox_icon"></span>
+                                                    <label class="label pl-7" for="saveDelivery">Save my name, email, and website in this browser for the next time I comment.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="payment_item p-5 border border-outline">
+                                        <div class="form_radio flex items-center gap-2">
+                                            <input type="radio" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" id="apple" name="payment" />
+                                            <label class="txt-button cursor-pointer" for="apple">Apple Pay</label>
+                                        </div>
+                                        <div class="payment_infor">
+                                            <p>Make your payment directly into our bank account. Your order will not be shipped until the funds have cleared in our account.</p>
+                                            <div class="grid grid-cols-2 gap-4 gap-y-5 mt-4">
+                                                <div class="col-span-full">
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="cardNameApple" placeholder="Name On Card*" />
+                                                </div>
+                                                <div class="col-span-full">
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="cardNumberApple" placeholder="Card Numbers*" />
+                                                </div>
+                                                <div>
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="date" id="dateApple" name="date" placeholder="mm/yy*" />
+                                                </div>
+                                                <div>
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="ccvApple" placeholder="CVV*" />
+                                                </div>
+                                                <div class="form_checkbox flex col-span-full">
+                                                    <input type="checkbox" class="checkbox" id="saveApple" />
+                                                    <span class="ph-fill ph-check-square text-[22px] checkbox_icon"></span>
+                                                    <label class="label pl-7" for="saveApple">Save my name, email, and website in this browser for the next time I comment.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="payment_item p-5 border border-outline">
+                                        <div class="form_radio flex items-center gap-2">
+                                            <input type="radio" class="radio_input flex-shrink-0 relative w-4 h-4 rounded-full cursor-pointer" id="paypal" name="payment" />
+                                            <label class="txt-button cursor-pointer" for="paypal">Paypal</label>
+                                        </div>
+                                        <div class="payment_infor">
+                                            <p>Make your payment directly into our bank account. Your order will not be shipped until the funds have cleared in our account.</p>
+                                            <div class="grid grid-cols-2 gap-4 gap-y-5 mt-4">
+                                                <div class="col-span-full">
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="cardNamePaypal" placeholder="Name On Card*" />
+                                                </div>
+                                                <div class="col-span-full">
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="cardNumberPaypal" placeholder="Card Numbers*" />
+                                                </div>
+                                                <div>
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="date" id="datePaypal" name="date" placeholder="mm/yy*" />
+                                                </div>
+                                                <div>
+                                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline bg-white" type="text" id="ccvPaypal" placeholder="CVV*" />
+                                                </div>
+                                                <div class="form_checkbox flex col-span-full">
+                                                    <input type="checkbox" class="checkbox" id="savePaypal" />
+                                                    <span class="ph-fill ph-check-square text-[22px] checkbox_icon"></span>
+                                                    <label class="label pl-7" for="savePaypal">Save my name, email, and website in this browser for the next time I comment.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block-button col-span-full md:mt-10 mt-7">
+                                <button class="btn w-full text-center">Payment</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- RELATED PRODUCT -->
-    <section class="product_related sm:py-25 py-15">
-        <div class="container">
-            <h3 class="heading3">Related Products</h3>
-            <ul class="product_list grid xl:grid-cols-4 grid-cols-2 sm:gap-7.5 gap-5 gap-y-10 sm:mt-10 mt-7">
-                <li class="product_item group">
-                    <div class="product_thumb overflow-hidden relative">
-                        <a href="product-detail.html" class="product_img block">
-                            <img src="./assets/images/products/2.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="VACO Impact Driver">
-                        </a>
-                        <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
-                        <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
-                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-heart text-xl"></span>
-                                </button>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-git-diff text-xl"></span>
-                                </button>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-eye text-xl"></span>
-                                </button>
-                            </li>
-                        </ul>
-                        <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+            <div class="xl:w-5/12 xl:pl-[15px] w-full">
+                <div class="checkout_summary">
+                    <h5 class="heading5 pb-3">Your Order</h5>
+                    <ul class="product_list">
+                        <li class="product_item flex items-center justify-between gap-10 mt-5 pb-5 border-b border-outline">
+                            <a href="product-detail.html" class="flex items-center gap-6">
+                                <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
+                                    <img src="./assets/images/products/1.jpg" alt="Real Steel Sledge Hammer" class='w-full h-full object-cover' />
+                                </div>
+                                <span class="txt-button line-clamp-2">Real Steel Sledge Hammer</span>
+                            </a>
+                            <p class="flex items-center gap-1 txt-button">
+                                <span class="product_quantity">1</span>
+                                <span>X</span>
+                                <span class="product_price">$<span>50</span>.00</span>
+                            </p>
+                        </li>
+                        <li class="product_item flex items-center justify-between gap-10 mt-5 pb-5 border-b border-outline">
+                            <a href="product-detail.html" class="flex items-center gap-6">
+                                <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
+                                    <img src="./assets/images/products/2.jpg" alt="Dewalt Flooring Knee Pads" class='w-full h-full object-cover' />
+                                </div>
+                                <span class="txt-button line-clamp-2">Dewalt Flooring Knee Pads</span>
+                            </a>
+                            <p class="flex items-center gap-1 txt-button">
+                                <span class="product_quantity">1</span>
+                                <span>X</span>
+                                <span class="product_price">$<span>40</span>.00</span>
+                            </p>
+                        </li>
+                        <li class="product_item flex items-center justify-between gap-10 mt-5 pb-5 border-b border-outline">
+                            <a href="product-detail.html" class="flex items-center gap-6">
+                                <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
+                                    <img src="./assets/images/products/3.jpg" alt="Method Antibacterial" class='w-full h-full object-cover' />
+                                </div>
+                                <span class="txt-button line-clamp-2">Method Antibacterial</span>
+                            </a>
+                            <p class="flex items-center gap-1 txt-button">
+                                <span class="product_quantity">1</span>
+                                <span>X</span>
+                                <span class="product_price">$<span>60</span>.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="discount_code w-full sm:mt-8 mt-6">
+                        <form class='w-full h-14 relative'>
+                            <input type="text" placeholder='Add voucher discount' class='form_input w-full h-full pl-4 pr-44 border border-outline' required />
+                            <button class='btn flex items-center justify-center absolute top-1.5 bottom-1.5 right-1.5'>Apply Code</button>
+                        </form>
+                        <p class="mt-3 caption1">Discount code is only used for orders with a total value of products over $500.00</p>
                     </div>
-                    <a href="product-detail.html" class="product_info block pt-5">
-                        <div class="flex items-center gap-2">
-                            <ul class="flex gap-px">
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                            </ul>
-                            <span class="caption1 text-variant1">(1.234)</span>
-                        </div>
-                        <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">VACO Impact Driver</strong>
-                        <strong class="heading6">$68.00</strong>
-                    </a>
-                </li>
-                <li class="product_item group">
-                    <div class="product_thumb overflow-hidden relative">
-                        <a href="product-detail.html" class="product_img block">
-                            <img src="./assets/images/products/3.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Custom Leathercraft Bucket">
-                        </a>
-                        <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
-                        <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
-                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-heart text-xl"></span>
-                                </button>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-git-diff text-xl"></span>
-                                </button>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-eye text-xl"></span>
-                                </button>
-                            </li>
-                        </ul>
-                        <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                    <div class="discount_area py-5 flex justify-between border-b border-outline txt-button">
+                        <strong>Discounts</strong>
+                        <strong>-$<span class="discount">10</span><span>.00</span></strong>
                     </div>
-                    <a href="product-detail.html" class="product_info block pt-5">
-                        <div class="flex items-center gap-2">
-                            <ul class="flex gap-px">
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-outline"></li>
-                            </ul>
-                            <span class="caption1 text-variant1">(1.234)</span>
-                        </div>
-                        <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Custom Leathercraft Bucket</strong>
-                        <strong class="heading6">$68.00</strong>
-                    </a>
-                </li>
-                <li class="product_item group">
-                    <div class="product_thumb overflow-hidden relative">
-                        <a href="product-detail.html" class="product_img block">
-                            <img src="./assets/images/products/4.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Klein Tools 60491 Hinged">
-                        </a>
-                        <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
-                        <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
-                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-heart text-xl"></span>
-                                </button>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-git-diff text-xl"></span>
-                                </button>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-eye text-xl"></span>
-                                </button>
-                            </li>
-                        </ul>
-                        <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                    <div class="ship_area py-5 flex justify-between border-b border-outline txt-button">
+                        <strong>Shipping</strong>
+                        <strong>$30.00</strong>
                     </div>
-                    <a href="product-detail.html" class="product_info block pt-5">
-                        <div class="flex items-center gap-2">
-                            <ul class="flex gap-px">
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-outline"></li>
-                            </ul>
-                            <span class="caption1 text-variant1">(1.234)</span>
-                        </div>
-                        <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Klein Tools 60491 Hinged</strong>
-                        <strong class="heading6">$68.00</strong>
-                    </a>
-                </li>
-                <li class="product_item group">
-                    <div class="product_thumb overflow-hidden relative">
-                        <a href="product-detail.html" class="product_img block">
-                            <img src="./assets/images/products/5.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Real Steel Sledge Hammer">
-                        </a>
-                        <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
-                        <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
-                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-heart text-xl"></span>
-                                </button>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-git-diff text-xl"></span>
-                                </button>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
-                                    <span class="ph ph-eye text-xl"></span>
-                                </button>
-                            </li>
-                        </ul>
-                        <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                    <div class="total_order_area pt-5 flex justify-between heading5">
+                        <strong>Total</strong>
+                        <strong class="cart_total">$170.00</strong>
                     </div>
-                    <a href="product-detail.html" class="product_info block pt-5">
-                        <div class="flex items-center gap-2">
-                            <ul class="flex gap-px">
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-yellow"></li>
-                                <li class="ph-fill ph-star text-outline"></li>
-                            </ul>
-                            <span class="caption1 text-variant1">(1.234)</span>
-                        </div>
-                        <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Real Steel Sledge Hammer</strong>
-                        <strong class="heading6">$68.00</strong>
-                    </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </section>
     <!-- FOOTER -->
