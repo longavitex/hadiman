@@ -417,6 +417,9 @@ legend {
 .form_input:focus {
   border-color: #202020;
 }
+.form_input:focus.border-variant1 {
+  border-color: #FFFFFF;
+}
 
 .form_select {
   position: relative;
@@ -1188,13 +1191,11 @@ legend {
 }
 .services.style-four .services_card {
   overflow: hidden;
-  -webkit-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
-  -moz-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
-  -ms-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
   clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
+  -webkit-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
 }
 .services.style-four .services_name {
-  margin-right: -15%;
+  transform: translateX(-15%);
 }
 .services_sidebar .tab_btn.active {
   color: #FF6600;

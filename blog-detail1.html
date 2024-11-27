@@ -364,7 +364,7 @@
                 </ul>
                 <ul class="menu_icons">
                     <li class="menu_icons_item inline-block align-middle max-lg:hidden">
-                        <button class="menu_icons_btn js_btn_search">
+                        <button class="menu_icons_btn js_btn_open_popup" data-popup="popup_search">
                             <span class="ph ph-magnifying-glass text-2xl"></span>
                             <span class="blind">button search</span>
                         </button>
@@ -906,7 +906,7 @@
                     </a>
                     <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-surface duration-300 hover:bg-black hover:text-white">
                         <span class="ph ph-x text-lg"></span>
-                        <span class="blind">button close menu mobile</span>
+                        <span class="blind">button close popup</span>
                     </button>
                 </div>
                 <form class="form_search overflow-hidden relative w-full h-13 mt-8">
@@ -1052,6 +1052,20 @@
             </div>
         </div>
 
+        <!-- Popup Search -->
+        <div id="popup_search" class='popup_item popup_search absolute top-0 left-0 w-full h-full bg-black bg-opacity-90 duration-500'>
+            <button class="btn_close_popup js_btn_close_popup absolute top-16 left-[87vw]">
+                <span class="ph ph-x text-white text-5xl"></span>
+                <span class="blind">button close popup</span>
+            </button>
+            <form class="form_search overflow-hidden absolute top-1/2 left-1/2 w-[80vw] -translate-x-1/2 -translate-y-1/2">
+                <input class="form_input py-5 lg:pr-28 pr-18 w-full h-full border-b-2 border-variant1 lg:text-6xl text-4xl text-white" type="text" placeholder="Search..." required />
+                <button class="flex items-center justify-end absolute top-0 right-0 lg:w-20 w-14 h-full aspect-square text-white">
+                    <span class="ph ph-magnifying-glass lg:text-6xl text-4xl"></span>
+                </button>
+            </form>
+        </div>
+
         <!-- Popup Wishlist -->
         <div id="popup_wishlist" class='popup_item popup_wishlist absolute top-0 right-0 sm:w-[500px] w-[80vw] h-full bg-white translate-x-full duration-500'>
             <div class='popup_wishlist_inner flex flex-col h-full p-6'>
@@ -1059,7 +1073,7 @@
                     <h5 class="heading5">Wishlist</h5>
                     <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-surface duration-300 hover:bg-black hover:text-white">
                         <span class="ph ph-x text-lg"></span>
-                        <span class="blind">button close menu mobile</span>
+                        <span class="blind">button close popup</span>
                     </button>
                 </div>
                 <ul class="wishlist_list overflow-x-hidden w-full h-full max-h-max">
@@ -1104,7 +1118,7 @@
                     <h5 class="heading5">Cart</h5>
                     <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-surface duration-300 hover:bg-black hover:text-white">
                         <span class="ph ph-x text-lg"></span>
-                        <span class="blind">button close menu mobile</span>
+                        <span class="blind">button close popup</span>
                     </button>
                 </div>
                 <ul class="cart_list overflow-x-hidden w-full h-full max-h-max">

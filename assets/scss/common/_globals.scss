@@ -365,6 +365,10 @@ legend {
 
   &:focus {
     border-color: $black;
+
+    &.border-variant1 {
+      border-color: $white;
+    }
   }
 }
 
