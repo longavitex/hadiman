@@ -1026,6 +1026,10 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.aspect-\[16\/9\] {
+  aspect-ratio: 16/9;
+}
+
 .h-0 {
   height: 0px;
 }
@@ -1331,6 +1335,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[50vw\] {
+  width: 50vw;
 }
 
 .min-w-7 {
@@ -2560,11 +2568,6 @@ video {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
-}
-
-.group:hover .group-hover\:grayscale-0 {
-  --tw-grayscale: grayscale(0);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .group:hover .group-hover\:backdrop-blur-none {
