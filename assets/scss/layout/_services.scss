@@ -14,14 +14,12 @@
     .services {
       &_card {
         overflow: hidden;
-        -webkit-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
-        -moz-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
-        -ms-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
         clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
+        -webkit-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
       }
 
       &_name {
-        margin-right: -15%;
+        transform: translateX(-15%);
       }
     }
   }
