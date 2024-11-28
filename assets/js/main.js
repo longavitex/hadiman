@@ -37,6 +37,48 @@
         })
     }
 
+    // animate text slider
+    const animateTextSlider = function(swiper) {
+        let activeIndex = swiper.realIndex
+        const $sectionTit = $('.swiper-slide[data-swiper-slide-index="' + activeIndex + '"]').find('.section_tit');
+
+        if ($sectionTit.length) {
+            // Lưu nội dung gốc nếu chưa lưu
+            if (!$sectionTit.data('text')) {
+                $sectionTit.data('text', $sectionTit.text().trim());
+            }
+        
+            const rawText = $sectionTit.data('text'); // Lấy nội dung gốc
+            $sectionTit.empty(); // Xóa nội dung cũ
+        
+            // Chia text theo ký tự, đồng thời giữ <br>
+            const parts = rawText.split(/(<br>)/g); // Tách thành mảng, giữ nguyên <br>
+        
+            let charIndex = 0; // Biến chỉ số toàn cục cho từng ký tự
+        
+            parts.forEach(part => {
+                if (part === '<br>') {
+                    // Nếu là <br>, thêm thẻ <br>
+                    $sectionTit.append('<br>');
+                } else {
+                    // Nếu là text, tách ký tự và bọc <span>
+                    for (let char of part) {
+                        const span = $('<span>').text(char === " " ? "\u00A0" : char).removeClass('show')
+                            .appendTo($sectionTit);
+        
+                        // Thêm hiệu ứng với delay dựa trên charIndex
+                        setTimeout(() => {
+                            span.addClass('show')
+                        }, charIndex * 50); // 50ms delay mỗi ký tự
+        
+                        charIndex++; // Tăng chỉ số
+                    }
+                }
+            });
+        }
+    }
+
+    // active testimonials image
     const activeTestimonials = function(swiper) {
         let activeIndex = swiper.realIndex
         
@@ -225,7 +267,17 @@
 
     // swiper obj
     var setSwipers = function() {
-        const sliderSwiperObj = new Swiper('.slider_swiper', SWIPER_OPTIONS.SLIDER_SWIPER);
+        const sliderSwiperObj = new Swiper('.slider_swiper', {
+            ...SWIPER_OPTIONS.SLIDER_SWIPER,
+            on: {
+                init: function() {
+                    animateTextSlider(this)
+                },
+                slideChangeTransitionStart: function() {
+                    animateTextSlider(this)
+                },
+            }
+        });
         const testimonialsSwiperObj = new Swiper('.testimonials_swiper', {
             ...SWIPER_OPTIONS.TESTIMONIAL_SWIPER,
             on: {
@@ -666,8 +718,19 @@
         })
     }
 
+    // animate 
+    function handleInteraction() {
+        $('.animate').each(function() {
+            var itemTop = $(this).offset().top;
+            if($(win).scrollTop() >= itemTop - .9 * $(win).innerHeight()){
+                $(this).addClass('show');
+            }
+        });
+    }
+
     $(win).scroll(function () {
         handleFixedHeader()
+        handleInteraction()
     }).scroll();
 
     $(win).on('load', function () {
@@ -689,5 +752,6 @@
         handleRemoveProduct()
         openPopup()
         closePopup()
+        handleInteraction()
     });
 })(window, window.jQuery);

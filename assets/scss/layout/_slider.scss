@@ -1,6 +1,46 @@
 /* Slider */ 
 .slider {
-    .swiper-pagination {
-        bottom: 28px;
+    .section_tit {
+        opacity: 0;
+
+        span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+
+            &.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .section_desc,
+    &_btn_item {
+        opacity: .0001;
+        transform: translateY(40px);
+        transition-property: opacity, transform;
+        transition-duration: .7s;
+        transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+        transition-delay: calc(var(--i) * .2s);
+    }
+
+    .swiper {
+        &-slide-active {
+            .section_tit {
+                opacity: 1;
+            }
+
+            .section_desc,
+            .slider_btn_item {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        &-pagination {
+            bottom: 28px;
+        }
     }
 }
