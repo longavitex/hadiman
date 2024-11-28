@@ -42,38 +42,83 @@
         let activeIndex = swiper.realIndex
         const $sectionTit = $('.swiper-slide[data-swiper-slide-index="' + activeIndex + '"]').find('.section_tit');
 
+        // if ($sectionTit.length) {
+        //     // Lưu nội dung gốc nếu chưa lưu
+        //     if (!$sectionTit.data('text')) {
+        //         $sectionTit.data('text', $sectionTit.text().trim());
+        //     }
+        
+        //     const rawText = $sectionTit.data('text'); // Lấy nội dung gốc
+        //     $sectionTit.empty(); // Xóa nội dung cũ
+        
+        //     // Chia text theo ký tự, đồng thời giữ <br>
+        //     const parts = rawText.split(/(<br>)/g); // Tách thành mảng, giữ nguyên <br>
+        
+        //     let charIndex = 0; // Biến chỉ số toàn cục cho từng ký tự
+        
+        //     parts.forEach(part => {
+        //         if (part === '<br>') {
+        //             // Nếu là <br>, thêm thẻ <br>
+        //             $sectionTit.append('<br>');
+        //         } else {
+        //             // Nếu là text, tách ký tự và bọc <span>
+        //             for (let char of part) {
+        //                 const span = $('<span>').text(char === " " ? "\u00A0" : char).removeClass('show')
+        //                     .appendTo($sectionTit);
+        
+        //                 // Thêm hiệu ứng với delay dựa trên charIndex
+        //                 setTimeout(() => {
+        //                     span.addClass('show')
+        //                 }, charIndex * 50); // 50ms delay mỗi ký tự
+        
+        //                 charIndex++; // Tăng chỉ số
+        //             }
+        //         }
+        //     });
+        // }
         if ($sectionTit.length) {
             // Lưu nội dung gốc nếu chưa lưu
             if (!$sectionTit.data('text')) {
                 $sectionTit.data('text', $sectionTit.text().trim());
             }
-        
+    
             const rawText = $sectionTit.data('text'); // Lấy nội dung gốc
             $sectionTit.empty(); // Xóa nội dung cũ
-        
-            // Chia text theo ký tự, đồng thời giữ <br>
-            const parts = rawText.split(/(<br>)/g); // Tách thành mảng, giữ nguyên <br>
-        
-            let charIndex = 0; // Biến chỉ số toàn cục cho từng ký tự
-        
-            parts.forEach(part => {
-                if (part === '<br>') {
-                    // Nếu là <br>, thêm thẻ <br>
-                    $sectionTit.append('<br>');
-                } else {
-                    // Nếu là text, tách ký tự và bọc <span>
-                    for (let char of part) {
-                        const span = $('<span>').text(char === " " ? "\u00A0" : char).removeClass('show')
-                            .appendTo($sectionTit);
-        
-                        // Thêm hiệu ứng với delay dựa trên charIndex
-                        setTimeout(() => {
-                            span.addClass('show')
-                        }, charIndex * 50); // 50ms delay mỗi ký tự
-        
-                        charIndex++; // Tăng chỉ số
-                    }
+    
+            // Tách văn bản thành từng từ
+            const words = rawText.split(' ');
+    
+            let charIndex = 0; // Chỉ số cho từng ký tự
+    
+            words.forEach((word, index) => {
+                const wordWrapper = $('<span>'); // Tạo thẻ <span> bao quanh từ
+    
+                // Tạo các thẻ <span> cho từng ký tự trong từ
+                word.split('').forEach(char => {
+                    const charSpan = $('<span>').text(char === " " ? "\u00A0" : char); // Tạo span cho ký tự
+                    wordWrapper.append(charSpan); // Thêm charSpan vào wordWrapper
+                });
+    
+                // Thêm thẻ <span> chứa các ký tự vào phần tử chứa tiêu đề
+                $sectionTit.append(wordWrapper);
+    
+                // Nếu không phải từ cuối cùng, thêm dấu cách giữa các từ
+                if (index < words.length - 1) {
+                    $sectionTit.append(' '); // Thêm dấu cách giữa các từ
                 }
+            });
+    
+            // Áp dụng hiệu ứng cho từng ký tự
+            let totalCharCount = 0;
+            $sectionTit.find('span span').each(function () {
+                const $charSpan = $(this);
+    
+                // Thêm và xóa class 'show' cho từng ký tự với độ trễ
+                setTimeout(() => {
+                    $charSpan.addClass('show'); // Thêm class 'show' cho ký tự
+                }, totalCharCount * 50); // 50ms delay mỗi ký tự
+    
+                totalCharCount++; // Tăng chỉ số
             });
         }
     }
