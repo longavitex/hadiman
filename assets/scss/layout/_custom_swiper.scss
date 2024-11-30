@@ -9,6 +9,7 @@
 
     &-slide {
         height: unset !important;
+        transition-property: all;
     }
 
     &-pagination {

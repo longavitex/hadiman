@@ -642,8 +642,9 @@ legend {
 }
 .banner .swiper-container .heading2 {
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #E4E4E4;
+  -webkit-text-stroke-color: #202020;
   color: #FFFFFF;
+  opacity: 0.4;
 }
 
 .blog_item.style-two::before, .blog_item.style-two::after {
@@ -703,6 +704,11 @@ legend {
   width: 100%;
 }
 
+.cta.style-two {
+  background: url(../assets/images/components/cta2.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+}
+
 /* Swiper Pagination */
 .swiper {
   cursor: grab;
@@ -713,6 +719,7 @@ legend {
 }
 .swiper-slide {
   height: unset !important;
+  transition-property: all;
 }
 .swiper-pagination-bullet {
   position: relative;
@@ -1000,6 +1007,9 @@ legend {
   display: block;
 }
 
+.process_item:hover .process_ordinal {
+  animation: scaleAnimate 0.5s ease;
+}
 @media (min-width: 1280px) {
   .process.style-three .process_item:nth-child(1)::before, .process.style-three .process_item:nth-child(3)::before {
     position: absolute;
@@ -1030,6 +1040,17 @@ legend {
   }
 }
 
+@keyframes scaleAnimate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* Projects */
 .projects_item {
   overflow: hidden;

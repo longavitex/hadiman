@@ -1,4 +1,12 @@
 .process {
+    &_item {
+        &:hover {
+            .process_ordinal {
+                animation: scaleAnimate 0.5s ease;
+            }
+        }
+    }
+
     &.style-three {
         @include respond-above($screen-xl) {
             .process_item {
@@ -50,3 +58,17 @@
         }
     }
 }
+
+@keyframes scaleAnimate {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }

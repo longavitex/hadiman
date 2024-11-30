@@ -26,8 +26,9 @@
 
     .heading2 {
       -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: $outline;
+      -webkit-text-stroke-color: $black;
       color: $white;
+      opacity: 0.4;
     }
   }
 }
