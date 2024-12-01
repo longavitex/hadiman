@@ -3,4 +3,9 @@
         background: url(../assets/images/components/cta2.jpg) center / cover no-repeat;
         background-attachment: fixed;
     }
+    &.style-three {
+        background: url(../assets/images/components/form_request_banner3.png) center / cover no-repeat;
+        background-attachment: fixed;
+        background-color: $black;
+    }
 }

@@ -708,6 +708,11 @@ legend {
   background: url(../assets/images/components/cta2.jpg) center/cover no-repeat;
   background-attachment: fixed;
 }
+.cta.style-three {
+  background: url(../assets/images/components/form_request_banner3.png) center/cover no-repeat;
+  background-attachment: fixed;
+  background-color: #202020;
+}
 
 /* Swiper Pagination */
 .swiper {
@@ -1031,6 +1036,12 @@ legend {
   }
 }
 @media (min-width: 1280px) {
+  .process.style-four .process_item .process_img {
+    transition: transform 0.5s linear;
+  }
+  .process.style-four .process_item:hover .process_img {
+    transform: rotateY(360deg);
+  }
   .process.style-four .process_item:nth-child(1)::before, .process.style-four .process_item:nth-child(3)::before {
     right: -7rem;
   }
@@ -1229,7 +1240,7 @@ legend {
   -webkit-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
 }
 .services.style-four .services_name {
-  transform: translateX(-15%);
+  transform: translateX(15%);
 }
 .services_sidebar .tab_btn.active {
   color: #FF6600;
@@ -1333,8 +1344,8 @@ legend {
   transform: translateY(40px);
   transition-property: opacity, transform;
   transition-duration: 0.7s;
-  transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-  transition-delay: calc(var(--i) * 0.2s);
+  transition-timing-function: ease;
+  transition-delay: calc(var(--i) * 0.1s);
 }
 .slider .swiper-slide-active .section_tit {
   opacity: 1;

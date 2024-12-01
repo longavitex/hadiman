@@ -41,6 +41,15 @@
     &.style-four {
         @include respond-above($screen-xl) {
             .process_item {
+                .process_img {
+                    transition: transform .5s linear;
+                }
+                &:hover {
+                    .process_img {
+                        transform: rotateY(360deg);
+                    }
+                }
+                
                 &:nth-child(1),
                 &:nth-child(3) {
                     &::before {

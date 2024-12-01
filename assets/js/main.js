@@ -263,6 +263,10 @@
                     slidesPerView: 4,
                     spaceBetween: -60,
                 },
+                2200: {
+                    slidesPerView: 5,
+                    spaceBetween: -60,
+                },
             },
         },
         PRODUCT_SWIPER_THUMB: {
