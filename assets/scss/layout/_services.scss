@@ -19,7 +19,7 @@
       }
 
       &_name {
-        transform: translateX(15%);
+        transform: translateX(13%);
       }
     }
   }
@@ -28,6 +28,16 @@
     .tab_btn {
       &.active {
         color: $orange;
+      }
+    }
+  }
+
+  &_benefit {
+    &_item {
+      &:hover {
+        .services_benefit_icon {
+          transform: rotateY(360deg);
+        }
       }
     }
   }

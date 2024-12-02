@@ -1240,10 +1240,13 @@ legend {
   -webkit-clip-path: polygon(85% 0%, 100% 100%, 15% 100%, 0% 0%);
 }
 .services.style-four .services_name {
-  transform: translateX(15%);
+  transform: translateX(13%);
 }
 .services_sidebar .tab_btn.active {
   color: #FF6600;
+}
+.services_benefit_item:hover .services_benefit_icon {
+  transform: rotateY(360deg);
 }
 
 /* shop */

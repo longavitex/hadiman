@@ -244,7 +244,7 @@
             spaceBetween: 0,
             pagination: {
                 clickable: true,
-                el: ".swiper .swiper-pagination"
+                el: ".services.style-four .swiper-pagination"
             },
             breakpoints: {
                 576: {
@@ -309,7 +309,7 @@
         const bannerSwiperObj = new Swiper('.banner_swiper', SWIPER_OPTIONS.BANNER_SWIPER);
         const brandSwiperObj = new Swiper('.brand_swiper', SWIPER_OPTIONS.BRAND_SWIPER);
         const projectsSwiperObj = new Swiper('.projects_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
-        const servicesSwiperObj = new Swiper('.services_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
+        const servicesSwiperObj = new Swiper('.services.style-three .services_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
         const servicesSwiperFourObj = new Swiper('.services.style-four .services_swiper', SWIPER_OPTIONS.SERVICES_SWIPER_FOUR);
         const productSwiperListObj = new Swiper('.product_swiper_list', SWIPER_OPTIONS.PRODUCT_SWIPER_LIST);
         const productSwiperThumbObj = new Swiper('.product_swiper_thumb', {
