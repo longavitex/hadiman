@@ -42,7 +42,7 @@
         let activeIndex = swiper.realIndex
         const $sectionTit = $('.swiper-slide[data-swiper-slide-index="' + activeIndex + '"]').find('.section_tit');
 
-        if ($sectionTit.length) {
+        if ($sectionTit.length > 0) {
             // save origin content if not save
             if (!$sectionTit.data('text')) {
                 $sectionTit.data('text', $sectionTit.text().trim());
@@ -53,8 +53,6 @@
     
             // seperate content to character
             const words = rawText.split(' ');
-    
-            let charIndex = 0; // index for each character
     
             words.forEach((word, index) => {
                 const wordWrapper = $('<span>'); // create <span> parent
@@ -706,6 +704,36 @@
         }, 1000);
     }
 
+    // Counter
+    const handleCounter = function() {
+        // check element in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top >= 0 && rect.bottom <= window.innerHeight;
+        }
+
+        // run counter
+        $('.counter_number').each(function () {
+            const $this = $(this);
+            const target = parseFloat($this.text());
+            const decimalPlaces = Number.isInteger(target) ? 0 : 1;
+
+            if (isInViewport(this) && !$this.hasClass('counted')) {
+                const countUp = new CountUp(this.id, 0, target, decimalPlaces, 3, {
+                    duration: 3,
+                    separator: ',',
+                });
+
+                if (!countUp.error) {
+                    countUp.start();
+                    $this.addClass('counted'); // run 1 time
+                } else {
+                    console.error(countUp.error);
+                }
+            }
+        });
+    }
+
     // popup
     const openPopup = function() {
         $('.js_btn_open_popup').on('click', function(){
@@ -745,6 +773,7 @@
 
     $(win).scroll(function () {
         handleFixedHeader()
+        handleCounter()
         handleInteraction()
     }).scroll();
 

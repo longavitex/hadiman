@@ -350,6 +350,18 @@ legend {
       width: 100%;
     }
   }
+
+  &.animate_width {
+    &::before {
+      width: 100%;
+    }
+
+    &:hover {
+      &::before {
+        animation: fullWidth .4s ease;
+      }
+    }
+  }
 }
 
 .active {
@@ -552,6 +564,16 @@ legend {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes fullWidth {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
   }
 }
 

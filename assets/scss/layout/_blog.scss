@@ -47,6 +47,24 @@
           }
         }
       }
+
+      @include respond-below($screen-lg) {
+        &::before {
+          opacity: 1;
+        }
+        
+        .blog_info {
+          &::before {
+            transform: translateY(100%);
+          }
+        }
+
+        .blog_date,
+        .blog_cate,
+        .blog_info {
+          color: $white;
+        }
+      }
     }
   }
 

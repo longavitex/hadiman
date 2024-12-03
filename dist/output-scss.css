@@ -406,6 +406,12 @@ legend {
 .has_line.active::before, .has_line:hover::before {
   width: 100%;
 }
+.has_line.animate_width::before {
+  width: 100%;
+}
+.has_line.animate_width:hover::before {
+  animation: fullWidth 0.4s ease;
+}
 
 .active > .has_line::before {
   width: 100%;
@@ -570,6 +576,14 @@ legend {
     transform: scale(1);
   }
 }
+@keyframes fullWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 @media (max-width: 1023.98px) {
   html,
   body {
@@ -680,6 +694,19 @@ legend {
 }
 .blog_item.style-two:hover .blog_info::before {
   transform: translateY(100%);
+}
+@media (max-width: 1023.98px) {
+  .blog_item.style-two::before {
+    opacity: 1;
+  }
+  .blog_item.style-two .blog_info::before {
+    transform: translateY(100%);
+  }
+  .blog_item.style-two .blog_date,
+  .blog_item.style-two .blog_cate,
+  .blog_item.style-two .blog_info {
+    color: #FFFFFF;
+  }
 }
 .blog_sidebar .recent_list .blog_item:last-child {
   border: none;
@@ -1036,12 +1063,6 @@ legend {
   }
 }
 @media (min-width: 1280px) {
-  .process.style-four .process_item .process_img {
-    transition: transform 0.5s linear;
-  }
-  .process.style-four .process_item:hover .process_img {
-    transform: rotateY(360deg);
-  }
   .process.style-four .process_item:nth-child(1)::before, .process.style-four .process_item:nth-child(3)::before {
     right: -7rem;
   }
@@ -1342,6 +1363,8 @@ legend {
   opacity: 1;
   transform: translateY(0);
 }
+.slider .section_tit_two,
+.slider .section_tit_three,
 .slider .section_desc, .slider_btn_item {
   opacity: 0.0001;
   transform: translateY(40px);
@@ -1350,13 +1373,20 @@ legend {
   transition-timing-function: ease;
   transition-delay: calc(var(--i) * 0.1s);
 }
+.slider.style-three .section_tit_three,
+.slider.style-three .section_desc,
+.slider.style-three .slider_btn_item {
+  transform: translateX(80px);
+}
 .slider .swiper-slide-active .section_tit {
   opacity: 1;
 }
+.slider .swiper-slide-active .section_tit_two,
+.slider .swiper-slide-active .section_tit_three,
 .slider .swiper-slide-active .section_desc,
 .slider .swiper-slide-active .slider_btn_item {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(0);
 }
 .slider .swiper-pagination {
   bottom: 28px;

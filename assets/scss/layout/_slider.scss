@@ -20,6 +20,8 @@
         }
     }
 
+    .section_tit_two,
+    .section_tit_three,
     .section_desc,
     &_btn_item {
         opacity: .0001;
@@ -30,16 +32,26 @@
         transition-delay: calc(var(--i) * .1s);
     }
 
+    &.style-three {
+        .section_tit_three,
+        .section_desc,
+        .slider_btn_item  {
+            transform: translateX(80px);
+        }
+    }
+
     .swiper {
         &-slide-active {
             .section_tit {
                 opacity: 1;
             }
 
+            .section_tit_two,
+            .section_tit_three,
             .section_desc,
             .slider_btn_item {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translate(0);
             }
         }
 
