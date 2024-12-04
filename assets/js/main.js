@@ -100,6 +100,19 @@
         })
     }
 
+    // active project home four
+    const activeProjectThree = function(swiper) {
+        let activeIndex = swiper.realIndex
+        
+        $('.projects_thumb_item').each(function() {
+            if($(this).attr('data-swiper-slide-index') == activeIndex) {
+                let dataProject = $(this).attr('data-project')
+                $('.projects_link').removeClass('active')
+                $(".projects_link[data-project=" + dataProject + "]").addClass('active')
+            }
+        })
+    }
+
     const SWIPER_OPTIONS = {
         SLIDER_SWIPER: {
             loop: true,
@@ -111,6 +124,27 @@
             navigation: {
                 prevEl: ".slider .btn_prev",
                 nextEl: ".slider .btn_next",
+            },
+        },
+        CHOOSE_US_SWIPER: {
+            loop: true,
+            allowTouchMove: true,
+            slidesPerView: 1,
+            spaceBetween: 16,
+            autoplay: {
+                delay: 3500,
+            },
+            breakpoints: {
+                640: {
+                    loop: false,
+                    allowTouchMove: false,
+                    slidesPerView: 2,
+                    grid: {
+                        rows: 2,
+                    },
+                    spaceBetween: 30,
+                    autoplay: false,
+                },
             },
         },
         TESTIMONIAL_SWIPER: {
@@ -160,6 +194,57 @@
             pagination: {
                 clickable: true,
                 el: ".testimonials_swiper_three+.swiper-pagination"
+            },
+        },
+        TEAM_SWIPER: {
+            loop: true,
+            allowTouchMove: true,
+            slidesPerView: 1,
+            spaceBetween: 16,
+            autoplay: {
+                delay: 3000,
+            },
+            breakpoints: {
+                1024: {
+                    loop: false,
+                    allowTouchMove: false,
+                    slidesPerView: 2,
+                    grid: {
+                        rows: 2,
+                    },
+                    spaceBetween: 30,
+                    autoplay: false,
+                },
+            },
+        },
+        TEAM_SWIPER_THREE: {
+            loop: true,
+            allowTouchMove: true,
+            slidesPerView: 1,
+            spaceBetween: 16,
+            autoplay: {
+                delay: 3000,
+            },
+            breakpoints: {
+                450: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+                1280: {
+                    loop: false,
+                    allowTouchMove: false,
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    autoplay: false,
+                },
             },
         },
         BANNER_SWIPER: {
@@ -236,6 +321,16 @@
                 },
             },
         },
+        PROJECTS_SWIPER_THREE: {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 3000
+            },
+            speed: 600,
+            effect: "fade",
+        },
         SERVICES_SWIPER_FOUR: {
             loop: true,
             slidesPerView: 1,
@@ -291,6 +386,7 @@
                 },
             }
         });
+        const chooseUsSwiperObj = new Swiper('.choose_us_swiper', SWIPER_OPTIONS.CHOOSE_US_SWIPER);
         const testimonialsSwiperObj = new Swiper('.testimonials_swiper', {
             ...SWIPER_OPTIONS.TESTIMONIAL_SWIPER,
             on: {
@@ -304,9 +400,22 @@
         });
         const testimonialsSwiperTwoObj = new Swiper('.testimonials_swiper_two', SWIPER_OPTIONS.TESTIMONIAL_SWIPER_TWO);
         const testimonialsSwiperThreeObj = new Swiper('.testimonials_swiper_three', SWIPER_OPTIONS.TESTIMONIAL_SWIPER_THREE);
+        const teamSwiperObj = new Swiper('.team_swiper', SWIPER_OPTIONS.TEAM_SWIPER);
+        const teamSwiperThreeObj = new Swiper('.team_swiper_three', SWIPER_OPTIONS.TEAM_SWIPER_THREE);
         const bannerSwiperObj = new Swiper('.banner_swiper', SWIPER_OPTIONS.BANNER_SWIPER);
         const brandSwiperObj = new Swiper('.brand_swiper', SWIPER_OPTIONS.BRAND_SWIPER);
         const projectsSwiperObj = new Swiper('.projects_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
+        const projectsSwiperThreeObj = new Swiper('.projects.style-three .projects_thumb_swiper', {
+            ...SWIPER_OPTIONS.PROJECTS_SWIPER_THREE,
+            on: {
+                init: function() {
+                    activeProjectThree(this)
+                },
+                slideChangeTransitionStart: function() {
+                    activeProjectThree(this)
+                },
+            }
+        });
         const servicesSwiperObj = new Swiper('.services.style-three .services_swiper', SWIPER_OPTIONS.PROJECTS_SWIPER);
         const servicesSwiperFourObj = new Swiper('.services.style-four .services_swiper', SWIPER_OPTIONS.SERVICES_SWIPER_FOUR);
         const productSwiperListObj = new Swiper('.product_swiper_list', SWIPER_OPTIONS.PRODUCT_SWIPER_LIST);
@@ -316,7 +425,7 @@
                 swiper: productSwiperListObj,
             },
         });
-    };
+    }
 
     // projects style center home4
     const projectsSlideFour = function () {
@@ -388,18 +497,6 @@
             $(this).closest('.projects_item').find('.comparison_btn').css('left', $(this).val() + "%")
             $(this).closest('.projects_item').find('.projects_divisor').css('width', $(this).val() + "%")
         })
-    }
-
-    // projects hover home3
-    const handleHoverProjectsThree = function () {
-        $('.projects_link').hover(function () {
-            // When hover, add class
-            var index = $(this).closest('.projects_item').index();
-            $('.projects_link').removeClass('active');
-            $(this).addClass('active');
-            $('.projects_thumb_item').removeClass('active');
-            $('.projects_thumb_item').eq(index).addClass('active');
-        });
     }
 
     // Active menu tab
@@ -786,7 +883,6 @@
         setSwipers()
         projectsSlideFour()
         handleCompareProject()
-        handleHoverProjectsThree()
         handleActiveTab()
         handleClickLoadMore()
         handleFaqs()

@@ -974,41 +974,43 @@
     </section>
     <!-- OUR PROJECTS -->
     <section class="section projects style-three">
-        <ul class="projects_thumb max-sm:h-96">
-            <li class="projects_thumb_item invisible h-0 opacity-50 active">
-                <img src="./assets/images/projects/thumb/1.jpg" class="h-full object-cover" alt="Comprehensive HVAC">
-            </li>
-            <li class="projects_thumb_item invisible h-0 opacity-50">
-                <img src="./assets/images/projects/thumb/2.jpg" class="h-full object-cover" alt="Expert AC Installation">
-            </li>
-            <li class="projects_thumb_item invisible h-0 opacity-50">
-                <img src="./assets/images/projects/thumb/3.jpg" class="h-full object-cover" alt="Quality Heating Repair">
-            </li>
-            <li class="projects_thumb_item invisible h-0 opacity-50">
-                <img src="./assets/images/projects/thumb/4.jpg" class="h-full object-cover" alt="Prompt Emergency Repair">
-            </li>
-        </ul>
+        <div class="projects_thumb_swiper swiper">
+            <ul class="projects_thumb swiper-wrapper max-sm:h-96">
+                <li class="projects_thumb_item swiper-slide" data-project="1">
+                    <img src="./assets/images/projects/thumb/1.jpg" class="h-full object-cover" alt="Comprehensive HVAC">
+                </li>
+                <li class="projects_thumb_item swiper-slide" data-project="2">
+                    <img src="./assets/images/projects/thumb/2.jpg" class="h-full object-cover" alt="Expert AC Installation">
+                </li>
+                <li class="projects_thumb_item swiper-slide" data-project="3">
+                    <img src="./assets/images/projects/thumb/3.jpg" class="h-full object-cover" alt="Quality Heating Repair">
+                </li>
+                <li class="projects_thumb_item swiper-slide" data-project="4">
+                    <img src="./assets/images/projects/thumb/4.jpg" class="h-full object-cover" alt="Prompt Emergency Repair">
+                </li>
+            </ul>
+        </div>
         <ul class="projects_list grid xl:grid-cols-4 sm:grid-cols-2 w-full">
             <li class="projects_item">
-                <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow active">
+                <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow" data-project="1">
                     <span class="projects_cate txt-label">HVAC Maintenance</span>
                     <strong class="projects_name mt-3 heading5 line-clamp-1">Comprehensive HVAC</strong>
                 </a>
             </li>
             <li class="projects_item">
-                <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow">
+                <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow" data-project="2">
                     <span class="projects_cate txt-label">AC Installation</span>
                     <strong class="projects_name mt-3 heading5 line-clamp-1">Expert AC Installation</strong>
                 </a>
             </li>
             <li class="projects_item">
-                <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow">
+                <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow" data-project="3">
                     <span class="projects_cate txt-label">Heating Repair</span>
                     <strong class="projects_name mt-3 heading5 line-clamp-1">Quality Heating Repair</strong>
                 </a>
             </li>
             <li class="projects_item">
-                <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow">
+                <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow" data-project="4">
                     <span class="projects_cate txt-label">Emergency Repair</span>
                     <strong class="projects_name mt-3 heading5 line-clamp-1">Prompt Emergency Repair</strong>
                 </a>
@@ -1021,164 +1023,166 @@
             <span class="section_tag tag bg-yellow">Our teams</span>
             <h3 class="section_tit mt-4 heading3">Meet the Our Experts</h3>
             <p class="section_desc lg:w-1/2 lg:mt-5 mt-3 body2 text-variant1 text-center">Our team of skilled professionals brings years of experience, ensuring top-quality service and attention to detail in every task.</p>
-            <ul class="team_list grid lg:grid-cols-4 sm:grid-cols-2 gap-7.5 w-full lg:mt-12 mt-9">
-                <li class="team_item group">
-                    <div class="team_img overflow-hidden relative aspect-[3/4]">
-                        <img src="./assets/images/team/team1.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="John Michaels">
-                        <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <a href="https://www.facebook.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-facebook-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <a href="https://www.x.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-x-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                <a href="https://www.linkedin.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-linkedin-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                <a href="https://www.instagram.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-instagram-logo text-2xl"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="team_info mt-5">
-                        <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">John Michaels</strong>
-                        <span class="team_position mt-2 text-variant1 line-clamp-2">Senior Project Manager</span>
-                    </div>
-                </li>
-                <li class="team_item group">
-                    <div class="team_img overflow-hidden relative aspect-[3/4]">
-                        <img src="./assets/images/team/team2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Sarah Thompson">
-                        <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <a href="https://www.facebook.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-facebook-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <a href="https://www.x.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-x-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                <a href="https://www.linkedin.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-linkedin-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                <a href="https://www.instagram.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-instagram-logo text-2xl"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="team_info mt-5">
-                        <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Sarah Thompson</strong>
-                        <span class="team_position mt-2 text-variant1 line-clamp-2">Lead HVAC Technician</span>
-                    </div>
-                </li>
-                <li class="team_item group">
-                    <div class="team_img overflow-hidden relative aspect-[3/4]">
-                        <img src="./assets/images/team/team3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Emily Carter">
-                        <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <a href="https://www.facebook.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-facebook-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <a href="https://www.x.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-x-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                <a href="https://www.linkedin.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-linkedin-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                <a href="https://www.instagram.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-instagram-logo text-2xl"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="team_info mt-5">
-                        <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Emily Carter</strong>
-                        <span class="team_position mt-2 text-variant1 line-clamp-2">Customer Support Manager</span>
-                    </div>
-                </li>
-                <li class="team_item group">
-                    <div class="team_img overflow-hidden relative aspect-[3/4]">
-                        <img src="./assets/images/team/team4.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Mark Robinson">
-                        <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <a href="https://www.facebook.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-facebook-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <a href="https://www.x.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-x-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                <a href="https://www.linkedin.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-linkedin-logo text-2xl"></span>
-                                </a>
-                            </li>
-                            <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                <a href="https://www.instagram.com/"
-                                    class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                    target="_blank">
-                                    <span class="ph ph-instagram-logo text-2xl"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="team_info mt-5">
-                        <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Mark Robinson</strong>
-                        <span class="team_position mt-2 text-variant1 line-clamp-2">Plumbing Services Specialist</span>
-                    </div>
-                </li>
-            </ul>
+            <div class="team_swiper_three swiper w-full">
+                <ul class="team_list swiper-wrapper w-full lg:mt-12 mt-9">
+                    <li class="team_item swiper-slide group">
+                        <div class="team_img overflow-hidden relative aspect-[3/4]">
+                            <img src="./assets/images/team/team1.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="John Michaels">
+                            <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <a href="https://www.facebook.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-facebook-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <a href="https://www.x.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-x-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <a href="https://www.linkedin.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-linkedin-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                    <a href="https://www.instagram.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-instagram-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team_info mt-5">
+                            <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">John Michaels</strong>
+                            <span class="team_position mt-2 text-variant1 line-clamp-2">Senior Project Manager</span>
+                        </div>
+                    </li>
+                    <li class="team_item swiper-slide group">
+                        <div class="team_img overflow-hidden relative aspect-[3/4]">
+                            <img src="./assets/images/team/team2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Sarah Thompson">
+                            <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <a href="https://www.facebook.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-facebook-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <a href="https://www.x.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-x-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <a href="https://www.linkedin.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-linkedin-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                    <a href="https://www.instagram.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-instagram-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team_info mt-5">
+                            <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Sarah Thompson</strong>
+                            <span class="team_position mt-2 text-variant1 line-clamp-2">Lead HVAC Technician</span>
+                        </div>
+                    </li>
+                    <li class="team_item swiper-slide group">
+                        <div class="team_img overflow-hidden relative aspect-[3/4]">
+                            <img src="./assets/images/team/team3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Emily Carter">
+                            <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <a href="https://www.facebook.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-facebook-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <a href="https://www.x.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-x-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <a href="https://www.linkedin.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-linkedin-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                    <a href="https://www.instagram.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-instagram-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team_info mt-5">
+                            <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Emily Carter</strong>
+                            <span class="team_position mt-2 text-variant1 line-clamp-2">Customer Support Manager</span>
+                        </div>
+                    </li>
+                    <li class="team_item swiper-slide group">
+                        <div class="team_img overflow-hidden relative aspect-[3/4]">
+                            <img src="./assets/images/team/team4.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Mark Robinson">
+                            <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                    <a href="https://www.facebook.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-facebook-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                    <a href="https://www.x.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-x-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                    <a href="https://www.linkedin.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-linkedin-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                                <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                    <a href="https://www.instagram.com/"
+                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                        target="_blank">
+                                        <span class="ph ph-instagram-logo text-2xl"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team_info mt-5">
+                            <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Mark Robinson</strong>
+                            <span class="team_position mt-2 text-variant1 line-clamp-2">Plumbing Services Specialist</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <!-- FORM REQUEST -->

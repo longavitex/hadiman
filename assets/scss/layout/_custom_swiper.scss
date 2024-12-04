@@ -12,6 +12,17 @@
         transition-property: all;
     }
 
+    &-grid-column {
+        >.swiper-wrapper {
+            flex-direction: unset !important;
+            row-gap: 30px;
+
+            .swiper-slide {
+                margin-top: 0 !important;
+            }
+        }
+    }
+
     &-pagination {
         &-bullet {
             position: relative;

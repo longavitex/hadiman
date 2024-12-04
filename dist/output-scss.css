@@ -753,6 +753,13 @@ legend {
   height: unset !important;
   transition-property: all;
 }
+.swiper-grid-column > .swiper-wrapper {
+  flex-direction: unset !important;
+  row-gap: 30px;
+}
+.swiper-grid-column > .swiper-wrapper .swiper-slide {
+  margin-top: 0 !important;
+}
 .swiper-pagination-bullet {
   position: relative;
   margin: 0 8px !important;
@@ -893,6 +900,26 @@ legend {
 }
 .faqs_item.active .icon_arrow_minus {
   opacity: 1;
+}
+
+/* footer */
+.footer_nav_btn .ph-plus,
+.footer_nav_btn .ph-minus {
+  transition: opacity 0.3s ease;
+}
+.footer_nav_btn.active .ph-plus {
+  opacity: 0;
+}
+.footer_nav_btn.active .ph-minus {
+  opacity: 1;
+}
+.footer_nav_list {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s linear;
+}
+.footer_nav_btn.active + .footer_nav_list {
+  max-height: 200px;
 }
 
 /* menu */
@@ -1184,14 +1211,6 @@ legend {
   border-radius: 20px;
   background: transparent;
   cursor: grabbing;
-}
-.projects.style-three .projects_thumb_item {
-  transition: visibility 0.5s linear, opacity 0.5s linear;
-}
-.projects.style-three .projects_thumb_item.active {
-  visibility: visible;
-  height: 100%;
-  opacity: 1;
 }
 .projects.style-three .projects_item {
   position: relative;
