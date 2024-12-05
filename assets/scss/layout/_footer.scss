@@ -1,33 +1,39 @@
 /* footer */
 .footer {
-    &_nav {
-        &_btn {
-            .ph-plus,
-            .ph-minus {
-                transition: opacity .3s ease;
-            }
-    
-            &.active {
-                .ph {
-                    &-plus {
-                        opacity: 0;
+    &.style-two {
+        .footer {
+            &_nav {
+                &_btn {
+                    .ph-plus,
+                    .ph-minus {
+                        transition: opacity .3s ease;
                     }
-                    
-                    &-minus {
-                        opacity: 1;
+            
+                    &.active {
+                        .ph {
+                            &-plus {
+                                opacity: 0;
+                            }
+                            
+                            &-minus {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+        
+                &_list {
+                    @include respond-below($screen-sm) {
+                        overflow: hidden;
+                        max-height: 0;
+                        transition: max-height .4s linear;
                     }
                 }
             }
+        
+            &_nav_btn.active + .footer_nav_list {
+                max-height: 200px;
+            }
         }
-
-        &_list {
-            overflow: hidden;
-            max-height: 0;
-            transition: max-height .4s linear;
-        }
-    }
-
-    &_nav_btn.active + .footer_nav_list {
-        max-height: 200px;
     }
 }

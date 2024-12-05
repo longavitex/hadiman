@@ -97,6 +97,11 @@
                                         class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-yellow hover:bg-opacity-10 hover:text-yellow duration-300">Homepage
                                         04</a>
                                 </li>
+                                <li class="menu_sub_item">
+                                    <a href="rtl.html"
+                                        class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-yellow hover:bg-opacity-10 hover:text-yellow duration-300">Homepage
+                                        RTL</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="menu_item h-full relative">
@@ -473,33 +478,35 @@
     <!-- ABOUT -->
     <section class="section about sm:py-25 py-15">
         <div class="container flex max-lg:flex-col items-center xl:gap-20 gap-10">
-            <div class="about_img flex-shrink-0 relative lg:w-[49%] sm:w-2/3 w-full pb-15">
+            <div class="about_img flex-shrink-0 relative lg:w-[49%] sm:w-2/3 w-full pb-15 animate animate_right">
                 <img src="./assets/images/components/about3_1.jpg" class="w-2/3" alt="Reliable Home Repairs And Renovations, Every Time">
-                <div class="about_banner absolute xl:top-13 top-6 xl:right-4 right-0 sm:py-7.5 py-4 sm:px-10 px-6 bg-yellow text-white">
+                <div class="about_banner absolute xl:top-13 top-6 xl:right-4 right-0 sm:py-7.5 py-4 sm:px-10 px-6 bg-yellow text-white animate animate_left" style="--i: 3">
                     <h2 class="heading2 text-center">25+</h2>
                     <p class="block mt-1 text-center">Year Of <br>Experience</p>
                 </div>
-                <div class="absolute right-0 bottom-0 w-[54%] border-t-[20px] border-l-[20px] border-white">
+                <div class="absolute right-0 bottom-0 w-[54%] border-t-[20px] border-l-[20px] border-white animate" style="--i: 2">
                     <img src="./assets/images/components/about3_2.jpg" alt="about3_2">
                 </div>
             </div>
             <div class="about_content">
-                <span class="section_tag tag bg-yellow">about us</span>
-                <h3 class="section_tit mt-4 heading3">Reliable Home Repairs And Renovations, Every Time</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation, our team is committed to getting it right the first time.</p>
+                <span class="section_tag tag bg-yellow animate">about us</span>
+                <h3 class="section_tit mt-4 heading3 animate">Reliable Home Repairs And Renovations, Every Time</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation, our team is committed to getting it right the first time.</p>
                 <ul class="about_benefit flex max-sm:flex-col gap-7.5 gap-y-5 mt-10">
-                    <li>
+                    <li class="animate" style="--i: 1">
                         <span class="ph ph-trophy text-6xl"></span>
                         <strong class="block mt-5 heading6">Experienced, Skilled Team</strong>
                         <p class="mt-3 text-variant1">Our experienced team provides expert solutions tailored to your renovation.</p>
                     </li>
-                    <li>
+                    <li class="animate" style="--i: 2">
                         <span class="ph ph-headset text-6xl"></span>
                         <strong class="block mt-5 heading6">Support 24/7</strong>
                         <p class="mt-3 text-variant1">Emergency services are available 24/7 to quickly respond when urgent repairs arise.</p>
                     </li>
                 </ul>
-                <a href="about-us.html" class="btn mt-10 bg-yellow">About Us</a>
+                <div class="btn_area animate">
+                    <a href="about-us.html" class="btn mt-10 bg-yellow">About Us</a>
+                </div>
             </div>
         </div>
     </section>
@@ -507,11 +514,11 @@
     <section class="section services style-three sm:py-25 py-15 bg-dark">
         <div class="container flex flex-col items-center">
             <div class="heading flex max-lg:flex-col justify-center gap-7 gap-y-5 text-white">
-                <div class="lg:w-1/2">
+                <div class="lg:w-1/2 animate animate_right">
                     <span class="section_tag tag bg-yellow">What We Do?</span>
                     <h3 class="section_tit mt-4 heading3">Our Service That We Offer</h3>
                 </div>
-                <div class="lg:w-5/12">
+                <div class="lg:w-5/12 animate animate_left">
                     <p class="section_desc body2">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation</p>
                     <a href="our-services.html" class="inline-flex items-center gap-2 mt-3">
                         <span class="has_line line_white animate_width txt-button">View All Services</span>
@@ -523,100 +530,110 @@
         <div class="services_list w-full lg:mt-12 mt-9 lg:px-10 px-4">
             <div class="services_swiper swiper">
                 <ul class="swiper-wrapper">
-                    <li class="services_item swiper-slide">
-                        <a href="services-detail.html" class="services_link block overflow-hidden relative group">
-                            <div class="services_thumb">
-                                <img src="./assets/images/services/3-1.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="AC Installation">
-                            </div>
-                            <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
-                                <div class="heading flex items-center justify-between w-full h-[4.25rem]">
-                                    <strong class="services_name px-6 line-clamp-1 break-all heading5">AC Installation</strong>
-                                    <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
-                                        <span class="ph ph-arrow-up-right text-3xl"></span>
-                                    </span>
+                    <li class="swiper-slide">
+                        <div class="services_item animate" style="--i: 1">
+                            <a href="services-detail.html" class="services_link block overflow-hidden relative group">
+                                <div class="services_thumb">
+                                    <img src="./assets/images/services/3-1.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="AC Installation">
                                 </div>
-                                <div class="detail p-6 border-t border-outline">
-                                    <p class="services_desc line-clamp-2 mb-2 text-variant1">Quickly identify and fix leaks to prevent water damage and costly repairs.</p>
-                                    <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
+                                    <div class="heading flex items-center justify-between w-full h-[4.25rem]">
+                                        <strong class="services_name px-6 line-clamp-1 break-all heading5">AC Installation</strong>
+                                        <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
+                                            <span class="ph ph-arrow-up-right text-3xl"></span>
+                                        </span>
+                                    </div>
+                                    <div class="detail p-6 border-t border-outline">
+                                        <p class="services_desc line-clamp-2 mb-2 text-variant1">Quickly identify and fix leaks to prevent water damage and costly repairs.</p>
+                                        <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </li>
-                    <li class="services_item swiper-slide">
-                        <a href="services-detail.html" class="services_link block overflow-hidden relative group">
-                            <div class="services_thumb">
-                                <img src="./assets/images/services/3-2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="HVAC Maintenance">
-                            </div>
-                            <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
-                                <div class="heading flex items-center justify-between w-full h-[4.25rem]">
-                                    <strong class="services_name px-6 line-clamp-1 break-all heading5">HVAC Maintenance</strong>
-                                    <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
-                                        <span class="ph ph-arrow-up-right text-3xl"></span>
-                                    </span>
+                    <li class="swiper-slide">
+                        <div class="services_item animate" style="--i: 2">
+                            <a href="services-detail.html" class="services_link block overflow-hidden relative group">
+                                <div class="services_thumb">
+                                    <img src="./assets/images/services/3-2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="HVAC Maintenance">
                                 </div>
-                                <div class="detail p-6 border-t border-outline">
-                                    <p class="services_desc line-clamp-2 mb-2 text-variant1">Regular maintenance and tune-ups to improve efficiency & extend the lifespan of your HVAC system.</p>
-                                    <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
+                                    <div class="heading flex items-center justify-between w-full h-[4.25rem]">
+                                        <strong class="services_name px-6 line-clamp-1 break-all heading5">HVAC Maintenance</strong>
+                                        <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
+                                            <span class="ph ph-arrow-up-right text-3xl"></span>
+                                        </span>
+                                    </div>
+                                    <div class="detail p-6 border-t border-outline">
+                                        <p class="services_desc line-clamp-2 mb-2 text-variant1">Regular maintenance and tune-ups to improve efficiency & extend the lifespan of your HVAC system.</p>
+                                        <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </li>
-                    <li class="services_item swiper-slide">
-                        <a href="services-detail.html" class="services_link block overflow-hidden relative group">
-                            <div class="services_thumb">
-                                <img src="./assets/images/services/3-3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Heating Repair">
-                            </div>
-                            <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
-                                <div class="heading flex items-center justify-between w-full h-[4.25rem]">
-                                    <strong class="services_name px-6 line-clamp-1 break-all heading5">Heating Repair</strong>
-                                    <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
-                                        <span class="ph ph-arrow-up-right text-3xl"></span>
-                                    </span>
+                    <li class="swiper-slide">
+                        <div class="services_item animate" style="--i: 3">
+                            <a href="services-detail.html" class="services_link block overflow-hidden relative group">
+                                <div class="services_thumb">
+                                    <img src="./assets/images/services/3-3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Heating Repair">
                                 </div>
-                                <div class="detail p-6 border-t border-outline">
-                                    <p class="services_desc line-clamp-2 mb-2 text-variant1">Quickly identify and fix leaks to prevent water damage and costly repairs.</p>
-                                    <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
+                                    <div class="heading flex items-center justify-between w-full h-[4.25rem]">
+                                        <strong class="services_name px-6 line-clamp-1 break-all heading5">Heating Repair</strong>
+                                        <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
+                                            <span class="ph ph-arrow-up-right text-3xl"></span>
+                                        </span>
+                                    </div>
+                                    <div class="detail p-6 border-t border-outline">
+                                        <p class="services_desc line-clamp-2 mb-2 text-variant1">Quickly identify and fix leaks to prevent water damage and costly repairs.</p>
+                                        <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </li>
-                    <li class="services_item swiper-slide">
-                        <a href="services-detail.html" class="services_link block overflow-hidden relative group">
-                            <div class="services_thumb">
-                                <img src="./assets/images/services/3-4.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Emergency Repair">
-                            </div>
-                            <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
-                                <div class="heading flex items-center justify-between w-full h-[4.25rem]">
-                                    <strong class="services_name px-6 line-clamp-1 break-all heading5">Emergency Repair</strong>
-                                    <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
-                                        <span class="ph ph-arrow-up-right text-3xl"></span>
-                                    </span>
+                    <li class="swiper-slide">
+                        <div class="services_item animate" style="--i: 4">
+                            <a href="services-detail.html" class="services_link block overflow-hidden relative group">
+                                <div class="services_thumb">
+                                    <img src="./assets/images/services/3-4.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Emergency Repair">
                                 </div>
-                                <div class="detail p-6 border-t border-outline">
-                                    <p class="services_desc line-clamp-2 mb-2 text-variant1">Regular maintenance and tune-ups to improve efficiency & extend the lifespan of your HVAC system.</p>
-                                    <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
+                                    <div class="heading flex items-center justify-between w-full h-[4.25rem]">
+                                        <strong class="services_name px-6 line-clamp-1 break-all heading5">Emergency Repair</strong>
+                                        <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
+                                            <span class="ph ph-arrow-up-right text-3xl"></span>
+                                        </span>
+                                    </div>
+                                    <div class="detail p-6 border-t border-outline">
+                                        <p class="services_desc line-clamp-2 mb-2 text-variant1">Regular maintenance and tune-ups to improve efficiency & extend the lifespan of your HVAC system.</p>
+                                        <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </li>
-                    <li class="services_item swiper-slide">
-                        <a href="services-detail.html" class="services_link block overflow-hidden relative group">
-                            <div class="services_thumb">
-                                <img src="./assets/images/services/3-2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="AC Installation">
-                            </div>
-                            <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
-                                <div class="heading flex items-center justify-between w-full h-[4.25rem]">
-                                    <strong class="services_name px-6 line-clamp-1 break-all heading5">Heating Repair</strong>
-                                    <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
-                                        <span class="ph ph-arrow-up-right text-3xl"></span>
-                                    </span>
+                    <li class="swiper-slide">
+                        <div class="services_item animate" style="--i: 5">
+                            <a href="services-detail.html" class="services_link block overflow-hidden relative group">
+                                <div class="services_thumb">
+                                    <img src="./assets/images/services/3-2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="AC Installation">
                                 </div>
-                                <div class="detail p-6 border-t border-outline">
-                                    <p class="services_desc line-clamp-2 mb-2 text-variant1">Quickly identify and fix leaks to prevent water damage and costly repairs.</p>
-                                    <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                <div class="services_info absolute top-full left-0 w-full bg-white lg:-translate-y-[4.25rem] -translate-y-full duration-400">
+                                    <div class="heading flex items-center justify-between w-full h-[4.25rem]">
+                                        <strong class="services_name px-6 line-clamp-1 break-all heading5">Heating Repair</strong>
+                                        <span class="flex flex-shrink-0 items-center justify-center w-[4.25rem] h-[4.25rem] bg-yellow text-white duration-300 hover:bg-black">
+                                            <span class="ph ph-arrow-up-right text-3xl"></span>
+                                        </span>
+                                    </div>
+                                    <div class="detail p-6 border-t border-outline">
+                                        <p class="services_desc line-clamp-2 mb-2 text-variant1">Quickly identify and fix leaks to prevent water damage and costly repairs.</p>
+                                        <span class="inline-block txt-button underline decoration-2 underline-offset-2 duration-300 hover:text-yellow">Learn More</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </li>
                 </ul>
                 <div class="swiper-pagination pagination-white relative mt-10"></div>
@@ -681,11 +698,11 @@
     <!-- PROCESS -->
     <section class="section process style-three">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag bg-yellow">Our Process</span>
-            <h3 class="section_title mt-4 heading3 text-center">Our Renovation Process</h3>
-            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">We take you through every stage of the renovation journey, ensuring your vision becomes reality with precision and care.</p>
+            <span class="section_tag tag bg-yellow animate">Our Process</span>
+            <h3 class="section_title mt-4 heading3 text-center animate">Our Renovation Process</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">We take you through every stage of the renovation journey, ensuring your vision becomes reality with precision and care.</p>
             <ul class="process_list grid xl:grid-cols-4 sm:grid-cols-2 gap-7.5 gap-y-10 lg:mt-12 mt-9">
-                <li class="process_item flex flex-col items-center gap-7 relative group">
+                <li class="process_item flex flex-col items-center gap-7 relative group animate" style="--i: 1">
                     <span class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
                         <span class="icon-consultation sm:text-5xl text-4xl"></span>
                         <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-yellow text-white txt-button">1</span>
@@ -695,7 +712,7 @@
                         <p class="mt-3 text-variant1 text-center">We discuss your needs and budget, creating a detailed plan to ensure everything is ready before starting.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative xl:pt-10 group">
+                <li class="process_item flex flex-col items-center gap-7 relative xl:pt-10 group animate" style="--i: 2">
                     <span class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
                         <span class="icon-design sm:text-5xl text-4xl"></span>
                         <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-yellow text-white txt-button">2</span>
@@ -705,7 +722,7 @@
                         <p class="mt-3 text-variant1 text-center">We create a custom design based on your ideas, reviewing it together to make sure it meets your expectations.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative group">
+                <li class="process_item flex flex-col items-center gap-7 relative group animate" style="--i: 3">
                     <span class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
                         <span class="icon-wrench sm:text-5xl text-4xl"></span>
                         <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-yellow text-white txt-button">3</span>
@@ -715,7 +732,7 @@
                         <p class="mt-3 text-variant1 text-center">Our team begins the renovation, managing each phase carefully & keeping you updated throughout the process.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative xl:pt-10 group">
+                <li class="process_item flex flex-col items-center gap-7 relative xl:pt-10 group animate" style="--i: 4">
                     <span class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
                         <span class="icon-inspection sm:text-5xl text-4xl"></span>
                         <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-yellow text-white txt-button">4</span>
@@ -733,16 +750,18 @@
         <div class="container">
             <div class="pricing_inner flex max-lg:flex-col xl:gap-30 gap-10 sm:py-25 py-15 border-t border-outline">
                 <div class="pricing_content flex-shrink-0 lg:w-[34%]">
-                    <span class="section_tag tag bg-yellow">Pricing Plan</span>
-                    <h3 class="section_tit mt-4 heading3">Choose the Right Plan for Your Home</h3>
-                    <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Affordable pricing plans tailored to your home repair needs, from quick fixes to large-scale renovations.</p>
-                    <a href="our-pricing.html" class="btn mt-10 bg-yellow">View Offers</a>
-                    <div class="pricing_thumb lg:mt-12 mt-9 max-lg:hidden">
+                    <span class="section_tag tag bg-yellow animate">Pricing Plan</span>
+                    <h3 class="section_tit mt-4 heading3 animate">Choose the Right Plan for Your Home</h3>
+                    <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">Affordable pricing plans tailored to your home repair needs, from quick fixes to large-scale renovations.</p>
+                    <div class="btn_area animate">
+                        <a href="our-pricing.html" class="btn mt-10 bg-yellow">View Offers</a>
+                    </div>
+                    <div class="pricing_thumb lg:mt-12 mt-9 max-lg:hidden animate">
                         <img src="./assets/images/components/pricing3.jpg" alt="pricing3">
                     </div>
                 </div>
                 <ul class="pricing_list flex flex-col gap-8 w-full">
-                    <li class="pricing_item flex max-sm:flex-col sm:items-center xl:gap-14 gap-7 relative w-full xl:p-8 p-7 border-2 border-outline duration-300 hover:border-yellow">
+                    <li class="pricing_item flex max-sm:flex-col sm:items-center xl:gap-14 gap-7 relative w-full xl:p-8 p-7 border-2 border-outline duration-300 hover:border-yellow animate">
                         <div class="pricing_info flex-shrink-0 xl:w-[40%] sm:w-[45%]">
                             <strong class="pricing_type heading5">Basic Plan</strong>
                             <h3 class="flex items-end mt-4">
@@ -776,7 +795,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pricing_item flex max-sm:flex-col sm:items-center xl:gap-14 gap-7 relative w-full xl:p-8 p-7 border-2 border-yellow duration-300">
+                    <li class="pricing_item flex max-sm:flex-col sm:items-center xl:gap-14 gap-7 relative w-full xl:p-8 p-7 border-2 border-yellow duration-300 animate">
                         <div class="pricing_info flex-shrink-0 xl:w-[40%] sm:w-[45%]">
                             <span class="tag tag_fill absolute top-0 right-0 bg-yellow">Popular</span>
                             <strong class="pricing_type heading5">Standard Plan</strong>
@@ -811,7 +830,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pricing_item flex max-sm:flex-col sm:items-center xl:gap-14 gap-7 relative w-full xl:p-8 p-7 border-2 border-outline duration-300 hover:border-yellow">
+                    <li class="pricing_item flex max-sm:flex-col sm:items-center xl:gap-14 gap-7 relative w-full xl:p-8 p-7 border-2 border-outline duration-300 hover:border-yellow animate">
                         <div class="pricing_info flex-shrink-0 xl:w-[40%] sm:w-[45%]">
                             <strong class="pricing_type heading5">Premium Plan</strong>
                             <h3 class="flex items-end mt-4">
@@ -850,22 +869,22 @@
         </div>
     </section>
     <!-- CTA -->
-    <section class="section cta overflow-hidden relative bg-dark">
+    <section class="section cta relative bg-dark">
         <div class="cta_bg absolute top-0 left-0 w-full h-full pointer-events-none">
             <img src="./assets/images/components/bg_cta3.png" class="h-full object-cover" alt="bg_cta3">
         </div>
         <div class="container relative sm:py-25 py-15 text-white">
-            <div class="cta_img absolute bottom-0 xl:left-[45%] left-1/3 xl:w-[63%] lg:w-3/4 w-full max-md:hidden">
+            <div class="cta_img absolute bottom-0 xl:left-[45%] left-1/3 xl:w-[63%] lg:w-3/4 w-full max-md:hidden animate animate_left">
                 <img src="./assets/images/components/cta3.png" alt="cta3">
             </div>
-            <span class="section_tag tag relative bg-white text-white">Support</span>
-            <h3 class="section_title relative xl:w-1/2 sm:w-2/3 mt-4 heading3">Explore Comprehensive Cooling Solutions Now!</h3>
-            <p class="section_desc relative xl:w-1/2 sm:w-2/3 lg:mt-5 mt-3 body2">We offer comprehensive AC services tailored to your needs. Contact us now to learn more about how we can keep your home cool and comfortable!</p>
+            <span class="section_tag tag relative bg-white text-white animate">Support</span>
+            <h3 class="section_title relative xl:w-1/2 sm:w-2/3 mt-4 heading3 animate">Explore Comprehensive Cooling Solutions Now!</h3>
+            <p class="section_desc relative xl:w-1/2 sm:w-2/3 lg:mt-5 mt-3 body2 animate">We offer comprehensive AC services tailored to your needs. Contact us now to learn more about how we can keep your home cool and comfortable!</p>
             <ul class="group_btn flex flex-wrap items-center gap-10 gap-y-6 relative mt-10">
-                <li>
+                <li class="animate" style="--i: 1">
                     <a href="contact.html" class="btn bg-yellow">Contact Us</a>
                 </li>
-                <li>
+                <li class="animate" style="--i: 2">
                     <a href="tel:+1555678888" class="block">
                         <span class="caption1 text-white">Have any Question?</span>
                         <strong class="heading6 block mt-1">1-555-678-888</strong>
@@ -878,11 +897,11 @@
     <section class="section testimonials sm:pt-25 pt-15">
         <div class="container flex max-lg:flex-col xl:gap-20 gap-10 gap-y-8">
             <div class="flex-shrink-0 lg:w-[30%] sm:w-2/3 w-full">
-                <span class="section_tag tag bg-yellow">Testimonials</span>
-                <h3 class="section_tit mt-4 heading3">What Our Clients Are Saying?</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
+                <span class="section_tag tag bg-yellow animate">Testimonials</span>
+                <h3 class="section_tit mt-4 heading3 animate">What Our Clients Are Saying?</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
             </div>
-            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline">
+            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline animate animate_left" style="--i: 1">
                 <div class="testimonials_swiper_three swiper w-full">
                     <ul class="swiper-wrapper">
                         <li class="testimonials_item swiper-slide">
@@ -953,19 +972,19 @@
     <section class="section counter sm:py-25 py-15">
         <div class="container">
             <ul class="counter_list grid xl:grid-cols-4 grid-cols-2 gap-10">
-                <li class="counter_item">
+                <li class="counter_item animate" style="--i: 1">
                     <h2 class="heading1"><span id="counter_number1" class="counter_number">20</span>k+</h2>
                     <p class="mt-4 body2 text-variant1">We proudly complete over 20,000 services with high quality.</p>
                 </li>
-                <li class="counter_item">
+                <li class="counter_item animate" style="--i: 2">
                     <h2 class="heading1"><span id="counter_number2" class="counter_number">4.8</span>/5</h2>
                     <p class="mt-4 body2 text-variant1">Our valued customers consistently rate us 4.8 out of 5 for overall satisfaction.</p>
                 </li>
-                <li class="counter_item">
+                <li class="counter_item animate" style="--i: 3">
                     <h2 class="heading1"><span id="counter_number3" class="counter_number">10</span>k+</h2>
                     <p class="mt-4 body2 text-variant1">Join over 10,000 satisfied customers who have placed their trust in us.</p>
                 </li>
-                <li class="counter_item">
+                <li class="counter_item animate" style="--i: 4">
                     <h2 class="heading1"><span id="counter_number4" class="counter_number">10</span>+</h2>
                     <p class="mt-4 body2 text-variant1">Benefit from our extensive 10+ years of industry experience & expertise.</p>
                 </li>
@@ -974,7 +993,7 @@
     </section>
     <!-- OUR PROJECTS -->
     <section class="section projects style-three">
-        <div class="projects_thumb_swiper swiper">
+        <div class="projects_thumb_swiper swiper animate">
             <ul class="projects_thumb swiper-wrapper max-sm:h-96">
                 <li class="projects_thumb_item swiper-slide" data-project="1">
                     <img src="./assets/images/projects/thumb/1.jpg" class="h-full object-cover" alt="Comprehensive HVAC">
@@ -991,25 +1010,25 @@
             </ul>
         </div>
         <ul class="projects_list grid xl:grid-cols-4 sm:grid-cols-2 w-full">
-            <li class="projects_item">
+            <li class="projects_item animate" style="--i: 1">
                 <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow" data-project="1">
                     <span class="projects_cate txt-label">HVAC Maintenance</span>
                     <strong class="projects_name mt-3 heading5 line-clamp-1">Comprehensive HVAC</strong>
                 </a>
             </li>
-            <li class="projects_item">
+            <li class="projects_item animate" style="--i: 2">
                 <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow" data-project="2">
                     <span class="projects_cate txt-label">AC Installation</span>
                     <strong class="projects_name mt-3 heading5 line-clamp-1">Expert AC Installation</strong>
                 </a>
             </li>
-            <li class="projects_item">
+            <li class="projects_item animate" style="--i: 3">
                 <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow" data-project="3">
                     <span class="projects_cate txt-label">Heating Repair</span>
                     <strong class="projects_name mt-3 heading5 line-clamp-1">Quality Heating Repair</strong>
                 </a>
             </li>
-            <li class="projects_item">
+            <li class="projects_item animate" style="--i: 4">
                 <a href="projects-detail.html" class="projects_link block md:p-8 p-7 bg-dark text-white duration-400 hover:bg-yellow" data-project="4">
                     <span class="projects_cate txt-label">Emergency Repair</span>
                     <strong class="projects_name mt-3 heading5 line-clamp-1">Prompt Emergency Repair</strong>
@@ -1020,165 +1039,173 @@
     <!-- OUR TEAMS -->
     <section class="section team sm:py-25 py-15">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag bg-yellow">Our teams</span>
-            <h3 class="section_tit mt-4 heading3">Meet the Our Experts</h3>
-            <p class="section_desc lg:w-1/2 lg:mt-5 mt-3 body2 text-variant1 text-center">Our team of skilled professionals brings years of experience, ensuring top-quality service and attention to detail in every task.</p>
+            <span class="section_tag tag bg-yellow animate">Our teams</span>
+            <h3 class="section_tit mt-4 heading3 animate">Meet the Our Experts</h3>
+            <p class="section_desc lg:w-1/2 lg:mt-5 mt-3 body2 text-variant1 text-center animate">Our team of skilled professionals brings years of experience, ensuring top-quality service and attention to detail in every task.</p>
             <div class="team_swiper_three swiper w-full">
                 <ul class="team_list swiper-wrapper w-full lg:mt-12 mt-9">
-                    <li class="team_item swiper-slide group">
-                        <div class="team_img overflow-hidden relative aspect-[3/4]">
-                            <img src="./assets/images/team/team1.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="John Michaels">
-                            <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                    <a href="https://www.facebook.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-facebook-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                    <a href="https://www.x.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-x-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                    <a href="https://www.linkedin.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-linkedin-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                    <a href="https://www.instagram.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-instagram-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="team_info mt-5">
-                            <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">John Michaels</strong>
-                            <span class="team_position mt-2 text-variant1 line-clamp-2">Senior Project Manager</span>
-                        </div>
-                    </li>
-                    <li class="team_item swiper-slide group">
-                        <div class="team_img overflow-hidden relative aspect-[3/4]">
-                            <img src="./assets/images/team/team2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Sarah Thompson">
-                            <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                    <a href="https://www.facebook.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-facebook-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                    <a href="https://www.x.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-x-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                    <a href="https://www.linkedin.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-linkedin-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                    <a href="https://www.instagram.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-instagram-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="team_info mt-5">
-                            <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Sarah Thompson</strong>
-                            <span class="team_position mt-2 text-variant1 line-clamp-2">Lead HVAC Technician</span>
+                    <li class="swiper-slide group">
+                        <div class="team_item animate" style="--i: 1">
+                            <div class="team_img overflow-hidden relative aspect-[3/4]">
+                                <img src="./assets/images/team/team1.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="John Michaels">
+                                <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                    <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                        <a href="https://www.facebook.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-facebook-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                        <a href="https://www.x.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-x-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                        <a href="https://www.linkedin.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-linkedin-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                        <a href="https://www.instagram.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-instagram-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team_info mt-5">
+                                <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">John Michaels</strong>
+                                <span class="team_position mt-2 text-variant1 line-clamp-2">Senior Project Manager</span>
+                            </div>
                         </div>
                     </li>
-                    <li class="team_item swiper-slide group">
-                        <div class="team_img overflow-hidden relative aspect-[3/4]">
-                            <img src="./assets/images/team/team3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Emily Carter">
-                            <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                    <a href="https://www.facebook.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-facebook-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                    <a href="https://www.x.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-x-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                    <a href="https://www.linkedin.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-linkedin-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                    <a href="https://www.instagram.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-instagram-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="team_info mt-5">
-                            <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Emily Carter</strong>
-                            <span class="team_position mt-2 text-variant1 line-clamp-2">Customer Support Manager</span>
+                    <li class="swiper-slide group">
+                        <div class="team_item animate" style="--i: 2">
+                            <div class="team_img overflow-hidden relative aspect-[3/4]">
+                                <img src="./assets/images/team/team2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Sarah Thompson">
+                                <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                    <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                        <a href="https://www.facebook.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-facebook-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                        <a href="https://www.x.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-x-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                        <a href="https://www.linkedin.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-linkedin-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                        <a href="https://www.instagram.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-instagram-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team_info mt-5">
+                                <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Sarah Thompson</strong>
+                                <span class="team_position mt-2 text-variant1 line-clamp-2">Lead HVAC Technician</span>
+                            </div>
                         </div>
                     </li>
-                    <li class="team_item swiper-slide group">
-                        <div class="team_img overflow-hidden relative aspect-[3/4]">
-                            <img src="./assets/images/team/team4.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Mark Robinson">
-                            <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                                <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                    <a href="https://www.facebook.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-facebook-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                    <a href="https://www.x.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-x-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                    <a href="https://www.linkedin.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-linkedin-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                                <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                    <a href="https://www.instagram.com/"
-                                        class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
-                                        target="_blank">
-                                        <span class="ph ph-instagram-logo text-2xl"></span>
-                                    </a>
-                                </li>
-                            </ul>
+                    <li class="swiper-slide group">
+                        <div class="team_item animate" style="--i: 3">
+                            <div class="team_img overflow-hidden relative aspect-[3/4]">
+                                <img src="./assets/images/team/team3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Emily Carter">
+                                <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                    <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                        <a href="https://www.facebook.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-facebook-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                        <a href="https://www.x.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-x-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                        <a href="https://www.linkedin.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-linkedin-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                        <a href="https://www.instagram.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-instagram-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team_info mt-5">
+                                <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Emily Carter</strong>
+                                <span class="team_position mt-2 text-variant1 line-clamp-2">Customer Support Manager</span>
+                            </div>
                         </div>
-                        <div class="team_info mt-5">
-                            <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Mark Robinson</strong>
-                            <span class="team_position mt-2 text-variant1 line-clamp-2">Plumbing Services Specialist</span>
+                    </li>
+                    <li class="swiper-slide group">
+                        <div class="team_item animate" style="--i: 4">
+                            <div class="team_img overflow-hidden relative aspect-[3/4]">
+                                <img src="./assets/images/team/team4.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Mark Robinson">
+                                <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                    <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                        <a href="https://www.facebook.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-facebook-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                        <a href="https://www.x.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-x-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                        <a href="https://www.linkedin.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-linkedin-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                    <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                        <a href="https://www.instagram.com/"
+                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-yellow hover:text-white"
+                                            target="_blank">
+                                            <span class="ph ph-instagram-logo text-2xl"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team_info mt-5">
+                                <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-yellow">Mark Robinson</strong>
+                                <span class="team_position mt-2 text-variant1 line-clamp-2">Plumbing Services Specialist</span>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -1186,33 +1213,33 @@
         </div>
     </section>
     <!-- FORM REQUEST -->
-    <section class="section form_request">
+    <section class="section form_request sm:pb-25 pb-15">
         <div class="form_request_banner cta style-three relative">
             <div class="container flex flex-col items-center relative sm:pt-25 pt-15 pb-[16.25rem] text-white">
                 <button class="btn_play js_btn_open_popup inline-flex items-center justify-center w-18 h-18 rounded-full bg-yellow duration-400 hover:bg-white hover:text-black" data-popup="popup_video">
                     <span class="ph-fill ph-play text-3xl"></span>
                     <span class="blind">button play video</span>
                 </button>
-                <strong class="block mt-10 heading6 text-center">Not Sure Where to Begin?</strong>
-                <h3 class="section_tit sm:w-2/3 mt-3 heading2 text-center">Get Quick, Reliable Air Conditioning Solutions Today.</h3>
+                <strong class="block mt-10 heading6 text-center animate">Not Sure Where to Begin?</strong>
+                <h3 class="section_tit sm:w-2/3 mt-3 heading2 text-center animate">Get Quick, Reliable Air Conditioning Solutions Today.</h3>
             </div>
         </div>
         <div class="container -mt-[12.5rem]">
             <div class="relative sm:w-[83%] mx-auto bg-white box_shadow_sm">
                 <div class="form_request_form relative xl:w-[52%] sm:p-12 p-8">
-                    <h4 class="heading4">Request A Quote</h4>
-                    <p class="mt-3 text-variant1">We’ll work with you for a customized cleaning plan that meets your needs and fits your budget.</p>
+                    <h4 class="heading4 animate">Request A Quote</h4>
+                    <p class="mt-3 text-variant1 animate">We’ll work with you for a customized cleaning plan that meets your needs and fits your budget.</p>
                     <form class="form grid sm:grid-cols-2 grid-cols-1 gap-5 w-full mt-6">
-                        <div class="form_group w-full">
+                        <div class="form_group w-full animate" style="--i: 1">
                             <input type="text" name="name" class="form_input w-full py-3 px-4 border border-outline rounded" placeholder="Your Name" required>
                         </div>
-                        <div class="form_group w-full">
+                        <div class="form_group w-full animate" style="--i: 2">
                             <input type="tel" name="phone" pattern="\d*" class="form_input w-full py-3 px-4 border border-outline rounded" placeholder="Phone Number" required>
                         </div>
-                        <div class="form_group w-full">
+                        <div class="form_group w-full animate" style="--i: 3">
                             <input type="email" name="email" class="form_input w-full py-3 px-4 border border-outline rounded" placeholder="Email Address" required>
                         </div>
-                        <div class="form_group form_select w-full">
+                        <div class="form_group form_select w-full animate" style="--i: 4">
                             <select name="services" class="w-full py-3 px-4 border border-outline rounded" required>
                                 <option value="Choose Services" selected disabled>Choose Services</option>
                                 <option value="HVAC Maintenance">HVAC Maintenance</option>
@@ -1222,28 +1249,28 @@
                             </select>
                             <span class="ph ph-caret-down arrow_down text-xl"></span>
                         </div>
-                        <div class="form_group sm:col-span-2 w-full">
+                        <div class="form_group sm:col-span-2 w-full animate" style="--i: 5">
                             <textarea name="message" class="form_input w-full py-3 px-4 border border-outline rounded" rows="3" placeholder="Your Mesage" required></textarea>
                         </div>
-                        <div class="form_group sm:col-span-2 mt-1 w-full">
+                        <div class="form_group sm:col-span-2 mt-1 w-full animate" style="--i: 6">
                             <button type="submit" class="btn w-full bg-yellow text-center">Make An Appointment</button>
                         </div>
                     </form>
                 </div>
-                <div class="form_request_img overflow-hidden absolute top-0 right-0 w-[48%] h-full max-xl:hidden group">
+                <div class="form_request_img overflow-hidden absolute top-0 right-0 w-[48%] h-full max-xl:hidden group animate animate_left">
                     <img src="./assets/images/components/form_request_img3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Request A Quote">
                 </div>
             </div>
         </div>
     </section>
     <!-- LASTEST NEWS -->
-    <section class="section blog sm:py-25 py-15">
+    <section class="section blog sm:pb-25 pb-15">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag bg-yellow">Latest News</span>
-            <h3 class="section_tit mt-4 heading3 text-center">Home Repair Tips & Expert Advice</h3>
-            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">Discover articles with DIY tips, expert insights, and advice to help you easily maintain and improve your home.</p>
+            <span class="section_tag tag bg-yellow animate">Latest News</span>
+            <h3 class="section_tit mt-4 heading3 text-center animate">Home Repair Tips & Expert Advice</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">Discover articles with DIY tips, expert insights, and advice to help you easily maintain and improve your home.</p>
             <ul class="blog_list grid xl:grid-cols-2 gap-7.5 w-full lg:mt-12 mt-9">
-                <li class="blog_item flex max-md:flex-col md:items-center justify-end relative bg-white border border-outline group">
+                <li class="blog_item flex max-md:flex-col md:items-center justify-end relative bg-white border border-outline group animate" style="--i: 1">
                     <a href="blog-detail1.html" class="blog_thumb block overflow-hidden md:absolute top-0 left-0 h-full md:w-[46%]">
                         <img src="./assets/images/blog/blog3-1.jpg" class="h-full object-cover duration-300 hover:scale-105" alt="How Regular AC Maintenance Can Save You Money">
                     </a>
@@ -1263,7 +1290,7 @@
                         </a>
                     </div>
                 </li>
-                <li class="blog_item flex max-md:flex-col md:items-center justify-end relative bg-white border border-outline group">
+                <li class="blog_item flex max-md:flex-col md:items-center justify-end relative bg-white border border-outline group animate" style="--i: 2">
                     <a href="blog-detail1.html" class="blog_thumb block overflow-hidden md:absolute top-0 left-0 h-full md:w-[46%]">
                         <img src="./assets/images/blog/blog3-2.jpg" class="h-full object-cover duration-300 hover:scale-105" alt="Common AC Problems and How to Fix Them">
                     </a>
@@ -1480,6 +1507,9 @@
                             </li>
                             <li>
                                 <a href="home4.html" class="menu_sub_link py-2 txt-button">Homepage 04</a>
+                            </li>
+                            <li>
+                                <a href="rtl.html" class="menu_sub_link py-2 txt-button">Homepage RTL</a>
                             </li>
                         </ul>
                     </li>

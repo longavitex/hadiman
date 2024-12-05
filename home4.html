@@ -110,6 +110,11 @@
                                 class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-red hover:bg-opacity-10 hover:text-red duration-300 active">Homepage
                                 04</a>
                         </li>
+                        <li class="menu_sub_item">
+                            <a href="rtl.html"
+                                class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-red hover:bg-opacity-10 hover:text-red duration-300">Homepage
+                                RTL</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="menu_item h-full relative">
@@ -409,17 +414,17 @@
     <section class="section about sm:py-25 py-15">
         <div class="container flex max-xl:flex-col-reverse items-center xl:gap-20 gap-10">
             <div class="about_content w-full">
-                <span class="section_tag tag inline-block bg-red">Leading the Way in Handyman Electrical</span>
-                <h3 class="section_tit mt-4 heading3">Your Trusted & Reliable Electrical Services, Every Step of the Way</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">We’re committed to providing dependable, high-quality electrical solutions you can trust. From minor repairs to full installations, our expert team ensures safe and efficient service.</p>
+                <span class="section_tag tag bg-red animate">Leading the Way in Handyman Electrical</span>
+                <h3 class="section_tit mt-4 heading3 animate">Your Trusted & Reliable Electrical Services, Every Step of the Way</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">We’re committed to providing dependable, high-quality electrical solutions you can trust. From minor repairs to full installations, our expert team ensures safe and efficient service.</p>
                 <ul class="about_benefit flex flex-wrap gap-10 gap-y-6 mt-10">
-                    <li class="flex items-center gap-5">
+                    <li class="flex items-center gap-5 animate" style="--i: 1">
                         <div class="flex flex-shrink-0 items-center justify-center w-18 h-18 bg-surface">
                             <span class="ph ph-lightning text-4xl"></span>
                         </div>
                         <strong class="heading6 whitespace-nowrap">Experienced, <br>Skilled Team</strong>
                     </li>
-                    <li>
+                    <li class=" animate" style="--i: 2">
                         <ul>
                             <li class="flex items-center gap-3">
                                 <span class="ph ph-check text-2xl text-red"></span>
@@ -433,10 +438,10 @@
                     </li>
                 </ul>
                 <ul class="about_btn flex flex-wrap gap-8 gap-y-6 mt-10">
-                    <li>
+                    <li class="animate" style="--i: 1">
                         <a href="about-us.html" class="btn bg-red">About Us</a>
                     </li>
-                    <li>
+                    <li class="animate" style="--i: 2">
                         <a href="tel:+1555678888" class="flex items-center gap-3 group">
                             <span
                                 class="flex items-center justify-center w-14 h-14 border-2 border-red duration-400 group-hover:bg-red group-hover:text-white">
@@ -451,10 +456,10 @@
                 </ul>
             </div>
             <div class="about_img flex-shrink-0 grid grid-cols-2 sm:gap-7.5 gap-6 relative xl:w-[55%] sm:w-2/3 w-full">
-                <div class="about_bg">
+                <div class="about_bg animate animate_right">
                     <img src="./assets/images/components/about3_1.jpg" alt="about3_1">
                 </div>
-                <div class="about_bg sm:pt-20 pt-12">
+                <div class="about_bg sm:pt-20 pt-12 animate animate_left">
                     <img src="./assets/images/components/about4_2.jpg" alt="about4_2">
                 </div>
                 <button class="btn_play js_btn_open_popup absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-30 w-20 sm:h-30 h-20 p-2.5 bg-white rounded-full duration-300 hover:bg-black hover:text-white" data-popup="popup_video">
@@ -468,11 +473,11 @@
     <section class="section services style-four sm:py-25 py-15 bg-dark">
         <div class="container flex flex-col items-center">
             <div class="heading flex max-lg:flex-col justify-center gap-7 gap-y-5 text-white">
-                <div class="lg:w-1/2">
+                <div class="lg:w-1/2 animate animate_right">
                     <span class="section_tag tag bg-red">What We Do?</span>
                     <h3 class="section_tit mt-4 heading3">Our Service That We Offer</h3>
                 </div>
-                <div class="lg:w-5/12">
+                <div class="lg:w-5/12 animate animate_left">
                     <p class="section_desc body2">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation</p>
                     <a href="our-services.html" class="inline-flex items-center gap-2 mt-3 duration-300 hover:text-red">
                         <span class="has_line line_white animate_width txt-button">View All Services</span>
@@ -485,7 +490,7 @@
             <div class="services_swiper sm:-mx-10 swiper">
                 <ul class="swiper-wrapper">
                     <li class="services_item swiper-slide">
-                        <div class="services_card">
+                        <div class="services_card animate" style="--i: 1">
                             <a href="services-detail.html" class="services_link block overflow-hidden relative group">
                                 <!-- <div class="services_thumb opacity-60 grayscale duration-300 hover:opacity-100 hover:grayscale-0"> -->
                                 <div class="services_thumb">
@@ -501,7 +506,7 @@
                         </div>
                     </li>
                     <li class="services_item swiper-slide">
-                        <div class="services_card">
+                        <div class="services_card animate" style="--i: 2">
                             <a href="services-detail.html" class="services_link block overflow-hidden relative group">
                                 <!-- <div class="services_thumb opacity-60 grayscale duration-300 hover:opacity-100 hover:grayscale-0"> -->
                                 <div class="services_thumb">
@@ -517,7 +522,7 @@
                         </div>
                     </li>
                     <li class="services_item swiper-slide">
-                        <div class="services_card">
+                        <div class="services_card animate" style="--i: 3">
                             <a href="services-detail.html" class="services_link block overflow-hidden relative group">
                                 <!-- <div class="services_thumb opacity-60 grayscale duration-300 hover:opacity-100 hover:grayscale-0"> -->
                                 <div class="services_thumb">
@@ -533,7 +538,7 @@
                         </div>
                     </li>
                     <li class="services_item swiper-slide">
-                        <div class="services_card">
+                        <div class="services_card animate" style="--i: 4">
                             <a href="services-detail.html" class="services_link block overflow-hidden relative group">
                                 <!-- <div class="services_thumb opacity-60 grayscale duration-300 hover:opacity-100 hover:grayscale-0"> -->
                                 <div class="services_thumb">
@@ -549,7 +554,7 @@
                         </div>
                     </li>
                     <li class="services_item swiper-slide">
-                        <div class="services_card">
+                        <div class="services_card animate" style="--i: 5">
                             <a href="services-detail.html" class="services_link block overflow-hidden relative group">
                                 <!-- <div class="services_thumb opacity-60 grayscale duration-300 hover:opacity-100 hover:grayscale-0"> -->
                                 <div class="services_thumb">
@@ -565,7 +570,7 @@
                         </div>
                     </li>
                     <li class="services_item swiper-slide">
-                        <div class="services_card">
+                        <div class="services_card animate" style="--i: 6">
                             <a href="services-detail.html" class="services_link block overflow-hidden relative group">
                                 <!-- <div class="services_thumb opacity-60 grayscale duration-300 hover:opacity-100 hover:grayscale-0"> -->
                                 <div class="services_thumb">
@@ -588,14 +593,14 @@
     <!-- WHY CHOOSE US -->
     <section class="section choose_us sm:py-25 py-15 bg-surface">
         <div class="container flex max-lg:flex-col items-center xl:gap-20 gap-10">
-            <div class="choose_us_img flex-shrink-0 lg:w-[45%] sm:w-2/3 w-full">
+            <div class="choose_us_img flex-shrink-0 lg:w-[45%] sm:w-2/3 w-full animate animate_right">
                 <img src="./assets/images/components/form_request_img3.jpg" alt="WHY CHOOSE US">
             </div>
             <div class="choose_us_content w-full">
-                <span class="section_tag tag bg-red">WHY CHOOSE US</span>
-                <h3 class="section_tit mt-4 heading3">Why We’re the Best Choice</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Our skilled team provides top-notch air conditioning services, from installation to repair and maintenance, ensuring your system runs efficiently for year-round comfort.</p>
-                <div class="heading_menu mt-10 border-b-2 border-outline">
+                <span class="section_tag tag bg-red animate">WHY CHOOSE US</span>
+                <h3 class="section_tit mt-4 heading3 animate">Why We’re the Best Choice</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">Our skilled team provides top-notch air conditioning services, from installation to repair and maintenance, ensuring your system runs efficiently for year-round comfort.</p>
+                <div class="heading_menu mt-10 border-b-2 border-outline animate">
                     <div class="menu_tab style-red -mb-0.5">
                         <ul class="menu flex gap-10" role="tablist">
                             <li class="indicator absolute bottom-0 h-0.5 bg-red duration-300"></li>
@@ -611,7 +616,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="services_01" class="tab_panel mt-6 active" role="tabpanel" aria-labelledby="services_tab01" aria-hidden="false">
+                <div id="services_01" class="tab_panel mt-6 animate active" role="tabpanel" aria-labelledby="services_tab01" aria-hidden="false">
                     <p class="text-variant1">We’re committed to providing dependable, high-quality electrical solutions you can trust. From minor repairs to full installations, our expert team ensures safe and efficient service.</p>
                     <ul class="list_feature grid xs:grid-cols-2 gap-10 gap-y-5 mt-5">
                         <li class="flex gap-1">
@@ -640,11 +645,11 @@
                         </li>
                     </ul>
                 </div>
-                <div id="services_02" class="tab_panel mt-6" role="tabpanel" aria-labelledby="services_tab02" aria-hidden="true">
+                <div id="services_02" class="tab_panel mt-6 animate" role="tabpanel" aria-labelledby="services_tab02" aria-hidden="true">
                     <p class="text-variant1">Our story began with a simple mission: to deliver reliable and expert electrical services that make a difference. Over the years, we've grown from a small local team into a trusted name in the industry, thanks to our commitment to innovation, safety, and customer satisfaction.</p>
                     <p class="text-variant1 mt-2"> Every project, big or small, reflects our dedication to quality and the relationships we've built with our community. Join us as we continue to illuminate the future, one connection at a time.</p>
                 </div>
-                <div id="services_03" class="tab_panel mt-6" role="tabpanel" aria-labelledby="services_tab03" aria-hidden="true">
+                <div id="services_03" class="tab_panel mt-6 animate" role="tabpanel" aria-labelledby="services_tab03" aria-hidden="true">
                     <p class="text-variant1">These accolades reflect our unwavering commitment to quality, innovation, and customer satisfaction. We strive to set higher standards every year.</p>
                     <ul class="list_feature flex flex-col gap-5 mt-5">
                         <li class="flex gap-1">
@@ -661,18 +666,20 @@
                         </li>
                     </ul>
                 </div>
-                <a href="about-us.html" class="btn mt-10 bg-red">Learn more</a>
+                <div class="btn_area animate">
+                    <a href="about-us.html" class="btn mt-10 bg-red">Learn more</a>
+                </div>
             </div>
         </div>
     </section>
     <!-- PROCESS -->
     <section class="section process style-three style-four sm:py-25 py-15">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag bg-red">Our Process</span>
-            <h3 class="section_title mt-4 heading3 text-center">Our Renovation Process</h3>
-            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">We take you through every stage of the renovation journey, ensuring your vision becomes reality with precision and care.</p>
+            <span class="section_tag tag bg-red animate">Our Process</span>
+            <h3 class="section_title mt-4 heading3 text-center animate">Our Renovation Process</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">We take you through every stage of the renovation journey, ensuring your vision becomes reality with precision and care.</p>
             <ul class="process_list grid xl:grid-cols-4 sm:grid-cols-2 gap-[4.375rem] gap-y-10 lg:mt-12 mt-9">
-                <li class="process_item flex flex-col items-center gap-7 relative group">
+                <li class="process_item flex flex-col items-center gap-7 relative group animate" style="--i: 1">
                     <div class="process_img overflow-hidden w-[12.5rem] h-[12.5rem] p-1.5 border-2 border-transparent rounded-full duration-400 group-hover:border-red">
                         <img src="./assets/images/process/1.jpg" class="h-full object-cover rounded-full" alt="Select Service">
                     </div>
@@ -682,7 +689,7 @@
                         <p class="mt-3 text-variant1 text-center">Browse and choose the service that best fits your needs.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative group">
+                <li class="process_item flex flex-col items-center gap-7 relative group animate" style="--i: 2">
                     <div class="process_img overflow-hidden w-[12.5rem] h-[12.5rem] p-1.5 border-2 border-transparent rounded-full duration-400 group-hover:border-red">
                         <img src="./assets/images/process/2.jpg" class="h-full object-cover rounded-full" alt="Confirm Details">
                     </div>
@@ -692,7 +699,7 @@
                         <p class="mt-3 text-variant1 text-center">Review and confirm your service details and schedule.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative group">
+                <li class="process_item flex flex-col items-center gap-7 relative group animate" style="--i: 3">
                     <div class="process_img overflow-hidden w-[12.5rem] h-[12.5rem] p-1.5 border-2 border-transparent rounded-full duration-400 group-hover:border-red">
                         <img src="./assets/images/process/3.jpg" class="h-full object-cover rounded-full" alt="Project Execution">
                     </div>
@@ -702,7 +709,7 @@
                         <p class="mt-3 text-variant1 text-center">Our team carries out the work with skill and efficiency.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative group">
+                <li class="process_item flex flex-col items-center gap-7 relative group animate" style="--i: 4">
                     <div class="process_img overflow-hidden w-[12.5rem] h-[12.5rem] p-1.5 border-2 border-transparent rounded-full duration-400 group-hover:border-red">
                         <img src="./assets/images/process/4.jpg" class="h-full object-cover rounded-full" alt="Final Inspection">
                     </div>
@@ -716,14 +723,14 @@
         </div>
     </section>
     <!-- OUR PROJECTS -->
-    <section class="section projects style-four overflow-hidden w-full sm:py-25 py-15 bg-surface">
+    <section class="section projects style-four w-full sm:py-25 py-15 bg-surface">
         <div class="container">
             <div class="heading flex max-lg:flex-col justify-center gap-7 gap-y-5">
-                <div class="lg:w-1/2">
+                <div class="lg:w-1/2 animate animate_right">
                     <span class="section_tag tag bg-red">Our Projects</span>
                     <h3 class="section_tit mt-4 heading3">Amazing Work Results</h3>
                 </div>
-                <div class="lg:w-1/2">
+                <div class="lg:w-1/2 animate animate_left">
                     <p class="section_desc body2 text-variant1">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation</p>
                     <a href="our-projects1.html" class="inline-flex items-center gap-2 mt-4 mx-auto">
                         <span class="has_line line_black animate_width txt-button">View All Projects</span>
@@ -732,7 +739,7 @@
                 </div>
             </div>
         </div>
-        <div class="projects_list lg:mt-12 mt-9">
+        <div class="projects_list lg:mt-12 mt-9 animate">
             <ul class="projects_slick">
                 <li class="projects_item">
                     <a href="projects-detail.html" class="projects_link block overflow-hidden relative group">
@@ -773,10 +780,10 @@
             <div class="testimonials_inner">
                 <div class="section_heading flex flex-wrap items-end justify-between gap-7">
                     <div>
-                        <span class="section_tag tag bg-red">Testimonials</span>
-                        <h3 class="section_tit mt-4 heading3">What our clients say?</h3>
+                        <span class="section_tag tag bg-red animate">Testimonials</span>
+                        <h3 class="section_tit mt-4 heading3 animate">What our clients say?</h3>
                     </div>
-                    <div class="group_btn flex items-center gap-3">
+                    <div class="group_btn flex items-center gap-3 animate">
                         <button class="btn_prev flex items-center justify-center w-12 h-12 border border-outline duration-300 hover:bg-black hover:text-white">
                             <span class="ph ph-caret-left text-2xl"></span>
                             <span class="blind">button prev</span>
@@ -790,79 +797,87 @@
                 <div class="testimonials_content relative w-full lg:mt-12 mt-9">
                     <div class="testimonials_swiper_two swiper">
                         <ul class="swiper-wrapper">
-                            <li class="testimonials_item swiper-slide p-7 border border-outline duration-300 hover:border-red">
-                                <ul class="rating flex">
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl text-variant2"></li>
-                                </ul>
-                                <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
-                                <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
-                                    <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
-                                        <img src="./assets/images/team/team1.jpg" class="h-full object-cover" alt="Guy Hawkins">
-                                    </div>
-                                    <div class="testimonials_author">
-                                        <strong class="testimonials_name heading6">Guy Hawkins</strong>
-                                        <span class="testimonials_address block mt-1 text-variant1">New York, USA</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonials_item swiper-slide p-7 border border-outline duration-300 hover:border-red">
-                                <ul class="rating flex">
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                </ul>
-                                <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
-                                <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
-                                    <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
-                                        <img src="./assets/images/team/team2.jpg" class="h-full object-cover" alt="Michael Carrick">
-                                    </div>
-                                    <div class="testimonials_author">
-                                        <strong class="testimonials_name heading6">Michael Carrick</strong>
-                                        <span class="testimonials_address block mt-1 text-variant1">Manchester, UK</span>
+                            <li class="swiper-slide p-7 border border-outline duration-300 hover:border-red">
+                                <div class="testimonials_item animate" style="--i: 1">
+                                    <ul class="rating flex">
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl text-variant2"></li>
+                                    </ul>
+                                    <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
+                                    <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
+                                        <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                            <img src="./assets/images/team/team1.jpg" class="h-full object-cover" alt="Guy Hawkins">
+                                        </div>
+                                        <div class="testimonials_author">
+                                            <strong class="testimonials_name heading6">Guy Hawkins</strong>
+                                            <span class="testimonials_address block mt-1 text-variant1">New York, USA</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="testimonials_item swiper-slide p-7 border border-outline duration-300 hover:border-red">
-                                <ul class="rating flex">
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl text-variant2"></li>
-                                </ul>
-                                <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
-                                <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
-                                    <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
-                                        <img src="./assets/images/team/team3.jpg" class="h-full object-cover" alt="Christina Rodiguez">
-                                    </div>
-                                    <div class="testimonials_author">
-                                        <strong class="testimonials_name heading6">Christina Rodiguez</strong>
-                                        <span class="testimonials_address block mt-1 text-variant1">Madrid, Spain</span>
+                            <li class="swiper-slide p-7 border border-outline duration-300 hover:border-red">
+                                <div class="testimonials_item animate" style="--i: 2">
+                                    <ul class="rating flex">
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                    </ul>
+                                    <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
+                                    <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
+                                        <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                            <img src="./assets/images/team/team2.jpg" class="h-full object-cover" alt="Michael Carrick">
+                                        </div>
+                                        <div class="testimonials_author">
+                                            <strong class="testimonials_name heading6">Michael Carrick</strong>
+                                            <span class="testimonials_address block mt-1 text-variant1">Manchester, UK</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="testimonials_item swiper-slide p-7 border border-outline duration-300 hover:border-red">
-                                <ul class="rating flex">
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                    <li class="ph-fill ph-star text-xl"></li>
-                                </ul>
-                                <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
-                                <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
-                                    <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
-                                        <img src="./assets/images/team/team4.jpg" class="h-full object-cover" alt="Leonardo Pato">
+                            <li class="swiper-slide p-7 border border-outline duration-300 hover:border-red">
+                                <div class="testimonials_item animate" style="--i: 3">
+                                    <ul class="rating flex">
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl text-variant2"></li>
+                                    </ul>
+                                    <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
+                                    <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
+                                        <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                            <img src="./assets/images/team/team3.jpg" class="h-full object-cover" alt="Christina Rodiguez">
+                                        </div>
+                                        <div class="testimonials_author">
+                                            <strong class="testimonials_name heading6">Christina Rodiguez</strong>
+                                            <span class="testimonials_address block mt-1 text-variant1">Madrid, Spain</span>
+                                        </div>
                                     </div>
-                                    <div class="testimonials_author">
-                                        <strong class="testimonials_name heading6">Leonardo Pato</strong>
-                                        <span class="testimonials_address block mt-1 text-variant1">Paris, France</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide p-7 border border-outline duration-300 hover:border-red">
+                                <div class="testimonials_item animate" style="--i: 4">
+                                    <ul class="rating flex">
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                        <li class="ph-fill ph-star text-xl"></li>
+                                    </ul>
+                                    <p class="testimonials_desc mt-3 body2 line-clamp-4">“Excellent electrical work done at our home. The technicians were thorough, punctual, and left the place spotless. The team’s attention to detail was truly impressive”</p>
+                                    <div class="flex items-center gap-4 mt-6 pt-6 border-t border-outline">
+                                        <div class="testimonials_img flex-shrink-0 overflow-hidden w-15 h-15 rounded-full">
+                                            <img src="./assets/images/team/team4.jpg" class="h-full object-cover" alt="Leonardo Pato">
+                                        </div>
+                                        <div class="testimonials_author">
+                                            <strong class="testimonials_name heading6">Leonardo Pato</strong>
+                                            <span class="testimonials_address block mt-1 text-variant1">Paris, France</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -876,19 +891,19 @@
     <section class="section counter">
         <div class="container">
             <ul class="counter_list grid xl:grid-cols-4 grid-cols-2 gap-10 sm:py-25 py-15 border-t border-outline">
-                <li class="counter_item">
+                <li class="counter_item animate" style="--i: 1">
                     <h2 class="heading1"><span id="counter_number1" class="counter_number">20</span>k+</h2>
                     <p class="mt-4 body2 text-variant1">We proudly complete over 20,000 services with high quality.</p>
                 </li>
-                <li class="counter_item">
+                <li class="counter_item animate" style="--i: 2">
                     <h2 class="heading1"><span id="counter_number2" class="counter_number">4.8</span>/5</h2>
                     <p class="mt-4 body2 text-variant1">Our valued customers consistently rate us 4.8 out of 5 for overall satisfaction.</p>
                 </li>
-                <li class="counter_item">
+                <li class="counter_item animate" style="--i: 3">
                     <h2 class="heading1"><span id="counter_number3" class="counter_number">10</span>k+</h2>
                     <p class="mt-4 body2 text-variant1">Join over 10,000 satisfied customers who have placed their trust in us.</p>
                 </li>
-                <li class="counter_item">
+                <li class="counter_item animate" style="--i: 4">
                     <h2 class="heading1"><span id="counter_number4" class="counter_number">10</span>+</h2>
                     <p class="mt-4 body2 text-variant1">Benefit from our extensive 10+ years of industry experience & expertise.</p>
                 </li>
@@ -899,29 +914,29 @@
     <section class="section form_request sm:py-25 py-15 bg-dark">
         <div class="container flex items-center max-xl:flex-col gap-30 gap-y-14">
             <div class="form_request_content w-full text-white">
-                <span class="section_tag tag bg-white">Contact US</span>
-                <h3 class="section_tit mt-4 heading3">Get in Touch with Us</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2">Reach out today for expert guidance, service inquiries, or personalized solutions. We're here to support your project every step of the way!</p>
+                <span class="section_tag tag bg-white animate">Contact US</span>
+                <h3 class="section_tit mt-4 heading3 animate">Get in Touch with Us</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 animate">Reach out today for expert guidance, service inquiries, or personalized solutions. We're here to support your project every step of the way!</p>
                 <ul class="list_feature grid sm:grid-cols-2 gap-14 gap-y-4 mt-5">
-                    <li class="flex items-center gap-3">
+                    <li class="flex items-center gap-3 animate" style="--i: 1">
                         <span class="ph ph-check text-xl"></span>
                         <span>24/7 Electrical Support</span>
                     </li>
-                    <li class="flex items-center gap-3">
+                    <li class="flex items-center gap-3 animate" style="--i: 2">
                         <span class="ph ph-check text-xl"></span>
                         <span>Free Assessment Before You Decide</span>
                     </li>
-                    <li class="flex items-center gap-3">
+                    <li class="flex items-center gap-3 animate" style="--i: 3">
                         <span class="ph ph-check text-xl"></span>
                         <span>Trusted, Skilled Electricians</span>
                     </li>
-                    <li class="flex items-center gap-3">
+                    <li class="flex items-center gap-3 animate" style="--i: 4">
                         <span class="ph ph-check text-xl"></span>
                         <span>Customized Solutions for Your Needs</span>
                     </li>
                 </ul>
                 <ul class="list_info grid md:grid-cols-3 gap-8 mt-10 pt-10 border-t border-white border-opacity-10">
-                    <li class="item flex gap-3">
+                    <li class="item flex gap-3 animate" style="--i: 1">
                         <span class="flex flex-shrink-0 items-center justify-center w-15 h-15 rounded-full bg-white bg-opacity-10">
                             <span class="ph ph-map-pin text-3xl"></span>
                         </span>
@@ -930,7 +945,7 @@
                             <p class="mt-1">101 E 129th St, East Chicago, IN 46312, US</p>
                         </div>
                     </li>
-                    <li class="item flex gap-3">
+                    <li class="item flex gap-3 animate" style="--i: 2">
                         <span class="flex flex-shrink-0 items-center justify-center w-15 h-15 rounded-full bg-white bg-opacity-10">
                             <span class="ph ph-alarm text-3xl"></span>
                         </span>
@@ -939,7 +954,7 @@
                             <p class="mt-1">Weekday: 8:00 - 18:00 Sunday: Closed</p>
                         </div>
                     </li>
-                    <li class="item flex gap-3">
+                    <li class="item flex gap-3 animate" style="--i: 3">
                         <span class="flex flex-shrink-0 items-center justify-center w-15 h-15 rounded-full bg-white bg-opacity-10">
                             <span class="ph ph-phone-call text-3xl"></span>
                         </span>
@@ -951,7 +966,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="form_request_form flex-shrink-0 relative xl:w-5/12 w-full p-8 bg-white">
+            <div class="form_request_form flex-shrink-0 relative xl:w-5/12 w-full p-8 bg-white animate animate_left" style="--i: 3">
                 <h4 class="heading4">Request A Quote</h4>
                 <p class="mt-3 text-variant1">We’ll work with you for a customized cleaning plan that meets your needs and fits your budget.</p>
                 <form class="form grid sm:grid-cols-2 grid-cols-1 gap-5 w-full mt-6">
@@ -985,7 +1000,7 @@
         </div>
     </section>
     <!-- VIDEO -->
-    <section class="section video">
+    <section class="section video animate">
         <div class="video_inner flex items-center justify-center lg:h-[35rem] h-[25rem]">
             <img src="./assets/images/components/bg_video4.jpg" class="h-full object-cover" alt="bg_video4">
             <button class="btn_play js_btn_open_popup inline-flex items-center justify-center absolute w-18 h-18 rounded-full bg-white duration-400 hover:bg-red hover:text-white" data-popup="popup_video">
@@ -997,11 +1012,11 @@
     <!-- LASTEST NEWS -->
     <section class="section blog sm:py-25 py-15">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag">Latest News</span>
-            <h3 class="section_tit mt-4 heading3 text-center">Latest Electrical News & Tips</h3>
-            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">Discover insights, updates, and tips for all your electrical needs.</p>
+            <span class="section_tag tag animate">Latest News</span>
+            <h3 class="section_tit mt-4 heading3 text-center animate">Latest Electrical News & Tips</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">Discover insights, updates, and tips for all your electrical needs.</p>
             <ul class="blog_list grid lg:grid-cols-2 gap-7.5 w-full lg:mt-12 mt-9">
-                <li class="blog_item flex flex-col gap-6">
+                <li class="blog_item flex flex-col gap-6 animate animate_right">
                     <a href="blog-detail1.html" class="blog_thumb block overflow-hidden group">
                         <img src="./assets/images/blog/blog4-1.jpg" class="duration-400 group-hover:scale-110" alt="Benefits of Solar Energy for Modern Homes">
                     </a>
@@ -1019,7 +1034,7 @@
                 </li>
                 <li>
                     <ul class="flex flex-col sm:gap-6 gap-7.5">
-                        <li class="blog_item flex max-sm:flex-col sm:items-center gap-6">
+                        <li class="blog_item flex max-sm:flex-col sm:items-center gap-6 animate animate_left" style="--i: 1">
                             <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 overflow-hidden sm:w-56 group">
                                 <img src="./assets/images/blog/blog1-1.jpg" class="duration-400 group-hover:scale-110" alt="Top Electrical Safety Tips Every Homeowner Should Know">
                             </a>
@@ -1032,7 +1047,7 @@
                                 <a href="blog-detail1.html" class="blog_tit mt-4 line-clamp-2 heading5 duration-300 hover:text-orange">Top Electrical Safety Tips Every Homeowner Should Know</a>
                             </div>
                         </li>
-                        <li class="blog_item flex max-sm:flex-col sm:items-center gap-6">
+                        <li class="blog_item flex max-sm:flex-col sm:items-center gap-6 animate animate_left" style="--i: 2">
                             <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 overflow-hidden sm:w-56 group">
                                 <img src="./assets/images/blog/blog1-2.jpg" class="duration-400 group-hover:scale-110" alt="The Ultimate Guide to Upgrading Your Home’s Electrical Panel">
                             </a>
@@ -1045,7 +1060,7 @@
                                 <a href="blog-detail1.html" class="blog_tit mt-4 line-clamp-2 heading5 duration-300 hover:text-orange">The Ultimate Guide to Upgrading Your Home’s Electrical Panel</a>
                             </div>
                         </li>
-                        <li class="blog_item flex max-sm:flex-col sm:items-center gap-6">
+                        <li class="blog_item flex max-sm:flex-col sm:items-center gap-6 animate animate_left" style="--i: 3">
                             <a href="blog-detail1.html" class="blog_thumb block flex-shrink-0 overflow-hidden sm:w-56 group">
                                 <img src="./assets/images/blog/blog1-3.jpg" class="duration-400 group-hover:scale-110" alt="Choosing the Right Lighting: How to Enhance Your Home’s Ambience">
                             </a>
@@ -1257,6 +1272,9 @@
                             </li>
                             <li>
                                 <a href="home4.html" class="menu_sub_link py-2 txt-button active">Homepage 04</a>
+                            </li>
+                            <li>
+                                <a href="rtl.html" class="menu_sub_link py-2 txt-button">Homepage RTL</a>
                             </li>
                         </ul>
                     </li>
