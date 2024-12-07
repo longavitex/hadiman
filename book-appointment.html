@@ -417,7 +417,7 @@
             <img src="./assets/images/breadcrumb/appointment.jpg" alt="Appointment" class="h-full object-cover">
         </div>
         <div class="container relative text-white">
-            <ul class="breadcrumb_nav flex items-center gap-1">
+            <ul class="breadcrumb_nav flex items-center gap-1 animate">
                 <li class="flex items-center">
                     <a href="index.html" class="breadcrumb_link caption1 duration-300 hover:underline">Home</a>
                 </li>
@@ -426,36 +426,38 @@
                     <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Appointment</a>
                 </li>
             </ul>
-            <h2 class="section_tit mt-3 heading2">Book Appointment</h2>
+            <h2 class="section_tit mt-3 heading2 animate" style="--i: 2">Book Appointment</h2>
         </div>
     </section>
     <!-- BOOK APPOINTMENT -->
     <section class="section appointment sm:py-25 py-15">
         <div class="container flex max-xl:flex-col gap-[9.5rem] gap-y-14">
             <div class="appointment_content w-full">
-                <span class="section_tag tag">Book a Consultation</span>
-                <h3 class="section_tit mt-4 heading3">Book Your Trusted Handyman Expert Now!</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Affordable pricing plans tailored to your home repair needs, from quick fixes to large-scale renovations.</p>
+                <span class="section_tag tag animate">Book a Consultation</span>
+                <h3 class="section_tit mt-4 heading3 animate">Book Your Trusted Handyman Expert Now!</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">Affordable pricing plans tailored to your home repair needs, from quick fixes to large-scale renovations.</p>
                 <ul class="list_feature flex flex-col gap-3 mt-7 pt-7 border-t border-outline">
-                    <li class="flex items-center gap-3">
+                    <li class="flex items-center gap-3 animate">
                         <span class="ph ph-map-pin text-2xl"></span>
                         <span>268 St, East Chicago, IN 46312, US</span>
                     </li>
-                    <li class="flex items-center gap-3">
+                    <li class="flex items-center gap-3 animate">
                         <span class="ph ph-envelope text-2xl"></span>
                         <span>hi.avitex@gmail.com</span>
                     </li>
-                    <li class="flex items-center gap-3">
+                    <li class="flex items-center gap-3 animate">
                         <span class="ph ph-phone-call text-2xl"></span>
                         <span>1-555-678-8888</span>
                     </li>
                 </ul>
-                <a href="https://maps.app.goo.gl/Z8zKdiKbpcEdV6MV8" class="inline-flex gap-1 mt-7 duration-300 hover:text-orange" target="_blank">
-                    <strong class="txt-button underline underline-offset-4">Google map</strong>
-                    <span class="ph-bold ph-arrow-right text-xl"></span>
-                </a>
+                <div class="btn_area animate">
+                    <a href="https://maps.app.goo.gl/Z8zKdiKbpcEdV6MV8" class="inline-flex gap-1 mt-7 duration-300 hover:text-orange" target="_blank">
+                        <strong class="txt-button underline underline-offset-4">Google map</strong>
+                        <span class="ph-bold ph-arrow-right text-xl"></span>
+                    </a>
+                </div>
             </div>
-            <div class="appointment_form flex-shrink-0 relative xl:w-1/2 w-full shadow-lg">
+            <div class="appointment_form flex-shrink-0 relative xl:w-1/2 w-full shadow-lg animate animate_left" style="--i: 2">
                 <div id="calendar" class="calendar">
                     <div class="calendar_heading flex items-center justify-between px-5 py-3.5 bg-orange text-white">
                         <button class="btn_prev_month">

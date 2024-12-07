@@ -417,7 +417,7 @@
             <img src="./assets/images/breadcrumb/testimonials.jpg" alt="Our Testimonials" class="h-full object-cover">
         </div>
         <div class="container relative text-white">
-            <ul class="breadcrumb_nav flex items-center gap-1">
+            <ul class="breadcrumb_nav flex items-center gap-1 animate">
                 <li class="flex items-center">
                     <a href="index.html" class="breadcrumb_link caption1 duration-300 hover:underline">Home</a>
                 </li>
@@ -426,24 +426,24 @@
                     <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Testimonials</a>
                 </li>
             </ul>
-            <h2 class="section_tit mt-3 heading2">Our Testimonials</h2>
+            <h2 class="section_tit mt-3 heading2 animate" style="--i: 2">Our Testimonials</h2>
         </div>
     </section>
     <!-- TESTIMONIALS -->
     <section class="section testimonials sm:py-25 py-15">
         <div class="container">
-            <div class="testimonials_inner">
-                <span class="section_tag tag block w-fit mx-auto">Testimonials</span>
-                <h3 class="section_tit mt-4 heading3 text-center">What our clients say?</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">Hear from our satisfied clients who trust us for top-quality service.</p>
-                <div class="testimonials_content relative w-full lg:mt-12 mt-9">
+            <div class="testimonials_inner flex flex-col items-center">
+                <span class="section_tag tag mx-auto bg-orange animate">Testimonials</span>
+                <h3 class="section_tit mt-4 heading3 text-center animate">What our clients say?</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">Hear from our satisfied clients who trust us for top-quality service.</p>
+                <div class="testimonials_content relative w-full lg:mt-12 mt-9 animate">
                     <button class="btn_prev flex items-center justify-center absolute top-1/2 2xl:-left-[1.375rem] -left-[16px] z-[2] -translate-y-1/2 w-11 h-[4.25rem] border border-outline bg-white duration-300 hover:bg-orange hover:text-white">
                         <span class="ph ph-caret-left text-xl"></span>
                         <span class="blind">button prev</span>
                     </button>
                     <div class="testimonials_swiper_two swiper">
                         <ul class="swiper-wrapper">
-                            <li class="testimonials_item swiper-slide p-7 border border-outline">
+                            <li class="testimonials_item swiper-slide p-7 border border-outline duration-300 hover:border-orange">
                                 <ul class="rating flex">
                                     <li class="ph-fill ph-star text-xl"></li>
                                     <li class="ph-fill ph-star text-xl"></li>
@@ -462,7 +462,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="testimonials_item swiper-slide p-7 border border-outline">
+                            <li class="testimonials_item swiper-slide p-7 border border-outline duration-300 hover:border-orange">
                                 <ul class="rating flex">
                                     <li class="ph-fill ph-star text-xl"></li>
                                     <li class="ph-fill ph-star text-xl"></li>
@@ -481,7 +481,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="testimonials_item swiper-slide p-7 border border-outline">
+                            <li class="testimonials_item swiper-slide p-7 border border-outline duration-300 hover:border-orange">
                                 <ul class="rating flex">
                                     <li class="ph-fill ph-star text-xl"></li>
                                     <li class="ph-fill ph-star text-xl"></li>
@@ -500,7 +500,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="testimonials_item swiper-slide p-7 border border-outline">
+                            <li class="testimonials_item swiper-slide p-7 border border-outline duration-300 hover:border-orange">
                                 <ul class="rating flex">
                                     <li class="ph-fill ph-star text-xl"></li>
                                     <li class="ph-fill ph-star text-xl"></li>
@@ -532,11 +532,11 @@
     <section class="section testimonials sm:py-25 py-15 bg-surface">
         <div class="container flex max-lg:flex-col xl:gap-20 gap-10 gap-y-8">
             <div class="flex-shrink-0 lg:w-[30%] sm:w-2/3 w-full">
-                <span class="section_tag tag">Testimonials</span>
-                <h3 class="section_tit mt-4 heading3">What Our Clients Are Saying?</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
+                <span class="section_tag tag bg-orange animate">Testimonials</span>
+                <h3 class="section_tit mt-4 heading3 animate">What Our Clients Are Saying?</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
             </div>
-            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline">
+            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline animate animate_left" style="--i: 1">
                 <div class="testimonials_swiper_three swiper w-full">
                     <ul class="swiper-wrapper">
                         <li class="testimonials_item swiper-slide">
@@ -605,7 +605,7 @@
     </section>
     <section class="section testimonials style-filter sm:py-25 py-15">
         <div class="container flex max-lg:flex-col items-center gap-y-8">
-            <ul class="testimonials_thumb flex-shrink-0 relative lg:w-5/12 sm:w-2/3 w-full aspect-square">
+            <ul class="testimonials_thumb flex-shrink-0 relative lg:w-5/12 sm:w-2/3 w-full aspect-square animate animate_right">
                 <li class="testimonials_img invisible overflow-hidden absolute top-0 left-0 w-full h-full opacity-0 duration-500"
                     data-testimonials="1">
                     <img src="./assets/images/testimonial/1.jpg" class="h-full object-cover" alt="testimonial 1">
@@ -619,7 +619,7 @@
                     <img src="./assets/images/testimonial/3.jpg" class="h-full object-cover" alt="testimonial 3">
                 </li>
             </ul>
-            <div class="testimonials_content flex flex-col justify-center overflow-hidden w-full xl:pl-30 lg:pl-14">
+            <div class="testimonials_content flex flex-col justify-center overflow-hidden w-full xl:pl-30 lg:pl-14 animate animate_left">
                 <span class="section_tag tag w-fit">Testimonials</span>
                 <h3 class="section_tit mt-4 heading3">What our clients say?</h3>
                 <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Hear from our satisfied clients who trust us for
@@ -636,7 +636,8 @@
                             </ul>
                             <p class="testimonials_desc mt-6 text-2xl line-clamp-4">“Excellent electrical work done at
                                 our home. The technicians were thorough, punctual, and left the place spotless. The
-                                team’s attention to detail was truly impressive. The technicians has been perfect on time.”</p>
+                                team’s attention to detail was truly impressive. The
+                                plumbers arrived on time, diagnosed the issue quickly”</p>
                             <div class="flex flex-wrap items-end justify-between gap-5 mt-4">
                                 <div class="testimonials_author">
                                     <strong class="testimonials_name heading6">Guy Hawkins</strong>

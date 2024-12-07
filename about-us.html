@@ -417,7 +417,7 @@
             <img src="./assets/images/breadcrumb/about.jpg" alt="About Us" class="h-full object-cover">
         </div>
         <div class="container relative text-white">
-            <ul class="breadcrumb_nav flex items-center gap-1">
+            <ul class="breadcrumb_nav flex items-center gap-1 animate">
                 <li class="flex items-center">
                     <a href="index.html" class="breadcrumb_link caption1 duration-300 hover:underline">Home</a>
                 </li>
@@ -426,58 +426,41 @@
                     <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">About Us</a>
                 </li>
             </ul>
-            <h2 class="section_tit mt-3 heading2">About Us</h2>
+            <h2 class="section_tit mt-3 heading2 animate" style="--i: 2">About Us</h2>
         </div>
     </section>
     <!-- ABOUT -->
     <section class="section about sm:py-25 py-15">
-        <div class="container flex max-lg:flex-col items-center 3xl:gap-20 gap-14">
-            <div class="about_img flex-shrink-0 relative lg:w-[49%] sm:w-2/3 w-full pb-15">
+        <div class="container flex max-lg:flex-col items-center xl:gap-20 gap-10">
+            <div class="about_img flex-shrink-0 relative lg:w-[49%] sm:w-2/3 w-full pb-15 animate animate_right">
                 <img src="./assets/images/components/about3_1.jpg" class="w-2/3" alt="Reliable Home Repairs And Renovations, Every Time">
-                <div class="about_banner absolute xl:top-13 top-6 xl:right-4 right-0 sm:py-7.5 py-4 sm:px-10 px-6 bg-orange text-white">
+                <div class="about_banner absolute xl:top-13 top-6 xl:right-4 right-0 sm:py-7.5 py-4 sm:px-10 px-6 bg-orange text-white animate animate_left" style="--i: 3">
                     <h2 class="heading2 text-center">25+</h2>
                     <p class="block mt-1 text-center">Year Of <br>Experience</p>
                 </div>
-                <div class="absolute right-0 bottom-0 w-[54%] border-t-[20px] border-l-[20px] border-white">
+                <div class="absolute right-0 bottom-0 w-[54%] border-t-[20px] border-l-[20px] border-white animate" style="--i: 2">
                     <img src="./assets/images/components/about3_2.jpg" alt="about3_2">
                 </div>
             </div>
-            <div class="about_content overflow-hidden w-full">
-                <span class="section_tag tag bg-orange">about us</span>
-                <h3 class="section_tit mt-4 heading3">Reliable Home Repairs And Renovations, Every Time</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation, our team is committed to getting it right the first time.</p>
-                <div class="heading_menu mt-10 border-b-2 border-outline">
-                    <div class="menu_tab -mb-0.5">
-                        <ul class="menu flex gap-7" role="tablist">
-                            <li class="indicator absolute bottom-0 h-0.5 bg-orange duration-300"></li>
-                            <li class="tab_item" role="presentation">
-                                <button class="tab_btn tab_btn_border pb-2.5 txt-label hover:text-orange duration-300 active" id="introduction" role="tab" aria-controls="tab_introduction" aria-selected="true">Introduction</button>
-                            </li>
-                            <li class="tab_item" role="presentation">
-                                <button class="tab_btn tab_btn_border pb-2.5 txt-label hover:text-orange duration-300" id="vision" role="tab" aria-controls="tab_vision" aria-selected="false">Our Vision</button>
-                            </li>
-                            <li class="tab_item" role="presentation">
-                                <button class="tab_btn tab_btn_border pb-2.5 txt-label hover:text-orange duration-300" id="apart" role="tab" aria-controls="tab_apart" aria-selected="false">What Sets Us Apart</button>
-                            </li>
-                            <li class="tab_item" role="presentation">
-                                <button class="tab_btn tab_btn_border pb-2.5 txt-label hover:text-orange duration-300" id="commitment" role="tab" aria-controls="tab_commitment" aria-selected="false">Our Commitment</button>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="about_content">
+                <span class="section_tag tag bg-orange animate">about us</span>
+                <h3 class="section_tit mt-4 heading3 animate">Reliable Home Repairs And Renovations, Every Time</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">We pride ourselves on delivering consistent, high-quality services that you can depend on. Whether it’s a small fix or a large-scale renovation, our team is committed to getting it right the first time.</p>
+                <ul class="about_benefit flex max-sm:flex-col gap-7.5 gap-y-5 mt-10">
+                    <li class="animate" style="--i: 1">
+                        <span class="ph ph-trophy text-6xl"></span>
+                        <strong class="block mt-5 heading6">Experienced, Skilled Team</strong>
+                        <p class="mt-3 text-variant1">Our experienced team provides expert solutions tailored to your renovation.</p>
+                    </li>
+                    <li class="animate" style="--i: 2">
+                        <span class="ph ph-headset text-6xl"></span>
+                        <strong class="block mt-5 heading6">Support 24/7</strong>
+                        <p class="mt-3 text-variant1">Emergency services are available 24/7 to quickly respond when urgent repairs arise.</p>
+                    </li>
+                </ul>
+                <div class="btn_area animate">
+                    <a href="about-us.html" class="btn mt-10 bg-orange">About Us</a>
                 </div>
-                <div id="tab_introduction" class="tab_panel mt-6 active" role="tabpanel" aria-labelledby="introduction" aria-hidden="false">
-                    <p class="text-variant1">Welcome to Hadiman, your one-stop solution for all home repairs and maintenance needs. We specialize in a variety of services, from plumbing and electrical work to HVAC repairs and home renovations. Our experienced team of professionals is dedicated to providing reliable, efficient, and high-quality solutions that keep your home running smoothly. Whether it’s a small repair or a major project, we ensure the job gets done right, with minimal disruption and maximum satisfaction. Let us handle the hard work, so you can enjoy peace of mind.</p>
-                </div>
-                <div id="tab_vision" class="tab_panel mt-6" role="tabpanel" aria-labelledby="vision" aria-hidden="true">
-                    <p class="text-variant1">At Handyman, our vision is to become the go-to partner for all home repair and maintenance needs. We aim to redefine the industry through innovative solutions, exceptional craftsmanship, and unparalleled customer service. By prioritizing quality, safety, and sustainability, we strive to create long-term value for every homeowner. Our goal is not just to fix problems but to build lasting relationships and trust. Together, let’s shape a future where every home functions flawlessly, providing comfort and peace of mind.</p>
-                </div>
-                <div id="tab_apart" class="tab_panel mt-6" role="tabpanel" aria-labelledby="apart" aria-hidden="true">
-                    <p class="text-variant1">"What makes Handyman different is our unwavering dedication to excellence and customer satisfaction. Our skilled team combines years of expertise with cutting-edge tools to deliver outstanding results. We prioritize transparency, offering competitive pricing without hidden costs. From timely project completion to personalized solutions, we ensure a seamless experience every step of the way. Unlike others, we don’t just fix issues; we enhance the functionality and aesthetics of your home with care and precision.</p>
-                </div>
-                <div id="tab_commitment" class="tab_panel mt-6" role="tabpanel" aria-labelledby="commitment" aria-hidden="true">
-                    <p class="text-variant1">"Handyman is committed to delivering top-notch service that exceeds expectations. We stand by our promise of reliability, efficiency, and high-quality work in every project. Our team values integrity, treating your home with the utmost respect and care. From minor repairs to major renovations, we’re dedicated to providing solutions that are tailored to your unique needs. With us, you’re not just a customer—you’re a valued partner in creating a safe, comfortable, and well-maintained living space."</p>
-                </div>
-                <a href="our-services.html" class="btn mt-10 bg-orange">Our Services</a>
             </div>
         </div>
     </section>
@@ -485,22 +468,22 @@
     <section class="section counter">
         <div class="counter_list sm:pt-25 pt-15 sm:pb-[23rem] pb-60 bg-dark">
             <ul class="container flex max-xl:flex-wrap items-center justify-between gap-y-10">
-                <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full text-white">
+                <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full text-white animate" style="--i: 1">
                     <h2 class="heading1"><span id="counter_number1" class="counter_number">20</span>k+</h2>
                     <strong class="heading6">Services Completed</strong>
                 </li>
                 <li class="line max-xl:hidden flex-shrink-0 w-px h-32 bg-white bg-opacity-20"></li>
-                <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full text-white">
+                <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full text-white animate" style="--i: 2">
                     <h2 class="heading1"><span id="counter_number2" class="counter_number">4.8</span>/5</h2>
                     <strong class="heading6">By 1,200 customers</strong>
                 </li>
                 <li class="line max-xl:hidden flex-shrink-0 w-px h-32 bg-white bg-opacity-20"></li>
-                <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full text-white">
+                <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full text-white animate" style="--i: 3">
                     <h2 class="heading1"><span id="counter_number3" class="counter_number">10</span>k+</h2>
                     <strong class="heading6">Satisfied Customers</strong>
                 </li>
                 <li class="line max-xl:hidden flex-shrink-0 w-px h-32 bg-white bg-opacity-20"></li>
-                <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full text-white">
+                <li class="counter_item flex flex-col items-center gap-4 max-xl:w-1/2 max-sm:w-full text-white animate" style="--i: 4">
                     <h2 class="heading1"><span id="counter_number4" class="counter_number">10</span>+</h2>
                     <strong class="heading6">Years Of Experience</strong>
                 </li>
@@ -511,10 +494,10 @@
                 <div class="flex max-md:flex-col items-center md:justify-end relative bg-white">
                     <div
                         class="bg_img flex-shrink-0 md:absolute top-0 left-0 md:w-1/2 w-full md:h-full max-md:relative">
-                        <img src="./assets/images/components/counter1.jpg" class="h-full object-cover"
+                        <img src="./assets/images/components/counter1.jpg" class="h-full object-cover animate animate_left"
                             alt="Book Our Expert Handyman Today!">
                         <a href="tel:+1555678888"
-                            class="banner_link flex items-center gap-4 absolute right-0 bottom-0 p-5 bg-dark text-white duration-400 group hover:bg-orange">
+                            class="banner_link flex items-center gap-4 absolute right-0 bottom-0 p-5 bg-dark text-white duration-400 group hover:bg-orange animate animate_right" style="--i: 1">
                             <span
                                 class="icon inline-flex items-center justify-center sm:w-20 w-15 sm:h-20 h-15 rounded-full bg-orange duration-400 group-hover:bg-white group-hover:text-orange">
                                 <span class="ph-fill ph-phone-call sm:text-5xl text-3xl"></span>
@@ -527,12 +510,12 @@
                     </div>
                     <div
                         class="counter_content flex flex-col justify-center md:w-1/2 h-full xl:p-20 md:p-9 max-md:p-8 border border-outline">
-                        <span class="section_tag tag w-fit">Get A Quote</span>
-                        <h3 class="section_tit mt-4 heading3">Book Our Expert Handyman Today!</h3>
-                        <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">From plumbing to electrical and HVAC, our
+                        <span class="section_tag tag w-fit animate">Get A Quote</span>
+                        <h3 class="section_tit mt-4 heading3 animate">Book Our Expert Handyman Today!</h3>
+                        <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">From plumbing to electrical and HVAC, our
                             skilled experts are ready to handle all your home repair & maintenance needs. Schedule your
                             service today!</p>
-                        <a href="contact.html" class="btn w-fit lg:mt-8 mt-6">Contact Us</a>
+                        <a href="contact.html" class="btn w-fit lg:mt-8 mt-6 animate">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -541,11 +524,11 @@
     <!-- PROCESS -->
     <section class="section process style-three sm:py-25 py-15">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag bg-orange">Our Process</span>
-            <h3 class="section_title mt-4 heading3 text-center">Our Renovation Process</h3>
-            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">We take you through every stage of the renovation journey, ensuring your vision becomes reality with precision and care.</p>
+            <span class="section_tag tag bg-orange animate">Our Process</span>
+            <h3 class="section_title mt-4 heading3 text-center animate">Our Renovation Process</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">We take you through every stage of the renovation journey, ensuring your vision becomes reality with precision and care.</p>
             <ul class="process_list grid xl:grid-cols-4 sm:grid-cols-2 gap-7.5 gap-y-10 lg:mt-12 mt-9">
-                <li class="process_item flex flex-col items-center gap-7 relative group">
+                <li class="process_item flex flex-col items-center gap-7 relative group animate" style="--i: 1">
                     <span class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
                         <span class="icon-consultation sm:text-5xl text-4xl"></span>
                         <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-orange text-white txt-button">1</span>
@@ -555,7 +538,7 @@
                         <p class="mt-3 text-variant1 text-center">We discuss your needs and budget, creating a detailed plan to ensure everything is ready before starting.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative xl:pt-10 group">
+                <li class="process_item flex flex-col items-center gap-7 relative xl:pt-10 group animate" style="--i: 2">
                     <span class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
                         <span class="icon-design sm:text-5xl text-4xl"></span>
                         <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-orange text-white txt-button">2</span>
@@ -565,7 +548,7 @@
                         <p class="mt-3 text-variant1 text-center">We create a custom design based on your ideas, reviewing it together to make sure it meets your expectations.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative group">
+                <li class="process_item flex flex-col items-center gap-7 relative group animate" style="--i: 3">
                     <span class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
                         <span class="icon-wrench sm:text-5xl text-4xl"></span>
                         <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-orange text-white txt-button">3</span>
@@ -575,7 +558,7 @@
                         <p class="mt-3 text-variant1 text-center">Our team begins the renovation, managing each phase carefully & keeping you updated throughout the process.</p>
                     </div>
                 </li>
-                <li class="process_item flex flex-col items-center gap-7 relative xl:pt-10 group">
+                <li class="process_item flex flex-col items-center gap-7 relative xl:pt-10 group animate" style="--i: 4">
                     <span class="process_icon flex flex-shrink-0 items-center justify-center relative sm:w-25 w-20 sm:h-25 h-20 border border-outline rounded-full duration-400 group-hover:bg-black group-hover:text-white">
                         <span class="icon-inspection sm:text-5xl text-4xl"></span>
                         <span class="process_ordinal flex items-center justify-center absolute sm:top-0 -top-2 sm:right-0 -right-2 w-[26px] h-[26px] border-[3px] border-white rounded-full bg-orange text-white txt-button">4</span>
@@ -592,11 +575,11 @@
     <section class="section testimonials sm:py-25 py-15 bg-surface">
         <div class="container flex max-lg:flex-col xl:gap-20 gap-10 gap-y-8">
             <div class="flex-shrink-0 lg:w-[30%] sm:w-2/3 w-full">
-                <span class="section_tag tag">Testimonials</span>
-                <h3 class="section_tit mt-4 heading3">What Our Clients Are Saying?</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
+                <span class="section_tag tag bg-orange animate">Testimonials</span>
+                <h3 class="section_tit mt-4 heading3 animate">What Our Clients Are Saying?</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
             </div>
-            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline">
+            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline animate animate_left" style="--i: 1">
                 <div class="testimonials_swiper_three swiper w-full">
                     <ul class="swiper-wrapper">
                         <li class="testimonials_item swiper-slide">
@@ -666,18 +649,18 @@
     <!-- WHY CHOOSE US -->
     <section class="section choose_us sm:py-25 py-15">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag w-fit">WHY CHOOSE US</span>
-            <h3 class="section_tit mt-4 heading3 text-center">Why We’re the Best Choice</h3>
-            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">We go the extra mile to ensure your satisfaction with every step of the process.</p>
+            <span class="section_tag tag w-fit animate">WHY CHOOSE US</span>
+            <h3 class="section_tit mt-4 heading3 text-center animate">Why We’re the Best Choice</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">We go the extra mile to ensure your satisfaction with every step of the process.</p>
             <div class="choose_us_content flex max-lg:flex-col items-center gap-15 mt-12">
                 <ul class="choose_us_list flex flex-col lg:gap-12 gap-8 max-lg:w-full">
-                    <li class="choose_us_item flex flex-col lg:items-end">
+                    <li class="choose_us_item flex flex-col lg:items-end animate animate_right">
                         <span class="icon-pencil text-6xl"></span>
                         <strong class="block mt-5 heading5">Customized Solutions</strong>
                         <p class="mt-3 text-variant1 lg:text-right">We tailor our air conditioning services to fit your specific needs and preferences, ensuring optimal performance and comfort in your home for years to come.</p>
                     </li>
                     <li class="line flex-shrink-0 w-full h-px bg-outline"></li>
-                    <li class="choose_us_item flex flex-col lg:items-end">
+                    <li class="choose_us_item flex flex-col lg:items-end animate animate_right">
                         <span class="icon-timer text-6xl"></span>
                         <strong class="block mt-5 heading5">Timely Response</strong>
                         <p class="mt-3 text-variant1 lg:text-right">Our team is committed to prompt service, guaranteeing quick responses to your air conditioning issues, minimizing downtime, and restoring your comfort efficiently.
@@ -688,14 +671,14 @@
                     <img src="./assets/images/components/about_us.png" alt="about_us">
                 </div>
                 <ul class="choose_us_list flex flex-col lg:gap-12 gap-8 max-lg:w-full">
-                    <li class="choose_us_item">
+                    <li class="choose_us_item animate animate_left">
                         <span class="icon-reward text-6xl"></span>
                         <strong class="block mt-5 heading5">Quality Products</strong>
                         <p class="mt-3 text-variant1">We use only high-quality, reliable products and equipment to ensure
                             that your air conditioning system operates efficiently and lasts longer.</p>
                     </li>
                     <li class="line flex-shrink-0 w-full h-px bg-outline"></li>
-                    <li class="choose_us_item">
+                    <li class="choose_us_item animate animate_left">
                         <span class="icon-hand-coin text-6xl"></span>
                         <strong class="block mt-5 heading5">Transparent Pricing</strong>
                         <p class="mt-3 text-variant1">We provide straightforward, upfront pricing with no hidden fees, so you can make informed decisions about your air conditioning services.</p>
@@ -708,165 +691,173 @@
     <section class="section team">
         <div class="container">
             <div class="team_inner flex flex-col items-center sm:py-25 py-15 border-t border-outline">
-                <span class="section_tag tag bg-orange">Our teams</span>
-                <h3 class="section_tit mt-4 heading3">Meet the Our Experts</h3>
-                <p class="section_desc lg:w-1/2 lg:mt-5 mt-3 body2 text-variant1 text-center">Our team of skilled professionals brings years of experience, ensuring top-quality service and attention to detail in every task.</p>
+                <span class="section_tag tag bg-orange animate">Our teams</span>
+                <h3 class="section_tit mt-4 heading3 animate">Meet the Our Experts</h3>
+                <p class="section_desc lg:w-1/2 lg:mt-5 mt-3 body2 text-variant1 text-center animate">Our team of skilled professionals brings years of experience, ensuring top-quality service and attention to detail in every task.</p>
                 <div class="team_swiper_three swiper w-full">
                     <ul class="team_list swiper-wrapper w-full lg:mt-12 mt-9">
-                        <li class="team_item swiper-slide group">
-                            <div class="team_img overflow-hidden relative aspect-[3/4]">
-                                <img src="./assets/images/team/team1.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="John Michaels">
-                                <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                                    <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                        <a href="https://www.facebook.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-facebook-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                        <a href="https://www.x.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-x-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                        <a href="https://www.linkedin.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-linkedin-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                        <a href="https://www.instagram.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-instagram-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team_info mt-5">
-                                <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-orange">John Michaels</strong>
-                                <span class="team_position mt-2 text-variant1 line-clamp-2">Senior Project Manager</span>
-                            </div>
-                        </li>
-                        <li class="team_item swiper-slide group">
-                            <div class="team_img overflow-hidden relative aspect-[3/4]">
-                                <img src="./assets/images/team/team2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Sarah Thompson">
-                                <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                                    <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                        <a href="https://www.facebook.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-facebook-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                        <a href="https://www.x.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-x-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                        <a href="https://www.linkedin.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-linkedin-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                        <a href="https://www.instagram.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-instagram-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team_info mt-5">
-                                <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-orange">Sarah Thompson</strong>
-                                <span class="team_position mt-2 text-variant1 line-clamp-2">Lead HVAC Technician</span>
+                        <li class="swiper-slide group">
+                            <div class="team_item animate" style="--i: 1">
+                                <div class="team_img overflow-hidden relative aspect-[3/4]">
+                                    <img src="./assets/images/team/team1.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="John Michaels">
+                                    <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                        <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                            <a href="https://www.facebook.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-facebook-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                            <a href="https://www.x.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-x-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                            <a href="https://www.linkedin.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-linkedin-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                            <a href="https://www.instagram.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-instagram-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team_info mt-5">
+                                    <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-orange">John Michaels</strong>
+                                    <span class="team_position mt-2 text-variant1 line-clamp-2">Senior Project Manager</span>
+                                </div>
                             </div>
                         </li>
-                        <li class="team_item swiper-slide group">
-                            <div class="team_img overflow-hidden relative aspect-[3/4]">
-                                <img src="./assets/images/team/team3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Emily Carter">
-                                <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                                    <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                        <a href="https://www.facebook.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-facebook-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                        <a href="https://www.x.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-x-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                        <a href="https://www.linkedin.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-linkedin-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                        <a href="https://www.instagram.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-instagram-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team_info mt-5">
-                                <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-orange">Emily Carter</strong>
-                                <span class="team_position mt-2 text-variant1 line-clamp-2">Customer Support Manager</span>
+                        <li class="swiper-slide group">
+                            <div class="team_item animate" style="--i: 2">
+                                <div class="team_img overflow-hidden relative aspect-[3/4]">
+                                    <img src="./assets/images/team/team2.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Sarah Thompson">
+                                    <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                        <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                            <a href="https://www.facebook.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-facebook-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                            <a href="https://www.x.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-x-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                            <a href="https://www.linkedin.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-linkedin-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                            <a href="https://www.instagram.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-instagram-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team_info mt-5">
+                                    <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-orange">Sarah Thompson</strong>
+                                    <span class="team_position mt-2 text-variant1 line-clamp-2">Lead HVAC Technician</span>
+                                </div>
                             </div>
                         </li>
-                        <li class="team_item swiper-slide group">
-                            <div class="team_img overflow-hidden relative aspect-[3/4]">
-                                <img src="./assets/images/team/team4.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Mark Robinson">
-                                <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
-                                    <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                        <a href="https://www.facebook.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-facebook-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                        <a href="https://www.x.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-x-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
-                                        <a href="https://www.linkedin.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-linkedin-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                    <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
-                                        <a href="https://www.instagram.com/"
-                                            class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
-                                            target="_blank">
-                                            <span class="ph ph-instagram-logo text-2xl"></span>
-                                        </a>
-                                    </li>
-                                </ul>
+                        <li class="swiper-slide group">
+                            <div class="team_item animate" style="--i: 3">
+                                <div class="team_img overflow-hidden relative aspect-[3/4]">
+                                    <img src="./assets/images/team/team3.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Emily Carter">
+                                    <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                        <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                            <a href="https://www.facebook.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-facebook-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                            <a href="https://www.x.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-x-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                            <a href="https://www.linkedin.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-linkedin-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                            <a href="https://www.instagram.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-instagram-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team_info mt-5">
+                                    <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-orange">Emily Carter</strong>
+                                    <span class="team_position mt-2 text-variant1 line-clamp-2">Customer Support Manager</span>
+                                </div>
                             </div>
-                            <div class="team_info mt-5">
-                                <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-orange">Mark Robinson</strong>
-                                <span class="team_position mt-2 text-variant1 line-clamp-2">Plumbing Services Specialist</span>
+                        </li>
+                        <li class="swiper-slide group">
+                            <div class="team_item animate" style="--i: 4">
+                                <div class="team_img overflow-hidden relative aspect-[3/4]">
+                                    <img src="./assets/images/team/team4.jpg" class="h-full object-cover duration-400 group-hover:scale-110" alt="Mark Robinson">
+                                    <ul class="team_socials flex flex-col gap-2 absolute top-3 right-3 translate-x-25 duration-400 group-hover:translate-x-0 max-lg:translate-x-0">
+                                        <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                            <a href="https://www.facebook.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-facebook-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                            <a href="https://www.x.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-x-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                            <a href="https://www.linkedin.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-linkedin-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                        <li class="translate-x-20 duration-400 delay-300 group-hover:translate-x-0">
+                                            <a href="https://www.instagram.com/"
+                                                class="inline-flex items-center justify-center w-11 h-11 bg-white duration-400 hover:bg-orange hover:text-white"
+                                                target="_blank">
+                                                <span class="ph ph-instagram-logo text-2xl"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team_info mt-5">
+                                    <strong class="team_name line-clamp-2 heading5 duration-300 group-hover:text-orange">Mark Robinson</strong>
+                                    <span class="team_position mt-2 text-variant1 line-clamp-2">Plumbing Services Specialist</span>
+                                </div>
                             </div>
                         </li>
                     </ul>

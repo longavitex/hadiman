@@ -417,7 +417,7 @@
             <img src="./assets/images/breadcrumb/pricing.jpg" alt="Our Pricing" class="h-full object-cover">
         </div>
         <div class="container relative text-white">
-            <ul class="breadcrumb_nav flex items-center gap-1">
+            <ul class="breadcrumb_nav flex items-center gap-1 animate">
                 <li class="flex items-center">
                     <a href="index.html" class="breadcrumb_link caption1 duration-300 hover:underline">Home</a>
                 </li>
@@ -426,112 +426,119 @@
                     <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50">Pricing</a>
                 </li>
             </ul>
-            <h2 class="section_tit mt-3 heading2">Our Pricing</h2>
+            <h2 class="section_tit mt-3 heading2 animate" style="--i: 2">Our Pricing</h2>
         </div>
     </section>
     <!-- PRICING PLAN -->
     <section class="section pricing sm:py-25 py-15">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag">Pricing Plan</span>
-            <h3 class="section_tit mt-4 heading3 text-center">Choose the Right Plan for Your Home</h3>
-            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">Affordable pricing plans tailored to your home repair needs, from quick fixes to large-scale renovations.</p>
+            <span class="section_tag tag animate">Pricing Plan</span>
+            <h3 class="section_tit mt-4 heading3 text-center animate">Choose the Right Plan for Your Home</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">Affordable pricing plans tailored to your home
+                repair needs, from quick fixes to large-scale renovations.</p>
             <ul class="pricing_list grid xl:grid-cols-3 gap-7.5 w-full lg:mt-12 mt-9">
-                <li class="pricing_item relative w-full p-6 border-2 border-outline bg-white duration-300 shadow-sm">
-                    <strong class="pricing_type heading5">Basic Plan</strong>
-                    <h3 class="flex items-end mt-4">
-                        <span class="heading3">$25.00</span>
-                        <span class="text-variant1 font-normal">/ per session</span>
-                    </h3>
-                    <p class="pricing_desc mt-4 text-variant1">Perfect for small fixes around the house, offering
-                        reliable solutions to keep your home in shape.</p>
-                    <ul class="feature_list flex flex-col gap-3 mt-6 p-6 bg-orange bg-opacity-5">
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Minor Repairs & Adjustments</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Standard Documentation</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Basic Floor Plan Design (if needed)</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Consistent Brand Standards</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Quality Check on Completed Work</span>
-                        </li>
-                    </ul>
-                    <a href="our-pricing.html" class="btn bg-black w-full text-center mt-6">Get This Package</a>
+                <li class="pricing_item animate" style="--i: 1">
+                    <div class="relative w-full p-6 border-2 border-outline bg-white duration-300 shadow-sm hover:border-orange">
+                        <strong class="pricing_type heading5">Basic Plan</strong>
+                        <h3 class="flex items-end mt-4">
+                            <span class="heading3">$25.00</span>
+                            <span class="text-variant1 font-normal">/ per session</span>
+                        </h3>
+                        <p class="pricing_desc mt-4 text-variant1">Perfect for small fixes around the house, offering
+                            reliable solutions to keep your home in shape.</p>
+                        <ul class="feature_list flex flex-col gap-3 mt-6 p-6 bg-orange bg-opacity-5">
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Minor Repairs & Adjustments</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Standard Documentation</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Basic Floor Plan Design (if needed)</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Consistent Brand Standards</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Quality Check on Completed Work</span>
+                            </li>
+                        </ul>
+                        <a href="our-pricing.html" class="btn bg-black w-full text-center mt-6">Get This Package</a>
+                    </div>
                 </li>
-                <li class="pricing_item relative w-full p-6 border-2 border-orange bg-white duration-300 shadow-sm">
-                    <span class="tag tag_fill absolute top-0 right-0">Popular</span>
-                    <strong class="pricing_type heading5">Standard Plan</strong>
-                    <h3 class="flex items-end mt-4">
-                        <span class="heading3">$50.00</span>
-                        <span class="text-variant1 font-normal">/ per session</span>
-                    </h3>
-                    <p class="pricing_desc mt-4 text-variant1">Ideal for mid-sized projects requiring a higher level of
-                        service and maintenance.</p>
-                    <ul class="feature_list flex flex-col gap-3 mt-6 p-6 bg-orange bg-opacity-5">
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Repairs, Installations & Maintenance</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Complete Documentation & Reports</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Enhanced Floor Plan Design</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Consistent Brand Presentation</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Priority Customer Support</span>
-                        </li>
-                    </ul>
-                    <a href="our-pricing.html" class="btn w-full text-center mt-6">Get This Package</a>
+                <li class="pricing_item animate" style="--i: 2">
+                    <div class="relative w-full p-6 border-2 border-orange bg-white duration-300 shadow-sm">
+                        <span class="tag tag_fill absolute top-0 right-0">Popular</span>
+                        <strong class="pricing_type heading5">Standard Plan</strong>
+                        <h3 class="flex items-end mt-4">
+                            <span class="heading3">$50.00</span>
+                            <span class="text-variant1 font-normal">/ per session</span>
+                        </h3>
+                        <p class="pricing_desc mt-4 text-variant1">Ideal for mid-sized projects requiring a higher level of
+                            service and maintenance.</p>
+                        <ul class="feature_list flex flex-col gap-3 mt-6 p-6 bg-orange bg-opacity-5">
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Repairs, Installations & Maintenance</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Complete Documentation & Reports</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Enhanced Floor Plan Design</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Consistent Brand Presentation</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Priority Customer Support</span>
+                            </li>
+                        </ul>
+                        <a href="our-pricing.html" class="btn w-full text-center mt-6">Get This Package</a>
+                    </div>
                 </li>
-                <li class="pricing_item relative w-full p-6 border-2 border-outline bg-white duration-300 shadow-sm">
-                    <strong class="pricing_type heading5">Premium Plan</strong>
-                    <h3 class="flex items-end mt-4">
-                        <span class="heading3">$65.00</span>
-                        <span class="text-variant1 font-normal">/ per session</span>
-                    </h3>
-                    <p class="pricing_desc mt-4 text-variant1">Best for large-scale projects or homeowners seeking
-                        top-tier service and full support.</p>
-                    <ul class="feature_list flex flex-col gap-3 mt-6 p-6 bg-orange bg-opacity-5">
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Full Home Renovations Installations</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Detailed Documentation & Custom Reports</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Customized Floor Plan Design</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">Brand Consistency Across All Services</span>
-                        </li>
-                        <li class="feature_item flex gap-2">
-                            <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
-                            <span class="pricing_feature">24/7 Dedicated Customer Support</span>
-                        </li>
-                    </ul>
-                    <a href="our-pricing.html" class="btn bg-black w-full text-center mt-6">Get This Package</a>
+                <li class="pricing_item animate" style="--i: 3">
+                    <div class="relative w-full p-6 border-2 border-outline bg-white duration-300 shadow-sm hover:border-orange">
+                        <strong class="pricing_type heading5">Premium Plan</strong>
+                        <h3 class="flex items-end mt-4">
+                            <span class="heading3">$65.00</span>
+                            <span class="text-variant1 font-normal">/ per session</span>
+                        </h3>
+                        <p class="pricing_desc mt-4 text-variant1">Best for large-scale projects or homeowners seeking
+                            top-tier service and full support.</p>
+                        <ul class="feature_list flex flex-col gap-3 mt-6 p-6 bg-orange bg-opacity-5">
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Full Home Renovations Installations</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Detailed Documentation & Custom Reports</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Customized Floor Plan Design</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">Brand Consistency Across All Services</span>
+                            </li>
+                            <li class="feature_item flex gap-2">
+                                <span class="ph ph-check flex-shrink-0 text-2xl text-orange"></span>
+                                <span class="pricing_feature">24/7 Dedicated Customer Support</span>
+                            </li>
+                        </ul>
+                        <a href="our-pricing.html" class="btn bg-black w-full text-center mt-6">Get This Package</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -540,11 +547,11 @@
     <section class="section testimonials sm:py-25 py-15 bg-surface">
         <div class="container flex max-lg:flex-col xl:gap-20 gap-10 gap-y-8">
             <div class="flex-shrink-0 lg:w-[30%] sm:w-2/3 w-full">
-                <span class="section_tag tag">Testimonials</span>
-                <h3 class="section_tit mt-4 heading3">What Our Clients Are Saying?</h3>
-                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
+                <span class="section_tag tag bg-orange animate">Testimonials</span>
+                <h3 class="section_tit mt-4 heading3 animate">What Our Clients Are Saying?</h3>
+                <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 animate">Hear from our satisfied clients who trust us for top-quality service, reliable results, and exceptional customer care on every project.</p>
             </div>
-            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline">
+            <div class="testimonials_content overflow-hidden w-full xl:pl-20 lg:pl-10 lg:border-l border-outline animate animate_left" style="--i: 1">
                 <div class="testimonials_swiper_three swiper w-full">
                     <ul class="swiper-wrapper">
                         <li class="testimonials_item swiper-slide">
@@ -614,11 +621,11 @@
     <!-- FAQS -->
     <section class="section faqs sm:py-25 py-15">
         <div class="container flex flex-col items-center">
-            <span class="section_tag tag">FAQs</span>
-            <h3 class="section_title heading3 mt-4 text-center">Frequently Asked Questions</h3>
-            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center">Get Answers to Common Questions About Our Services and How We Work</p>
+            <span class="section_tag tag animate">FAQs</span>
+            <h3 class="section_title heading3 mt-4 text-center animate">Frequently Asked Questions</h3>
+            <p class="section_desc lg:mt-5 mt-3 body2 text-variant1 text-center animate">Get Answers to Common Questions About Our Services and How We Work</p>
             <ul class="faqs_list sm:w-5/6 w-full lg:mt-12 mt-9 border border-outline">
-                <li class="faqs_item py-5 px-6 border-b border-outline">
+                <li class="faqs_item py-5 px-6 border-b border-outline animate">
                     <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
                         <strong class="title heading5 text-left">What areas do you serve?</strong>
                         <span class="icon_arrow">
@@ -630,7 +637,7 @@
                         <p class="text-variant1">We provide services across multiple regions, ensuring that our expert team is readily available to meet your needs. Contact us to see if we cover your specific location.</p>
                     </div>
                 </li>
-                <li class="faqs_item py-5 px-6 border-b border-outline">
+                <li class="faqs_item py-5 px-6 border-b border-outline animate">
                     <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
                         <strong class="title heading5 text-left">Are your technicians licensed?</strong>
                         <span class="icon_arrow">
@@ -642,7 +649,7 @@
                         <p class="text-variant1">Yes, all our technicians are fully licensed and certified in their respective fields. We ensure they undergo regular training to stay updated with industry standards.</p>
                     </div>
                 </li>
-                <li class="faqs_item py-5 px-6 border-b border-outline">
+                <li class="faqs_item py-5 px-6 border-b border-outline animate">
                     <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
                         <strong class="title heading5 text-left">What should I expect during a service visit?</strong>
                         <span class="icon_arrow">
@@ -654,7 +661,7 @@
                         <p class="text-variant1">During a service visit, our friendly technician will assess the problem, explain the necessary work, and provide you with a clear plan of action. We strive to deliver efficient and respectful service.</p>
                     </div>
                 </li>
-                <li class="faqs_item py-5 px-6 border-b border-outline">
+                <li class="faqs_item py-5 px-6 border-b border-outline animate">
                     <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
                         <strong class="title heading5 text-left">Do you offer free estimates?</strong>
                         <span class="icon_arrow">
@@ -666,7 +673,7 @@
                         <p class="text-variant1">Absolutely! We offer complimentary estimates to help you make informed decisions. Our team will evaluate your requirements and provide a transparent, no-obligation quote.</p>
                     </div>
                 </li>
-                <li class="faqs_item py-5 px-6 border-b border-outline">
+                <li class="faqs_item py-5 px-6 border-b border-outline animate">
                     <button class="faqs_btn heading flex items-center justify-between gap-4 w-full">
                         <strong class="title heading5 text-left">How do I know which service I need?</strong>
                         <span class="icon_arrow">
