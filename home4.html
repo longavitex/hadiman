@@ -406,6 +406,8 @@
     <section class="section slider h-[51rem]">
         <h3 class="blind">Slider</h3>
         <div class="slider_video w-full h-full relative">
+            <!-- If the video path is incorrect, the background image will be displayed. -->
+            <img src="./assets/images/slider/slider4.jpg" class="absolute bottom-0 left-0 w-full h-full" alt="bg video">
             <video class="w-full absolute bottom-0 left-0" autoplay loop muted playsinline>
                 <source src="./assets/images/slider/video_slider4.mp4" type="video/mp4">
             </video>
@@ -1005,7 +1007,7 @@
         <div class="video_inner flex items-center justify-center lg:h-[35rem] h-[25rem]">
             <h3 class="blind">Video</h3>
             <!-- If the video path is incorrect, the background image will be displayed. -->
-            <img src="./assets/images/components/bg_video4.jpg" class="absolute top-0 left-0 z-[-1] w-full h-full" alt="video">
+            <img src="./assets/images/components/bg_video4.jpg" class="absolute top-0 left-0 z-[-1] w-full h-full object-cover" alt="video">
             <video class="w-full h-full object-cover" autoplay loop muted playsinline>
                 <source src="./assets/images/other/video4.mp4" type="video/mp4">
             </video>

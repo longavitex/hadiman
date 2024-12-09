@@ -814,6 +814,10 @@ video {
   z-index: 2;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .col-span-full {
   grid-column: 1 / -1;
 }
