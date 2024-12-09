@@ -1,13 +1,30 @@
 /********* Table of contents *********/
-/*** custom-swiper ***/
-/****** Slider - Swiper Pagination ***/
-/****** Swiper Navigation ***/
-/****** Swiper Scrollbar ***/
-/*** Main color ***/
-/*** Reset ***/
+/*** fonts ***/
+/*** variables ***/
+/*** mixins ***/
+/*** reset ***/
+/*** globals ***/
+/*** banner ***/
+/*** blog ***/
+/*** calendar ***/
+/*** cta ***/
+/*** custom_swiper ***/
+/*** custom_slick ***/
+/*** faqs ***/
+/*** footer ***/
+/*** header ***/
+/*** menu_tab ***/
+/*** popup ***/
+/*** process ***/
+/*** project ***/
+/*** services ***/
+/*** shop ***/
+/*** slider ***/
+/*** testimonials ***/
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;500;600;700&display=swap");
 /* Variables */
+/* Mixins */
 /* Reset */
 * {
   padding: 0;
@@ -641,6 +658,7 @@ legend {
     line-height: 2.25rem;
   }
 }
+/* banner */
 .banner {
   overflow: hidden;
   max-width: 100%;
@@ -672,6 +690,7 @@ legend {
   opacity: 0.4;
 }
 
+/* blog */
 .blog_item.style-two::before, .blog_item.style-two::after {
   position: absolute;
   top: 0;
@@ -723,6 +742,7 @@ legend {
   border: none;
 }
 
+/* calendar */
 .calendar {
   position: relative;
 }
@@ -742,6 +762,7 @@ legend {
   width: 100%;
 }
 
+/* cta */
 .cta.style-two {
   background: url(../assets/images/components/cta2.jpg) center/cover no-repeat;
   background-attachment: fixed;
@@ -752,7 +773,7 @@ legend {
   background-color: #202020;
 }
 
-/* Swiper Pagination */
+/* Swiper */
 .swiper {
   cursor: grab;
   user-select: none;
@@ -846,7 +867,7 @@ legend {
   }
 }
 
-/* Slick Dots */
+/* Slick */
 .slick-dots {
   display: flex !important;
   align-items: center;
@@ -935,7 +956,7 @@ legend {
   max-height: 200px;
 }
 
-/* menu */
+/* header menu */
 .menu_item:hover .has_line::before {
   width: 100%;
 }
@@ -978,7 +999,7 @@ legend {
   color: #D31B41;
 }
 
-/* MENU TAB */
+/* TAB */
 .menu_tab {
   position: relative;
   overflow-x: auto;
@@ -1053,6 +1074,7 @@ legend {
   opacity: 1;
 }
 
+/* popup */
 .popup {
   visibility: hidden;
   display: flex;
@@ -1079,6 +1101,7 @@ legend {
   display: block;
 }
 
+/* process */
 .process_item:hover .process_ordinal {
   animation: scaleAnimate 0.5s ease;
 }

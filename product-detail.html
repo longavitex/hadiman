@@ -413,6 +413,7 @@
     </header>
     <!-- BREADCRUMB -->
     <section class="section breadcrumb pt-5 border-t border-outline">
+        <h3 class="blind">Product Detail</h3>
         <div class="container">
             <ul class="breadcrumb_nav flex items-center gap-1 animate">
                 <li class="flex items-center">
@@ -519,7 +520,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 mt-6">
-                        <button class="btn_cart btn flex items-center justify-center w-full h-12 bg-black">
+                        <button class="btn_cart js_btn_open_popup btn flex items-center justify-center w-full h-12 bg-black" data-popup="popup_cart">
                             <span>Add to cart - </span>
                             <span class="product_price">$79.99</span>
                         </button>
@@ -528,7 +529,7 @@
                             <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
                             <span class="blind">button compare</span>
                         </button>
-                        <button class="btn_wishlist btn_toggle flex flex-shrink-0 items-center justify-center w-12 h-12 border border-outline duration-300 hover:border-outline hover:bg-black hover:text-white">
+                        <button class="btn_wishlist btn_toggle js_btn_open_popup flex flex-shrink-0 items-center justify-center w-12 h-12 border border-outline duration-300 hover:border-outline hover:bg-black hover:text-white" data-popup="popup_wishlist">
                             <span class="ph ph-heart text-2xl"></span>
                             <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
                             <span class="blind">button wishlist</span>
@@ -684,7 +685,7 @@
                     <div id="tab_review" class="tab_panel review active" role="tabpanel" aria-labelledby="review" aria-hidden="false">
                         <div class="rating_area flex items-center max-md:flex-col justify-between gap-y-3">
                             <div class="flex flex-col items-center justify-center gap-1">
-                                <h1 class="heading1 avg_rating">4.8</h1>
+                                <h2 class="heading1 avg_rating">4.8</h2>
                                 <div class="flex flex-col items-center gap-1">
                                     <ul class="rate flex">
                                         <li class="ph-fill ph-star text-2xl text-yellow"></li>

@@ -1,9 +1,27 @@
-// Table of contents
-/**** Swiper Obj ****/
+/************* Table of contents *************/
+/**** Add fixed header ****/
+/**** Toggle active ****/
+/**** Animate text slider ****/
+/**** Active testimonials image ****/
+/**** Active project home four ****/
+/**** Swiper obj ****/
+/**** Projects style center home4 ****/
+/**** Compare projects home1 ****/
+/**** Active menu tab ****/
+/**** Click load more btn ****/
+/**** FAQs ****/
+/**** Generate calendar for the current month ****/
+/**** Navigate to the previous or next month ****/
+/**** Rate product ****/
+/**** Quantity product ****/
+/**** Remove product ****/
+/**** Countdown time ****/
+/**** Counter ****/
+/**** popup ****/
+/**** animate  ****/
 
 
 ; (function (win, $) {
-    gsap.registerPlugin(Observer);
     const calendar = $('#calendar');
     const daysContainer = $('.days');
     const monthName = $('.calendar_date');
@@ -11,7 +29,6 @@
     const itemsPerRow = 7; // days in row (grid 7 cols)
 
     let currentDate = new Date();
-    let selectedDate = null;
     let calendarHeight = calendar.outerHeight();
 
     // Add fixed header
@@ -37,7 +54,7 @@
         })
     }
 
-    // animate text slider
+    // Animate text slider
     const animateTextSlider = function(swiper) {
         let activeIndex = swiper.realIndex
         const $sectionTit = $('.swiper-slide[data-swiper-slide-index="' + activeIndex + '"]').find('.section_tit');
@@ -87,7 +104,7 @@
         }
     }
 
-    // active testimonials image
+    // Active testimonials image
     const activeTestimonials = function(swiper) {
         let activeIndex = swiper.realIndex
         
@@ -100,7 +117,7 @@
         })
     }
 
-    // active project home four
+    // Active project home four
     const activeProjectThree = function(swiper) {
         let activeIndex = swiper.realIndex
         
@@ -373,7 +390,7 @@
         },
     }
 
-    // swiper obj
+    // Swiper obj
     var setSwipers = function() {
         const sliderSwiperObj = new Swiper('.slider_swiper', {
             ...SWIPER_OPTIONS.SLIDER_SWIPER,
@@ -427,7 +444,7 @@
         });
     }
 
-    // projects style center home4
+    // Projects style center home4
     const projectsSlideFour = function () {
         $('.projects_slick').slick({
             dots: true,
@@ -555,7 +572,7 @@
         })
     }
 
-    // Active menu tab
+    // Click load more btn
     const handleClickLoadMore = function () {
         $(".js_btn_load_more").on('click', function () {
             // show loading
