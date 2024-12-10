@@ -874,13 +874,17 @@
                         <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
                         <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
                             <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                <button class="product_action_btn btn_wishlist btn_toggle js_btn_open_popup flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white" data-popup="popup_wishlist">
                                     <span class="ph ph-heart text-xl"></span>
+                                    <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                                    <span class="blind">button wishlist</span>
                                 </button>
                             </li>
                             <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                <button class="product_action_btn btn_compare btn_toggle flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
                                     <span class="ph ph-git-diff text-xl"></span>
+                                    <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                                    <span class="blind">button compare</span>
                                 </button>
                             </li>
                             <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
@@ -889,7 +893,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        <button class="btn_cart js_btn_open_popup btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden" data-popup="popup_cart">Add To cart</button>
                     </div>
                     <a href="product-detail.html" class="product_info block pt-5">
                         <div class="flex items-center gap-2">
@@ -914,13 +918,17 @@
                         <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
                         <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
                             <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                <button class="product_action_btn btn_wishlist btn_toggle js_btn_open_popup flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white" data-popup="popup_wishlist">
                                     <span class="ph ph-heart text-xl"></span>
+                                    <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                                    <span class="blind">button wishlist</span>
                                 </button>
                             </li>
                             <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                <button class="product_action_btn btn_compare btn_toggle flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
                                     <span class="ph ph-git-diff text-xl"></span>
+                                    <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                                    <span class="blind">button compare</span>
                                 </button>
                             </li>
                             <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
@@ -929,7 +937,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        <button class="btn_cart js_btn_open_popup btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden" data-popup="popup_cart">Add To cart</button>
                     </div>
                     <a href="product-detail.html" class="product_info block pt-5">
                         <div class="flex items-center gap-2">
@@ -954,13 +962,17 @@
                         <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
                         <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
                             <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                <button class="product_action_btn btn_wishlist btn_toggle js_btn_open_popup flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white" data-popup="popup_wishlist">
                                     <span class="ph ph-heart text-xl"></span>
+                                    <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                                    <span class="blind">button wishlist</span>
                                 </button>
                             </li>
                             <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                <button class="product_action_btn btn_compare btn_toggle flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
                                     <span class="ph ph-git-diff text-xl"></span>
+                                    <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                                    <span class="blind">button compare</span>
                                 </button>
                             </li>
                             <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
@@ -969,7 +981,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        <button class="btn_cart js_btn_open_popup btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden" data-popup="popup_cart">Add To cart</button>
                     </div>
                     <a href="product-detail.html" class="product_info block pt-5">
                         <div class="flex items-center gap-2">
@@ -994,13 +1006,17 @@
                         <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
                         <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
                             <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_wishlist flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                <button class="product_action_btn btn_wishlist btn_toggle js_btn_open_popup flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white" data-popup="popup_wishlist">
                                     <span class="ph ph-heart text-xl"></span>
+                                    <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                                    <span class="blind">button wishlist</span>
                                 </button>
                             </li>
                             <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
-                                <button class="product_action_btn btn_compare flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                <button class="product_action_btn btn_compare btn_toggle flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
                                     <span class="ph ph-git-diff text-xl"></span>
+                                    <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                                    <span class="blind">button compare</span>
                                 </button>
                             </li>
                             <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
@@ -1009,7 +1025,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="btn_cart btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden">Add To cart</button>
+                        <button class="btn_cart js_btn_open_popup btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden" data-popup="popup_cart">Add To cart</button>
                     </div>
                     <a href="product-detail.html" class="product_info block pt-5">
                         <div class="flex items-center gap-2">
