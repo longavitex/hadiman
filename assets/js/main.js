@@ -867,7 +867,7 @@
             $('.popup, .popup_item').removeClass('open');
             
             // pause video iframe youtube 
-            $('.popup_video iframe')[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+            $('.popup_video iframe')[0]?.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
         })
 
         $('.popup_item').on('click', function(e){
