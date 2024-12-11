@@ -361,6 +361,9 @@ legend {
   text-transform: uppercase;
   color: #FF6600;
 }
+.tag.block {
+  display: block;
+}
 .tag.leading-7 {
   line-height: 1.75rem;
 }
@@ -768,6 +771,11 @@ legend {
   background-attachment: fixed;
 }
 .cta.style-three {
+  background: url(../assets/images/components/bg_cta3.png) center/cover no-repeat;
+  background-attachment: fixed;
+  background-color: #171C38;
+}
+.cta.form_request_banner {
   background: url(../assets/images/components/form_request_banner3.png) center/cover no-repeat;
   background-attachment: fixed;
   background-color: #202020;
@@ -935,24 +943,24 @@ legend {
 }
 
 /* footer */
-.footer.style-two .footer_nav_btn .ph-plus,
-.footer.style-two .footer_nav_btn .ph-minus {
+.footer_nav_btn .ph-plus,
+.footer_nav_btn .ph-minus {
   transition: opacity 0.3s ease;
 }
-.footer.style-two .footer_nav_btn.active .ph-plus {
+.footer_nav_btn.active .ph-plus {
   opacity: 0;
 }
-.footer.style-two .footer_nav_btn.active .ph-minus {
+.footer_nav_btn.active .ph-minus {
   opacity: 1;
 }
 @media (max-width: 639.98px) {
-  .footer.style-two .footer_nav_list {
+  .footer_nav_list {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.4s linear;
   }
 }
-.footer.style-two .footer_nav_btn.active + .footer_nav_list {
+.footer_nav_btn.active + .footer_nav_list {
   max-height: 200px;
 }
 
@@ -1322,7 +1330,7 @@ legend {
   color: #FF6600;
 }
 .services_benefit_item:hover .services_benefit_icon {
-  transform: rotateY(360deg);
+  animation: scaleAnimate 0.5s ease;
 }
 
 /* shop */

@@ -411,7 +411,7 @@
         </div>
     </header>
     <!-- SLIDER -->
-    <section class="section slider h-[47.5rem] relative">
+    <section class="section slider sm:h-[47.5rem] h-[40rem] relative">
         <button
             class="btn_prev flex items-center justify-center absolute top-1/2 min-[1600px]:left-10 left-[16px] z-[2] -translate-y-1/2 w-13 h-[4.75rem] bg-white min-[1600px]:bg-opacity-10 bg-opacity-30 text-white duration-300 lg:hover:bg-opacity-80 lg:hover:text-black">
             <span class="ph ph-caret-left text-xl"></span>
@@ -1575,9 +1575,14 @@
                         <p class="mt-4 text-variant2">Sign up to get the latest news and events—we promise no spam.</p>
                     </div>
                 </div>
-                <div class="footer_nav flex max-xl:flex-wrap justify-between gap-10 gap-y-8 mt-10">
-                    <div class="footer_nav_area">
-                        <strong class="footer_nav_heading txt-label">About</strong>
+                <div class="footer_nav flex max-xl:flex-wrap justify-between gap-10 gap-y-6 mt-10">
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">About</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>About</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
                         <ul class="footer_nav_list flex flex-col gap-2 mt-3">
                             <li>
                                 <a href="about-us.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">About Us</a>
@@ -1593,8 +1598,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer_nav_area">
-                        <strong class="footer_nav_heading txt-label">Categories</strong>
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">Categories</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>Categories</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
                         <ul class="footer_nav_list flex flex-col gap-2 mt-3">
                             <li>
                                 <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Renovation Services</a>
@@ -1610,8 +1620,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer_nav_area">
-                        <strong class="footer_nav_heading txt-label">Quick Links</strong>
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">Quick Links</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>Quick Links</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
                         <ul class="footer_nav_list flex flex-col gap-2 mt-3">
                             <li>
                                 <a href="our-services.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Our Services</a>
@@ -1631,7 +1646,7 @@
                         <strong class="footer_nav_heading txt-label">Get a Free Estimate Today!</strong>
                         <p class="footer_nav_desc mt-3 text-variant2">Call us for a cost estimate over the phone</p>
                         <h5 class="footer_nav_contact heading5 mt-4">1-555-678-8888</h5>
-                        <a href="book-appointment.html" class="btn mt-4 hover:bg-white">Request an estimate</a>
+                        <a href="book-appointment.html" class="btn mt-4">Request an estimate</a>
                     </div>
                 </div>
             </div>

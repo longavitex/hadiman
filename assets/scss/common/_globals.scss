@@ -261,6 +261,10 @@ legend {
   text-transform: uppercase;
   color: $orange;
 
+  &.block {
+    display: block;
+  }
+
   &.leading-7 {
     line-height: 1.75rem;
   }

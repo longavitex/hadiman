@@ -5,6 +5,11 @@
         background-attachment: fixed;
     }
     &.style-three {
+        background: url(../assets/images/components/bg_cta3.png) center / cover no-repeat;
+        background-attachment: fixed;
+        background-color: $dark;
+    }
+    &.form_request_banner {
         background: url(../assets/images/components/form_request_banner3.png) center / cover no-repeat;
         background-attachment: fixed;
         background-color: $black;

@@ -389,7 +389,7 @@
         </div>
     </header>
     <!-- SLIDER -->
-    <section class="section style-three slider h-[43.5rem] relative">
+    <section class="section style-three slider sm:h-[43.5rem] h-[38rem] relative">
         <button
             class="btn_prev flex items-center justify-center absolute top-1/2 left-0 z-[2] -translate-y-1/2 w-13 h-[4.75rem] bg-white min-[1600px]:bg-opacity-10 bg-opacity-30 text-white duration-300 lg:hover:bg-opacity-80 lg:hover:text-black">
             <span class="ph ph-caret-left text-xl"></span>
@@ -870,10 +870,7 @@
         </div>
     </section>
     <!-- CTA -->
-    <section class="section cta relative bg-dark">
-        <div class="cta_bg absolute top-0 left-0 w-full h-full pointer-events-none">
-            <img src="./assets/images/components/bg_cta3.png" class="h-full object-cover" alt="bg_cta3">
-        </div>
+    <section class="section cta style-three">
         <div class="container relative sm:py-25 py-15 text-white">
             <div class="cta_img absolute bottom-0 xl:left-[45%] left-1/3 xl:w-[63%] lg:w-3/4 w-full max-md:hidden animate animate_left">
                 <img src="./assets/images/components/cta3.png" alt="cta3">
@@ -1216,7 +1213,7 @@
     </section>
     <!-- FORM REQUEST -->
     <section class="section form_request sm:pb-25 pb-15">
-        <div class="form_request_banner cta style-three relative">
+        <div class="form_request_banner cta relative">
             <div class="container flex flex-col items-center relative sm:pt-25 pt-15 pb-[16.25rem] text-white">
                 <button class="btn_play js_btn_open_popup inline-flex items-center justify-center w-18 h-18 rounded-full bg-yellow duration-400 hover:bg-white hover:text-black" data-popup="popup_video">
                     <span class="ph-fill ph-play text-3xl"></span>
@@ -1397,9 +1394,14 @@
                         <p class="mt-4 text-variant2">Sign up to get the latest news and events—we promise no spam.</p>
                     </div>
                 </div>
-                <div class="footer_nav flex max-xl:flex-wrap justify-between gap-10 gap-y-8 mt-10">
-                    <div class="footer_nav_area">
-                        <strong class="footer_nav_heading txt-label">About</strong>
+                <div class="footer_nav flex max-xl:flex-wrap justify-between gap-10 gap-y-6 mt-10">
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">About</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>About</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
                         <ul class="footer_nav_list flex flex-col gap-2 mt-3">
                             <li>
                                 <a href="about-us.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">About Us</a>
@@ -1415,8 +1417,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer_nav_area">
-                        <strong class="footer_nav_heading txt-label">Categories</strong>
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">Categories</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>Categories</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
                         <ul class="footer_nav_list flex flex-col gap-2 mt-3">
                             <li>
                                 <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Renovation Services</a>
@@ -1432,8 +1439,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer_nav_area">
-                        <strong class="footer_nav_heading txt-label">Quick Links</strong>
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">Quick Links</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>Quick Links</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
                         <ul class="footer_nav_list flex flex-col gap-2 mt-3">
                             <li>
                                 <a href="our-services.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Our Services</a>

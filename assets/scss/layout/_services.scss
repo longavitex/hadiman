@@ -36,7 +36,7 @@
     &_item {
       &:hover {
         .services_benefit_icon {
-          transform: rotateY(360deg);
+          animation: scaleAnimate 0.5s ease;
         }
       }
     }
