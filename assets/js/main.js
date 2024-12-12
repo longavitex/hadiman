@@ -128,6 +128,11 @@
                 $(".projects_link[data-project=" + dataProject + "]").addClass('active')
             }
         })
+
+        $('.projects_link').hover(function () {
+            var index = $(this).closest('.projects_item').index();
+            swiper.slideTo(index)
+        });
     }
 
     const SWIPER_OPTIONS = {
@@ -142,6 +147,11 @@
                 prevEl: ".slider .btn_prev",
                 nextEl: ".slider .btn_next",
             },
+            autoplay: {
+                delay: 5000,
+            },
+            effect: 'fade',
+            speed: 600,
         },
         CHOOSE_US_SWIPER: {
             loop: true,
@@ -506,6 +516,35 @@
                 },
             ]
         });
+    }
+
+    // Active project home four
+    const activeProcess = function() {
+        $('.process_item').hover(function () {
+            var processIndex = $(this).index();
+            $('.process_item').removeClass('active')
+            
+            for (let index = 1; index <= $('.process_item').length; index++) {
+                if(index <= processIndex) {
+                    $('.process_item').eq(index - 1).addClass('active');
+                }
+            }
+
+            $('.process_line_progress').css('height', (processIndex - 1) * (100 / 3) + '%')
+            // if($(this).closest('.process').hasClass('style-one')) {
+            // } else {
+            //     if($(win).innerWidth() > 640) {
+            //         $('.process_line').css('height', (processIndex - 1) * 28 + '%')
+            //     } else {
+            //         $('.process_line').css('height', (processIndex - 1) * 25.5 + '%')
+            //     }
+            // }
+        });
+
+        $('.process_list').on('mouseleave', function () {
+            $('.process_item').removeClass('active')
+            $('.process_line_progress').css('height', 0)
+        })
     }
 
     // Compare projects home1
@@ -899,6 +938,7 @@
         handleToggleButtonClicked()
         setSwipers()
         projectsSlideFour()
+        activeProcess()
         handleCompareProject()
         handleActiveTab()
         handleClickLoadMore()
