@@ -412,8 +412,35 @@
                     animateTextSlider(this)
                 },
             }
-        });const sliderSwiperTwoObj = new Swiper('.slider_swiper_two', {
+        });
+        const sliderSwiperTwoObj = new Swiper('.slider_swiper_two', {
             ...SWIPER_OPTIONS.SLIDER_SWIPER,
+            on: {
+                init: function() {
+                    animateTextSlider(this)
+                },
+                slideChangeTransitionStart: function() {
+                    animateTextSlider(this)
+                },
+            }
+        });
+        const sliderSwiperThreeObj = new Swiper('.slider_swiper_three', {
+            ...SWIPER_OPTIONS.SLIDER_SWIPER,
+            effect: "creative",
+            speed: 800,
+            creativeEffect: {
+                prev: {
+                shadow: true,
+                origin: "left center",
+                translate: ["-5%", 0, -200],
+                rotate: [0, 100, 0],
+                },
+                next: {
+                origin: "right center",
+                translate: ["5%", 0, -200],
+                rotate: [0, -100, 0],
+                },
+            },
             on: {
                 init: function() {
                     animateTextSlider(this)
