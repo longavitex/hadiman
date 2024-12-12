@@ -150,8 +150,6 @@
             autoplay: {
                 delay: 5000,
             },
-            effect: 'fade',
-            speed: 600,
         },
         CHOOSE_US_SWIPER: {
             loop: true,
@@ -404,6 +402,18 @@
     var setSwipers = function() {
         const sliderSwiperObj = new Swiper('.slider_swiper', {
             ...SWIPER_OPTIONS.SLIDER_SWIPER,
+            effect: 'fade',
+            speed: 600,
+            on: {
+                init: function() {
+                    animateTextSlider(this)
+                },
+                slideChangeTransitionStart: function() {
+                    animateTextSlider(this)
+                },
+            }
+        });const sliderSwiperTwoObj = new Swiper('.slider_swiper_two', {
+            ...SWIPER_OPTIONS.SLIDER_SWIPER,
             on: {
                 init: function() {
                     animateTextSlider(this)
@@ -531,14 +541,6 @@
             }
 
             $('.process_line_progress').css('height', (processIndex - 1) * (100 / 3) + '%')
-            // if($(this).closest('.process').hasClass('style-one')) {
-            // } else {
-            //     if($(win).innerWidth() > 640) {
-            //         $('.process_line').css('height', (processIndex - 1) * 28 + '%')
-            //     } else {
-            //         $('.process_line').css('height', (processIndex - 1) * 25.5 + '%')
-            //     }
-            // }
         });
 
         $('.process_list').on('mouseleave', function () {
